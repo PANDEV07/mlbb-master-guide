@@ -1,0 +1,902 @@
+[
+    {
+        "parentSlug":  "antique-cuirass",
+        "componentSlug":  "ares-belt",
+        "componentName":  "Ares Belt",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "antique-cuirass",
+        "componentSlug":  "dreadnaught-armor",
+        "componentName":  "Dreadnaught Armor",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "arcane-boots",
+        "componentSlug":  "boots",
+        "componentName":  "Boots",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "arcane-boots",
+        "componentSlug":  "mystery-codex",
+        "componentName":  "Mystery Codex",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "ares-belt",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "athenas-shield",
+        "componentSlug":  "silence-robe",
+        "componentName":  "Silence Robe",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "athenas-shield",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "azure-blade",
+        "componentSlug":  "magic-necklace",
+        "componentName":  "Magic Necklace",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "berserkers-fury",
+        "componentSlug":  "javelin",
+        "componentName":  "Javelin",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "berserkers-fury",
+        "componentSlug":  "legion-sword",
+        "componentName":  "Legion Sword",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "black-ice-shield",
+        "componentSlug":  "leather-jerkin",
+        "componentName":  "Leather Jerkin",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "black-ice-shield",
+        "componentSlug":  "magic-resist-cloak",
+        "componentName":  "Magic Resist Cloak",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "blade-armor",
+        "componentSlug":  "leather-jerkin",
+        "componentName":  "Leather Jerkin",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "blade-armor",
+        "componentSlug":  "steel-legplates",
+        "componentName":  "Steel Legplates",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "blade-of-despair",
+        "componentSlug":  "legion-sword",
+        "componentName":  "Legion Sword",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "blade-of-the-heptaseas",
+        "componentSlug":  "fury-hammer",
+        "componentName":  "Fury Hammer",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "blade-of-the-heptaseas",
+        "componentSlug":  "ogre-tomahawk",
+        "componentName":  "Ogre Tomahawk",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "blood-wings",
+        "componentSlug":  "magic-wand",
+        "componentName":  "Magic Wand",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "brute-force-breastplate",
+        "componentSlug":  "ares-belt",
+        "componentName":  "Ares Belt",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "brute-force-breastplate",
+        "componentSlug":  "heros-ring",
+        "componentName":  "Hero\u0027s Ring",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "brute-force-breastplate",
+        "componentSlug":  "leather-jerkin",
+        "componentName":  "Leather Jerkin",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "chastise-pauldron",
+        "componentSlug":  "ares-belt",
+        "componentName":  "Ares Belt",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "chastise-pauldron",
+        "componentSlug":  "steel-legplates",
+        "componentName":  "Steel Legplates",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "clock-of-destiny",
+        "componentSlug":  "book-of-sages",
+        "componentName":  "Book of Sages",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "clock-of-destiny",
+        "componentSlug":  "elegant-gem",
+        "componentName":  "Elegant Gem",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "concentrated-energy",
+        "componentSlug":  "magic-wand",
+        "componentName":  "Magic Wand",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "concentrated-energy",
+        "componentSlug":  "mystic-container",
+        "componentName":  "Mystic Container",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "concentrated-energy",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "corrosion-scythe",
+        "componentSlug":  "regular-spear",
+        "componentName":  "Regular Spear",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "corrosion-scythe",
+        "componentSlug":  "swift-crossbow",
+        "componentName":  "Swift Crossbow",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "cursed-helmet",
+        "componentSlug":  "ares-belt",
+        "componentName":  "Ares Belt",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "cursed-helmet",
+        "componentSlug":  "magic-resist-cloak",
+        "componentName":  "Magic Resist Cloak",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "cursed-helmet",
+        "componentSlug":  "molten-essence",
+        "componentName":  "Molten Essence",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "demon-boots",
+        "componentSlug":  "boots",
+        "componentName":  "Boots",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "demon-boots",
+        "componentSlug":  "magic-necklace",
+        "componentName":  "Magic Necklace",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "demon-hunter-sword",
+        "componentSlug":  "knife",
+        "componentName":  "Knife",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "demon-hunter-sword",
+        "componentSlug":  "regular-spear",
+        "componentName":  "Regular Spear",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "demon-hunter-sword",
+        "componentSlug":  "vampire-mallet",
+        "componentName":  "Vampire Mallet",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "divine-glaive",
+        "componentSlug":  "magic-wand",
+        "componentName":  "Magic Wand",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "dominance-ice",
+        "componentSlug":  "black-ice-shield",
+        "componentName":  "Black Ice Shield",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "dominance-ice",
+        "componentSlug":  "leather-jerkin",
+        "componentName":  "Leather Jerkin",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "dominance-ice",
+        "componentSlug":  "magic-resist-cloak",
+        "componentName":  "Magic Resist Cloak",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "dreadnaught-armor",
+        "componentSlug":  "leather-jerkin",
+        "componentName":  "Leather Jerkin",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "elegant-gem",
+        "componentSlug":  "power-crystal",
+        "componentName":  "Power Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "elegant-gem",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "enchanted-talisman",
+        "componentSlug":  "magic-necklace",
+        "componentName":  "Magic Necklace",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "enchanted-talisman",
+        "componentSlug":  "magic-wand",
+        "componentName":  "Magic Wand",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "enchanted-talisman",
+        "componentSlug":  "tome-of-evil",
+        "componentName":  "Tome of Evil",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "endless-battle",
+        "componentSlug":  "azure-blade",
+        "componentName":  "Azure Blade",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "endless-battle",
+        "componentSlug":  "iron-hunting-bow",
+        "componentName":  "Iron Hunting Bow",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "endless-battle",
+        "componentSlug":  "ogre-tomahawk",
+        "componentName":  "Ogre Tomahawk",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "exotic-veil",
+        "componentSlug":  "mystery-codex",
+        "componentName":  "Mystery Codex",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "feather-of-heaven",
+        "componentSlug":  "book-of-sages",
+        "componentName":  "Book of Sages",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "feather-of-heaven",
+        "componentSlug":  "swift-crossbow",
+        "componentName":  "Swift Crossbow",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "flask-of-the-oasis",
+        "componentSlug":  "book-of-sages",
+        "componentName":  "Book of Sages",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "flask-of-the-oasis",
+        "componentSlug":  "magic-wand",
+        "componentName":  "Magic Wand",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "flask-of-the-oasis",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "fleeting-time",
+        "componentSlug":  "expert-gloves",
+        "componentName":  "Expert Gloves",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "fleeting-time",
+        "componentSlug":  "heros-ring",
+        "componentName":  "Hero\u0027s Ring",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "fury-hammer",
+        "componentSlug":  "dagger",
+        "componentName":  "Dagger",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "genius-wand",
+        "componentSlug":  "exotic-veil",
+        "componentName":  "Exotic Veil",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "genius-wand",
+        "componentSlug":  "magic-wand",
+        "componentName":  "Magic Wand",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "glowing-wand",
+        "componentSlug":  "exotic-veil",
+        "componentName":  "Exotic Veil",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "glowing-wand",
+        "componentSlug":  "mystery-codex",
+        "componentName":  "Mystery Codex",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "glowing-wand",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "golden-staff",
+        "componentSlug":  "dagger",
+        "componentName":  "Dagger",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "golden-staff",
+        "componentSlug":  "regular-spear",
+        "componentName":  "Regular Spear",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "great-dragon-spear",
+        "componentSlug":  "iron-hunting-bow",
+        "componentName":  "Iron Hunting Bow",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "great-dragon-spear",
+        "componentSlug":  "javelin",
+        "componentName":  "Javelin",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "great-dragon-spear",
+        "componentSlug":  "legion-sword",
+        "componentName":  "Legion Sword",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "guardian-helmet",
+        "componentSlug":  "ares-belt",
+        "componentName":  "Ares Belt",
+        "quantity":  3
+    },
+    {
+        "parentSlug":  "haass-claws",
+        "componentSlug":  "dagger",
+        "componentName":  "Dagger",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "haass-claws",
+        "componentSlug":  "rogue-meteor",
+        "componentName":  "Rogue Meteor",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "haass-claws",
+        "componentSlug":  "vampire-mallet",
+        "componentName":  "Vampire Mallet",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "holy-crystal",
+        "componentSlug":  "magic-wand",
+        "componentName":  "Magic Wand",
+        "quantity":  3
+    },
+    {
+        "parentSlug":  "hunter-strike",
+        "componentSlug":  "dagger",
+        "componentName":  "Dagger",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "hunter-strike",
+        "componentSlug":  "fury-hammer",
+        "componentName":  "Fury Hammer",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "hunter-strike",
+        "componentSlug":  "iron-hunting-bow",
+        "componentName":  "Iron Hunting Bow",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "ice-queen-wand",
+        "componentSlug":  "exotic-veil",
+        "componentName":  "Exotic Veil",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "ice-queen-wand",
+        "componentSlug":  "mystery-codex",
+        "componentName":  "Mystery Codex",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "ice-queen-wand",
+        "componentSlug":  "mystic-container",
+        "componentName":  "Mystic Container",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "immortality",
+        "componentSlug":  "ares-belt",
+        "componentName":  "Ares Belt",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "immortality",
+        "componentSlug":  "leather-jerkin",
+        "componentName":  "Leather Jerkin",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "immortality",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "legion-sword",
+        "componentSlug":  "dagger",
+        "componentName":  "Dagger",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "lightning-truncheon",
+        "componentSlug":  "book-of-sages",
+        "componentName":  "Book of Sages",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "lightning-truncheon",
+        "componentSlug":  "magic-wand",
+        "componentName":  "Magic Wand",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "lightning-truncheon",
+        "componentSlug":  "power-crystal",
+        "componentName":  "Power Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "magic-blade",
+        "componentSlug":  "dagger",
+        "componentName":  "Dagger",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "magic-blade",
+        "componentSlug":  "vampire-mallet",
+        "componentName":  "Vampire Mallet",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "magic-boots",
+        "componentSlug":  "boots",
+        "componentName":  "Boots",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "magic-boots",
+        "componentSlug":  "heros-ring",
+        "componentName":  "Hero\u0027s Ring",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "magic-wand",
+        "componentSlug":  "mystery-codex",
+        "componentName":  "Mystery Codex",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "malefic-gun",
+        "componentSlug":  "fury-hammer",
+        "componentName":  "Fury Hammer",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "malefic-gun",
+        "componentSlug":  "knife",
+        "componentName":  "Knife",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "malefic-roar",
+        "componentSlug":  "legion-sword",
+        "componentName":  "Legion Sword",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "molten-essence",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "mystic-container",
+        "componentSlug":  "mystery-codex",
+        "componentName":  "Mystery Codex",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "ogre-tomahawk",
+        "componentSlug":  "dagger",
+        "componentName":  "Dagger",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "ogre-tomahawk",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "oracle",
+        "componentSlug":  "heros-ring",
+        "componentName":  "Hero\u0027s Ring",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "oracle",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "queens-wings",
+        "componentSlug":  "ares-belt",
+        "componentName":  "Ares Belt",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "queens-wings",
+        "componentSlug":  "expert-gloves",
+        "componentName":  "Expert Gloves",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "queens-wings",
+        "componentSlug":  "heros-ring",
+        "componentName":  "Hero\u0027s Ring",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "radiant-armor",
+        "componentSlug":  "healing-necklace",
+        "componentName":  "Healing Necklace",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "radiant-armor",
+        "componentSlug":  "magic-resist-cloak",
+        "componentName":  "Magic Resist Cloak",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "radiant-armor",
+        "componentSlug":  "silence-robe",
+        "componentName":  "Silence Robe",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "rapid-boots",
+        "componentSlug":  "boots",
+        "componentName":  "Boots",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "rapid-boots",
+        "componentSlug":  "healing-necklace",
+        "componentName":  "Healing Necklace",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "regular-spear",
+        "componentSlug":  "dagger",
+        "componentName":  "Dagger",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "regular-spear",
+        "componentSlug":  "knife",
+        "componentName":  "Knife",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "rogue-meteor",
+        "componentSlug":  "javelin",
+        "componentName":  "Javelin",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "rogue-meteor",
+        "componentSlug":  "knife",
+        "componentName":  "Knife",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "rose-gold-meteor",
+        "componentSlug":  "knife",
+        "componentName":  "Knife",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "rose-gold-meteor",
+        "componentSlug":  "magic-blade",
+        "componentName":  "Magic Blade",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "sea-halberd",
+        "componentSlug":  "legion-sword",
+        "componentName":  "Legion Sword",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "sea-halberd",
+        "componentSlug":  "regular-spear",
+        "componentName":  "Regular Spear",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "silence-robe",
+        "componentSlug":  "magic-resist-cloak",
+        "componentName":  "Magic Resist Cloak",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "silence-robe",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "sky-piercer",
+        "componentSlug":  "expert-gloves",
+        "componentName":  "Expert Gloves",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "starlium-scythe",
+        "componentSlug":  "azure-blade",
+        "componentName":  "Azure Blade",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "starlium-scythe",
+        "componentSlug":  "book-of-sages",
+        "componentName":  "Book of Sages",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "starlium-scythe",
+        "componentSlug":  "magic-wand",
+        "componentName":  "Magic Wand",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "steel-legplates",
+        "componentSlug":  "leather-jerkin",
+        "componentName":  "Leather Jerkin",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "swift-boots",
+        "componentSlug":  "boots",
+        "componentName":  "Boots",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "swift-boots",
+        "componentSlug":  "knife",
+        "componentName":  "Knife",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "swift-crossbow",
+        "componentSlug":  "knife",
+        "componentName":  "Knife",
+        "quantity":  2
+    },
+    {
+        "parentSlug":  "thunder-belt",
+        "componentSlug":  "ares-belt",
+        "componentName":  "Ares Belt",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "thunder-belt",
+        "componentSlug":  "leather-jerkin",
+        "componentName":  "Leather Jerkin",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "thunder-belt",
+        "componentSlug":  "magic-resist-cloak",
+        "componentName":  "Magic Resist Cloak",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "tome-of-evil",
+        "componentSlug":  "book-of-sages",
+        "componentName":  "Book of Sages",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "tome-of-evil",
+        "componentSlug":  "magic-necklace",
+        "componentName":  "Magic Necklace",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "tough-boots",
+        "componentSlug":  "boots",
+        "componentName":  "Boots",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "tough-boots",
+        "componentSlug":  "magic-resist-cloak",
+        "componentName":  "Magic Resist Cloak",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "war-axe",
+        "componentSlug":  "heros-ring",
+        "componentName":  "Hero\u0027s Ring",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "war-axe",
+        "componentSlug":  "iron-hunting-bow",
+        "componentName":  "Iron Hunting Bow",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "war-axe",
+        "componentSlug":  "ogre-tomahawk",
+        "componentName":  "Ogre Tomahawk",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "warrior-boots",
+        "componentSlug":  "boots",
+        "componentName":  "Boots",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "warrior-boots",
+        "componentSlug":  "leather-jerkin",
+        "componentName":  "Leather Jerkin",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "wind-of-nature",
+        "componentSlug":  "regular-spear",
+        "componentName":  "Regular Spear",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "wind-of-nature",
+        "componentSlug":  "vampire-mallet",
+        "componentName":  "Vampire Mallet",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "windtalker",
+        "componentSlug":  "knife",
+        "componentName":  "Knife",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "windtalker",
+        "componentSlug":  "rogue-meteor",
+        "componentName":  "Rogue Meteor",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "winter-crown",
+        "componentSlug":  "expert-gloves",
+        "componentName":  "Expert Gloves",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "winter-crown",
+        "componentSlug":  "heros-ring",
+        "componentName":  "Hero\u0027s Ring",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "winter-crown",
+        "componentSlug":  "vitality-crystal",
+        "componentName":  "Vitality Crystal",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "wishing-lantern",
+        "componentSlug":  "book-of-sages",
+        "componentName":  "Book of Sages",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "wishing-lantern",
+        "componentSlug":  "magic-wand",
+        "componentName":  "Magic Wand",
+        "quantity":  1
+    },
+    {
+        "parentSlug":  "wishing-lantern",
+        "componentSlug":  "power-crystal",
+        "componentName":  "Power Crystal",
+        "quantity":  1
+    }
+]

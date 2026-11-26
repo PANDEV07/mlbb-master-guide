@@ -1,0 +1,678 @@
+{
+    "schemaVersion":  1,
+    "source":  {
+                   "name":  "MLBBHub",
+                   "domain":  "mlbbhub.com",
+                   "baseUrl":  "https://mlbbhub.com/heroes",
+                   "sourceTier":  "TIER_2_SECONDARY",
+                   "sourceCategory":  "SECONDARY_HERO_ROSTER",
+                   "reliabilityNotes":  "Referensi sekunder untuk cakupan nama roster hero. Bukan sumber resmi Moonton. Setiap identitas dan detail gameplay tetap memerlukan verifikasi tersendiri."
+               },
+    "heroes":  [
+                   {
+                       "name":  "Aamon",
+                       "slug":  "aamon",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Akai",
+                       "slug":  "akai",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Aldous",
+                       "slug":  "aldous",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Alice",
+                       "slug":  "alice",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Alpha",
+                       "slug":  "alpha",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Alucard",
+                       "slug":  "alucard",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Angela",
+                       "slug":  "angela",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Argus",
+                       "slug":  "argus",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Arlott",
+                       "slug":  "arlott",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Atlas",
+                       "slug":  "atlas",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Aulus",
+                       "slug":  "aulus",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Aurora",
+                       "slug":  "aurora",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Badang",
+                       "slug":  "badang",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Balmond",
+                       "slug":  "balmond",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Bane",
+                       "slug":  "bane",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Barats",
+                       "slug":  "barats",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Baxia",
+                       "slug":  "baxia",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Beatrix",
+                       "slug":  "beatrix",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Belerick",
+                       "slug":  "belerick",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Benedetta",
+                       "slug":  "benedetta",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Brody",
+                       "slug":  "brody",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Bruno",
+                       "slug":  "bruno",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Carmilla",
+                       "slug":  "carmilla",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Cecilion",
+                       "slug":  "cecilion",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Chang\u0027e",
+                       "slug":  "change",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Chip",
+                       "slug":  "chip",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Chou",
+                       "slug":  "chou",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Cici",
+                       "slug":  "cici",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Claude",
+                       "slug":  "claude",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Clint",
+                       "slug":  "clint",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Cyclops",
+                       "slug":  "cyclops",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Diggie",
+                       "slug":  "diggie",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Dyrroth",
+                       "slug":  "dyrroth",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Edith",
+                       "slug":  "edith",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Esmeralda",
+                       "slug":  "esmeralda",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Estes",
+                       "slug":  "estes",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Eudora",
+                       "slug":  "eudora",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Fanny",
+                       "slug":  "fanny",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Faramis",
+                       "slug":  "faramis",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Floryn",
+                       "slug":  "floryn",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Franco",
+                       "slug":  "franco",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Fredrinn",
+                       "slug":  "fredrinn",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Freya",
+                       "slug":  "freya",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Gatotkaca",
+                       "slug":  "gatotkaca",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Gloo",
+                       "slug":  "gloo",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Gord",
+                       "slug":  "gord",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Granger",
+                       "slug":  "granger",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Grock",
+                       "slug":  "grock",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Guinevere",
+                       "slug":  "guinevere",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Gusion",
+                       "slug":  "gusion",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Hanabi",
+                       "slug":  "hanabi",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Hanzo",
+                       "slug":  "hanzo",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Harith",
+                       "slug":  "harith",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Harley",
+                       "slug":  "harley",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Hayabusa",
+                       "slug":  "hayabusa",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Helcurt",
+                       "slug":  "helcurt",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Hilda",
+                       "slug":  "hilda",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Hirara",
+                       "slug":  "hirara",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Hylos",
+                       "slug":  "hylos",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Irithel",
+                       "slug":  "irithel",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Ixia",
+                       "slug":  "ixia",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Jawhead",
+                       "slug":  "jawhead",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Johnson",
+                       "slug":  "johnson",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Joy",
+                       "slug":  "joy",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Julian",
+                       "slug":  "julian",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Kadita",
+                       "slug":  "kadita",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Kagura",
+                       "slug":  "kagura",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Kaja",
+                       "slug":  "kaja",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Kalea",
+                       "slug":  "kalea",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Karina",
+                       "slug":  "karina",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Karrie",
+                       "slug":  "karrie",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Khaleed",
+                       "slug":  "khaleed",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Khufra",
+                       "slug":  "khufra",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Kimmy",
+                       "slug":  "kimmy",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Lancelot",
+                       "slug":  "lancelot",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Lapu-Lapu",
+                       "slug":  "lapu-lapu",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Layla",
+                       "slug":  "layla",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Leomord",
+                       "slug":  "leomord",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Lesley",
+                       "slug":  "lesley",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Ling",
+                       "slug":  "ling",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Lolita",
+                       "slug":  "lolita",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Lukas",
+                       "slug":  "lukas",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Lunox",
+                       "slug":  "lunox",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Luo Yi",
+                       "slug":  "luo-yi",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Lylia",
+                       "slug":  "lylia",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Marcel",
+                       "slug":  "marcel",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Martis",
+                       "slug":  "martis",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Masha",
+                       "slug":  "masha",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Mathilda",
+                       "slug":  "mathilda",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Melissa",
+                       "slug":  "melissa",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Minotaur",
+                       "slug":  "minotaur",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Minsitthar",
+                       "slug":  "minsitthar",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Miya",
+                       "slug":  "miya",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Moskov",
+                       "slug":  "moskov",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Nana",
+                       "slug":  "nana",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Natalia",
+                       "slug":  "natalia",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Natan",
+                       "slug":  "natan",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Nolan",
+                       "slug":  "nolan",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Novaria",
+                       "slug":  "novaria",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Obsidia",
+                       "slug":  "obsidia",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Odette",
+                       "slug":  "odette",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Paquito",
+                       "slug":  "paquito",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Pharsa",
+                       "slug":  "pharsa",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Phoveus",
+                       "slug":  "phoveus",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Popol and Kupa",
+                       "slug":  "popol-and-kupa",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Rafaela",
+                       "slug":  "rafaela",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Roger",
+                       "slug":  "roger",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Ruby",
+                       "slug":  "ruby",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Saber",
+                       "slug":  "saber",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Selena",
+                       "slug":  "selena",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Silvanna",
+                       "slug":  "silvanna",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Sora",
+                       "slug":  "sora",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Sun",
+                       "slug":  "sun",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Suyou",
+                       "slug":  "suyou",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Terizla",
+                       "slug":  "terizla",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Thamuz",
+                       "slug":  "thamuz",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Tigreal",
+                       "slug":  "tigreal",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Uranus",
+                       "slug":  "uranus",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Vale",
+                       "slug":  "vale",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Valentina",
+                       "slug":  "valentina",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Valir",
+                       "slug":  "valir",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Vexana",
+                       "slug":  "vexana",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Wanwan",
+                       "slug":  "wanwan",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "X.Borg",
+                       "slug":  "xborg",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Xavier",
+                       "slug":  "xavier",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Yi Sun-shin",
+                       "slug":  "yi-sun-shin",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Yin",
+                       "slug":  "yin",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Yu Zhong",
+                       "slug":  "yu-zhong",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Yve",
+                       "slug":  "yve",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Zetian",
+                       "slug":  "zetian",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Zhask",
+                       "slug":  "zhask",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Zhuxin",
+                       "slug":  "zhuxin",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   },
+                   {
+                       "name":  "Zilong",
+                       "slug":  "zilong",
+                       "sourceUrl":  "https://mlbbhub.com/heroes"
+                   }
+               ]
+}

@@ -1,0 +1,1147 @@
+{
+    "totalItems":  104,
+    "itemsWithRecipe":  73,
+    "totalRecipeEdges":  150,
+    "matchedComponents":  150,
+    "unresolvedComponents":  [
+
+                             ],
+    "duplicateComponents":  [
+                                {
+                                    "item":  "Azure Blade",
+                                    "component":  "Magic Necklace"
+                                },
+                                {
+                                    "item":  "Berserker\u0027s Fury",
+                                    "component":  "Javelin"
+                                },
+                                {
+                                    "item":  "Blade Armor",
+                                    "component":  "Leather Jerkin"
+                                },
+                                {
+                                    "item":  "Blade of Despair",
+                                    "component":  "Legion Sword"
+                                },
+                                {
+                                    "item":  "Blood Wings",
+                                    "component":  "Magic Wand"
+                                },
+                                {
+                                    "item":  "Clock of Destiny",
+                                    "component":  "Book of Sages"
+                                },
+                                {
+                                    "item":  "Demon Boots",
+                                    "component":  "Magic Necklace"
+                                },
+                                {
+                                    "item":  "Dreadnaught Armor",
+                                    "component":  "Leather Jerkin"
+                                },
+                                {
+                                    "item":  "Fleeting Time",
+                                    "component":  "Hero\u0027s Ring"
+                                },
+                                {
+                                    "item":  "Golden Staff",
+                                    "component":  "Dagger"
+                                },
+                                {
+                                    "item":  "Guardian Helmet",
+                                    "component":  "Ares Belt"
+                                },
+                                {
+                                    "item":  "Guardian Helmet",
+                                    "component":  "Ares Belt"
+                                },
+                                {
+                                    "item":  "Holy Crystal",
+                                    "component":  "Magic Wand"
+                                },
+                                {
+                                    "item":  "Holy Crystal",
+                                    "component":  "Magic Wand"
+                                },
+                                {
+                                    "item":  "Legion Sword",
+                                    "component":  "Dagger"
+                                },
+                                {
+                                    "item":  "Malefic Gun",
+                                    "component":  "Knife"
+                                },
+                                {
+                                    "item":  "Oracle",
+                                    "component":  "Hero\u0027s Ring"
+                                },
+                                {
+                                    "item":  "Rapid Boots",
+                                    "component":  "Healing Necklace"
+                                },
+                                {
+                                    "item":  "Sky Piercer",
+                                    "component":  "Expert Gloves"
+                                },
+                                {
+                                    "item":  "Swift Crossbow",
+                                    "component":  "Knife"
+                                }
+                            ],
+    "cycleDetected":  false,
+    "cycleCandidateSlugs":  [
+
+                            ],
+    "edges":  [
+                  {
+                      "parent":  "Antique Cuirass",
+                      "parentSlug":  "antique-cuirass",
+                      "component":  "Dreadnaught Armor",
+                      "componentSlug":  "dreadnaught-armor",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Antique Cuirass",
+                      "parentSlug":  "antique-cuirass",
+                      "component":  "Ares Belt",
+                      "componentSlug":  "ares-belt",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Arcane Boots",
+                      "parentSlug":  "arcane-boots",
+                      "component":  "Boots",
+                      "componentSlug":  "boots",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Arcane Boots",
+                      "parentSlug":  "arcane-boots",
+                      "component":  "Mystery Codex",
+                      "componentSlug":  "mystery-codex",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Ares Belt",
+                      "parentSlug":  "ares-belt",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Athena\u0027s Shield",
+                      "parentSlug":  "athenas-shield",
+                      "component":  "Silence Robe",
+                      "componentSlug":  "silence-robe",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Athena\u0027s Shield",
+                      "parentSlug":  "athenas-shield",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Azure Blade",
+                      "parentSlug":  "azure-blade",
+                      "component":  "Magic Necklace",
+                      "componentSlug":  "magic-necklace",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Berserker\u0027s Fury",
+                      "parentSlug":  "berserkers-fury",
+                      "component":  "Legion Sword",
+                      "componentSlug":  "legion-sword",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Berserker\u0027s Fury",
+                      "parentSlug":  "berserkers-fury",
+                      "component":  "Javelin",
+                      "componentSlug":  "javelin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Black Ice Shield",
+                      "parentSlug":  "black-ice-shield",
+                      "component":  "Leather Jerkin",
+                      "componentSlug":  "leather-jerkin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Black Ice Shield",
+                      "parentSlug":  "black-ice-shield",
+                      "component":  "Magic Resist Cloak",
+                      "componentSlug":  "magic-resist-cloak",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Blade Armor",
+                      "parentSlug":  "blade-armor",
+                      "component":  "Steel Legplates",
+                      "componentSlug":  "steel-legplates",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Blade Armor",
+                      "parentSlug":  "blade-armor",
+                      "component":  "Leather Jerkin",
+                      "componentSlug":  "leather-jerkin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Blade of Despair",
+                      "parentSlug":  "blade-of-despair",
+                      "component":  "Legion Sword",
+                      "componentSlug":  "legion-sword",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Blade of the Heptaseas",
+                      "parentSlug":  "blade-of-the-heptaseas",
+                      "component":  "Fury Hammer",
+                      "componentSlug":  "fury-hammer",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Blade of the Heptaseas",
+                      "parentSlug":  "blade-of-the-heptaseas",
+                      "component":  "Ogre Tomahawk",
+                      "componentSlug":  "ogre-tomahawk",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Blood Wings",
+                      "parentSlug":  "blood-wings",
+                      "component":  "Magic Wand",
+                      "componentSlug":  "magic-wand",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Brute Force Breastplate",
+                      "parentSlug":  "brute-force-breastplate",
+                      "component":  "Ares Belt",
+                      "componentSlug":  "ares-belt",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Brute Force Breastplate",
+                      "parentSlug":  "brute-force-breastplate",
+                      "component":  "Hero\u0027s Ring",
+                      "componentSlug":  "heros-ring",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Brute Force Breastplate",
+                      "parentSlug":  "brute-force-breastplate",
+                      "component":  "Leather Jerkin",
+                      "componentSlug":  "leather-jerkin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Chastise Pauldron",
+                      "parentSlug":  "chastise-pauldron",
+                      "component":  "Steel Legplates",
+                      "componentSlug":  "steel-legplates",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Chastise Pauldron",
+                      "parentSlug":  "chastise-pauldron",
+                      "component":  "Ares Belt",
+                      "componentSlug":  "ares-belt",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Clock of Destiny",
+                      "parentSlug":  "clock-of-destiny",
+                      "component":  "Elegant Gem",
+                      "componentSlug":  "elegant-gem",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Clock of Destiny",
+                      "parentSlug":  "clock-of-destiny",
+                      "component":  "Book of Sages",
+                      "componentSlug":  "book-of-sages",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Concentrated Energy",
+                      "parentSlug":  "concentrated-energy",
+                      "component":  "Mystic Container",
+                      "componentSlug":  "mystic-container",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Concentrated Energy",
+                      "parentSlug":  "concentrated-energy",
+                      "component":  "Magic Wand",
+                      "componentSlug":  "magic-wand",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Concentrated Energy",
+                      "parentSlug":  "concentrated-energy",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Corrosion Scythe",
+                      "parentSlug":  "corrosion-scythe",
+                      "component":  "Swift Crossbow",
+                      "componentSlug":  "swift-crossbow",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Corrosion Scythe",
+                      "parentSlug":  "corrosion-scythe",
+                      "component":  "Regular Spear",
+                      "componentSlug":  "regular-spear",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Cursed Helmet",
+                      "parentSlug":  "cursed-helmet",
+                      "component":  "Molten Essence",
+                      "componentSlug":  "molten-essence",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Cursed Helmet",
+                      "parentSlug":  "cursed-helmet",
+                      "component":  "Ares Belt",
+                      "componentSlug":  "ares-belt",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Cursed Helmet",
+                      "parentSlug":  "cursed-helmet",
+                      "component":  "Magic Resist Cloak",
+                      "componentSlug":  "magic-resist-cloak",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Demon Boots",
+                      "parentSlug":  "demon-boots",
+                      "component":  "Boots",
+                      "componentSlug":  "boots",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Demon Boots",
+                      "parentSlug":  "demon-boots",
+                      "component":  "Magic Necklace",
+                      "componentSlug":  "magic-necklace",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Demon Hunter Sword",
+                      "parentSlug":  "demon-hunter-sword",
+                      "component":  "Regular Spear",
+                      "componentSlug":  "regular-spear",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Demon Hunter Sword",
+                      "parentSlug":  "demon-hunter-sword",
+                      "component":  "Vampire Mallet",
+                      "componentSlug":  "vampire-mallet",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Demon Hunter Sword",
+                      "parentSlug":  "demon-hunter-sword",
+                      "component":  "Knife",
+                      "componentSlug":  "knife",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Divine Glaive",
+                      "parentSlug":  "divine-glaive",
+                      "component":  "Magic Wand",
+                      "componentSlug":  "magic-wand",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Dominance Ice",
+                      "parentSlug":  "dominance-ice",
+                      "component":  "Black Ice Shield",
+                      "componentSlug":  "black-ice-shield",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Dominance Ice",
+                      "parentSlug":  "dominance-ice",
+                      "component":  "Leather Jerkin",
+                      "componentSlug":  "leather-jerkin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Dominance Ice",
+                      "parentSlug":  "dominance-ice",
+                      "component":  "Magic Resist Cloak",
+                      "componentSlug":  "magic-resist-cloak",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Dreadnaught Armor",
+                      "parentSlug":  "dreadnaught-armor",
+                      "component":  "Leather Jerkin",
+                      "componentSlug":  "leather-jerkin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Elegant Gem",
+                      "parentSlug":  "elegant-gem",
+                      "component":  "Power Crystal",
+                      "componentSlug":  "power-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Elegant Gem",
+                      "parentSlug":  "elegant-gem",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Enchanted Talisman",
+                      "parentSlug":  "enchanted-talisman",
+                      "component":  "Tome of Evil",
+                      "componentSlug":  "tome-of-evil",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Enchanted Talisman",
+                      "parentSlug":  "enchanted-talisman",
+                      "component":  "Magic Necklace",
+                      "componentSlug":  "magic-necklace",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Enchanted Talisman",
+                      "parentSlug":  "enchanted-talisman",
+                      "component":  "Magic Wand",
+                      "componentSlug":  "magic-wand",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Endless Battle",
+                      "parentSlug":  "endless-battle",
+                      "component":  "Azure Blade",
+                      "componentSlug":  "azure-blade",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Endless Battle",
+                      "parentSlug":  "endless-battle",
+                      "component":  "Iron Hunting Bow",
+                      "componentSlug":  "iron-hunting-bow",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Endless Battle",
+                      "parentSlug":  "endless-battle",
+                      "component":  "Ogre Tomahawk",
+                      "componentSlug":  "ogre-tomahawk",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Exotic Veil",
+                      "parentSlug":  "exotic-veil",
+                      "component":  "Mystery Codex",
+                      "componentSlug":  "mystery-codex",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Feather of Heaven",
+                      "parentSlug":  "feather-of-heaven",
+                      "component":  "Swift Crossbow",
+                      "componentSlug":  "swift-crossbow",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Feather of Heaven",
+                      "parentSlug":  "feather-of-heaven",
+                      "component":  "Book of Sages",
+                      "componentSlug":  "book-of-sages",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Flask of the Oasis",
+                      "parentSlug":  "flask-of-the-oasis",
+                      "component":  "Magic Wand",
+                      "componentSlug":  "magic-wand",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Flask of the Oasis",
+                      "parentSlug":  "flask-of-the-oasis",
+                      "component":  "Book of Sages",
+                      "componentSlug":  "book-of-sages",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Flask of the Oasis",
+                      "parentSlug":  "flask-of-the-oasis",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Fleeting Time",
+                      "parentSlug":  "fleeting-time",
+                      "component":  "Hero\u0027s Ring",
+                      "componentSlug":  "heros-ring",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Fleeting Time",
+                      "parentSlug":  "fleeting-time",
+                      "component":  "Expert Gloves",
+                      "componentSlug":  "expert-gloves",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Fury Hammer",
+                      "parentSlug":  "fury-hammer",
+                      "component":  "Dagger",
+                      "componentSlug":  "dagger",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Genius Wand",
+                      "parentSlug":  "genius-wand",
+                      "component":  "Exotic Veil",
+                      "componentSlug":  "exotic-veil",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Genius Wand",
+                      "parentSlug":  "genius-wand",
+                      "component":  "Magic Wand",
+                      "componentSlug":  "magic-wand",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Glowing Wand",
+                      "parentSlug":  "glowing-wand",
+                      "component":  "Exotic Veil",
+                      "componentSlug":  "exotic-veil",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Glowing Wand",
+                      "parentSlug":  "glowing-wand",
+                      "component":  "Mystery Codex",
+                      "componentSlug":  "mystery-codex",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Glowing Wand",
+                      "parentSlug":  "glowing-wand",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Golden Staff",
+                      "parentSlug":  "golden-staff",
+                      "component":  "Regular Spear",
+                      "componentSlug":  "regular-spear",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Golden Staff",
+                      "parentSlug":  "golden-staff",
+                      "component":  "Dagger",
+                      "componentSlug":  "dagger",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Great Dragon Spear",
+                      "parentSlug":  "great-dragon-spear",
+                      "component":  "Legion Sword",
+                      "componentSlug":  "legion-sword",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Great Dragon Spear",
+                      "parentSlug":  "great-dragon-spear",
+                      "component":  "Iron Hunting Bow",
+                      "componentSlug":  "iron-hunting-bow",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Great Dragon Spear",
+                      "parentSlug":  "great-dragon-spear",
+                      "component":  "Javelin",
+                      "componentSlug":  "javelin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Guardian Helmet",
+                      "parentSlug":  "guardian-helmet",
+                      "component":  "Ares Belt",
+                      "componentSlug":  "ares-belt",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Haas\u0027s Claws",
+                      "parentSlug":  "haass-claws",
+                      "component":  "Vampire Mallet",
+                      "componentSlug":  "vampire-mallet",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Haas\u0027s Claws",
+                      "parentSlug":  "haass-claws",
+                      "component":  "Rogue Meteor",
+                      "componentSlug":  "rogue-meteor",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Haas\u0027s Claws",
+                      "parentSlug":  "haass-claws",
+                      "component":  "Dagger",
+                      "componentSlug":  "dagger",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Holy Crystal",
+                      "parentSlug":  "holy-crystal",
+                      "component":  "Magic Wand",
+                      "componentSlug":  "magic-wand",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Hunter Strike",
+                      "parentSlug":  "hunter-strike",
+                      "component":  "Fury Hammer",
+                      "componentSlug":  "fury-hammer",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Hunter Strike",
+                      "parentSlug":  "hunter-strike",
+                      "component":  "Iron Hunting Bow",
+                      "componentSlug":  "iron-hunting-bow",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Hunter Strike",
+                      "parentSlug":  "hunter-strike",
+                      "component":  "Dagger",
+                      "componentSlug":  "dagger",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Ice Queen Wand",
+                      "parentSlug":  "ice-queen-wand",
+                      "component":  "Mystic Container",
+                      "componentSlug":  "mystic-container",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Ice Queen Wand",
+                      "parentSlug":  "ice-queen-wand",
+                      "component":  "Exotic Veil",
+                      "componentSlug":  "exotic-veil",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Ice Queen Wand",
+                      "parentSlug":  "ice-queen-wand",
+                      "component":  "Mystery Codex",
+                      "componentSlug":  "mystery-codex",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Immortality",
+                      "parentSlug":  "immortality",
+                      "component":  "Ares Belt",
+                      "componentSlug":  "ares-belt",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Immortality",
+                      "parentSlug":  "immortality",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Immortality",
+                      "parentSlug":  "immortality",
+                      "component":  "Leather Jerkin",
+                      "componentSlug":  "leather-jerkin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Legion Sword",
+                      "parentSlug":  "legion-sword",
+                      "component":  "Dagger",
+                      "componentSlug":  "dagger",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Lightning Truncheon",
+                      "parentSlug":  "lightning-truncheon",
+                      "component":  "Magic Wand",
+                      "componentSlug":  "magic-wand",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Lightning Truncheon",
+                      "parentSlug":  "lightning-truncheon",
+                      "component":  "Book of Sages",
+                      "componentSlug":  "book-of-sages",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Lightning Truncheon",
+                      "parentSlug":  "lightning-truncheon",
+                      "component":  "Power Crystal",
+                      "componentSlug":  "power-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Magic Blade",
+                      "parentSlug":  "magic-blade",
+                      "component":  "Dagger",
+                      "componentSlug":  "dagger",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Magic Blade",
+                      "parentSlug":  "magic-blade",
+                      "component":  "Vampire Mallet",
+                      "componentSlug":  "vampire-mallet",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Magic Boots",
+                      "parentSlug":  "magic-boots",
+                      "component":  "Boots",
+                      "componentSlug":  "boots",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Magic Boots",
+                      "parentSlug":  "magic-boots",
+                      "component":  "Hero\u0027s Ring",
+                      "componentSlug":  "heros-ring",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Magic Wand",
+                      "parentSlug":  "magic-wand",
+                      "component":  "Mystery Codex",
+                      "componentSlug":  "mystery-codex",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Malefic Gun",
+                      "parentSlug":  "malefic-gun",
+                      "component":  "Fury Hammer",
+                      "componentSlug":  "fury-hammer",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Malefic Gun",
+                      "parentSlug":  "malefic-gun",
+                      "component":  "Knife",
+                      "componentSlug":  "knife",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Malefic Roar",
+                      "parentSlug":  "malefic-roar",
+                      "component":  "Legion Sword",
+                      "componentSlug":  "legion-sword",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Molten Essence",
+                      "parentSlug":  "molten-essence",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Mystic Container",
+                      "parentSlug":  "mystic-container",
+                      "component":  "Mystery Codex",
+                      "componentSlug":  "mystery-codex",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Ogre Tomahawk",
+                      "parentSlug":  "ogre-tomahawk",
+                      "component":  "Dagger",
+                      "componentSlug":  "dagger",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Ogre Tomahawk",
+                      "parentSlug":  "ogre-tomahawk",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Oracle",
+                      "parentSlug":  "oracle",
+                      "component":  "Hero\u0027s Ring",
+                      "componentSlug":  "heros-ring",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Oracle",
+                      "parentSlug":  "oracle",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Queen\u0027s Wings",
+                      "parentSlug":  "queens-wings",
+                      "component":  "Ares Belt",
+                      "componentSlug":  "ares-belt",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Queen\u0027s Wings",
+                      "parentSlug":  "queens-wings",
+                      "component":  "Hero\u0027s Ring",
+                      "componentSlug":  "heros-ring",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Queen\u0027s Wings",
+                      "parentSlug":  "queens-wings",
+                      "component":  "Expert Gloves",
+                      "componentSlug":  "expert-gloves",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Radiant Armor",
+                      "parentSlug":  "radiant-armor",
+                      "component":  "Silence Robe",
+                      "componentSlug":  "silence-robe",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Radiant Armor",
+                      "parentSlug":  "radiant-armor",
+                      "component":  "Magic Resist Cloak",
+                      "componentSlug":  "magic-resist-cloak",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Radiant Armor",
+                      "parentSlug":  "radiant-armor",
+                      "component":  "Healing Necklace",
+                      "componentSlug":  "healing-necklace",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Rapid Boots",
+                      "parentSlug":  "rapid-boots",
+                      "component":  "Boots",
+                      "componentSlug":  "boots",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Rapid Boots",
+                      "parentSlug":  "rapid-boots",
+                      "component":  "Healing Necklace",
+                      "componentSlug":  "healing-necklace",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Regular Spear",
+                      "parentSlug":  "regular-spear",
+                      "component":  "Knife",
+                      "componentSlug":  "knife",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Regular Spear",
+                      "parentSlug":  "regular-spear",
+                      "component":  "Dagger",
+                      "componentSlug":  "dagger",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Rogue Meteor",
+                      "parentSlug":  "rogue-meteor",
+                      "component":  "Knife",
+                      "componentSlug":  "knife",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Rogue Meteor",
+                      "parentSlug":  "rogue-meteor",
+                      "component":  "Javelin",
+                      "componentSlug":  "javelin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Rose Gold Meteor",
+                      "parentSlug":  "rose-gold-meteor",
+                      "component":  "Magic Blade",
+                      "componentSlug":  "magic-blade",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Rose Gold Meteor",
+                      "parentSlug":  "rose-gold-meteor",
+                      "component":  "Knife",
+                      "componentSlug":  "knife",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Sea Halberd",
+                      "parentSlug":  "sea-halberd",
+                      "component":  "Legion Sword",
+                      "componentSlug":  "legion-sword",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Sea Halberd",
+                      "parentSlug":  "sea-halberd",
+                      "component":  "Regular Spear",
+                      "componentSlug":  "regular-spear",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Silence Robe",
+                      "parentSlug":  "silence-robe",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Silence Robe",
+                      "parentSlug":  "silence-robe",
+                      "component":  "Magic Resist Cloak",
+                      "componentSlug":  "magic-resist-cloak",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Sky Piercer",
+                      "parentSlug":  "sky-piercer",
+                      "component":  "Expert Gloves",
+                      "componentSlug":  "expert-gloves",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Starlium Scythe",
+                      "parentSlug":  "starlium-scythe",
+                      "component":  "Azure Blade",
+                      "componentSlug":  "azure-blade",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Starlium Scythe",
+                      "parentSlug":  "starlium-scythe",
+                      "component":  "Book of Sages",
+                      "componentSlug":  "book-of-sages",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Starlium Scythe",
+                      "parentSlug":  "starlium-scythe",
+                      "component":  "Magic Wand",
+                      "componentSlug":  "magic-wand",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Steel Legplates",
+                      "parentSlug":  "steel-legplates",
+                      "component":  "Leather Jerkin",
+                      "componentSlug":  "leather-jerkin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Swift Boots",
+                      "parentSlug":  "swift-boots",
+                      "component":  "Boots",
+                      "componentSlug":  "boots",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Swift Boots",
+                      "parentSlug":  "swift-boots",
+                      "component":  "Knife",
+                      "componentSlug":  "knife",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Swift Crossbow",
+                      "parentSlug":  "swift-crossbow",
+                      "component":  "Knife",
+                      "componentSlug":  "knife",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Thunder Belt",
+                      "parentSlug":  "thunder-belt",
+                      "component":  "Ares Belt",
+                      "componentSlug":  "ares-belt",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Thunder Belt",
+                      "parentSlug":  "thunder-belt",
+                      "component":  "Leather Jerkin",
+                      "componentSlug":  "leather-jerkin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Thunder Belt",
+                      "parentSlug":  "thunder-belt",
+                      "component":  "Magic Resist Cloak",
+                      "componentSlug":  "magic-resist-cloak",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Tome of Evil",
+                      "parentSlug":  "tome-of-evil",
+                      "component":  "Magic Necklace",
+                      "componentSlug":  "magic-necklace",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Tome of Evil",
+                      "parentSlug":  "tome-of-evil",
+                      "component":  "Book of Sages",
+                      "componentSlug":  "book-of-sages",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Tough Boots",
+                      "parentSlug":  "tough-boots",
+                      "component":  "Boots",
+                      "componentSlug":  "boots",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Tough Boots",
+                      "parentSlug":  "tough-boots",
+                      "component":  "Magic Resist Cloak",
+                      "componentSlug":  "magic-resist-cloak",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "War Axe",
+                      "parentSlug":  "war-axe",
+                      "component":  "Ogre Tomahawk",
+                      "componentSlug":  "ogre-tomahawk",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "War Axe",
+                      "parentSlug":  "war-axe",
+                      "component":  "Iron Hunting Bow",
+                      "componentSlug":  "iron-hunting-bow",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "War Axe",
+                      "parentSlug":  "war-axe",
+                      "component":  "Hero\u0027s Ring",
+                      "componentSlug":  "heros-ring",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Warrior Boots",
+                      "parentSlug":  "warrior-boots",
+                      "component":  "Boots",
+                      "componentSlug":  "boots",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Warrior Boots",
+                      "parentSlug":  "warrior-boots",
+                      "component":  "Leather Jerkin",
+                      "componentSlug":  "leather-jerkin",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Wind of Nature",
+                      "parentSlug":  "wind-of-nature",
+                      "component":  "Regular Spear",
+                      "componentSlug":  "regular-spear",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Wind of Nature",
+                      "parentSlug":  "wind-of-nature",
+                      "component":  "Vampire Mallet",
+                      "componentSlug":  "vampire-mallet",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Windtalker",
+                      "parentSlug":  "windtalker",
+                      "component":  "Rogue Meteor",
+                      "componentSlug":  "rogue-meteor",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Windtalker",
+                      "parentSlug":  "windtalker",
+                      "component":  "Knife",
+                      "componentSlug":  "knife",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Winter Crown",
+                      "parentSlug":  "winter-crown",
+                      "component":  "Expert Gloves",
+                      "componentSlug":  "expert-gloves",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Winter Crown",
+                      "parentSlug":  "winter-crown",
+                      "component":  "Hero\u0027s Ring",
+                      "componentSlug":  "heros-ring",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Winter Crown",
+                      "parentSlug":  "winter-crown",
+                      "component":  "Vitality Crystal",
+                      "componentSlug":  "vitality-crystal",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Wishing Lantern",
+                      "parentSlug":  "wishing-lantern",
+                      "component":  "Magic Wand",
+                      "componentSlug":  "magic-wand",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Wishing Lantern",
+                      "parentSlug":  "wishing-lantern",
+                      "component":  "Book of Sages",
+                      "componentSlug":  "book-of-sages",
+                      "matchStatus":  "MATCHED"
+                  },
+                  {
+                      "parent":  "Wishing Lantern",
+                      "parentSlug":  "wishing-lantern",
+                      "component":  "Power Crystal",
+                      "componentSlug":  "power-crystal",
+                      "matchStatus":  "MATCHED"
+                  }
+              ]
+}

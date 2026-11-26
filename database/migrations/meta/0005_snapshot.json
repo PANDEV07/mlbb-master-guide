@@ -1,0 +1,2104 @@
+{
+  "id": "f21147d1-0bbe-4d11-af95-0087d79b18e5",
+  "prevId": "487c57ee-a452-4e67-bafb-85770871823c",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.entity_evidences": {
+      "name": "entity_evidences",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "entity_type": {
+          "name": "entity_type",
+          "type": "varchar(64)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "entity_id": {
+          "name": "entity_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "aspect_name": {
+          "name": "aspect_name",
+          "type": "varchar(64)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'GENERAL'"
+        },
+        "source_id": {
+          "name": "source_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source_url": {
+          "name": "source_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "claim_classification": {
+          "name": "claim_classification",
+          "type": "claim_classification_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'UNKNOWN'"
+        },
+        "verification_status": {
+          "name": "verification_status",
+          "type": "verification_status_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'UNVERIFIED'"
+        },
+        "confidence_level": {
+          "name": "confidence_level",
+          "type": "confidence_level_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'LOW'"
+        },
+        "stance": {
+          "name": "stance",
+          "type": "evidence_stance_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'SUPPORTING'"
+        },
+        "evidence_excerpt": {
+          "name": "evidence_excerpt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "conflict_notes": {
+          "name": "conflict_notes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "verified_by": {
+          "name": "verified_by",
+          "type": "varchar(128)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "verified_at": {
+          "name": "verified_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "patch_version_id": {
+          "name": "patch_version_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "idx_entity_evidences_entity": {
+          "name": "idx_entity_evidences_entity",
+          "columns": [
+            {
+              "expression": "entity_type",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "entity_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_entity_evidences_status": {
+          "name": "idx_entity_evidences_status",
+          "columns": [
+            {
+              "expression": "verification_status",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_entity_evidences_source_id": {
+          "name": "idx_entity_evidences_source_id",
+          "columns": [
+            {
+              "expression": "source_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_entity_evidences_patch_version_id": {
+          "name": "idx_entity_evidences_patch_version_id",
+          "columns": [
+            {
+              "expression": "patch_version_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "entity_evidences_source_id_sources_id_fk": {
+          "name": "entity_evidences_source_id_sources_id_fk",
+          "tableFrom": "entity_evidences",
+          "tableTo": "sources",
+          "columnsFrom": [
+            "source_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "entity_evidences_patch_version_id_patch_versions_id_fk": {
+          "name": "entity_evidences_patch_version_id_patch_versions_id_fk",
+          "tableFrom": "entity_evidences",
+          "tableTo": "patch_versions",
+          "columnsFrom": [
+            "patch_version_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "set null",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.patch_changes": {
+      "name": "patch_changes",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "patch_version_id": {
+          "name": "patch_version_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "target_entity_type": {
+          "name": "target_entity_type",
+          "type": "varchar(64)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "target_entity_id": {
+          "name": "target_entity_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "target_entity_slug": {
+          "name": "target_entity_slug",
+          "type": "varchar(128)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "change_type": {
+          "name": "change_type",
+          "type": "patch_change_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "attribute_name": {
+          "name": "attribute_name",
+          "type": "varchar(128)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "previous_value": {
+          "name": "previous_value",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "new_value": {
+          "name": "new_value",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "summary": {
+          "name": "summary",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "idx_patch_changes_patch_version_id": {
+          "name": "idx_patch_changes_patch_version_id",
+          "columns": [
+            {
+              "expression": "patch_version_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_patch_changes_target_entity": {
+          "name": "idx_patch_changes_target_entity",
+          "columns": [
+            {
+              "expression": "target_entity_type",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "target_entity_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "patch_changes_patch_version_id_patch_versions_id_fk": {
+          "name": "patch_changes_patch_version_id_patch_versions_id_fk",
+          "tableFrom": "patch_changes",
+          "tableTo": "patch_versions",
+          "columnsFrom": [
+            "patch_version_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.sources": {
+      "name": "sources",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(160)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "domain": {
+          "name": "domain",
+          "type": "varchar(160)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "base_url": {
+          "name": "base_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source_tier": {
+          "name": "source_tier",
+          "type": "source_tier_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source_category": {
+          "name": "source_category",
+          "type": "varchar(64)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "reliability_notes": {
+          "name": "reliability_notes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "is_active": {
+          "name": "is_active",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "uq_sources_name_domain": {
+          "name": "uq_sources_name_domain",
+          "columns": [
+            {
+              "expression": "name",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "domain",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_sources_source_tier": {
+          "name": "idx_sources_source_tier",
+          "columns": [
+            {
+              "expression": "source_tier",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.knowledge_entities": {
+      "name": "knowledge_entities",
+      "schema": "",
+      "columns": {
+        "entity_id": {
+          "name": "entity_id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "entity_type": {
+          "name": "entity_type",
+          "type": "entity_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "metadata": {
+          "name": "metadata",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "idx_knowledge_entities_type": {
+          "name": "idx_knowledge_entities_type",
+          "columns": [
+            {
+              "expression": "entity_type",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "uq_knowledge_entities_id_type": {
+          "name": "uq_knowledge_entities_id_type",
+          "columns": [
+            {
+              "expression": "entity_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "entity_type",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.patch_versions": {
+      "name": "patch_versions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "version_code": {
+          "name": "version_code",
+          "type": "varchar(32)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "version_order": {
+          "name": "version_order",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "server_type": {
+          "name": "server_type",
+          "type": "server_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'ORIGINAL_SERVER'"
+        },
+        "season_label": {
+          "name": "season_label",
+          "type": "varchar(64)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "release_date": {
+          "name": "release_date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "is_current_live": {
+          "name": "is_current_live",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "notes_summary": {
+          "name": "notes_summary",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "uq_patch_versions_version_code_server_type": {
+          "name": "uq_patch_versions_version_code_server_type",
+          "columns": [
+            {
+              "expression": "version_code",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "server_type",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "uq_patch_versions_version_order_server_type": {
+          "name": "uq_patch_versions_version_order_server_type",
+          "columns": [
+            {
+              "expression": "version_order",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "server_type",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "uq_patch_versions_live_per_server": {
+          "name": "uq_patch_versions_live_per_server",
+          "columns": [
+            {
+              "expression": "server_type",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "where": "\"patch_versions\".\"is_current_live\" = true",
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "uq_patch_versions_id_server_type": {
+          "name": "uq_patch_versions_id_server_type",
+          "columns": [
+            {
+              "expression": "id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "server_type",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.profiles": {
+      "name": "profiles",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "entity_id": {
+          "name": "entity_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "entity_type": {
+          "name": "entity_type",
+          "type": "entity_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "patch_version_id": {
+          "name": "patch_version_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "server_type": {
+          "name": "server_type",
+          "type": "server_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "effective_range": {
+          "name": "effective_range",
+          "type": "tstzrange",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "payload": {
+          "name": "payload",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "fk_profiles_knowledge_entities": {
+          "name": "fk_profiles_knowledge_entities",
+          "tableFrom": "profiles",
+          "tableTo": "knowledge_entities",
+          "columnsFrom": [
+            "entity_id",
+            "entity_type"
+          ],
+          "columnsTo": [
+            "entity_id",
+            "entity_type"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "fk_profiles_patch_versions": {
+          "name": "fk_profiles_patch_versions",
+          "tableFrom": "profiles",
+          "tableTo": "patch_versions",
+          "columnsFrom": [
+            "patch_version_id",
+            "server_type"
+          ],
+          "columnsTo": [
+            "id",
+            "server_type"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.hero_builds": {
+      "name": "hero_builds",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "hero_entity_id": {
+          "name": "hero_entity_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "hero_entity_type": {
+          "name": "hero_entity_type",
+          "type": "entity_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'hero'"
+        },
+        "patch_version_id": {
+          "name": "patch_version_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "server_type": {
+          "name": "server_type",
+          "type": "server_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "profile": {
+          "name": "profile",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "status": {
+          "name": "status",
+          "type": "varchar(24)",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'DRAFT'"
+        },
+        "verification_status": {
+          "name": "verification_status",
+          "type": "verification_status_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'UNVERIFIED'"
+        },
+        "published_at": {
+          "name": "published_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "idx_hero_builds_hero": {
+          "name": "idx_hero_builds_hero",
+          "columns": [
+            {
+              "expression": "hero_entity_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_hero_builds_patch_server": {
+          "name": "idx_hero_builds_patch_server",
+          "columns": [
+            {
+              "expression": "patch_version_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "server_type",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_hero_builds_status": {
+          "name": "idx_hero_builds_status",
+          "columns": [
+            {
+              "expression": "status",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "fk_hero_builds_hero": {
+          "name": "fk_hero_builds_hero",
+          "tableFrom": "hero_builds",
+          "tableTo": "knowledge_entities",
+          "columnsFrom": [
+            "hero_entity_id",
+            "hero_entity_type"
+          ],
+          "columnsTo": [
+            "entity_id",
+            "entity_type"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "fk_hero_builds_patch": {
+          "name": "fk_hero_builds_patch",
+          "tableFrom": "hero_builds",
+          "tableTo": "patch_versions",
+          "columnsFrom": [
+            "patch_version_id",
+            "server_type"
+          ],
+          "columnsTo": [
+            "id",
+            "server_type"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.pro_match_build_items": {
+      "name": "pro_match_build_items",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "player_build_id": {
+          "name": "player_build_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "slot_order": {
+          "name": "slot_order",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "raw_item_name": {
+          "name": "raw_item_name",
+          "type": "varchar(160)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "item_entity_id": {
+          "name": "item_entity_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "item_entity_type": {
+          "name": "item_entity_type",
+          "type": "entity_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'item'"
+        },
+        "catalog_match_status": {
+          "name": "catalog_match_status",
+          "type": "pro_build_item_catalog_status_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'UNMATCHED'"
+        },
+        "verification_status": {
+          "name": "verification_status",
+          "type": "verification_status_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'UNVERIFIED'"
+        },
+        "is_verified_item": {
+          "name": "is_verified_item",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "uq_pro_match_build_items_build_slot": {
+          "name": "uq_pro_match_build_items_build_slot",
+          "columns": [
+            {
+              "expression": "player_build_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "slot_order",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_pro_match_build_items_item_entity": {
+          "name": "idx_pro_match_build_items_item_entity",
+          "columns": [
+            {
+              "expression": "item_entity_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_pro_match_build_items_catalog_status": {
+          "name": "idx_pro_match_build_items_catalog_status",
+          "columns": [
+            {
+              "expression": "catalog_match_status",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "is_verified_item",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "pro_match_build_items_player_build_id_pro_match_player_builds_id_fk": {
+          "name": "pro_match_build_items_player_build_id_pro_match_player_builds_id_fk",
+          "tableFrom": "pro_match_build_items",
+          "tableTo": "pro_match_player_builds",
+          "columnsFrom": [
+            "player_build_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "fk_pro_match_build_items_item": {
+          "name": "fk_pro_match_build_items_item",
+          "tableFrom": "pro_match_build_items",
+          "tableTo": "knowledge_entities",
+          "columnsFrom": [
+            "item_entity_id",
+            "item_entity_type"
+          ],
+          "columnsTo": [
+            "entity_id",
+            "entity_type"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "chk_pro_match_build_items_slot_order": {
+          "name": "chk_pro_match_build_items_slot_order",
+          "value": "\"pro_match_build_items\".\"slot_order\" >= 1 AND \"pro_match_build_items\".\"slot_order\" <= 6"
+        },
+        "chk_pro_match_build_items_item_type": {
+          "name": "chk_pro_match_build_items_item_type",
+          "value": "\"pro_match_build_items\".\"item_entity_type\" = 'item'"
+        },
+        "chk_pro_match_build_items_raw_name_not_blank": {
+          "name": "chk_pro_match_build_items_raw_name_not_blank",
+          "value": "length(trim(\"pro_match_build_items\".\"raw_item_name\")) > 0"
+        },
+        "chk_pro_match_build_items_catalog_verification_guard": {
+          "name": "chk_pro_match_build_items_catalog_verification_guard",
+          "value": "(\"pro_match_build_items\".\"item_entity_id\" IS NULL AND \"pro_match_build_items\".\"catalog_match_status\" IN ('UNMATCHED', 'AMBIGUOUS') AND \"pro_match_build_items\".\"is_verified_item\" = false AND \"pro_match_build_items\".\"verification_status\" NOT IN ('VERIFIED', 'PARTIALLY_VERIFIED')) OR (\"pro_match_build_items\".\"item_entity_id\" IS NOT NULL AND \"pro_match_build_items\".\"catalog_match_status\" = 'MATCHED' AND ((\"pro_match_build_items\".\"verification_status\" = 'VERIFIED' AND \"pro_match_build_items\".\"is_verified_item\" = true) OR (\"pro_match_build_items\".\"verification_status\" <> 'VERIFIED' AND \"pro_match_build_items\".\"is_verified_item\" = false)))"
+        }
+      },
+      "isRLSEnabled": false
+    },
+    "public.pro_match_player_builds": {
+      "name": "pro_match_player_builds",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "pro_match_id": {
+          "name": "pro_match_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "player_name": {
+          "name": "player_name",
+          "type": "varchar(120)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "team_name": {
+          "name": "team_name",
+          "type": "varchar(120)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "team_side": {
+          "name": "team_side",
+          "type": "pro_match_team_side_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'UNKNOWN'"
+        },
+        "role_lane": {
+          "name": "role_lane",
+          "type": "varchar(64)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "hero_entity_id": {
+          "name": "hero_entity_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "hero_entity_type": {
+          "name": "hero_entity_type",
+          "type": "entity_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'hero'"
+        },
+        "raw_hero_name": {
+          "name": "raw_hero_name",
+          "type": "varchar(120)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "battle_spell_entity_id": {
+          "name": "battle_spell_entity_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "battle_spell_entity_type": {
+          "name": "battle_spell_entity_type",
+          "type": "entity_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'spell'"
+        },
+        "raw_battle_spell_name": {
+          "name": "raw_battle_spell_name",
+          "type": "varchar(120)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "emblem_entity_id": {
+          "name": "emblem_entity_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "emblem_entity_type": {
+          "name": "emblem_entity_type",
+          "type": "entity_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'emblem'"
+        },
+        "raw_emblem_name": {
+          "name": "raw_emblem_name",
+          "type": "varchar(120)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "raw_emblem_talents": {
+          "name": "raw_emblem_talents",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'[]'::jsonb"
+        },
+        "match_result": {
+          "name": "match_result",
+          "type": "pro_match_result_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'UNKNOWN'"
+        },
+        "kills": {
+          "name": "kills",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "deaths": {
+          "name": "deaths",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "assists": {
+          "name": "assists",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "verification_status": {
+          "name": "verification_status",
+          "type": "verification_status_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'UNVERIFIED'"
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "uq_pro_match_player_builds_match_team_player": {
+          "name": "uq_pro_match_player_builds_match_team_player",
+          "columns": [
+            {
+              "expression": "pro_match_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "team_name",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "player_name",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_pro_match_player_builds_hero": {
+          "name": "idx_pro_match_player_builds_hero",
+          "columns": [
+            {
+              "expression": "hero_entity_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_pro_match_player_builds_player": {
+          "name": "idx_pro_match_player_builds_player",
+          "columns": [
+            {
+              "expression": "player_name",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_pro_match_player_builds_result": {
+          "name": "idx_pro_match_player_builds_result",
+          "columns": [
+            {
+              "expression": "match_result",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "pro_match_player_builds_pro_match_id_pro_matches_id_fk": {
+          "name": "pro_match_player_builds_pro_match_id_pro_matches_id_fk",
+          "tableFrom": "pro_match_player_builds",
+          "tableTo": "pro_matches",
+          "columnsFrom": [
+            "pro_match_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "fk_pro_match_player_builds_hero": {
+          "name": "fk_pro_match_player_builds_hero",
+          "tableFrom": "pro_match_player_builds",
+          "tableTo": "knowledge_entities",
+          "columnsFrom": [
+            "hero_entity_id",
+            "hero_entity_type"
+          ],
+          "columnsTo": [
+            "entity_id",
+            "entity_type"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "fk_pro_match_player_builds_battle_spell": {
+          "name": "fk_pro_match_player_builds_battle_spell",
+          "tableFrom": "pro_match_player_builds",
+          "tableTo": "knowledge_entities",
+          "columnsFrom": [
+            "battle_spell_entity_id",
+            "battle_spell_entity_type"
+          ],
+          "columnsTo": [
+            "entity_id",
+            "entity_type"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "fk_pro_match_player_builds_emblem": {
+          "name": "fk_pro_match_player_builds_emblem",
+          "tableFrom": "pro_match_player_builds",
+          "tableTo": "knowledge_entities",
+          "columnsFrom": [
+            "emblem_entity_id",
+            "emblem_entity_type"
+          ],
+          "columnsTo": [
+            "entity_id",
+            "entity_type"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "chk_pro_match_player_builds_hero_type": {
+          "name": "chk_pro_match_player_builds_hero_type",
+          "value": "\"pro_match_player_builds\".\"hero_entity_type\" = 'hero'"
+        },
+        "chk_pro_match_player_builds_spell_type": {
+          "name": "chk_pro_match_player_builds_spell_type",
+          "value": "\"pro_match_player_builds\".\"battle_spell_entity_type\" = 'spell'"
+        },
+        "chk_pro_match_player_builds_emblem_type": {
+          "name": "chk_pro_match_player_builds_emblem_type",
+          "value": "\"pro_match_player_builds\".\"emblem_entity_type\" = 'emblem'"
+        },
+        "chk_pro_match_player_builds_kda_non_negative": {
+          "name": "chk_pro_match_player_builds_kda_non_negative",
+          "value": "(\"pro_match_player_builds\".\"kills\" IS NULL OR \"pro_match_player_builds\".\"kills\" >= 0) AND (\"pro_match_player_builds\".\"deaths\" IS NULL OR \"pro_match_player_builds\".\"deaths\" >= 0) AND (\"pro_match_player_builds\".\"assists\" IS NULL OR \"pro_match_player_builds\".\"assists\" >= 0)"
+        },
+        "chk_pro_match_player_builds_hero_verified": {
+          "name": "chk_pro_match_player_builds_hero_verified",
+          "value": "\"pro_match_player_builds\".\"hero_entity_id\" IS NOT NULL OR \"pro_match_player_builds\".\"verification_status\" <> 'VERIFIED'"
+        }
+      },
+      "isRLSEnabled": false
+    },
+    "public.pro_match_sources": {
+      "name": "pro_match_sources",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "pro_match_id": {
+          "name": "pro_match_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "player_build_id": {
+          "name": "player_build_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "source_registry_id": {
+          "name": "source_registry_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "provider": {
+          "name": "provider",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source_url": {
+          "name": "source_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source_tier": {
+          "name": "source_tier",
+          "type": "source_tier_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'TIER_2_SECONDARY'"
+        },
+        "imported_at": {
+          "name": "imported_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "verification_status": {
+          "name": "verification_status",
+          "type": "verification_status_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'UNVERIFIED'"
+        },
+        "claim_classification": {
+          "name": "claim_classification",
+          "type": "claim_classification_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'UNKNOWN'"
+        },
+        "confidence_level": {
+          "name": "confidence_level",
+          "type": "confidence_level_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'LOW'"
+        },
+        "verified_at": {
+          "name": "verified_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "verified_by": {
+          "name": "verified_by",
+          "type": "varchar(128)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "evidence_excerpt": {
+          "name": "evidence_excerpt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "idx_pro_match_sources_match": {
+          "name": "idx_pro_match_sources_match",
+          "columns": [
+            {
+              "expression": "pro_match_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_pro_match_sources_player_build": {
+          "name": "idx_pro_match_sources_player_build",
+          "columns": [
+            {
+              "expression": "player_build_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_pro_match_sources_provider_status": {
+          "name": "idx_pro_match_sources_provider_status",
+          "columns": [
+            {
+              "expression": "provider",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "verification_status",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_pro_match_sources_match_url": {
+          "name": "idx_pro_match_sources_match_url",
+          "columns": [
+            {
+              "expression": "pro_match_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "source_url",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "pro_match_sources_pro_match_id_pro_matches_id_fk": {
+          "name": "pro_match_sources_pro_match_id_pro_matches_id_fk",
+          "tableFrom": "pro_match_sources",
+          "tableTo": "pro_matches",
+          "columnsFrom": [
+            "pro_match_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "pro_match_sources_player_build_id_pro_match_player_builds_id_fk": {
+          "name": "pro_match_sources_player_build_id_pro_match_player_builds_id_fk",
+          "tableFrom": "pro_match_sources",
+          "tableTo": "pro_match_player_builds",
+          "columnsFrom": [
+            "player_build_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        },
+        "pro_match_sources_source_registry_id_sources_id_fk": {
+          "name": "pro_match_sources_source_registry_id_sources_id_fk",
+          "tableFrom": "pro_match_sources",
+          "tableTo": "sources",
+          "columnsFrom": [
+            "source_registry_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "chk_pro_match_sources_provider_not_blank": {
+          "name": "chk_pro_match_sources_provider_not_blank",
+          "value": "length(trim(\"pro_match_sources\".\"provider\")) > 0"
+        },
+        "chk_pro_match_sources_url_not_blank": {
+          "name": "chk_pro_match_sources_url_not_blank",
+          "value": "length(trim(\"pro_match_sources\".\"source_url\")) > 0"
+        }
+      },
+      "isRLSEnabled": false
+    },
+    "public.pro_matches": {
+      "name": "pro_matches",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "tournament_name": {
+          "name": "tournament_name",
+          "type": "varchar(160)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "stage_name": {
+          "name": "stage_name",
+          "type": "varchar(120)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "match_code": {
+          "name": "match_code",
+          "type": "varchar(160)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "game_number": {
+          "name": "game_number",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "team_a_name": {
+          "name": "team_a_name",
+          "type": "varchar(120)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "team_b_name": {
+          "name": "team_b_name",
+          "type": "varchar(120)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "winner_team_name": {
+          "name": "winner_team_name",
+          "type": "varchar(120)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "match_date": {
+          "name": "match_date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "played_at": {
+          "name": "played_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "patch_version_id": {
+          "name": "patch_version_id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "server_type": {
+          "name": "server_type",
+          "type": "server_type_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'ORIGINAL_SERVER'"
+        },
+        "raw_patch_version": {
+          "name": "raw_patch_version",
+          "type": "varchar(64)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "verification_status": {
+          "name": "verification_status",
+          "type": "verification_status_enum",
+          "typeSchema": "public",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'UNVERIFIED'"
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "idx_pro_matches_tournament_date": {
+          "name": "idx_pro_matches_tournament_date",
+          "columns": [
+            {
+              "expression": "tournament_name",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "match_date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_pro_matches_patch_server": {
+          "name": "idx_pro_matches_patch_server",
+          "columns": [
+            {
+              "expression": "patch_version_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "server_type",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_pro_matches_match_code": {
+          "name": "idx_pro_matches_match_code",
+          "columns": [
+            {
+              "expression": "match_code",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_pro_matches_verification_status": {
+          "name": "idx_pro_matches_verification_status",
+          "columns": [
+            {
+              "expression": "verification_status",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "fk_pro_matches_patch_version": {
+          "name": "fk_pro_matches_patch_version",
+          "tableFrom": "pro_matches",
+          "tableTo": "patch_versions",
+          "columnsFrom": [
+            "patch_version_id",
+            "server_type"
+          ],
+          "columnsTo": [
+            "id",
+            "server_type"
+          ],
+          "onDelete": "restrict",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "chk_pro_matches_teams_distinct": {
+          "name": "chk_pro_matches_teams_distinct",
+          "value": "lower(trim(\"pro_matches\".\"team_a_name\")) <> lower(trim(\"pro_matches\".\"team_b_name\"))"
+        },
+        "chk_pro_matches_winner_valid": {
+          "name": "chk_pro_matches_winner_valid",
+          "value": "\"pro_matches\".\"winner_team_name\" IS NULL OR \"pro_matches\".\"winner_team_name\" = \"pro_matches\".\"team_a_name\" OR \"pro_matches\".\"winner_team_name\" = \"pro_matches\".\"team_b_name\""
+        },
+        "chk_pro_matches_game_number_positive": {
+          "name": "chk_pro_matches_game_number_positive",
+          "value": "\"pro_matches\".\"game_number\" IS NULL OR \"pro_matches\".\"game_number\" >= 1"
+        },
+        "chk_pro_matches_patch_required_for_verified": {
+          "name": "chk_pro_matches_patch_required_for_verified",
+          "value": "\"pro_matches\".\"verification_status\" <> 'VERIFIED' OR \"pro_matches\".\"patch_version_id\" IS NOT NULL"
+        }
+      },
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {
+    "public.claim_classification_enum": {
+      "name": "claim_classification_enum",
+      "schema": "public",
+      "values": [
+        "OFFICIAL_FACT",
+        "SECONDARY_SOURCE",
+        "RESEARCH_BASED_ANALYSIS",
+        "STRATEGIC_INTERPRETATION",
+        "COMMUNITY_THEORY",
+        "UNKNOWN"
+      ]
+    },
+    "public.confidence_level_enum": {
+      "name": "confidence_level_enum",
+      "schema": "public",
+      "values": [
+        "HIGH",
+        "MEDIUM",
+        "LOW"
+      ]
+    },
+    "public.entity_type_enum": {
+      "name": "entity_type_enum",
+      "schema": "public",
+      "values": [
+        "hero",
+        "item",
+        "emblem",
+        "spell",
+        "skill"
+      ]
+    },
+    "public.evidence_stance_enum": {
+      "name": "evidence_stance_enum",
+      "schema": "public",
+      "values": [
+        "SUPPORTING",
+        "CONFLICTING"
+      ]
+    },
+    "public.patch_change_type_enum": {
+      "name": "patch_change_type_enum",
+      "schema": "public",
+      "values": [
+        "BUFF",
+        "NERF",
+        "ADJUST",
+        "REVAMP",
+        "NEW",
+        "BUGFIX"
+      ]
+    },
+    "public.pro_build_item_catalog_status_enum": {
+      "name": "pro_build_item_catalog_status_enum",
+      "schema": "public",
+      "values": [
+        "MATCHED",
+        "UNMATCHED",
+        "AMBIGUOUS"
+      ]
+    },
+    "public.pro_match_result_enum": {
+      "name": "pro_match_result_enum",
+      "schema": "public",
+      "values": [
+        "WIN",
+        "LOSS",
+        "UNKNOWN"
+      ]
+    },
+    "public.pro_match_team_side_enum": {
+      "name": "pro_match_team_side_enum",
+      "schema": "public",
+      "values": [
+        "BLUE",
+        "RED",
+        "UNKNOWN"
+      ]
+    },
+    "public.server_type_enum": {
+      "name": "server_type_enum",
+      "schema": "public",
+      "values": [
+        "ORIGINAL_SERVER",
+        "ADVANCE_SERVER",
+        "EXPERIMENTAL"
+      ]
+    },
+    "public.source_tier_enum": {
+      "name": "source_tier_enum",
+      "schema": "public",
+      "values": [
+        "TIER_1_OFFICIAL",
+        "TIER_2_SECONDARY",
+        "TIER_3_ANALYTICAL",
+        "TIER_4_COMMUNITY"
+      ]
+    },
+    "public.verification_status_enum": {
+      "name": "verification_status_enum",
+      "schema": "public",
+      "values": [
+        "VERIFIED",
+        "PARTIALLY_VERIFIED",
+        "UNVERIFIED",
+        "OUTDATED",
+        "CONFLICTING",
+        "UNKNOWN",
+        "NOT_RESEARCHED",
+        "NOT_YET_AVAILABLE",
+        "NOT_FOUND"
+      ]
+    }
+  },
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

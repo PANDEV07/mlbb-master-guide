@@ -1,0 +1,2516 @@
+[
+    {
+        "name":  "Allow Throw",
+        "slug":  "allow-throw",
+        "baseDescription":  "Allow Throw is a Tier 1 Movement item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Trust",
+        "passiveDescription":  "Allow allied Jawhead to fling you.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Allow Throw is a Tier 1 Movement item that provides no base stats. Its passive ability \"Trust\" Allow allied Jawhead to fling you."
+    },
+    {
+        "name":  "Antique Cuirass",
+        "slug":  "antique-cuirass",
+        "baseDescription":  "Antique Cuirass is a Tier 3 Defense item that provides +920 HP, +40 Physical Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+920 HP",
+                                   "sign":  "+",
+                                   "value":  920,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+40 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Physical Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Deter",
+        "passiveDescription":  "When hit by a skill, reduces the attacker\u0027s Physical Damage by 8% for 2s (this effect stacks up to 3 times).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Antique Cuirass is a Tier 3 Defense item that provides +920 HP, +40 Physical Defense. Its passive ability \"Deter\" When hit by a skill, reduces the attacker\u0027s Physical Damage by 8% for 2s (this effect stacks up to 3 times)."
+    },
+    {
+        "name":  "Arcane Boots",
+        "slug":  "arcane-boots",
+        "baseDescription":  "Arcane Boots is a Tier 3 Movement item that provides +15 Magic Power, +40 Movement Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+15 Magic Power",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+40 Movement Speed",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Movement Speed"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Arcane Boots is a Tier 3 Movement item that provides +15 Magic Power, +40 Movement Speed."
+    },
+    {
+        "name":  "Ares Belt",
+        "slug":  "ares-belt",
+        "baseDescription":  "Ares Belt is a Tier 2 Defense item that provides +600 HP.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+600 HP",
+                                   "sign":  "+",
+                                   "value":  600,
+                                   "attribute":  "HP"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Ares Belt is a Tier 2 Defense item that provides +600 HP."
+    },
+    {
+        "name":  "Athena\u0027s Shield",
+        "slug":  "athenas-shield",
+        "baseDescription":  "Athena\u0027s Shield is a Tier 3 Defense item that provides +900 HP, +48 Magic Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+900 HP",
+                                   "sign":  "+",
+                                   "value":  900,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+48 Magic Defense",
+                                   "sign":  "+",
+                                   "value":  48,
+                                   "attribute":  "Magic Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Shield",
+        "passiveDescription":  "Upon taking Magic Damage from enemy hero skills or Basic Attacks, reduces Magic Damage taken by 25% for 3s (including the damage that triggers the effect). Regains this effect 5s after leaving combat.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Athena\u0027s Shield is a Tier 3 Defense item that provides +900 HP, +48 Magic Defense. Its passive ability \"Shield\" Upon taking Magic Damage from enemy hero skills or Basic Attacks, reduces Magic Damage taken by 25% for 3s (including the damage that triggers the effect). Regains this effect 5s after leaving combat."
+    },
+    {
+        "name":  "Azure Blade",
+        "slug":  "azure-blade",
+        "baseDescription":  "Azure Blade is a Tier 2 Magic item that provides +5% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+5%",
+                                   "sign":  "+",
+                                   "value":  5,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Judgement",
+        "passiveDescription":  "After casting a skill, the next Basic Attack within 3s deals 50 extra True Damage (1.5s cooldown).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Azure Blade is a Tier 2 Magic item that provides +5% Cooldown Reduction. Its passive ability \"Judgement\" After casting a skill, the next Basic Attack within 3s deals 50 extra True Damage (1.5s cooldown)."
+    },
+    {
+        "name":  "Berserker\u0027s Fury",
+        "slug":  "berserkers-fury",
+        "baseDescription":  "Berserker\u0027s Fury is a Tier 3 Attack item that provides +60 Physical Attack, +25% Crit Chance.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+60 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  60,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+25%",
+                                   "sign":  "+",
+                                   "value":  25,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Doom",
+        "passiveDescription":  "When Basic Attacks Crit, they deal extra True Damage equal to 12% of the damage before reduction. It also carries a unique attribute of 30% Critical Damage.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Berserker\u0027s Fury is a Tier 3 Attack item that provides +60 Physical Attack, +25% Crit Chance. Its passive ability \"Doom\" When Basic Attacks Crit, they deal extra True Damage equal to 12% of the damage before reduction. It also carries a unique attribute of 30% Critical Damage."
+    },
+    {
+        "name":  "Black Ice Shield",
+        "slug":  "black-ice-shield",
+        "baseDescription":  "Black Ice Shield is a Tier 2 Defense item that provides +20 Physical Defense, +20 Magic Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+20 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "Physical Defense"
+                               },
+                               {
+                                   "raw":  "+20 Magic Defense",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "Magic Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Fortress Shield",
+        "passiveDescription":  "For each enemy hero within 5 units, Physical \u0026 Magic Defense is increased by 4, up to 20.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Black Ice Shield is a Tier 2 Defense item that provides +20 Physical Defense, +20 Magic Defense. Its passive ability \"Fortress Shield\" For each enemy hero within 5 units, Physical \u0026 Magic Defense is increased by 4, up to 20."
+    },
+    {
+        "name":  "Blade Armor",
+        "slug":  "blade-armor",
+        "baseDescription":  "Blade Armor is a Tier 3 Defense item that provides +80 Physical Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+80 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  80,
+                                   "attribute":  "Physical Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Bladed Armor",
+        "passiveDescription":  "When struck by a Basic Attack, deals Physical Damage equal to 30 (+2% Total Physical Defense)% of the incoming damage (calculated before Damage Reduction) to the attacker and slows them by 15% for 1s. It also carries a unique attribute of 20% Critical Damage Reduction.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Blade Armor is a Tier 3 Defense item that provides +80 Physical Defense. Its passive ability \"Bladed Armor\" When struck by a Basic Attack, deals Physical Damage equal to 30 (+2% Total Physical Defense)% of the incoming damage (calculated before Damage Reduction) to the attacker and slows them by 15% for 1s. It also carries a unique attribute of 20% Critical Damage Reduction."
+    },
+    {
+        "name":  "Blade of Despair",
+        "slug":  "blade-of-despair",
+        "baseDescription":  "Blade of Despair is a Tier 3 Attack item that provides +160 Physical Attack.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+160 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  160,
+                                   "attribute":  "Physical Attack"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Despair",
+        "passiveDescription":  "Dealing damage to non-Minion enemies below 50% HP increases Physical Attack by 25% for 2s (takes effect before the damage is dealt).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Blade of Despair is a Tier 3 Attack item that provides +160 Physical Attack. Its passive ability \"Despair\" Dealing damage to non-Minion enemies below 50% HP increases Physical Attack by 25% for 2s (takes effect before the damage is dealt)."
+    },
+    {
+        "name":  "Blade of the Heptaseas",
+        "slug":  "blade-of-the-heptaseas",
+        "baseDescription":  "Blade of the Heptaseas is a Tier 3 Attack item that provides +70 Physical Attack, +250 HP.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+70 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  70,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+250 HP",
+                                   "sign":  "+",
+                                   "value":  250,
+                                   "attribute":  "HP"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Ambush",
+        "passiveDescription":  "If no damage is taken or dealt within 5s (excluding from Minions or Creeps), the next Basic Attack will deal an additional 160 (+40% Total Physical Attack) Physical Damage and slow the target by 40% for 1.5s. It also carries a unique attribute of 15 Physical Penetration.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Blade of the Heptaseas is a Tier 3 Attack item that provides +70 Physical Attack, +250 HP. Its passive ability \"Ambush\" If no damage is taken or dealt within 5s (excluding from Minions or Creeps), the next Basic Attack will deal an additional 160 (+40% Total Physical Attack) Physical Damage and slow the target by 40% for 1.5s. It also carries a unique attribute of 15 Physical Penetration."
+    },
+    {
+        "name":  "Blood Wings",
+        "slug":  "blood-wings",
+        "baseDescription":  "Blood Wings is a Tier 3 Magic item that provides +90 Magic Power.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+90 Magic Power",
+                                   "sign":  "+",
+                                   "value":  90,
+                                   "attribute":  "Magic Power"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Guard",
+        "passiveDescription":  "Gains a 800 (+100% Total Magic Power) Shield that will regenerate 20s after being damaged. The Shield also grants 30 Movement Speed while it lasts and 150 Movement Speed for 1s after it breaks.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Blood Wings is a Tier 3 Magic item that provides +90 Magic Power. Its passive ability \"Guard\" Gains a 800 (+100% Total Magic Power) Shield that will regenerate 20s after being damaged. The Shield also grants 30 Movement Speed while it lasts and 150 Movement Speed for 1s after it breaks."
+    },
+    {
+        "name":  "Bloody Retribution",
+        "slug":  "bloody-retribution",
+        "baseDescription":  "Bloody Retribution is a Tier 1 Jungling item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Hunter",
+        "passiveDescription":  "After dealing damage to a Creep, deal 40 (+3*Hero Level) + (+1% Max HP) True Damage to the target over 3s (damage is increased by 100% for non-Marksmen heroes).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Bloody Retribution is a Tier 1 Jungling item that provides no base stats. Its passive ability \"Hunter\" After dealing damage to a Creep, deal 40 (+3*Hero Level) + (+1% Max HP) True Damage to the target over 3s (damage is increased by 100% for non-Marksmen heroes)."
+    },
+    {
+        "name":  "Book of Sages",
+        "slug":  "book-of-sages",
+        "baseDescription":  "Book of Sages is a Tier 1 Magic item that provides +8 Magic Power, +5% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+8 Magic Power",
+                                   "sign":  "+",
+                                   "value":  8,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+5%",
+                                   "sign":  "+",
+                                   "value":  5,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Book of Sages is a Tier 1 Magic item that provides +8 Magic Power, +5% Cooldown Reduction."
+    },
+    {
+        "name":  "Boots",
+        "slug":  "boots",
+        "baseDescription":  "Boots is a Tier 1 Movement item that provides +20 Movement Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+20 Movement Speed",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "Movement Speed"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Boots is a Tier 1 Movement item that provides +20 Movement Speed."
+    },
+    {
+        "name":  "Broken Heart",
+        "slug":  "broken-heart",
+        "baseDescription":  "Broken Heart is a Tier 1 Movement item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Heart Broken",
+        "passiveDescription":  "Become immune to allied Cecilion\u0027s Moonlit Waltz in this match.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Broken Heart is a Tier 1 Movement item that provides no base stats. Its passive ability \"Heart Broken\" Become immune to allied Cecilion\u0027s Moonlit Waltz in this match."
+    },
+    {
+        "name":  "Brute Force Breastplate",
+        "slug":  "brute-force-breastplate",
+        "baseDescription":  "Brute Force Breastplate is a Tier 3 Defense item that provides +800 HP, +20 Physical Defense, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+800 HP",
+                                   "sign":  "+",
+                                   "value":  800,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+20 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "Physical Defense"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Brute Force",
+        "passiveDescription":  "After dealing damage, gain 1 stack every second for 4s, up to 6 stacks. Each stack grants 8 Adaptive Attack and 2% Movement Speed. At full stacks, gain extra 25% Control Duration Reduction.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Brute Force Breastplate is a Tier 3 Defense item that provides +800 HP, +20 Physical Defense, +10% Cooldown Reduction. Its passive ability \"Brute Force\" After dealing damage, gain 1 stack every second for 4s, up to 6 stacks. Each stack grants 8 Adaptive Attack and 2% Movement Speed. At full stacks, gain extra 25% Control Duration Reduction."
+    },
+    {
+        "name":  "Chastise Pauldron",
+        "slug":  "chastise-pauldron",
+        "baseDescription":  "Chastise Pauldron is a Tier 3 Defense item that provides +900 HP, +40 Physical Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+900 HP",
+                                   "sign":  "+",
+                                   "value":  900,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+40 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Physical Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Chastise",
+        "passiveDescription":  "Taking damage will reduce the Attack Speed and Attack Speed cap of the attacker to 80% of normal for 2s.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Chastise Pauldron is a Tier 3 Defense item that provides +900 HP, +40 Physical Defense. Its passive ability \"Chastise\" Taking damage will reduce the Attack Speed and Attack Speed cap of the attacker to 80% of normal for 2s."
+    },
+    {
+        "name":  "Clock of Destiny",
+        "slug":  "clock-of-destiny",
+        "baseDescription":  "Clock of Destiny is a Tier 3 Magic item that provides +45 Magic Power, +400 HP, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+45 Magic Power",
+                                   "sign":  "+",
+                                   "value":  45,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+400 HP",
+                                   "sign":  "+",
+                                   "value":  400,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Destiny",
+        "passiveDescription":  "Gains 4.5 (+0.5*Hero Level) Hybrid Defense for 5s when dealing Magic Damage to enemy heroes, stacking up to 6 times (can gain 1 stack every 0.4s).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Clock of Destiny is a Tier 3 Magic item that provides +45 Magic Power, +400 HP, +10% Cooldown Reduction. Its passive ability \"Destiny\" Gains 4.5 (+0.5*Hero Level) Hybrid Defense for 5s when dealing Magic Damage to enemy heroes, stacking up to 6 times (can gain 1 stack every 0.4s)."
+    },
+    {
+        "name":  "Conceal",
+        "slug":  "conceal",
+        "baseDescription":  "Conceal is a Tier 1 Roaming item that provides no base stats. Its active ability \"Active - Conceal\" Active: Conceals you and nearby allied heroes, granting 40% extra Movement Speed for 5s, or until taking or dealing damage.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  "When near allied heroes, you gain 30% EXP and Gold from minions and creeps. Dealing damage to enemy heroes (Cooldown: 15s) or revealing enemies also grants EXP and Gold. This skill can only be unlocked after accumulating 1000 Gold from Thriving.",
+        "hasRoamingEffect":  true,
+        "originalGameplay":  "Conceal is a Tier 1 Roaming item that provides no base stats. Its active ability \"Active - Conceal\" Active: Conceals you and nearby allied heroes, granting 40% extra Movement Speed for 5s, or until taking or dealing damage.\n\nWhen near allied heroes, you gain 30% EXP and Gold from minions and creeps. Dealing damage to enemy heroes (Cooldown: 15s) or revealing enemies also grants EXP and Gold. This skill can only be unlocked after accumulating 1000 Gold from Thriving."
+    },
+    {
+        "name":  "Concentrated Energy",
+        "slug":  "concentrated-energy",
+        "baseDescription":  "Concentrated Energy is a Tier 3 Magic item that provides +75 Magic Power, +400 HP.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+75 Magic Power",
+                                   "sign":  "+",
+                                   "value":  75,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+400 HP",
+                                   "sign":  "+",
+                                   "value":  400,
+                                   "attribute":  "HP"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Recharge",
+        "passiveDescription":  "Increases Magic Power by 5 after dealing Magic Damage (this effect stacks up to 6 times and can only gain 1 stack every 0.4s). When reaching full stacks, increases Magic Damage by 12% for 5s. It also carries a unique attribute of 20% Hybrid Lifesteal.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Concentrated Energy is a Tier 3 Magic item that provides +75 Magic Power, +400 HP. Its passive ability \"Recharge\" Increases Magic Power by 5 after dealing Magic Damage (this effect stacks up to 6 times and can only gain 1 stack every 0.4s). When reaching full stacks, increases Magic Damage by 12% for 5s. It also carries a unique attribute of 20% Hybrid Lifesteal."
+    },
+    {
+        "name":  "Corrosion Scythe",
+        "slug":  "corrosion-scythe",
+        "baseDescription":  "Corrosion Scythe is a Tier 3 Attack item that provides +30 Physical Attack, +30% Attack Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+30 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  30,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+30%",
+                                   "sign":  "+",
+                                   "value":  30,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Corrosion",
+        "passiveDescription":  "Basic Attacks gain 80 extra Physical Damage and slow the target by 8% (halved for ranged Basic Attacks) for 1.5s. Stacks up to 5 times.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Corrosion Scythe is a Tier 3 Attack item that provides +30 Physical Attack, +30% Attack Speed. Its passive ability \"Corrosion\" Basic Attacks gain 80 extra Physical Damage and slow the target by 8% (halved for ranged Basic Attacks) for 1.5s. Stacks up to 5 times."
+    },
+    {
+        "name":  "Cursed Helmet",
+        "slug":  "cursed-helmet",
+        "baseDescription":  "Cursed Helmet is a Tier 3 Defense item that provides +1200 HP, +20 Magic Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+1200 HP",
+                                   "sign":  "+",
+                                   "value":  1200,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+20 Magic Defense",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "Magic Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Burning Soul",
+        "passiveDescription":  "Deals (1.2% Max HP) Magic Damage to nearby enemies per second. This damage is increased by 125 (+15*Hero Level)% against creeps and minions.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Cursed Helmet is a Tier 3 Defense item that provides +1200 HP, +20 Magic Defense. Its passive ability \"Burning Soul\" Deals (1.2% Max HP) Magic Damage to nearby enemies per second. This damage is increased by 125 (+15*Hero Level)% against creeps and minions."
+    },
+    {
+        "name":  "Dagger",
+        "slug":  "dagger",
+        "baseDescription":  "Dagger is a Tier 1 Attack item that provides +15 Physical Attack.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+15 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "Physical Attack"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Dagger is a Tier 1 Attack item that provides +15 Physical Attack."
+    },
+    {
+        "name":  "Demon Boots",
+        "slug":  "demon-boots",
+        "baseDescription":  "Demon Boots is a Tier 3 Movement item that provides +40 Movement Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+40 Movement Speed",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Movement Speed"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Mysticism",
+        "passiveDescription":  "Getting a kill or assist on an enemy Minion will restore 4% Mana. (An assist occurs when a Minion dies within 2s after taking damage from the hero.).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Demon Boots is a Tier 3 Movement item that provides +40 Movement Speed. Its passive ability \"Mysticism\" Getting a kill or assist on an enemy Minion will restore 4% Mana. (An assist occurs when a Minion dies within 2s after taking damage from the hero.)."
+    },
+    {
+        "name":  "Demon Hunter Sword",
+        "slug":  "demon-hunter-sword",
+        "baseDescription":  "Demon Hunter Sword is a Tier 3 Attack item that provides +35 Physical Attack, +20% Attack Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+35 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  35,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+20%",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Engulf",
+        "passiveDescription":  "Basic Attacks deal 8% of the target\u0027s current HP as extra Physical Damage (capped at 60 against minions).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Demon Hunter Sword is a Tier 3 Attack item that provides +35 Physical Attack, +20% Attack Speed. Its passive ability \"Engulf\" Basic Attacks deal 8% of the target\u0027s current HP as extra Physical Damage (capped at 60 against minions)."
+    },
+    {
+        "name":  "Dire Hit",
+        "slug":  "dire-hit",
+        "baseDescription":  "Dire Hit is a Tier 1 Roaming item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Passive - Dire Hit",
+        "passiveDescription":  "Passive: Gains Force while moving, gradually increasing Movement Speed (up to 40). Upon reaching 20 stacks, the next hit consumes all stacks to deal extra True Damage based on the number of stacks.",
+        "hasPassive":  true,
+        "roamingDescription":  "When near allied heroes, you gain 30% EXP and Gold from minions and creeps. Dealing damage to enemy heroes (Cooldown: 15s) or revealing enemies also grants EXP and Gold. This skill can only be unlocked after getting 1000 Gold from Thriving.",
+        "hasRoamingEffect":  true,
+        "originalGameplay":  "Dire Hit is a Tier 1 Roaming item that provides no base stats. Its passive ability \"Passive - Dire Hit\" Passive: Gains Force while moving, gradually increasing Movement Speed (up to 40). Upon reaching 20 stacks, the next hit consumes all stacks to deal extra True Damage based on the number of stacks.\n\nWhen near allied heroes, you gain 30% EXP and Gold from minions and creeps. Dealing damage to enemy heroes (Cooldown: 15s) or revealing enemies also grants EXP and Gold. This skill can only be unlocked after getting 1000 Gold from Thriving."
+    },
+    {
+        "name":  "Divine Glaive",
+        "slug":  "divine-glaive",
+        "baseDescription":  "Divine Glaive is a Tier 3 Magic item that provides +60 Magic Power.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+60 Magic Power",
+                                   "sign":  "+",
+                                   "value":  60,
+                                   "attribute":  "Magic Power"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Spellbreaker",
+        "passiveDescription":  "When attacking an enemy, gains 0.1% extra Magic Penetration for each point of the enemy\u0027s Magic Defense, capped at 20%. It also carries a unique attribute of 40% Magic Penetration.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Divine Glaive is a Tier 3 Magic item that provides +60 Magic Power. Its passive ability \"Spellbreaker\" When attacking an enemy, gains 0.1% extra Magic Penetration for each point of the enemy\u0027s Magic Defense, capped at 20%. It also carries a unique attribute of 40% Magic Penetration."
+    },
+    {
+        "name":  "Dominance Ice",
+        "slug":  "dominance-ice",
+        "baseDescription":  "Dominance Ice is a Tier 3 Defense item that provides +40 Physical Defense, +40 Magic Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+40 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Physical Defense"
+                               },
+                               {
+                                   "raw":  "+40 Magic Defense",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Magic Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Fortress Shield",
+        "passiveDescription":  "For each enemy hero within 5 units, Physical \u0026 Magic Defense is increased by 8, up to 40.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Dominance Ice is a Tier 3 Defense item that provides +40 Physical Defense, +40 Magic Defense. Its passive ability \"Fortress Shield\" For each enemy hero within 5 units, Physical \u0026 Magic Defense is increased by 8, up to 40."
+    },
+    {
+        "name":  "Dreadnaught Armor",
+        "slug":  "dreadnaught-armor",
+        "baseDescription":  "Dreadnaught Armor is a Tier 2 Defense item that provides +30 Physical Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+30 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  30,
+                                   "attribute":  "Physical Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Deter",
+        "passiveDescription":  "When hit by a skill, reduces the attacker\u0027s Physical Damage by 4% for 2s (this effect stacks up to 3 times).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Dreadnaught Armor is a Tier 2 Defense item that provides +30 Physical Defense. Its passive ability \"Deter\" When hit by a skill, reduces the attacker\u0027s Physical Damage by 4% for 2s (this effect stacks up to 3 times)."
+    },
+    {
+        "name":  "Elegant Gem",
+        "slug":  "elegant-gem",
+        "baseDescription":  "Elegant Gem is a Tier 2 Magic item that provides +300 HP.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+300 HP",
+                                   "sign":  "+",
+                                   "value":  300,
+                                   "attribute":  "HP"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Gift",
+        "passiveDescription":  "When HP drops below 50%, recovers 15% of HP over the next 3s. When Mana drops below 50%, restores 15% of Mana over the next 3s. Cooldown: 60s.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Elegant Gem is a Tier 2 Magic item that provides +300 HP. Its passive ability \"Gift\" When HP drops below 50%, recovers 15% of HP over the next 3s. When Mana drops below 50%, restores 15% of Mana over the next 3s. Cooldown: 60s."
+    },
+    {
+        "name":  "Enchanted Talisman",
+        "slug":  "enchanted-talisman",
+        "baseDescription":  "Enchanted Talisman is a Tier 3 Magic item that provides +75 Magic Power, +300 HP, +15% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+75 Magic Power",
+                                   "sign":  "+",
+                                   "value":  75,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+300 HP",
+                                   "sign":  "+",
+                                   "value":  300,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+15%",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Mana Spring",
+        "passiveDescription":  "Regenerates 15% Max Mana every 10s.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Enchanted Talisman is a Tier 3 Magic item that provides +75 Magic Power, +300 HP, +15% Cooldown Reduction. Its passive ability \"Mana Spring\" Regenerates 15% Max Mana every 10s."
+    },
+    {
+        "name":  "Encourage",
+        "slug":  "encourage",
+        "baseDescription":  "Encourage is a Tier 1 Roaming item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Passive - Encourage",
+        "passiveDescription":  "Passive: Grants you and nearby allied heroes 20 extra Hybrid Defense.",
+        "hasPassive":  true,
+        "roamingDescription":  "When near allied heroes, you gain 30% EXP and Gold from minions and creeps. Dealing damage to enemy heroes (Cooldown: 15s) or revealing enemies also grants EXP and Gold. This skill can only be unlocked after accumulating 1000 Gold from Thriving.",
+        "hasRoamingEffect":  true,
+        "originalGameplay":  "Encourage is a Tier 1 Roaming item that provides no base stats. Its passive ability \"Passive - Encourage\" Passive: Grants you and nearby allied heroes 20 extra Hybrid Defense.\n\nWhen near allied heroes, you gain 30% EXP and Gold from minions and creeps. Dealing damage to enemy heroes (Cooldown: 15s) or revealing enemies also grants EXP and Gold. This skill can only be unlocked after accumulating 1000 Gold from Thriving."
+    },
+    {
+        "name":  "Endless Battle",
+        "slug":  "endless-battle",
+        "baseDescription":  "Endless Battle is a Tier 3 Attack item that provides +60 Physical Attack, +250 HP, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+60 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  60,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+250 HP",
+                                   "sign":  "+",
+                                   "value":  250,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Divine Justice",
+        "passiveDescription":  "After casting a skill, the next Basic Attack within 3s deals (60% Total Physical Attack) extra True Damage and recovers 80 (+40% Total Physical Attack) HP (1.5s cooldown).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Endless Battle is a Tier 3 Attack item that provides +60 Physical Attack, +250 HP, +10% Cooldown Reduction. Its passive ability \"Divine Justice\" After casting a skill, the next Basic Attack within 3s deals (60% Total Physical Attack) extra True Damage and recovers 80 (+40% Total Physical Attack) HP (1.5s cooldown)."
+    },
+    {
+        "name":  "Exotic Veil",
+        "slug":  "exotic-veil",
+        "baseDescription":  "Exotic Veil is a Tier 2 Magic item that provides +30 Magic Power.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+30 Magic Power",
+                                   "sign":  "+",
+                                   "value":  30,
+                                   "attribute":  "Magic Power"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Exotic Veil is a Tier 2 Magic item that provides +30 Magic Power."
+    },
+    {
+        "name":  "Expert Gloves",
+        "slug":  "expert-gloves",
+        "baseDescription":  "Expert Gloves is a Tier 1 Attack / Magic item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Expert Gloves is a Tier 1 Attack / Magic item that provides no base stats."
+    },
+    {
+        "name":  "Favor",
+        "slug":  "favor",
+        "baseDescription":  "Favor is a Tier 1 Roaming item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Passive - Favor",
+        "passiveDescription":  "Passive: Every 15s, your next healing or shield skill recovers 400 extra HP to the lowest-HP allied hero within 5 units (including yourself). Skills that only take effect on yourself cannot trigger this effect.",
+        "hasPassive":  true,
+        "roamingDescription":  "When near allied heroes, you gain 30% EXP and Gold from minions and creeps. Dealing damage to enemy heroes (Cooldown: 15s) or revealing enemies also grants EXP and Gold. This skill can only be unlocked after accumulating 1000 Gold from Thriving.",
+        "hasRoamingEffect":  true,
+        "originalGameplay":  "Favor is a Tier 1 Roaming item that provides no base stats. Its passive ability \"Passive - Favor\" Passive: Every 15s, your next healing or shield skill recovers 400 extra HP to the lowest-HP allied hero within 5 units (including yourself). Skills that only take effect on yourself cannot trigger this effect.\n\nWhen near allied heroes, you gain 30% EXP and Gold from minions and creeps. Dealing damage to enemy heroes (Cooldown: 15s) or revealing enemies also grants EXP and Gold. This skill can only be unlocked after accumulating 1000 Gold from Thriving."
+    },
+    {
+        "name":  "Feather of Heaven",
+        "slug":  "feather-of-heaven",
+        "baseDescription":  "Feather of Heaven is a Tier 3 Magic item that provides +60 Magic Power, +20% Attack Speed, +5% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+60 Magic Power",
+                                   "sign":  "+",
+                                   "value":  60,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+20%",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "%"
+                               },
+                               {
+                                   "raw":  "+5%",
+                                   "sign":  "+",
+                                   "value":  5,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Affliction",
+        "passiveDescription":  "Each Basic Attack deals extra 50 (+30% Total Magic Power) Magic Damage.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Feather of Heaven is a Tier 3 Magic item that provides +60 Magic Power, +20% Attack Speed, +5% Cooldown Reduction. Its passive ability \"Affliction\" Each Basic Attack deals extra 50 (+30% Total Magic Power) Magic Damage."
+    },
+    {
+        "name":  "Flame Retribution",
+        "slug":  "flame-retribution",
+        "baseDescription":  "Flame Retribution is a Tier 1 Jungling item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Hunter",
+        "passiveDescription":  "After dealing damage to a Creep, deal 40 (+3*Hero Level) + (+1% Max HP) True Damage to the target over 3s (damage is increased by 100% for non-Marksmen heroes).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Flame Retribution is a Tier 1 Jungling item that provides no base stats. Its passive ability \"Hunter\" After dealing damage to a Creep, deal 40 (+3*Hero Level) + (+1% Max HP) True Damage to the target over 3s (damage is increased by 100% for non-Marksmen heroes)."
+    },
+    {
+        "name":  "Flask of the Oasis",
+        "slug":  "flask-of-the-oasis",
+        "baseDescription":  "Flask of the Oasis is a Tier 3 Magic item that provides +60 Magic Power, +300 HP, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+60 Magic Power",
+                                   "sign":  "+",
+                                   "value":  60,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+300 HP",
+                                   "sign":  "+",
+                                   "value":  300,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Blessing",
+        "passiveDescription":  "When casting a healing or shield skill, if the target\u0027s HP is below 35% or falls below 35% within 3s, they will get a (100*Hero Level) shield that lasts 3s. When this effect triggers, it also reduces the cooldown of the caster\u0027s skills by 2s.\nThis effect can only trigger once every 60s on the same target, and will not trigger on self-only healing and shield skills. It also carries a unique attribute of 12% Healing Effect.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Flask of the Oasis is a Tier 3 Magic item that provides +60 Magic Power, +300 HP, +10% Cooldown Reduction. Its passive ability \"Blessing\" When casting a healing or shield skill, if the target\u0027s HP is below 35% or falls below 35% within 3s, they will get a (100*Hero Level) shield that lasts 3s. When this effect triggers, it also reduces the cooldown of the caster\u0027s skills by 2s.\nThis effect can only trigger once every 60s on the same target, and will not trigger on self-only healing and shield skills. It also carries a unique attribute of 12% Healing Effect."
+    },
+    {
+        "name":  "Fleeting Time",
+        "slug":  "fleeting-time",
+        "baseDescription":  "Fleeting Time is a Tier 3 Attack / Magic / Defense item that provides +600 HP, +15% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+600 HP",
+                                   "sign":  "+",
+                                   "value":  600,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+15%",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Timestream",
+        "passiveDescription":  "Hero kills or assists reduce the Ultimate\u0027s current cooldown by 30%.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Fleeting Time is a Tier 3 Attack / Magic / Defense item that provides +600 HP, +15% Cooldown Reduction. Its passive ability \"Timestream\" Hero kills or assists reduce the Ultimate\u0027s current cooldown by 30%."
+    },
+    {
+        "name":  "Flower of Hope",
+        "slug":  "flower-of-hope",
+        "baseDescription":  "Flower of Hope is a Tier 1 Magic item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Flower of Hope",
+        "passiveDescription":  "Every 6s, the next skill or Basic Attack deals an additional 100 (+40% Total Physical Attack) (+30% Total Magic Power) Magic Damage.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Flower of Hope is a Tier 1 Magic item that provides no base stats. Its passive ability \"Flower of Hope\" Every 6s, the next skill or Basic Attack deals an additional 100 (+40% Total Physical Attack) (+30% Total Magic Power) Magic Damage."
+    },
+    {
+        "name":  "Fury Hammer",
+        "slug":  "fury-hammer",
+        "baseDescription":  "Fury Hammer is a Tier 2 Attack item that provides +35 Physical Attack. It also carries a unique attribute of 12 Physical Penetration.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+35 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  35,
+                                   "attribute":  "Physical Attack"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Fury Hammer is a Tier 2 Attack item that provides +35 Physical Attack. It also carries a unique attribute of 12 Physical Penetration."
+    },
+    {
+        "name":  "Genius Wand",
+        "slug":  "genius-wand",
+        "baseDescription":  "Genius Wand is a Tier 3 Magic item that provides +75 Magic Power.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+75 Magic Power",
+                                   "sign":  "+",
+                                   "value":  75,
+                                   "attribute":  "Magic Power"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Magic",
+        "passiveDescription":  "Dealing Magic Damage to enemy heroes will reduce their Magic Defense by 2.5 (+0.5*Hero Level) for 2s. Stacks up to 3 times. It also carries a unique attribute of 10 Magic Penetration.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Genius Wand is a Tier 3 Magic item that provides +75 Magic Power. Its passive ability \"Magic\" Dealing Magic Damage to enemy heroes will reduce their Magic Defense by 2.5 (+0.5*Hero Level) for 2s. Stacks up to 3 times. It also carries a unique attribute of 10 Magic Penetration."
+    },
+    {
+        "name":  "Glowing Wand",
+        "slug":  "glowing-wand",
+        "baseDescription":  "Glowing Wand is a Tier 3 Magic item that provides +60 Magic Power, +300 HP.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+60 Magic Power",
+                                   "sign":  "+",
+                                   "value":  60,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+300 HP",
+                                   "sign":  "+",
+                                   "value":  300,
+                                   "attribute":  "HP"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Scorch",
+        "passiveDescription":  "Dealing Magic Damage burns the targets for 3s, also dealing extra Magic Damage equal to 1% of the target\u0027s Max HP per second.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Glowing Wand is a Tier 3 Magic item that provides +60 Magic Power, +300 HP. Its passive ability \"Scorch\" Dealing Magic Damage burns the targets for 3s, also dealing extra Magic Damage equal to 1% of the target\u0027s Max HP per second."
+    },
+    {
+        "name":  "Golden Staff",
+        "slug":  "golden-staff",
+        "baseDescription":  "Golden Staff is a Tier 3 Attack item that provides +55 Physical Attack, +15% Attack Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+55 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  55,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+15%",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Swift",
+        "passiveDescription":  "Every 1% extra Crit Chance gained is converted into 1% extra Attack Speed.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Golden Staff is a Tier 3 Attack item that provides +55 Physical Attack, +15% Attack Speed. Its passive ability \"Swift\" Every 1% extra Crit Chance gained is converted into 1% extra Attack Speed."
+    },
+    {
+        "name":  "Great Dragon Spear",
+        "slug":  "great-dragon-spear",
+        "baseDescription":  "Great Dragon Spear is a Tier 3 Attack item that provides +70 Physical Attack, +20% Crit Chance, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+70 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  70,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+20%",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "%"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Supreme Warrior",
+        "passiveDescription":  "After casting an Ultimate, increase Movement Speed by 30% for 7.5s. This effect has a 15s cooldown.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Great Dragon Spear is a Tier 3 Attack item that provides +70 Physical Attack, +20% Crit Chance, +10% Cooldown Reduction. Its passive ability \"Supreme Warrior\" After casting an Ultimate, increase Movement Speed by 30% for 7.5s. This effect has a 15s cooldown."
+    },
+    {
+        "name":  "Guardian Helmet",
+        "slug":  "guardian-helmet",
+        "baseDescription":  "Guardian Helmet is a Tier 3 Defense item that provides +1800 HP.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+1800 HP",
+                                   "sign":  "+",
+                                   "value":  1800,
+                                   "attribute":  "HP"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Recovery",
+        "passiveDescription":  "After 5s out of combat, recover (2.5% Max HP) HP per second.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Guardian Helmet is a Tier 3 Defense item that provides +1800 HP. Its passive ability \"Recovery\" After 5s out of combat, recover (2.5% Max HP) HP per second."
+    },
+    {
+        "name":  "Haas\u0027s Claws",
+        "slug":  "haass-claws",
+        "baseDescription":  "Haas\u0027s Claws is a Tier 3 Attack item that provides +40 Physical Attack, +15% Attack Speed, +20% Crit Chance.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+40 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+15%",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "%"
+                               },
+                               {
+                                   "raw":  "+20%",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Frenzy",
+        "passiveDescription":  "Critical strikes grant 20% Attack Speed for 2s. It also carries a unique attribute of 20% Lifesteal.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Haas\u0027s Claws is a Tier 3 Attack item that provides +40 Physical Attack, +15% Attack Speed, +20% Crit Chance. Its passive ability \"Frenzy\" Critical strikes grant 20% Attack Speed for 2s. It also carries a unique attribute of 20% Lifesteal."
+    },
+    {
+        "name":  "Healing Necklace",
+        "slug":  "healing-necklace",
+        "baseDescription":  "Healing Necklace is a Tier 1 Defense item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Healing Necklace is a Tier 1 Defense item that provides no base stats."
+    },
+    {
+        "name":  "Hero\u0027s Ring",
+        "slug":  "heros-ring",
+        "baseDescription":  "Hero\u0027s Ring is a Tier 1 Defense item that provides +150 HP, +5% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+150 HP",
+                                   "sign":  "+",
+                                   "value":  150,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+5%",
+                                   "sign":  "+",
+                                   "value":  5,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Hero\u0027s Ring is a Tier 1 Defense item that provides +150 HP, +5% Cooldown Reduction."
+    },
+    {
+        "name":  "Holy Crystal",
+        "slug":  "holy-crystal",
+        "baseDescription":  "Holy Crystal is a Tier 3 Magic item that provides +165 Magic Power.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+165 Magic Power",
+                                   "sign":  "+",
+                                   "value":  165,
+                                   "attribute":  "Magic Power"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Mystery",
+        "passiveDescription":  "Gains 21%-35% extra Magic Power (scales with level).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Holy Crystal is a Tier 3 Magic item that provides +165 Magic Power. Its passive ability \"Mystery\" Gains 21%-35% extra Magic Power (scales with level)."
+    },
+    {
+        "name":  "Hunter Strike",
+        "slug":  "hunter-strike",
+        "baseDescription":  "Hunter Strike is a Tier 3 Attack item that provides +80 Physical Attack, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+80 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  80,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Retribution",
+        "passiveDescription":  "Dealing damage to the same enemy hero or creep 5 times in a row grants 50% extra Movement Speed that decays over 3s (8s cooldown). It also carries a unique attribute of 15 Physical Penetration.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Hunter Strike is a Tier 3 Attack item that provides +80 Physical Attack, +10% Cooldown Reduction. Its passive ability \"Retribution\" Dealing damage to the same enemy hero or creep 5 times in a row grants 50% extra Movement Speed that decays over 3s (8s cooldown). It also carries a unique attribute of 15 Physical Penetration."
+    },
+    {
+        "name":  "Ice Queen Wand",
+        "slug":  "ice-queen-wand",
+        "baseDescription":  "Ice Queen Wand is a Tier 3 Magic item that provides +60 Magic Power, +300 HP.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+60 Magic Power",
+                                   "sign":  "+",
+                                   "value":  60,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+300 HP",
+                                   "sign":  "+",
+                                   "value":  300,
+                                   "attribute":  "HP"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Ice Bound",
+        "passiveDescription":  "When a skill deals damage to an enemy hero, it will also slow them by 10% for 2s (stacks up to 3 times). This effect has a 0.4s cooldown.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Ice Queen Wand is a Tier 3 Magic item that provides +60 Magic Power, +300 HP. Its passive ability \"Ice Bound\" When a skill deals damage to an enemy hero, it will also slow them by 10% for 2s (stacks up to 3 times). This effect has a 0.4s cooldown."
+    },
+    {
+        "name":  "Ice Retribution",
+        "slug":  "ice-retribution",
+        "baseDescription":  "Ice Retribution is a Tier 1 Jungling item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Hunter",
+        "passiveDescription":  "After dealing damage to a Creep, deal 40 (+3*Hero Level) + (+1% Max HP) True Damage to the target over 3s (damage is increased by 100% for non-Marksmen heroes).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Ice Retribution is a Tier 1 Jungling item that provides no base stats. Its passive ability \"Hunter\" After dealing damage to a Creep, deal 40 (+3*Hero Level) + (+1% Max HP) True Damage to the target over 3s (damage is increased by 100% for non-Marksmen heroes)."
+    },
+    {
+        "name":  "Immortality",
+        "slug":  "immortality",
+        "baseDescription":  "Immortality is a Tier 3 Defense item that provides +850 HP, +15 Physical Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+850 HP",
+                                   "sign":  "+",
+                                   "value":  850,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+15 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "Physical Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Immortal",
+        "passiveDescription":  "Resurrect 2.5s upon death and get 16% HP and a shield that can absorb 150 (+70*Hero Level) damage. Shield lasts 3s. This effect has a 210s cooldown.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Immortality is a Tier 3 Defense item that provides +850 HP, +15 Physical Defense. Its passive ability \"Immortal\" Resurrect 2.5s upon death and get 16% HP and a shield that can absorb 150 (+70*Hero Level) damage. Shield lasts 3s. This effect has a 210s cooldown."
+    },
+    {
+        "name":  "Iron Hunting Bow",
+        "slug":  "iron-hunting-bow",
+        "baseDescription":  "Iron Hunting Bow is a Tier 1 Attack item that provides +10 Physical Attack, +5% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+10 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+5%",
+                                   "sign":  "+",
+                                   "value":  5,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Iron Hunting Bow is a Tier 1 Attack item that provides +10 Physical Attack, +5% Cooldown Reduction."
+    },
+    {
+        "name":  "Javelin",
+        "slug":  "javelin",
+        "baseDescription":  "Javelin is a Tier 1 Attack item that provides +8% Crit Chance.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+8%",
+                                   "sign":  "+",
+                                   "value":  8,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Javelin is a Tier 1 Attack item that provides +8% Crit Chance."
+    },
+    {
+        "name":  "Knife",
+        "slug":  "knife",
+        "baseDescription":  "Knife is a Tier 1 Attack item that provides +10% Attack Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Knife is a Tier 1 Attack item that provides +10% Attack Speed."
+    },
+    {
+        "name":  "Lantern of Hope",
+        "slug":  "lantern-of-hope",
+        "baseDescription":  "Lantern of Hope is a Tier 1 Magic item that provides +20 Magic Power, +2% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+20 Magic Power",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+2%",
+                                   "sign":  "+",
+                                   "value":  2,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Lantern of Hope",
+        "passiveDescription":  "The equipment\u0027s attributes scale with hero level.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Lantern of Hope is a Tier 1 Magic item that provides +20 Magic Power, +2% Cooldown Reduction. Its passive ability \"Lantern of Hope\" The equipment\u0027s attributes scale with hero level."
+    },
+    {
+        "name":  "Leather Jerkin",
+        "slug":  "leather-jerkin",
+        "baseDescription":  "Leather Jerkin is a Tier 1 Defense item that provides +14 Physical Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+14 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  14,
+                                   "attribute":  "Physical Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Leather Jerkin is a Tier 1 Defense item that provides +14 Physical Defense."
+    },
+    {
+        "name":  "Legion Sword",
+        "slug":  "legion-sword",
+        "baseDescription":  "Legion Sword is a Tier 2 Attack item that provides +60 Physical Attack.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+60 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  60,
+                                   "attribute":  "Physical Attack"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Legion Sword is a Tier 2 Attack item that provides +60 Physical Attack."
+    },
+    {
+        "name":  "Lightning Truncheon",
+        "slug":  "lightning-truncheon",
+        "baseDescription":  "Lightning Truncheon is a Tier 3 Magic item that provides +75 Magic Power, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+75 Magic Power",
+                                   "sign":  "+",
+                                   "value":  75,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Resonate",
+        "passiveDescription":  "Every 6s, the next skill echoes, dealing 255 (+85% Total Magic Power) extra Magic Damage to all enemies in range.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Lightning Truncheon is a Tier 3 Magic item that provides +75 Magic Power, +10% Cooldown Reduction. Its passive ability \"Resonate\" Every 6s, the next skill echoes, dealing 255 (+85% Total Magic Power) extra Magic Damage to all enemies in range."
+    },
+    {
+        "name":  "Magic Blade",
+        "slug":  "magic-blade",
+        "baseDescription":  "Magic Blade is a Tier 2 Attack item that provides +25 Physical Attack, +10% Lifesteal.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+25 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  25,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Lifeline",
+        "passiveDescription":  "When taking damage that reduces HP below 30%, gain a (60*Hero Level) shield and 50% Movement Speed that rapidly decays over 3s. This effect has a 60s cooldown.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Magic Blade is a Tier 2 Attack item that provides +25 Physical Attack, +10% Lifesteal. Its passive ability \"Lifeline\" When taking damage that reduces HP below 30%, gain a (60*Hero Level) shield and 50% Movement Speed that rapidly decays over 3s. This effect has a 60s cooldown."
+    },
+    {
+        "name":  "Magic Boots",
+        "slug":  "magic-boots",
+        "baseDescription":  "Magic Boots is a Tier 3 Movement item that provides +150 HP, +10% Cooldown Reduction, +40 Movement Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+150 HP",
+                                   "sign":  "+",
+                                   "value":  150,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               },
+                               {
+                                   "raw":  "+40 Movement Speed",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Movement Speed"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Magic Boots is a Tier 3 Movement item that provides +150 HP, +10% Cooldown Reduction, +40 Movement Speed."
+    },
+    {
+        "name":  "Magic Necklace",
+        "slug":  "magic-necklace",
+        "baseDescription":  "Magic Necklace is a Tier 1 Magic item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Magic Necklace is a Tier 1 Magic item that provides no base stats."
+    },
+    {
+        "name":  "Magic Potion",
+        "slug":  "magic-potion",
+        "baseDescription":  "Magic Potion is a Tier 3 Magic item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Increase Power",
+        "passiveDescription":  "Upon purchase, grants 30 extra Magic Power and 10% Cooldown Reduction for 120s.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Magic Potion is a Tier 3 Magic item that provides no base stats. Its passive ability \"Increase Power\" Upon purchase, grants 30 extra Magic Power and 10% Cooldown Reduction for 120s."
+    },
+    {
+        "name":  "Magic Resist Cloak",
+        "slug":  "magic-resist-cloak",
+        "baseDescription":  "Magic Resist Cloak is a Tier 1 Defense item that provides +14 Magic Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+14 Magic Defense",
+                                   "sign":  "+",
+                                   "value":  14,
+                                   "attribute":  "Magic Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Magic Resist Cloak is a Tier 1 Defense item that provides +14 Magic Defense."
+    },
+    {
+        "name":  "Magic Wand",
+        "slug":  "magic-wand",
+        "baseDescription":  "Magic Wand is a Tier 1 Magic item that provides +45 Magic Power.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+45 Magic Power",
+                                   "sign":  "+",
+                                   "value":  45,
+                                   "attribute":  "Magic Power"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Magic Wand is a Tier 1 Magic item that provides +45 Magic Power."
+    },
+    {
+        "name":  "Malefic Gun",
+        "slug":  "malefic-gun",
+        "baseDescription":  "Malefic Gun is a Tier 3 Attack item that provides +40 Physical Attack, +20% Attack Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+40 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+20%",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Armor Buster",
+        "passiveDescription":  "Increase Physical Penetration by 30%.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Malefic Gun is a Tier 3 Attack item that provides +40 Physical Attack, +20% Attack Speed. Its passive ability \"Armor Buster\" Increase Physical Penetration by 30%."
+    },
+    {
+        "name":  "Malefic Roar",
+        "slug":  "malefic-roar",
+        "baseDescription":  "Malefic Roar is a Tier 3 Attack item that provides +60 Physical Attack.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+60 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  60,
+                                   "attribute":  "Physical Attack"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Armor Buster",
+        "passiveDescription":  "Increase Physical Penetration by 30%.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Malefic Roar is a Tier 3 Attack item that provides +60 Physical Attack. Its passive ability \"Armor Buster\" Increase Physical Penetration by 30%."
+    },
+    {
+        "name":  "Molten Essence",
+        "slug":  "molten-essence",
+        "baseDescription":  "Molten Essence is a Tier 2 Defense item that provides +540 HP.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+540 HP",
+                                   "sign":  "+",
+                                   "value":  540,
+                                   "attribute":  "HP"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Burning Soul",
+        "passiveDescription":  "Deals (0.6% Max HP) Magic Damage to nearby enemies per second. This damage is increased by 125 (+15*Hero Level)% against creeps and minions.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Molten Essence is a Tier 2 Defense item that provides +540 HP. Its passive ability \"Burning Soul\" Deals (0.6% Max HP) Magic Damage to nearby enemies per second. This damage is increased by 125 (+15*Hero Level)% against creeps and minions."
+    },
+    {
+        "name":  "Mystery Codex",
+        "slug":  "mystery-codex",
+        "baseDescription":  "Mystery Codex is a Tier 1 Magic item that provides +15 Magic Power.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+15 Magic Power",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "Magic Power"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Mystery Codex is a Tier 1 Magic item that provides +15 Magic Power."
+    },
+    {
+        "name":  "Mystic Container",
+        "slug":  "mystic-container",
+        "baseDescription":  "Mystic Container is a Tier 2 Magic item that provides +15 Magic Power.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+15 Magic Power",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "Magic Power"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Mystic Container is a Tier 2 Magic item that provides +15 Magic Power."
+    },
+    {
+        "name":  "Ogre Tomahawk",
+        "slug":  "ogre-tomahawk",
+        "baseDescription":  "Ogre Tomahawk is a Tier 2 Attack item that provides +25 Physical Attack, +230 HP.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+25 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  25,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+230 HP",
+                                   "sign":  "+",
+                                   "value":  230,
+                                   "attribute":  "HP"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Ogre Tomahawk is a Tier 2 Attack item that provides +25 Physical Attack, +230 HP."
+    },
+    {
+        "name":  "Oracle",
+        "slug":  "oracle",
+        "baseDescription":  "Oracle is a Tier 3 Defense item that provides +850 HP, +20 Physical Defense, +20 Magic Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+850 HP",
+                                   "sign":  "+",
+                                   "value":  850,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+20 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "Physical Defense"
+                               },
+                               {
+                                   "raw":  "+20 Magic Defense",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "Magic Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Bless",
+        "passiveDescription":  "Received Shield and HP Regen effects are increased by 25%.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Oracle is a Tier 3 Defense item that provides +850 HP, +20 Physical Defense, +20 Magic Defense. Its passive ability \"Bless\" Received Shield and HP Regen effects are increased by 25%."
+    },
+    {
+        "name":  "Power Crystal",
+        "slug":  "power-crystal",
+        "baseDescription":  "Power Crystal is a Tier 1 Magic item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Power Crystal is a Tier 1 Magic item that provides no base stats."
+    },
+    {
+        "name":  "Power Potion",
+        "slug":  "power-potion",
+        "baseDescription":  "Power Potion is a Tier 3 Attack item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Increase Power",
+        "passiveDescription":  "Upon purchase, grants 30 Physical Attack and 15% Lifesteal for 120s.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Power Potion is a Tier 3 Attack item that provides no base stats. Its passive ability \"Increase Power\" Upon purchase, grants 30 Physical Attack and 15% Lifesteal for 120s."
+    },
+    {
+        "name":  "Queen\u0027s Wings",
+        "slug":  "queens-wings",
+        "baseDescription":  "Queen\u0027s Wings is a Tier 3 Defense item that provides +750 HP, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+750 HP",
+                                   "sign":  "+",
+                                   "value":  750,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Demonize",
+        "passiveDescription":  "When HP drops below 40%, gains 30% Damage Reduction for 3s and reduces skill cooldowns by 2s. The effect has a 60s cooldown.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Queen\u0027s Wings is a Tier 3 Defense item that provides +750 HP, +10% Cooldown Reduction. Its passive ability \"Demonize\" When HP drops below 40%, gains 30% Damage Reduction for 3s and reduces skill cooldowns by 2s. The effect has a 60s cooldown."
+    },
+    {
+        "name":  "Radiant Armor",
+        "slug":  "radiant-armor",
+        "baseDescription":  "Radiant Armor is a Tier 3 Defense item that provides +950 HP, +40 Magic Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+950 HP",
+                                   "sign":  "+",
+                                   "value":  950,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+40 Magic Defense",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Magic Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Holy Blessing",
+        "passiveDescription":  "Taking Magic Damage grants 5 (+1*Hero Level) Magic Defense for 5s, up to 6 stacks (can only gain 1 stack(s) every 0.4s).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Radiant Armor is a Tier 3 Defense item that provides +950 HP, +40 Magic Defense. Its passive ability \"Holy Blessing\" Taking Magic Damage grants 5 (+1*Hero Level) Magic Defense for 5s, up to 6 stacks (can only gain 1 stack(s) every 0.4s)."
+    },
+    {
+        "name":  "Rapid Boots",
+        "slug":  "rapid-boots",
+        "baseDescription":  "Rapid Boots is a Tier 3 Movement item that provides +55 Movement Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+55 Movement Speed",
+                                   "sign":  "+",
+                                   "value":  55,
+                                   "attribute":  "Movement Speed"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Rapid Boots is a Tier 3 Movement item that provides +55 Movement Speed."
+    },
+    {
+        "name":  "Regular Spear",
+        "slug":  "regular-spear",
+        "baseDescription":  "Regular Spear is a Tier 2 Attack item that provides +20 Physical Attack, +10% Attack Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+20 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Regular Spear is a Tier 2 Attack item that provides +20 Physical Attack, +10% Attack Speed."
+    },
+    {
+        "name":  "Rock Potion",
+        "slug":  "rock-potion",
+        "baseDescription":  "Rock Potion is a Tier 3 Defense item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Increase Power",
+        "passiveDescription":  "Upon purchase, grants 500 Max HP and 5% Damage Reduction for 120s.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Rock Potion is a Tier 3 Defense item that provides no base stats. Its passive ability \"Increase Power\" Upon purchase, grants 500 Max HP and 5% Damage Reduction for 120s."
+    },
+    {
+        "name":  "Rogue Meteor",
+        "slug":  "rogue-meteor",
+        "baseDescription":  "Rogue Meteor is a Tier 2 Attack item that provides +15% Attack Speed, +10% Crit Chance.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+15%",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "%"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Rogue Meteor is a Tier 2 Attack item that provides +15% Attack Speed, +10% Crit Chance."
+    },
+    {
+        "name":  "Rose Gold Meteor",
+        "slug":  "rose-gold-meteor",
+        "baseDescription":  "Rose Gold Meteor is a Tier 3 Attack item that provides +30 Physical Attack, +20% Attack Speed, +10% Lifesteal.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+30 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  30,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+20%",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "%"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Dragon Scale",
+        "passiveDescription":  "Every 4 extra Physical Attack increases Hybrid Defense by 1, up to 50 (effect is halved if Main Role is not Fighter).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Rose Gold Meteor is a Tier 3 Attack item that provides +30 Physical Attack, +20% Attack Speed, +10% Lifesteal. Its passive ability \"Dragon Scale\" Every 4 extra Physical Attack increases Hybrid Defense by 1, up to 50 (effect is halved if Main Role is not Fighter)."
+    },
+    {
+        "name":  "Sea Halberd",
+        "slug":  "sea-halberd",
+        "baseDescription":  "Sea Halberd is a Tier 3 Attack item that provides +80 Physical Attack, +20% Attack Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+80 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  80,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+20%",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Lifebane",
+        "passiveDescription":  "Dealing damage to a target will reduce the Shield and HP Regen effects on them to 60% of normal for 3s.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Sea Halberd is a Tier 3 Attack item that provides +80 Physical Attack, +20% Attack Speed. Its passive ability \"Lifebane\" Dealing damage to a target will reduce the Shield and HP Regen effects on them to 60% of normal for 3s."
+    },
+    {
+        "name":  "Silence Robe",
+        "slug":  "silence-robe",
+        "baseDescription":  "Silence Robe is a Tier 2 Defense item that provides +540 HP, +23 Magic Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+540 HP",
+                                   "sign":  "+",
+                                   "value":  540,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+23 Magic Defense",
+                                   "sign":  "+",
+                                   "value":  23,
+                                   "attribute":  "Magic Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Silence Robe is a Tier 2 Defense item that provides +540 HP, +23 Magic Defense."
+    },
+    {
+        "name":  "Sky Piercer",
+        "slug":  "sky-piercer",
+        "baseDescription":  "Sky Piercer is a Tier 3 Attack / Magic item that provides +15 Movement Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+15 Movement Speed",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "Movement Speed"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Lethality",
+        "passiveDescription":  "After dealing damage to an enemy hero, executes the hero if their HP is lower than 4%. Gains 10 stack(s) of Lethality for each kill and loses 30% of current stack(s) for each death. Each stack of Lethality increases the HP threshold of the execute effect by 0.1%, stacking up to 80 times.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Sky Piercer is a Tier 3 Attack / Magic item that provides +15 Movement Speed. Its passive ability \"Lethality\" After dealing damage to an enemy hero, executes the hero if their HP is lower than 4%. Gains 10 stack(s) of Lethality for each kill and loses 30% of current stack(s) for each death. Each stack of Lethality increases the HP threshold of the execute effect by 0.1%, stacking up to 80 times."
+    },
+    {
+        "name":  "Starlium Scythe",
+        "slug":  "starlium-scythe",
+        "baseDescription":  "Starlium Scythe is a Tier 3 Magic item that provides +75 Magic Power, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+75 Magic Power",
+                                   "sign":  "+",
+                                   "value":  75,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Crisis",
+        "passiveDescription":  "After casting a skill, the next Basic Attack within 3s deals 90 (+60% Total Magic Power) extra True Damage and reduces the target\u0027s Movement Speed by 15% for 1.5s (1.5s cooldown).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Starlium Scythe is a Tier 3 Magic item that provides +75 Magic Power, +10% Cooldown Reduction. Its passive ability \"Crisis\" After casting a skill, the next Basic Attack within 3s deals 90 (+60% Total Magic Power) extra True Damage and reduces the target\u0027s Movement Speed by 15% for 1.5s (1.5s cooldown)."
+    },
+    {
+        "name":  "Steel Legplates",
+        "slug":  "steel-legplates",
+        "baseDescription":  "Steel Legplates is a Tier 2 Defense item that provides +35 Physical Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+35 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  35,
+                                   "attribute":  "Physical Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Steel Legplates is a Tier 2 Defense item that provides +35 Physical Defense."
+    },
+    {
+        "name":  "Swift Boots",
+        "slug":  "swift-boots",
+        "baseDescription":  "Swift Boots is a Tier 3 Movement item that provides +15% Attack Speed, +40 Movement Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+15%",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "%"
+                               },
+                               {
+                                   "raw":  "+40 Movement Speed",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Movement Speed"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Swift Boots is a Tier 3 Movement item that provides +15% Attack Speed, +40 Movement Speed."
+    },
+    {
+        "name":  "Swift Crossbow",
+        "slug":  "swift-crossbow",
+        "baseDescription":  "Swift Crossbow is a Tier 2 Attack item that provides +20% Attack Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+20%",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Crossbow",
+        "passiveDescription":  "Each Basic Attack deals 40 extra Adaptive Damage.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Swift Crossbow is a Tier 2 Attack item that provides +20% Attack Speed. Its passive ability \"Crossbow\" Each Basic Attack deals 40 extra Adaptive Damage."
+    },
+    {
+        "name":  "Throw Forbidden",
+        "slug":  "throw-forbidden",
+        "baseDescription":  "Throw Forbidden is a Tier 1 Movement item that provides no base stats.",
+        "baseAttributes":  [
+
+                           ],
+        "hasBaseStats":  false,
+        "hasNoBaseStats":  true,
+        "passiveName":  "Heavy Mountain",
+        "passiveDescription":  "Become immune to allied Jawhead\u0027s Ejector in this match.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Throw Forbidden is a Tier 1 Movement item that provides no base stats. Its passive ability \"Heavy Mountain\" Become immune to allied Jawhead\u0027s Ejector in this match."
+    },
+    {
+        "name":  "Thunder Belt",
+        "slug":  "thunder-belt",
+        "baseDescription":  "Thunder Belt is a Tier 3 Defense item that provides +600 HP, +15 Physical Defense, +15 Magic Defense.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+600 HP",
+                                   "sign":  "+",
+                                   "value":  600,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+15 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "Physical Defense"
+                               },
+                               {
+                                   "raw":  "+15 Magic Defense",
+                                   "sign":  "+",
+                                   "value":  15,
+                                   "attribute":  "Magic Defense"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Thunderbolt",
+        "passiveDescription":  "Every 4s, the next Basic Attack deals 50 (+100% Extra Physical Defense)(100% Extra Magic Defense) extra True Damage to the target and enemies around them, and briefly slows them by 99%. Hybrid Defense permanently increases by 1 each time the attack hits an enemy hero.\nThis effect is reduced to 50% for Marksmen, Mages, and Assassins.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Thunder Belt is a Tier 3 Defense item that provides +600 HP, +15 Physical Defense, +15 Magic Defense. Its passive ability \"Thunderbolt\" Every 4s, the next Basic Attack deals 50 (+100% Extra Physical Defense)(100% Extra Magic Defense) extra True Damage to the target and enemies around them, and briefly slows them by 99%. Hybrid Defense permanently increases by 1 each time the attack hits an enemy hero.\nThis effect is reduced to 50% for Marksmen, Mages, and Assassins."
+    },
+    {
+        "name":  "Tome of Evil",
+        "slug":  "tome-of-evil",
+        "baseDescription":  "Tome of Evil is a Tier 2 Magic item that provides +30 Magic Power, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+30 Magic Power",
+                                   "sign":  "+",
+                                   "value":  30,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Tome of Evil is a Tier 2 Magic item that provides +30 Magic Power, +10% Cooldown Reduction."
+    },
+    {
+        "name":  "Tough Boots",
+        "slug":  "tough-boots",
+        "baseDescription":  "Tough Boots is a Tier 3 Movement item that provides +18 Magic Defense, +40 Movement Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+18 Magic Defense",
+                                   "sign":  "+",
+                                   "value":  18,
+                                   "attribute":  "Magic Defense"
+                               },
+                               {
+                                   "raw":  "+40 Movement Speed",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Movement Speed"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Fortitude",
+        "passiveDescription":  "CC and Slow Duration reduced by 25%.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Tough Boots is a Tier 3 Movement item that provides +18 Magic Defense, +40 Movement Speed. Its passive ability \"Fortitude\" CC and Slow Duration reduced by 25%."
+    },
+    {
+        "name":  "Vampire Mallet",
+        "slug":  "vampire-mallet",
+        "baseDescription":  "Vampire Mallet is a Tier 1 Attack item that provides +8 Physical Attack, +8% Lifesteal.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+8 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  8,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+8%",
+                                   "sign":  "+",
+                                   "value":  8,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Vampire Mallet is a Tier 1 Attack item that provides +8 Physical Attack, +8% Lifesteal."
+    },
+    {
+        "name":  "Vitality Crystal",
+        "slug":  "vitality-crystal",
+        "baseDescription":  "Vitality Crystal is a Tier 1 Defense item that provides +230 HP.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+230 HP",
+                                   "sign":  "+",
+                                   "value":  230,
+                                   "attribute":  "HP"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Vitality Crystal is a Tier 1 Defense item that provides +230 HP."
+    },
+    {
+        "name":  "War Axe",
+        "slug":  "war-axe",
+        "baseDescription":  "War Axe is a Tier 3 Attack item that provides +35 Physical Attack, +400 HP, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+35 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  35,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+400 HP",
+                                   "sign":  "+",
+                                   "value":  400,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Fighting Spirit",
+        "passiveDescription":  "Attacks grant 12 extra Physical Attack per second for 4s, up to 6 stacks. Deals extra 10% True Damage based on the damage dealt (no damage reduction counted) at full stacks.\nMarksmen, Mages, and Supports only receive 50% of these stacked effects.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "War Axe is a Tier 3 Attack item that provides +35 Physical Attack, +400 HP, +10% Cooldown Reduction. Its passive ability \"Fighting Spirit\" Attacks grant 12 extra Physical Attack per second for 4s, up to 6 stacks. Deals extra 10% True Damage based on the damage dealt (no damage reduction counted) at full stacks.\nMarksmen, Mages, and Supports only receive 50% of these stacked effects."
+    },
+    {
+        "name":  "Warrior Boots",
+        "slug":  "warrior-boots",
+        "baseDescription":  "Warrior Boots is a Tier 3 Movement item that provides +18 Physical Defense, +40 Movement Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+18 Physical Defense",
+                                   "sign":  "+",
+                                   "value":  18,
+                                   "attribute":  "Physical Defense"
+                               },
+                               {
+                                   "raw":  "+40 Movement Speed",
+                                   "sign":  "+",
+                                   "value":  40,
+                                   "attribute":  "Movement Speed"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Valor",
+        "passiveDescription":  "Gain 4 extra Physical Defense for 3s when taking Physical Damage, up to 20.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Warrior Boots is a Tier 3 Movement item that provides +18 Physical Defense, +40 Movement Speed. Its passive ability \"Valor\" Gain 4 extra Physical Defense for 3s when taking Physical Damage, up to 20."
+    },
+    {
+        "name":  "Wind of Nature",
+        "slug":  "wind-of-nature",
+        "baseDescription":  "Wind of Nature is a Tier 3 Attack item that provides +30 Physical Attack, +20% Attack Speed, +10% Lifesteal. Its active ability \"Wind Chant\" Become immune to all Physical Damage for 2s (duration is halved if Main Role is not Marksman; 90s cooldown).",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+30 Physical Attack",
+                                   "sign":  "+",
+                                   "value":  30,
+                                   "attribute":  "Physical Attack"
+                               },
+                               {
+                                   "raw":  "+20%",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "%"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Wind of Nature is a Tier 3 Attack item that provides +30 Physical Attack, +20% Attack Speed, +10% Lifesteal. Its active ability \"Wind Chant\" Become immune to all Physical Damage for 2s (duration is halved if Main Role is not Marksman; 90s cooldown)."
+    },
+    {
+        "name":  "Windtalker",
+        "slug":  "windtalker",
+        "baseDescription":  "Windtalker is a Tier 3 Attack item that provides +35% Attack Speed, +20% Crit Chance, +20 Movement Speed.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+35%",
+                                   "sign":  "+",
+                                   "value":  35,
+                                   "attribute":  "%"
+                               },
+                               {
+                                   "raw":  "+20%",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "%"
+                               },
+                               {
+                                   "raw":  "+20 Movement Speed",
+                                   "sign":  "+",
+                                   "value":  20,
+                                   "attribute":  "Movement Speed"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Typhoon",
+        "passiveDescription":  "Every 5-2s (reduced by 0.2s for each Basic Attack), the next Basic Attack will hit up to 3 enemy units for 150-362 Magic Damage. (This attack can Crit and the damage increases to 200% against Minions.).",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Windtalker is a Tier 3 Attack item that provides +35% Attack Speed, +20% Crit Chance, +20 Movement Speed. Its passive ability \"Typhoon\" Every 5-2s (reduced by 0.2s for each Basic Attack), the next Basic Attack will hit up to 3 enemy units for 150-362 Magic Damage. (This attack can Crit and the damage increases to 200% against Minions.)."
+    },
+    {
+        "name":  "Winter Crown",
+        "slug":  "winter-crown",
+        "baseDescription":  "Winter Crown is a Tier 3 Attack / Magic item that provides +400 HP, +5% Cooldown Reduction. Its active ability \"Frozen\" Becomes frozen, untargetable, and immune to damage for 2s (100s cooldown). Cannot move or cast skills while frozen, but skills already cast won\u0027t be interrupted.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+400 HP",
+                                   "sign":  "+",
+                                   "value":  400,
+                                   "attribute":  "HP"
+                               },
+                               {
+                                   "raw":  "+5%",
+                                   "sign":  "+",
+                                   "value":  5,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  null,
+        "passiveDescription":  null,
+        "hasPassive":  false,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Winter Crown is a Tier 3 Attack / Magic item that provides +400 HP, +5% Cooldown Reduction. Its active ability \"Frozen\" Becomes frozen, untargetable, and immune to damage for 2s (100s cooldown). Cannot move or cast skills while frozen, but skills already cast won\u0027t be interrupted."
+    },
+    {
+        "name":  "Wishing Lantern",
+        "slug":  "wishing-lantern",
+        "baseDescription":  "Wishing Lantern is a Tier 3 Magic item that provides +75 Magic Power, +10% Cooldown Reduction.",
+        "baseAttributes":  [
+                               {
+                                   "raw":  "+75 Magic Power",
+                                   "sign":  "+",
+                                   "value":  75,
+                                   "attribute":  "Magic Power"
+                               },
+                               {
+                                   "raw":  "+10%",
+                                   "sign":  "+",
+                                   "value":  10,
+                                   "attribute":  "%"
+                               }
+                           ],
+        "hasBaseStats":  true,
+        "hasNoBaseStats":  false,
+        "passiveName":  "Butterfly Goddess",
+        "passiveDescription":  "For every 900 Magic Damage dealt to an enemy hero (calculated before Damage Reduction), a Butterfly Goddess is summoned to attack the enemy hero, dealing Magic Damage equal to 8% of their current HP.",
+        "hasPassive":  true,
+        "roamingDescription":  null,
+        "hasRoamingEffect":  false,
+        "originalGameplay":  "Wishing Lantern is a Tier 3 Magic item that provides +75 Magic Power, +10% Cooldown Reduction. Its passive ability \"Butterfly Goddess\" For every 900 Magic Damage dealt to an enemy hero (calculated before Damage Reduction), a Butterfly Goddess is summoned to attack the enemy hero, dealing Magic Damage equal to 8% of their current HP."
+    }
+]

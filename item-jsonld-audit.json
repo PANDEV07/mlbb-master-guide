@@ -1,0 +1,834 @@
+[
+    {
+        "Name":  "Allow Throw",
+        "Slug":  "allow-throw",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Antique Cuirass",
+        "Slug":  "antique-cuirass",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Arcane Boots",
+        "Slug":  "arcane-boots",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Ares Belt",
+        "Slug":  "ares-belt",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Athena\u0027s Shield",
+        "Slug":  "athenas-shield",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Azure Blade",
+        "Slug":  "azure-blade",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Berserker\u0027s Fury",
+        "Slug":  "berserkers-fury",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Black Ice Shield",
+        "Slug":  "black-ice-shield",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Blade Armor",
+        "Slug":  "blade-armor",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Blade of Despair",
+        "Slug":  "blade-of-despair",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Blade of the Heptaseas",
+        "Slug":  "blade-of-the-heptaseas",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Blood Wings",
+        "Slug":  "blood-wings",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Bloody Retribution",
+        "Slug":  "bloody-retribution",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Book of Sages",
+        "Slug":  "book-of-sages",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Boots",
+        "Slug":  "boots",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Broken Heart",
+        "Slug":  "broken-heart",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Brute Force Breastplate",
+        "Slug":  "brute-force-breastplate",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Chastise Pauldron",
+        "Slug":  "chastise-pauldron",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Clock of Destiny",
+        "Slug":  "clock-of-destiny",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Conceal",
+        "Slug":  "conceal",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Concentrated Energy",
+        "Slug":  "concentrated-energy",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Corrosion Scythe",
+        "Slug":  "corrosion-scythe",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Cursed Helmet",
+        "Slug":  "cursed-helmet",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Dagger",
+        "Slug":  "dagger",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Demon Boots",
+        "Slug":  "demon-boots",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Demon Hunter Sword",
+        "Slug":  "demon-hunter-sword",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Dire Hit",
+        "Slug":  "dire-hit",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Divine Glaive",
+        "Slug":  "divine-glaive",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Dominance Ice",
+        "Slug":  "dominance-ice",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Dreadnaught Armor",
+        "Slug":  "dreadnaught-armor",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Elegant Gem",
+        "Slug":  "elegant-gem",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Enchanted Talisman",
+        "Slug":  "enchanted-talisman",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Encourage",
+        "Slug":  "encourage",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Endless Battle",
+        "Slug":  "endless-battle",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Exotic Veil",
+        "Slug":  "exotic-veil",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Expert Gloves",
+        "Slug":  "expert-gloves",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Favor",
+        "Slug":  "favor",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Feather of Heaven",
+        "Slug":  "feather-of-heaven",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Flame Retribution",
+        "Slug":  "flame-retribution",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Flask of the Oasis",
+        "Slug":  "flask-of-the-oasis",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Fleeting Time",
+        "Slug":  "fleeting-time",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Flower of Hope",
+        "Slug":  "flower-of-hope",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Fury Hammer",
+        "Slug":  "fury-hammer",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Genius Wand",
+        "Slug":  "genius-wand",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Glowing Wand",
+        "Slug":  "glowing-wand",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Golden Staff",
+        "Slug":  "golden-staff",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Great Dragon Spear",
+        "Slug":  "great-dragon-spear",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Guardian Helmet",
+        "Slug":  "guardian-helmet",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Haas\u0027s Claws",
+        "Slug":  "haass-claws",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Healing Necklace",
+        "Slug":  "healing-necklace",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Hero\u0027s Ring",
+        "Slug":  "heros-ring",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Holy Crystal",
+        "Slug":  "holy-crystal",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Hunter Strike",
+        "Slug":  "hunter-strike",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Ice Queen Wand",
+        "Slug":  "ice-queen-wand",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Ice Retribution",
+        "Slug":  "ice-retribution",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Immortality",
+        "Slug":  "immortality",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Iron Hunting Bow",
+        "Slug":  "iron-hunting-bow",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Javelin",
+        "Slug":  "javelin",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Knife",
+        "Slug":  "knife",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Lantern of Hope",
+        "Slug":  "lantern-of-hope",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Leather Jerkin",
+        "Slug":  "leather-jerkin",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Legion Sword",
+        "Slug":  "legion-sword",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Lightning Truncheon",
+        "Slug":  "lightning-truncheon",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Blade",
+        "Slug":  "magic-blade",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Boots",
+        "Slug":  "magic-boots",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Necklace",
+        "Slug":  "magic-necklace",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Potion",
+        "Slug":  "magic-potion",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Resist Cloak",
+        "Slug":  "magic-resist-cloak",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Wand",
+        "Slug":  "magic-wand",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Malefic Gun",
+        "Slug":  "malefic-gun",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Malefic Roar",
+        "Slug":  "malefic-roar",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Molten Essence",
+        "Slug":  "molten-essence",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Mystery Codex",
+        "Slug":  "mystery-codex",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Mystic Container",
+        "Slug":  "mystic-container",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Ogre Tomahawk",
+        "Slug":  "ogre-tomahawk",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Oracle",
+        "Slug":  "oracle",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Power Crystal",
+        "Slug":  "power-crystal",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Power Potion",
+        "Slug":  "power-potion",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Queen\u0027s Wings",
+        "Slug":  "queens-wings",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Radiant Armor",
+        "Slug":  "radiant-armor",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Rapid Boots",
+        "Slug":  "rapid-boots",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Regular Spear",
+        "Slug":  "regular-spear",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Rock Potion",
+        "Slug":  "rock-potion",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Rogue Meteor",
+        "Slug":  "rogue-meteor",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Rose Gold Meteor",
+        "Slug":  "rose-gold-meteor",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Sea Halberd",
+        "Slug":  "sea-halberd",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Silence Robe",
+        "Slug":  "silence-robe",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Sky Piercer",
+        "Slug":  "sky-piercer",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Starlium Scythe",
+        "Slug":  "starlium-scythe",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Steel Legplates",
+        "Slug":  "steel-legplates",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Swift Boots",
+        "Slug":  "swift-boots",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Swift Crossbow",
+        "Slug":  "swift-crossbow",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Throw Forbidden",
+        "Slug":  "throw-forbidden",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Thunder Belt",
+        "Slug":  "thunder-belt",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Tome of Evil",
+        "Slug":  "tome-of-evil",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Tough Boots",
+        "Slug":  "tough-boots",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Vampire Mallet",
+        "Slug":  "vampire-mallet",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Vitality Crystal",
+        "Slug":  "vitality-crystal",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "War Axe",
+        "Slug":  "war-axe",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Warrior Boots",
+        "Slug":  "warrior-boots",
+        "FAQ":  true,
+        "FAQCount":  5,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Wind of Nature",
+        "Slug":  "wind-of-nature",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Windtalker",
+        "Slug":  "windtalker",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Winter Crown",
+        "Slug":  "winter-crown",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Wishing Lantern",
+        "Slug":  "wishing-lantern",
+        "FAQ":  true,
+        "FAQCount":  4,
+        "Article":  true,
+        "Status":  "EXTRACTED"
+    }
+]

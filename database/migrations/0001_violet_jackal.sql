@@ -1,0 +1,1 @@
+CREATE TYPE "public"."entity_type_enum" AS ENUM('hero', 'item', 'emblem', 'spell', 'skill');

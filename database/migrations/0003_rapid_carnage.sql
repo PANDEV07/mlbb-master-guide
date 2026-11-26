@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX "uq_knowledge_entities_id_type" ON "knowledge_entities" USING btree ("entity_id","entity_type");

@@ -1,0 +1,626 @@
+[
+    {
+        "Name":  "Allow Throw",
+        "Slug":  "allow-throw",
+        "IconUrl":  "https://mlbbhub.com/images/items/allow-throw.png",
+        "SourceUrl":  "https://mlbbhub.com/items/allow-throw"
+    },
+    {
+        "Name":  "Antique Cuirass",
+        "Slug":  "antique-cuirass",
+        "IconUrl":  "https://mlbbhub.com/images/items/antique-cuirass.png",
+        "SourceUrl":  "https://mlbbhub.com/items/antique-cuirass"
+    },
+    {
+        "Name":  "Arcane Boots",
+        "Slug":  "arcane-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/arcane-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/arcane-boots"
+    },
+    {
+        "Name":  "Ares Belt",
+        "Slug":  "ares-belt",
+        "IconUrl":  "https://mlbbhub.com/images/items/ares-belt.png",
+        "SourceUrl":  "https://mlbbhub.com/items/ares-belt"
+    },
+    {
+        "Name":  "Athena\u0027s Shield",
+        "Slug":  "athenas-shield",
+        "IconUrl":  "https://mlbbhub.com/images/items/athenas-shield.png",
+        "SourceUrl":  "https://mlbbhub.com/items/athenas-shield"
+    },
+    {
+        "Name":  "Azure Blade",
+        "Slug":  "azure-blade",
+        "IconUrl":  "https://mlbbhub.com/images/items/azure-blade.png",
+        "SourceUrl":  "https://mlbbhub.com/items/azure-blade"
+    },
+    {
+        "Name":  "Berserker\u0027s Fury",
+        "Slug":  "berserkers-fury",
+        "IconUrl":  "https://mlbbhub.com/images/items/berserkers-fury.png",
+        "SourceUrl":  "https://mlbbhub.com/items/berserkers-fury"
+    },
+    {
+        "Name":  "Black Ice Shield",
+        "Slug":  "black-ice-shield",
+        "IconUrl":  "https://mlbbhub.com/images/items/black-ice-shield.png",
+        "SourceUrl":  "https://mlbbhub.com/items/black-ice-shield"
+    },
+    {
+        "Name":  "Blade Armor",
+        "Slug":  "blade-armor",
+        "IconUrl":  "https://mlbbhub.com/images/items/blade-armor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/blade-armor"
+    },
+    {
+        "Name":  "Blade of Despair",
+        "Slug":  "blade-of-despair",
+        "IconUrl":  "https://mlbbhub.com/images/items/blade-of-despair.png",
+        "SourceUrl":  "https://mlbbhub.com/items/blade-of-despair"
+    },
+    {
+        "Name":  "Blade of the Heptaseas",
+        "Slug":  "blade-of-the-heptaseas",
+        "IconUrl":  "https://mlbbhub.com/images/items/blade-of-the-heptaseas.png",
+        "SourceUrl":  "https://mlbbhub.com/items/blade-of-the-heptaseas"
+    },
+    {
+        "Name":  "Blood Wings",
+        "Slug":  "blood-wings",
+        "IconUrl":  "https://mlbbhub.com/images/items/blood-wings.png",
+        "SourceUrl":  "https://mlbbhub.com/items/blood-wings"
+    },
+    {
+        "Name":  "Bloody Retribution",
+        "Slug":  "bloody-retribution",
+        "IconUrl":  "https://mlbbhub.com/images/items/bloody-retribution.png",
+        "SourceUrl":  "https://mlbbhub.com/items/bloody-retribution"
+    },
+    {
+        "Name":  "Book of Sages",
+        "Slug":  "book-of-sages",
+        "IconUrl":  "https://mlbbhub.com/images/items/book-of-sages.png",
+        "SourceUrl":  "https://mlbbhub.com/items/book-of-sages"
+    },
+    {
+        "Name":  "Boots",
+        "Slug":  "boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/boots"
+    },
+    {
+        "Name":  "Broken Heart",
+        "Slug":  "broken-heart",
+        "IconUrl":  "https://mlbbhub.com/images/items/broken-heart.png",
+        "SourceUrl":  "https://mlbbhub.com/items/broken-heart"
+    },
+    {
+        "Name":  "Brute Force Breastplate",
+        "Slug":  "brute-force-breastplate",
+        "IconUrl":  "https://mlbbhub.com/images/items/brute-force-breastplate.png",
+        "SourceUrl":  "https://mlbbhub.com/items/brute-force-breastplate"
+    },
+    {
+        "Name":  "Chastise Pauldron",
+        "Slug":  "chastise-pauldron",
+        "IconUrl":  "https://mlbbhub.com/images/items/chastise-pauldron.png",
+        "SourceUrl":  "https://mlbbhub.com/items/chastise-pauldron"
+    },
+    {
+        "Name":  "Clock of Destiny",
+        "Slug":  "clock-of-destiny",
+        "IconUrl":  "https://mlbbhub.com/images/items/clock-of-destiny.png",
+        "SourceUrl":  "https://mlbbhub.com/items/clock-of-destiny"
+    },
+    {
+        "Name":  "Conceal",
+        "Slug":  "conceal",
+        "IconUrl":  "https://mlbbhub.com/images/items/conceal.png",
+        "SourceUrl":  "https://mlbbhub.com/items/conceal"
+    },
+    {
+        "Name":  "Concentrated Energy",
+        "Slug":  "concentrated-energy",
+        "IconUrl":  "https://mlbbhub.com/images/items/concentrated-energy.png",
+        "SourceUrl":  "https://mlbbhub.com/items/concentrated-energy"
+    },
+    {
+        "Name":  "Corrosion Scythe",
+        "Slug":  "corrosion-scythe",
+        "IconUrl":  "https://mlbbhub.com/images/items/corrosion-scythe.png",
+        "SourceUrl":  "https://mlbbhub.com/items/corrosion-scythe"
+    },
+    {
+        "Name":  "Cursed Helmet",
+        "Slug":  "cursed-helmet",
+        "IconUrl":  "https://mlbbhub.com/images/items/cursed-helmet.png",
+        "SourceUrl":  "https://mlbbhub.com/items/cursed-helmet"
+    },
+    {
+        "Name":  "Dagger",
+        "Slug":  "dagger",
+        "IconUrl":  "https://mlbbhub.com/images/items/dagger.png",
+        "SourceUrl":  "https://mlbbhub.com/items/dagger"
+    },
+    {
+        "Name":  "Demon Boots",
+        "Slug":  "demon-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/demon-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/demon-boots"
+    },
+    {
+        "Name":  "Demon Hunter Sword",
+        "Slug":  "demon-hunter-sword",
+        "IconUrl":  "https://mlbbhub.com/images/items/demon-hunter-sword.png",
+        "SourceUrl":  "https://mlbbhub.com/items/demon-hunter-sword"
+    },
+    {
+        "Name":  "Dire Hit",
+        "Slug":  "dire-hit",
+        "IconUrl":  "https://mlbbhub.com/images/items/dire-hit.png",
+        "SourceUrl":  "https://mlbbhub.com/items/dire-hit"
+    },
+    {
+        "Name":  "Divine Glaive",
+        "Slug":  "divine-glaive",
+        "IconUrl":  "https://mlbbhub.com/images/items/divine-glaive.png",
+        "SourceUrl":  "https://mlbbhub.com/items/divine-glaive"
+    },
+    {
+        "Name":  "Dominance Ice",
+        "Slug":  "dominance-ice",
+        "IconUrl":  "https://mlbbhub.com/images/items/dominance-ice.png",
+        "SourceUrl":  "https://mlbbhub.com/items/dominance-ice"
+    },
+    {
+        "Name":  "Dreadnaught Armor",
+        "Slug":  "dreadnaught-armor",
+        "IconUrl":  "https://mlbbhub.com/images/items/dreadnaught-armor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/dreadnaught-armor"
+    },
+    {
+        "Name":  "Elegant Gem",
+        "Slug":  "elegant-gem",
+        "IconUrl":  "https://mlbbhub.com/images/items/elegant-gem.png",
+        "SourceUrl":  "https://mlbbhub.com/items/elegant-gem"
+    },
+    {
+        "Name":  "Enchanted Talisman",
+        "Slug":  "enchanted-talisman",
+        "IconUrl":  "https://mlbbhub.com/images/items/enchanted-talisman.png",
+        "SourceUrl":  "https://mlbbhub.com/items/enchanted-talisman"
+    },
+    {
+        "Name":  "Encourage",
+        "Slug":  "encourage",
+        "IconUrl":  "https://mlbbhub.com/images/items/encourage.png",
+        "SourceUrl":  "https://mlbbhub.com/items/encourage"
+    },
+    {
+        "Name":  "Endless Battle",
+        "Slug":  "endless-battle",
+        "IconUrl":  "https://mlbbhub.com/images/items/endless-battle.png",
+        "SourceUrl":  "https://mlbbhub.com/items/endless-battle"
+    },
+    {
+        "Name":  "Exotic Veil",
+        "Slug":  "exotic-veil",
+        "IconUrl":  "https://mlbbhub.com/images/items/exotic-veil.png",
+        "SourceUrl":  "https://mlbbhub.com/items/exotic-veil"
+    },
+    {
+        "Name":  "Expert Gloves",
+        "Slug":  "expert-gloves",
+        "IconUrl":  "https://mlbbhub.com/images/items/expert-gloves.png",
+        "SourceUrl":  "https://mlbbhub.com/items/expert-gloves"
+    },
+    {
+        "Name":  "Favor",
+        "Slug":  "favor",
+        "IconUrl":  "https://mlbbhub.com/images/items/favor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/favor"
+    },
+    {
+        "Name":  "Feather of Heaven",
+        "Slug":  "feather-of-heaven",
+        "IconUrl":  "https://mlbbhub.com/images/items/feather-of-heaven.png",
+        "SourceUrl":  "https://mlbbhub.com/items/feather-of-heaven"
+    },
+    {
+        "Name":  "Flame Retribution",
+        "Slug":  "flame-retribution",
+        "IconUrl":  "https://mlbbhub.com/images/items/flame-retribution.png",
+        "SourceUrl":  "https://mlbbhub.com/items/flame-retribution"
+    },
+    {
+        "Name":  "Flask of the Oasis",
+        "Slug":  "flask-of-the-oasis",
+        "IconUrl":  "https://mlbbhub.com/images/items/flask-of-the-oasis.png",
+        "SourceUrl":  "https://mlbbhub.com/items/flask-of-the-oasis"
+    },
+    {
+        "Name":  "Fleeting Time",
+        "Slug":  "fleeting-time",
+        "IconUrl":  "https://mlbbhub.com/images/items/fleeting-time.png",
+        "SourceUrl":  "https://mlbbhub.com/items/fleeting-time"
+    },
+    {
+        "Name":  "Flower of Hope",
+        "Slug":  "flower-of-hope",
+        "IconUrl":  "https://mlbbhub.com/images/items/flower-of-hope.png",
+        "SourceUrl":  "https://mlbbhub.com/items/flower-of-hope"
+    },
+    {
+        "Name":  "Fury Hammer",
+        "Slug":  "fury-hammer",
+        "IconUrl":  "https://mlbbhub.com/images/items/fury-hammer.png",
+        "SourceUrl":  "https://mlbbhub.com/items/fury-hammer"
+    },
+    {
+        "Name":  "Genius Wand",
+        "Slug":  "genius-wand",
+        "IconUrl":  "https://mlbbhub.com/images/items/genius-wand.png",
+        "SourceUrl":  "https://mlbbhub.com/items/genius-wand"
+    },
+    {
+        "Name":  "Glowing Wand",
+        "Slug":  "glowing-wand",
+        "IconUrl":  "https://mlbbhub.com/images/items/glowing-wand.png",
+        "SourceUrl":  "https://mlbbhub.com/items/glowing-wand"
+    },
+    {
+        "Name":  "Golden Staff",
+        "Slug":  "golden-staff",
+        "IconUrl":  "https://mlbbhub.com/images/items/golden-staff.png",
+        "SourceUrl":  "https://mlbbhub.com/items/golden-staff"
+    },
+    {
+        "Name":  "Great Dragon Spear",
+        "Slug":  "great-dragon-spear",
+        "IconUrl":  "https://mlbbhub.com/images/items/great-dragon-spear.png",
+        "SourceUrl":  "https://mlbbhub.com/items/great-dragon-spear"
+    },
+    {
+        "Name":  "Guardian Helmet",
+        "Slug":  "guardian-helmet",
+        "IconUrl":  "https://mlbbhub.com/images/items/guardian-helmet.png",
+        "SourceUrl":  "https://mlbbhub.com/items/guardian-helmet"
+    },
+    {
+        "Name":  "Haas\u0027s Claws",
+        "Slug":  "haass-claws",
+        "IconUrl":  "https://mlbbhub.com/images/items/haass-claws.png",
+        "SourceUrl":  "https://mlbbhub.com/items/haass-claws"
+    },
+    {
+        "Name":  "Healing Necklace",
+        "Slug":  "healing-necklace",
+        "IconUrl":  "https://mlbbhub.com/images/items/healing-necklace.png",
+        "SourceUrl":  "https://mlbbhub.com/items/healing-necklace"
+    },
+    {
+        "Name":  "Hero\u0027s Ring",
+        "Slug":  "heros-ring",
+        "IconUrl":  "https://mlbbhub.com/images/items/heros-ring.png",
+        "SourceUrl":  "https://mlbbhub.com/items/heros-ring"
+    },
+    {
+        "Name":  "Holy Crystal",
+        "Slug":  "holy-crystal",
+        "IconUrl":  "https://mlbbhub.com/images/items/holy-crystal.png",
+        "SourceUrl":  "https://mlbbhub.com/items/holy-crystal"
+    },
+    {
+        "Name":  "Hunter Strike",
+        "Slug":  "hunter-strike",
+        "IconUrl":  "https://mlbbhub.com/images/items/hunter-strike.png",
+        "SourceUrl":  "https://mlbbhub.com/items/hunter-strike"
+    },
+    {
+        "Name":  "Ice Queen Wand",
+        "Slug":  "ice-queen-wand",
+        "IconUrl":  "https://mlbbhub.com/images/items/ice-queen-wand.png",
+        "SourceUrl":  "https://mlbbhub.com/items/ice-queen-wand"
+    },
+    {
+        "Name":  "Ice Retribution",
+        "Slug":  "ice-retribution",
+        "IconUrl":  "https://mlbbhub.com/images/items/ice-retribution.png",
+        "SourceUrl":  "https://mlbbhub.com/items/ice-retribution"
+    },
+    {
+        "Name":  "Immortality",
+        "Slug":  "immortality",
+        "IconUrl":  "https://mlbbhub.com/images/items/immortality.png",
+        "SourceUrl":  "https://mlbbhub.com/items/immortality"
+    },
+    {
+        "Name":  "Iron Hunting Bow",
+        "Slug":  "iron-hunting-bow",
+        "IconUrl":  "https://mlbbhub.com/images/items/iron-hunting-bow.png",
+        "SourceUrl":  "https://mlbbhub.com/items/iron-hunting-bow"
+    },
+    {
+        "Name":  "Javelin",
+        "Slug":  "javelin",
+        "IconUrl":  "https://mlbbhub.com/images/items/javelin.png",
+        "SourceUrl":  "https://mlbbhub.com/items/javelin"
+    },
+    {
+        "Name":  "Knife",
+        "Slug":  "knife",
+        "IconUrl":  "https://mlbbhub.com/images/items/knife.png",
+        "SourceUrl":  "https://mlbbhub.com/items/knife"
+    },
+    {
+        "Name":  "Lantern of Hope",
+        "Slug":  "lantern-of-hope",
+        "IconUrl":  "https://mlbbhub.com/images/items/lantern-of-hope.png",
+        "SourceUrl":  "https://mlbbhub.com/items/lantern-of-hope"
+    },
+    {
+        "Name":  "Leather Jerkin",
+        "Slug":  "leather-jerkin",
+        "IconUrl":  "https://mlbbhub.com/images/items/leather-jerkin.png",
+        "SourceUrl":  "https://mlbbhub.com/items/leather-jerkin"
+    },
+    {
+        "Name":  "Legion Sword",
+        "Slug":  "legion-sword",
+        "IconUrl":  "https://mlbbhub.com/images/items/legion-sword.png",
+        "SourceUrl":  "https://mlbbhub.com/items/legion-sword"
+    },
+    {
+        "Name":  "Lightning Truncheon",
+        "Slug":  "lightning-truncheon",
+        "IconUrl":  "https://mlbbhub.com/images/items/lightning-truncheon.png",
+        "SourceUrl":  "https://mlbbhub.com/items/lightning-truncheon"
+    },
+    {
+        "Name":  "Magic Blade",
+        "Slug":  "magic-blade",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-blade.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-blade"
+    },
+    {
+        "Name":  "Magic Boots",
+        "Slug":  "magic-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-boots"
+    },
+    {
+        "Name":  "Magic Necklace",
+        "Slug":  "magic-necklace",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-necklace.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-necklace"
+    },
+    {
+        "Name":  "Magic Potion",
+        "Slug":  "magic-potion",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-potion.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-potion"
+    },
+    {
+        "Name":  "Magic Resist Cloak",
+        "Slug":  "magic-resist-cloak",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-resist-cloak.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-resist-cloak"
+    },
+    {
+        "Name":  "Magic Wand",
+        "Slug":  "magic-wand",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-wand.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-wand"
+    },
+    {
+        "Name":  "Malefic Gun",
+        "Slug":  "malefic-gun",
+        "IconUrl":  "https://mlbbhub.com/images/items/malefic-gun.png",
+        "SourceUrl":  "https://mlbbhub.com/items/malefic-gun"
+    },
+    {
+        "Name":  "Malefic Roar",
+        "Slug":  "malefic-roar",
+        "IconUrl":  "https://mlbbhub.com/images/items/malefic-roar.png",
+        "SourceUrl":  "https://mlbbhub.com/items/malefic-roar"
+    },
+    {
+        "Name":  "Molten Essence",
+        "Slug":  "molten-essence",
+        "IconUrl":  "https://mlbbhub.com/images/items/molten-essence.png",
+        "SourceUrl":  "https://mlbbhub.com/items/molten-essence"
+    },
+    {
+        "Name":  "Mystery Codex",
+        "Slug":  "mystery-codex",
+        "IconUrl":  "https://mlbbhub.com/images/items/mystery-codex.png",
+        "SourceUrl":  "https://mlbbhub.com/items/mystery-codex"
+    },
+    {
+        "Name":  "Mystic Container",
+        "Slug":  "mystic-container",
+        "IconUrl":  "https://mlbbhub.com/images/items/mystic-container.png",
+        "SourceUrl":  "https://mlbbhub.com/items/mystic-container"
+    },
+    {
+        "Name":  "Ogre Tomahawk",
+        "Slug":  "ogre-tomahawk",
+        "IconUrl":  "https://mlbbhub.com/images/items/ogre-tomahawk.png",
+        "SourceUrl":  "https://mlbbhub.com/items/ogre-tomahawk"
+    },
+    {
+        "Name":  "Oracle",
+        "Slug":  "oracle",
+        "IconUrl":  "https://mlbbhub.com/images/items/oracle.png",
+        "SourceUrl":  "https://mlbbhub.com/items/oracle"
+    },
+    {
+        "Name":  "Power Crystal",
+        "Slug":  "power-crystal",
+        "IconUrl":  "https://mlbbhub.com/images/items/power-crystal.png",
+        "SourceUrl":  "https://mlbbhub.com/items/power-crystal"
+    },
+    {
+        "Name":  "Power Potion",
+        "Slug":  "power-potion",
+        "IconUrl":  "https://mlbbhub.com/images/items/power-potion.png",
+        "SourceUrl":  "https://mlbbhub.com/items/power-potion"
+    },
+    {
+        "Name":  "Queen\u0027s Wings",
+        "Slug":  "queens-wings",
+        "IconUrl":  "https://mlbbhub.com/images/items/queens-wings.png",
+        "SourceUrl":  "https://mlbbhub.com/items/queens-wings"
+    },
+    {
+        "Name":  "Radiant Armor",
+        "Slug":  "radiant-armor",
+        "IconUrl":  "https://mlbbhub.com/images/items/radiant-armor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/radiant-armor"
+    },
+    {
+        "Name":  "Rapid Boots",
+        "Slug":  "rapid-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/rapid-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/rapid-boots"
+    },
+    {
+        "Name":  "Regular Spear",
+        "Slug":  "regular-spear",
+        "IconUrl":  "https://mlbbhub.com/images/items/regular-spear.png",
+        "SourceUrl":  "https://mlbbhub.com/items/regular-spear"
+    },
+    {
+        "Name":  "Rock Potion",
+        "Slug":  "rock-potion",
+        "IconUrl":  "https://mlbbhub.com/images/items/rock-potion.png",
+        "SourceUrl":  "https://mlbbhub.com/items/rock-potion"
+    },
+    {
+        "Name":  "Rogue Meteor",
+        "Slug":  "rogue-meteor",
+        "IconUrl":  "https://mlbbhub.com/images/items/rogue-meteor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/rogue-meteor"
+    },
+    {
+        "Name":  "Rose Gold Meteor",
+        "Slug":  "rose-gold-meteor",
+        "IconUrl":  "https://mlbbhub.com/images/items/rose-gold-meteor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/rose-gold-meteor"
+    },
+    {
+        "Name":  "Sea Halberd",
+        "Slug":  "sea-halberd",
+        "IconUrl":  "https://mlbbhub.com/images/items/sea-halberd.png",
+        "SourceUrl":  "https://mlbbhub.com/items/sea-halberd"
+    },
+    {
+        "Name":  "Silence Robe",
+        "Slug":  "silence-robe",
+        "IconUrl":  "https://mlbbhub.com/images/items/silence-robe.png",
+        "SourceUrl":  "https://mlbbhub.com/items/silence-robe"
+    },
+    {
+        "Name":  "Sky Piercer",
+        "Slug":  "sky-piercer",
+        "IconUrl":  "https://mlbbhub.com/images/items/sky-piercer.png",
+        "SourceUrl":  "https://mlbbhub.com/items/sky-piercer"
+    },
+    {
+        "Name":  "Starlium Scythe",
+        "Slug":  "starlium-scythe",
+        "IconUrl":  "https://mlbbhub.com/images/items/starlium-scythe.png",
+        "SourceUrl":  "https://mlbbhub.com/items/starlium-scythe"
+    },
+    {
+        "Name":  "Steel Legplates",
+        "Slug":  "steel-legplates",
+        "IconUrl":  "https://mlbbhub.com/images/items/steel-legplates.png",
+        "SourceUrl":  "https://mlbbhub.com/items/steel-legplates"
+    },
+    {
+        "Name":  "Swift Boots",
+        "Slug":  "swift-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/swift-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/swift-boots"
+    },
+    {
+        "Name":  "Swift Crossbow",
+        "Slug":  "swift-crossbow",
+        "IconUrl":  "https://mlbbhub.com/images/items/swift-crossbow.png",
+        "SourceUrl":  "https://mlbbhub.com/items/swift-crossbow"
+    },
+    {
+        "Name":  "Throw Forbidden",
+        "Slug":  "throw-forbidden",
+        "IconUrl":  "https://mlbbhub.com/images/items/throw-forbidden.png",
+        "SourceUrl":  "https://mlbbhub.com/items/throw-forbidden"
+    },
+    {
+        "Name":  "Thunder Belt",
+        "Slug":  "thunder-belt",
+        "IconUrl":  "https://mlbbhub.com/images/items/thunder-belt.png",
+        "SourceUrl":  "https://mlbbhub.com/items/thunder-belt"
+    },
+    {
+        "Name":  "Tome of Evil",
+        "Slug":  "tome-of-evil",
+        "IconUrl":  "https://mlbbhub.com/images/items/tome-of-evil.png",
+        "SourceUrl":  "https://mlbbhub.com/items/tome-of-evil"
+    },
+    {
+        "Name":  "Tough Boots",
+        "Slug":  "tough-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/tough-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/tough-boots"
+    },
+    {
+        "Name":  "Vampire Mallet",
+        "Slug":  "vampire-mallet",
+        "IconUrl":  "https://mlbbhub.com/images/items/vampire-mallet.png",
+        "SourceUrl":  "https://mlbbhub.com/items/vampire-mallet"
+    },
+    {
+        "Name":  "Vitality Crystal",
+        "Slug":  "vitality-crystal",
+        "IconUrl":  "https://mlbbhub.com/images/items/vitality-crystal.png",
+        "SourceUrl":  "https://mlbbhub.com/items/vitality-crystal"
+    },
+    {
+        "Name":  "War Axe",
+        "Slug":  "war-axe",
+        "IconUrl":  "https://mlbbhub.com/images/items/war-axe.png",
+        "SourceUrl":  "https://mlbbhub.com/items/war-axe"
+    },
+    {
+        "Name":  "Warrior Boots",
+        "Slug":  "warrior-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/warrior-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/warrior-boots"
+    },
+    {
+        "Name":  "Wind of Nature",
+        "Slug":  "wind-of-nature",
+        "IconUrl":  "https://mlbbhub.com/images/items/wind-of-nature.png",
+        "SourceUrl":  "https://mlbbhub.com/items/wind-of-nature"
+    },
+    {
+        "Name":  "Windtalker",
+        "Slug":  "windtalker",
+        "IconUrl":  "https://mlbbhub.com/images/items/windtalker.png",
+        "SourceUrl":  "https://mlbbhub.com/items/windtalker"
+    },
+    {
+        "Name":  "Winter Crown",
+        "Slug":  "winter-crown",
+        "IconUrl":  "https://mlbbhub.com/images/items/winter-crown.png",
+        "SourceUrl":  "https://mlbbhub.com/items/winter-crown"
+    },
+    {
+        "Name":  "Wishing Lantern",
+        "Slug":  "wishing-lantern",
+        "IconUrl":  "https://mlbbhub.com/images/items/wishing-lantern.png",
+        "SourceUrl":  "https://mlbbhub.com/items/wishing-lantern"
+    }
+]

@@ -1,0 +1,2215 @@
+[
+  {
+    "heroName": "Hirara",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Invincible",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Aulus",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Marcel",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "CC",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Eudora",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage"
+    ]
+  },
+  {
+    "heroName": "Sora",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Damage",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Obsidia",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Zetian",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE"
+    ],
+    "apiTags": [
+      "AOE",
+      "CC",
+      "Debuff",
+      "Shield",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Kalea",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Lukas",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Morph"
+    ]
+  },
+  {
+    "heroName": "Suyou",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Debuff",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Zhuxin",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Shield"
+    ]
+  },
+  {
+    "heroName": "Chip",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "CC",
+      "Heal",
+      "Speed Up",
+      "Teleport"
+    ]
+  },
+  {
+    "heroName": "Cici",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Nolan",
+    "mechanicCategories": [
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Burst",
+      "Damage",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Ixia",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Burst",
+      "CC",
+      "Damage",
+      "Heal"
+    ]
+  },
+  {
+    "heroName": "Arlott",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Damage",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Novaria",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Joy",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "Damage",
+      "Mobility",
+      "Speed Up",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Fredrinn",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Heal",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Julian",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "UTILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Conceal",
+      "Damage",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Xavier",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Melissa",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Debuff",
+      "Mobility",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Yin",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Floryn",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Damage",
+      "Heal"
+    ]
+  },
+  {
+    "heroName": "Edith",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Charge",
+      "Morph"
+    ]
+  },
+  {
+    "heroName": "Valentina",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Damage",
+      "Heal",
+      "Mobility",
+      "Morph",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Aamon",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "Damage"
+    ]
+  },
+  {
+    "heroName": "Natan",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Phoveus",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Beatrix",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Mobility",
+      "Morph",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Gloo",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SUSTAIN",
+      "UTILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Attach",
+      "Buff",
+      "CC",
+      "Heal",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Paquito",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Shield"
+    ]
+  },
+  {
+    "heroName": "Mathilda",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Burst",
+      "Damage",
+      "Mobility",
+      "Shield",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Yve",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Shield",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Brody",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Barats",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Khaleed",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "CC",
+      "Damage",
+      "Heal",
+      "Mobility",
+      "Reduce DMG",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Benedetta",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Damage",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Luo Yi",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Burst",
+      "CC",
+      "Slow",
+      "Teleport"
+    ]
+  },
+  {
+    "heroName": "Yu Zhong",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Mobility",
+      "Morph",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Popol and Kupa",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Shield",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Atlas",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Debuff",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Carmilla",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Damage",
+      "Debuff",
+      "Heal",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Cecilion",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Shield",
+      "Slow",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Silvanna",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Debuff",
+      "Mobility",
+      "Shield"
+    ]
+  },
+  {
+    "heroName": "Wanwan",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "UTILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility",
+      "Remove CC"
+    ]
+  },
+  {
+    "heroName": "Masha",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Baxia",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Damage",
+      "Debuff",
+      "Slow",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Lylia",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Heal",
+      "Slow",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Dyrroth",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Damage",
+      "Heal",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Ling",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "X.Borg",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Terizla",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Slow",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Esmeralda",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Mobility",
+      "Shield"
+    ]
+  },
+  {
+    "heroName": "Guinevere",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Granger",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "Damage",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Khufra",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Damage",
+      "Heal",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Badang",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Burst",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Faramis",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Death Immunity"
+    ]
+  },
+  {
+    "heroName": "Kadita",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Burst",
+      "CC",
+      "Heal",
+      "Invincible",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Minsitthar",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Damage",
+      "Reduce DMG",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Harith",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Thamuz",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Debuff",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Kimmy",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Damage",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Belerick",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Heal",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Hanzo",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Morph",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Lunox",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Damage",
+      "Heal",
+      "Invincible",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Leomord",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Mobility",
+      "Morph",
+      "Slow",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Vale",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Claude",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Mobility",
+      "Shield",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Aldous",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Shield"
+    ]
+  },
+  {
+    "heroName": "Selena",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility",
+      "Morph",
+      "Shield",
+      "Slow",
+      "Speed Up",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Kaja",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "CC",
+      "Debuff",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Chang'e",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Debuff",
+      "Shield",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Hanabi",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Shield"
+    ]
+  },
+  {
+    "heroName": "Uranus",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Heal",
+      "Mobility",
+      "Shield",
+      "Slow",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Martis",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Valir",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "UTILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Damage",
+      "Remove CC",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Gusion",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Damage",
+      "Heal",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Angela",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "SUSTAIN",
+      "UTILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Attach",
+      "CC",
+      "Heal",
+      "Shield",
+      "Slow",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Jawhead",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility",
+      "Shield"
+    ]
+  },
+  {
+    "heroName": "Lesley",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Pharsa",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "Burst",
+      "CC",
+      "Damage",
+      "Morph",
+      "Slow",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Helcurt",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Debuff",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Zhask",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Damage",
+      "Morph",
+      "Slow",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Hylos",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Damage",
+      "Debuff",
+      "Heal",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Diggie",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "CC Immune",
+      "Damage",
+      "Slow",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Lancelot",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Odette",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Argus",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Damage",
+      "Death Immunity",
+      "Debuff",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Grock",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Irithel",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Debuff",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Harley",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Debuff",
+      "Mobility",
+      "Slow",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Gatotkaca",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Heal",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Karrie",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Damage",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Roger",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "Damage",
+      "Debuff",
+      "Mobility",
+      "Morph",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Vexana",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "CC",
+      "Damage",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Lapu-Lapu",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Morph",
+      "Reduce DMG",
+      "Shield"
+    ]
+  },
+  {
+    "heroName": "Aurora",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE"
+    ],
+    "apiTags": [
+      "AOE",
+      "CC",
+      "Death Immunity",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Hilda",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Estes",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Heal",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Cyclops",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage"
+    ]
+  },
+  {
+    "heroName": "Johnson",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "AOE",
+      "CC",
+      "Morph",
+      "Shield",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Moskov",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Slow",
+      "Teleport"
+    ]
+  },
+  {
+    "heroName": "Yi Sun-shin",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Ruby",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Alpha",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "CC",
+      "Damage",
+      "Heal",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Sun",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Burst",
+      "Debuff",
+      "Heal",
+      "Mobility",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Chou",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Kagura",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY",
+      "UTILITY"
+    ],
+    "apiTags": [
+      "Burst",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Remove CC",
+      "Shield",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Natalia",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Gord",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Freya",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Morph",
+      "Shield"
+    ]
+  },
+  {
+    "heroName": "Hayabusa",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "MOBILITY",
+      "SPECIAL"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "Damage",
+      "Mobility",
+      "Summon"
+    ]
+  },
+  {
+    "heroName": "Lolita",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Shield"
+    ]
+  },
+  {
+    "heroName": "Minotaur",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Heal"
+    ]
+  },
+  {
+    "heroName": "Layla",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC"
+    ]
+  },
+  {
+    "heroName": "Fanny",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Zilong",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "Buff",
+      "CC",
+      "Damage",
+      "Debuff",
+      "Heal",
+      "Mobility",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Rafaela",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Heal",
+      "Slow",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Clint",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Burst",
+      "CC",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Bruno",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Bane",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Burst",
+      "CC",
+      "Damage",
+      "Heal"
+    ]
+  },
+  {
+    "heroName": "Franco",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE"
+    ],
+    "apiTags": [
+      "Buff",
+      "Burst",
+      "CC",
+      "Damage",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Akai",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Karina",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Damage",
+      "Mobility",
+      "Speed Up"
+    ]
+  },
+  {
+    "heroName": "Alucard",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Mobility"
+    ]
+  },
+  {
+    "heroName": "Tigreal",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Charge",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Nana",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "DEFENSE"
+    ],
+    "apiTags": [
+      "AOE",
+      "Burst",
+      "CC",
+      "Death Immunity",
+      "Debuff"
+    ]
+  },
+  {
+    "heroName": "Alice",
+    "mechanicCategories": [
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "CC",
+      "Heal",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Miya",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "UTILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "CC",
+      "Conceal",
+      "Remove CC"
+    ]
+  },
+  {
+    "heroName": "Balmond",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY",
+      "SUSTAIN"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "Heal",
+      "Mobility",
+      "Slow"
+    ]
+  },
+  {
+    "heroName": "Saber",
+    "mechanicCategories": [
+      "BUFF_DEBUFF",
+      "CROWD_CONTROL",
+      "DAMAGE",
+      "MOBILITY"
+    ],
+    "apiTags": [
+      "AOE",
+      "Buff",
+      "Burst",
+      "CC",
+      "Debuff",
+      "Mobility"
+    ]
+  }
+]

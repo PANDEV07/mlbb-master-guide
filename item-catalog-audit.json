@@ -1,0 +1,1042 @@
+[
+    {
+        "Name":  "Allow Throw",
+        "Slug":  "allow-throw",
+        "IconUrl":  "https://mlbbhub.com/images/items/allow-throw.png",
+        "SourceUrl":  "https://mlbbhub.com/items/allow-throw",
+        "Category":  "Movement",
+        "Tier":  1,
+        "Description":  "Allow Throw is a Tier 1 Movement item in Mobile Legends costing 0 gold. Trust: Allow allied Jawhead to fling you.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Antique Cuirass",
+        "Slug":  "antique-cuirass",
+        "IconUrl":  "https://mlbbhub.com/images/items/antique-cuirass.png",
+        "SourceUrl":  "https://mlbbhub.com/items/antique-cuirass",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Antique Cuirass is a Tier 3 Defense item in Mobile Legends costing 2170 gold. +920 HP, +40 Physical Defense. Deter: When hit by a skill, reduces the attacker\u0027s Physical Damage by 8% for 2s (this effect stacks up to 3 times).",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Arcane Boots",
+        "Slug":  "arcane-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/arcane-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/arcane-boots",
+        "Category":  "Movement",
+        "Tier":  3,
+        "Description":  "Arcane Boots is a Tier 3 Movement item in Mobile Legends costing 720 gold. +15 Magic Power, +40 Movement Speed.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Ares Belt",
+        "Slug":  "ares-belt",
+        "IconUrl":  "https://mlbbhub.com/images/items/ares-belt.png",
+        "SourceUrl":  "https://mlbbhub.com/items/ares-belt",
+        "Category":  "Defense",
+        "Tier":  2,
+        "Description":  "Ares Belt is a Tier 2 Defense item in Mobile Legends costing 700 gold. +600 HP.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Athena\u0027s Shield",
+        "Slug":  "athenas-shield",
+        "IconUrl":  "https://mlbbhub.com/images/items/athenas-shield.png",
+        "SourceUrl":  "https://mlbbhub.com/items/athenas-shield",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Athena\u0027s Shield is a Tier 3 Defense item in Mobile Legends costing 2150 gold. +900 HP, +48 Magic Defense. Shield: Upon taking Magic Damage from enemy hero skills or Basic Attacks, reduces Magic Damage taken by 25% for 3s (in...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Azure Blade",
+        "Slug":  "azure-blade",
+        "IconUrl":  "https://mlbbhub.com/images/items/azure-blade.png",
+        "SourceUrl":  "https://mlbbhub.com/items/azure-blade",
+        "Category":  "Magic",
+        "Tier":  2,
+        "Description":  "Azure Blade is a Tier 2 Magic item in Mobile Legends costing 600 gold. +5% Cooldown Reduction. Judgement: After casting a skill, the next Basic Attack within 3s deals 50 extra True Damage (1.5s cooldown).",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Berserker\u0027s Fury",
+        "Slug":  "berserkers-fury",
+        "IconUrl":  "https://mlbbhub.com/images/items/berserkers-fury.png",
+        "SourceUrl":  "https://mlbbhub.com/items/berserkers-fury",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Berserker\u0027s Fury is a Tier 3 Attack item in Mobile Legends costing 2390 gold. +60 Physical Attack, +25% Crit Chance. Doom: When Basic Attacks Crit, they deal extra True Damage equal to 12% of the damage before reduction.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Black Ice Shield",
+        "Slug":  "black-ice-shield",
+        "IconUrl":  "https://mlbbhub.com/images/items/black-ice-shield.png",
+        "SourceUrl":  "https://mlbbhub.com/items/black-ice-shield",
+        "Category":  "Defense",
+        "Tier":  2,
+        "Description":  "Black Ice Shield is a Tier 2 Defense item in Mobile Legends costing 780 gold. +20 Physical Defense, +20 Magic Defense. Fortress Shield: For each enemy hero within 5 units, Physical \u0026 Magic Defense is increased by 4, up to 20.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Blade Armor",
+        "Slug":  "blade-armor",
+        "IconUrl":  "https://mlbbhub.com/images/items/blade-armor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/blade-armor",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Blade Armor is a Tier 3 Defense item in Mobile Legends costing 1910 gold. +80 Physical Defense. Bladed Armor: When struck by a Basic Attack, deals Physical Damage equal to 30 (+2% Total Physical Defense)% of the incoming...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Blade of Despair",
+        "Slug":  "blade-of-despair",
+        "IconUrl":  "https://mlbbhub.com/images/items/blade-of-despair.png",
+        "SourceUrl":  "https://mlbbhub.com/items/blade-of-despair",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Blade of Despair is a Tier 3 Attack item in Mobile Legends costing 3010 gold. +160 Physical Attack. Despair: Dealing damage to non-Minion enemies below 50% HP increases Physical Attack by 25% for 2s (takes effect before...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Blade of the Heptaseas",
+        "Slug":  "blade-of-the-heptaseas",
+        "IconUrl":  "https://mlbbhub.com/images/items/blade-of-the-heptaseas.png",
+        "SourceUrl":  "https://mlbbhub.com/items/blade-of-the-heptaseas",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Blade of the Heptaseas is a Tier 3 Attack item in Mobile Legends costing 1950 gold. +70 Physical Attack, +250 HP. Ambush: If no damage is taken or dealt within 5s (excluding from Minions or Creeps), the next Basic Attack will deal a...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Blood Wings",
+        "Slug":  "blood-wings",
+        "IconUrl":  "https://mlbbhub.com/images/items/blood-wings.png",
+        "SourceUrl":  "https://mlbbhub.com/items/blood-wings",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Blood Wings is a Tier 3 Magic item in Mobile Legends costing 2100 gold. +90 Magic Power. Guard: Gains a 800 (+100% Total Magic Power) Shield that will regenerate 20s after being damaged. The Shield also gra...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Bloody Retribution",
+        "Slug":  "bloody-retribution",
+        "IconUrl":  "https://mlbbhub.com/images/items/bloody-retribution.png",
+        "SourceUrl":  "https://mlbbhub.com/items/bloody-retribution",
+        "Category":  "Jungling",
+        "Tier":  1,
+        "Description":  "Bloody Retribution is a Tier 1 Jungling item in Mobile Legends costing 0 gold. Hunter: After dealing damage to a Creep, deal 40 (+3*Hero Level) + (+1% Max HP) True Damage to the target over 3s (dam...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Book of Sages",
+        "Slug":  "book-of-sages",
+        "IconUrl":  "https://mlbbhub.com/images/items/book-of-sages.png",
+        "SourceUrl":  "https://mlbbhub.com/items/book-of-sages",
+        "Category":  "Magic",
+        "Tier":  1,
+        "Description":  "Book of Sages is a Tier 1 Magic item in Mobile Legends costing 450 gold. +8 Magic Power, +5% Cooldown Reduction.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Boots",
+        "Slug":  "boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/boots",
+        "Category":  "Movement",
+        "Tier":  1,
+        "Description":  "Boots is a Tier 1 Movement item in Mobile Legends costing 250 gold. +20 Movement Speed.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Broken Heart",
+        "Slug":  "broken-heart",
+        "IconUrl":  "https://mlbbhub.com/images/items/broken-heart.png",
+        "SourceUrl":  "https://mlbbhub.com/items/broken-heart",
+        "Category":  "Movement",
+        "Tier":  1,
+        "Description":  "Broken Heart is a Tier 1 Movement item in Mobile Legends costing 0 gold. Heart Broken: Become immune to allied Cecilion\u0027s Moonlit Waltz in this match.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Brute Force Breastplate",
+        "Slug":  "brute-force-breastplate",
+        "IconUrl":  "https://mlbbhub.com/images/items/brute-force-breastplate.png",
+        "SourceUrl":  "https://mlbbhub.com/items/brute-force-breastplate",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Brute Force Breastplate is a Tier 3 Defense item in Mobile Legends costing 2070 gold. +800 HP, +20 Physical Defense, +10% Cooldown Reduction. Brute Force: After dealing damage, gain 1 stack every second for 4s, up to 6 stacks. Each stack grants 8 Adaptive Attack an...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Chastise Pauldron",
+        "Slug":  "chastise-pauldron",
+        "IconUrl":  "https://mlbbhub.com/images/items/chastise-pauldron.png",
+        "SourceUrl":  "https://mlbbhub.com/items/chastise-pauldron",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Chastise Pauldron is a Tier 3 Defense item in Mobile Legends costing 2100 gold. +900 HP, +40 Physical Defense. Chastise: Taking damage will reduce the Attack Speed and Attack Speed cap of the attacker to 80% of normal for 2s.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Clock of Destiny",
+        "Slug":  "clock-of-destiny",
+        "IconUrl":  "https://mlbbhub.com/images/items/clock-of-destiny.png",
+        "SourceUrl":  "https://mlbbhub.com/items/clock-of-destiny",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Clock of Destiny is a Tier 3 Magic item in Mobile Legends costing 2030 gold. +45 Magic Power, +400 HP, +10% Cooldown Reduction. Destiny: Gains 4.5 (+0.5*Hero Level) Hybrid Defense for 5s when dealing Magic Damage to enemy heroes, stacking up to 6 ...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Conceal",
+        "Slug":  "conceal",
+        "IconUrl":  "https://mlbbhub.com/images/items/conceal.png",
+        "SourceUrl":  "https://mlbbhub.com/items/conceal",
+        "Category":  "Roaming",
+        "Tier":  1,
+        "Description":  "Conceal is a Tier 1 Roaming item in Mobile Legends costing 0 gold. Active - Conceal: Active: Conceals you and nearby allied heroes, granting 40% extra Movement Speed for 5s, or until taking or de...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Concentrated Energy",
+        "Slug":  "concentrated-energy",
+        "IconUrl":  "https://mlbbhub.com/images/items/concentrated-energy.png",
+        "SourceUrl":  "https://mlbbhub.com/items/concentrated-energy",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Concentrated Energy is a Tier 3 Magic item in Mobile Legends costing 2020 gold. +75 Magic Power, +400 HP. Recharge: Increases Magic Power by 5 after dealing Magic Damage (this effect stacks up to 6 times and can only gain 1 st...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Corrosion Scythe",
+        "Slug":  "corrosion-scythe",
+        "IconUrl":  "https://mlbbhub.com/images/items/corrosion-scythe.png",
+        "SourceUrl":  "https://mlbbhub.com/items/corrosion-scythe",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Corrosion Scythe is a Tier 3 Attack item in Mobile Legends costing 2050 gold. +30 Physical Attack, +30% Attack Speed. Corrosion: Basic Attacks gain 80 extra Physical Damage and slow the target by 8% (halved for ranged Basic Attacks) for 1....",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Cursed Helmet",
+        "Slug":  "cursed-helmet",
+        "IconUrl":  "https://mlbbhub.com/images/items/cursed-helmet.png",
+        "SourceUrl":  "https://mlbbhub.com/items/cursed-helmet",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Cursed Helmet is a Tier 3 Defense item in Mobile Legends costing 1910 gold. +1200 HP, +20 Magic Defense. Burning Soul: Deals (1.2% Max HP) Magic Damage to nearby enemies per second. This damage is increased by 125 (+15*Hero Level...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Dagger",
+        "Slug":  "dagger",
+        "IconUrl":  "https://mlbbhub.com/images/items/dagger.png",
+        "SourceUrl":  "https://mlbbhub.com/items/dagger",
+        "Category":  "Attack",
+        "Tier":  1,
+        "Description":  "Dagger is a Tier 1 Attack item in Mobile Legends costing 250 gold. +15 Physical Attack.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Demon Boots",
+        "Slug":  "demon-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/demon-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/demon-boots",
+        "Category":  "Movement",
+        "Tier":  3,
+        "Description":  "Demon Boots is a Tier 3 Movement item in Mobile Legends costing 720 gold. +40 Movement Speed. Mysticism: Getting a kill or assist on an enemy Minion will restore 4% Mana. (An assist occurs when a Minion dies within ...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Demon Hunter Sword",
+        "Slug":  "demon-hunter-sword",
+        "IconUrl":  "https://mlbbhub.com/images/items/demon-hunter-sword.png",
+        "SourceUrl":  "https://mlbbhub.com/items/demon-hunter-sword",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Demon Hunter Sword is a Tier 3 Attack item in Mobile Legends costing 2180 gold. +35 Physical Attack, +20% Attack Speed. Engulf: Basic Attacks deal 8% of the target\u0027s current HP as extra Physical Damage (capped at 60 against minions).",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Dire Hit",
+        "Slug":  "dire-hit",
+        "IconUrl":  "https://mlbbhub.com/images/items/dire-hit.png",
+        "SourceUrl":  "https://mlbbhub.com/items/dire-hit",
+        "Category":  "Roaming",
+        "Tier":  1,
+        "Description":  "Dire Hit is a Tier 1 Roaming item in Mobile Legends costing 0 gold. Passive - Dire Hit: Passive: Gains Force while moving, gradually increasing Movement Speed (up to 40). Upon reaching 20 stacks, th...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Divine Glaive",
+        "Slug":  "divine-glaive",
+        "IconUrl":  "https://mlbbhub.com/images/items/divine-glaive.png",
+        "SourceUrl":  "https://mlbbhub.com/items/divine-glaive",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Divine Glaive is a Tier 3 Magic item in Mobile Legends costing 1970 gold. +60 Magic Power. Spellbreaker: When attacking an enemy, gains 0.1% extra Magic Penetration for each point of the enemy\u0027s Magic Defense, cappe...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Dominance Ice",
+        "Slug":  "dominance-ice",
+        "IconUrl":  "https://mlbbhub.com/images/items/dominance-ice.png",
+        "SourceUrl":  "https://mlbbhub.com/items/dominance-ice",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Dominance Ice is a Tier 3 Defense item in Mobile Legends costing 2010 gold. +40 Physical Defense, +40 Magic Defense. Fortress Shield: For each enemy hero within 5 units, Physical \u0026 Magic Defense is increased by 8, up to 40.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Dreadnaught Armor",
+        "Slug":  "dreadnaught-armor",
+        "IconUrl":  "https://mlbbhub.com/images/items/dreadnaught-armor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/dreadnaught-armor",
+        "Category":  "Defense",
+        "Tier":  2,
+        "Description":  "Dreadnaught Armor is a Tier 2 Defense item in Mobile Legends costing 730 gold. +30 Physical Defense. Deter: When hit by a skill, reduces the attacker\u0027s Physical Damage by 4% for 2s (this effect stacks up to 3 times).",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Elegant Gem",
+        "Slug":  "elegant-gem",
+        "IconUrl":  "https://mlbbhub.com/images/items/elegant-gem.png",
+        "SourceUrl":  "https://mlbbhub.com/items/elegant-gem",
+        "Category":  "Magic",
+        "Tier":  2,
+        "Description":  "Elegant Gem is a Tier 2 Magic item in Mobile Legends costing 700 gold. +300 HP. Gift: When HP drops below 50%, recovers 15% of HP over the next 3s. When Mana drops below 50%, restores 15% of Mana ...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Enchanted Talisman",
+        "Slug":  "enchanted-talisman",
+        "IconUrl":  "https://mlbbhub.com/images/items/enchanted-talisman.png",
+        "SourceUrl":  "https://mlbbhub.com/items/enchanted-talisman",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Enchanted Talisman is a Tier 3 Magic item in Mobile Legends costing 2070 gold. +75 Magic Power, +300 HP, +15% Cooldown Reduction. Mana Spring: Regenerates 15% Max Mana every 10s.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Encourage",
+        "Slug":  "encourage",
+        "IconUrl":  "https://mlbbhub.com/images/items/encourage.png",
+        "SourceUrl":  "https://mlbbhub.com/items/encourage",
+        "Category":  "Roaming",
+        "Tier":  1,
+        "Description":  "Encourage is a Tier 1 Roaming item in Mobile Legends costing 0 gold. Passive - Encourage: Passive: Grants you and nearby allied heroes 20 extra Hybrid Defense.\n\nWhen near allied heroes, you gain 30% E...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Endless Battle",
+        "Slug":  "endless-battle",
+        "IconUrl":  "https://mlbbhub.com/images/items/endless-battle.png",
+        "SourceUrl":  "https://mlbbhub.com/items/endless-battle",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Endless Battle is a Tier 3 Attack item in Mobile Legends costing 2330 gold. +60 Physical Attack, +250 HP, +10% Cooldown Reduction. Divine Justice: After casting a skill, the next Basic Attack within 3s deals (60% Total Physical Attack) extra True Damage and...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Exotic Veil",
+        "Slug":  "exotic-veil",
+        "IconUrl":  "https://mlbbhub.com/images/items/exotic-veil.png",
+        "SourceUrl":  "https://mlbbhub.com/items/exotic-veil",
+        "Category":  "Magic",
+        "Tier":  2,
+        "Description":  "Exotic Veil is a Tier 2 Magic item in Mobile Legends costing 600 gold. +30 Magic Power.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Expert Gloves",
+        "Slug":  "expert-gloves",
+        "IconUrl":  "https://mlbbhub.com/images/items/expert-gloves.png",
+        "SourceUrl":  "https://mlbbhub.com/items/expert-gloves",
+        "Category":  "Attack",
+        "Tier":  1,
+        "Description":  "Expert Gloves is a Tier 1 Attack / Magic item in Mobile Legends costing 500 gold.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Favor",
+        "Slug":  "favor",
+        "IconUrl":  "https://mlbbhub.com/images/items/favor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/favor",
+        "Category":  "Roaming",
+        "Tier":  1,
+        "Description":  "Favor is a Tier 1 Roaming item in Mobile Legends costing 0 gold. Passive - Favor: Passive: Every 15s, your next healing or shield skill recovers 400 extra HP to the lowest-HP allied hero withi...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Feather of Heaven",
+        "Slug":  "feather-of-heaven",
+        "IconUrl":  "https://mlbbhub.com/images/items/feather-of-heaven.png",
+        "SourceUrl":  "https://mlbbhub.com/items/feather-of-heaven",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Feather of Heaven is a Tier 3 Magic item in Mobile Legends costing 2030 gold. +60 Magic Power, +20% Attack Speed, +5% Cooldown Reduction. Affliction: Each Basic Attack deals extra 50 (+30% Total Magic Power) Magic Damage.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Flame Retribution",
+        "Slug":  "flame-retribution",
+        "IconUrl":  "https://mlbbhub.com/images/items/flame-retribution.png",
+        "SourceUrl":  "https://mlbbhub.com/items/flame-retribution",
+        "Category":  "Jungling",
+        "Tier":  1,
+        "Description":  "Flame Retribution is a Tier 1 Jungling item in Mobile Legends costing 0 gold. Hunter: After dealing damage to a Creep, deal 40 (+3*Hero Level) + (+1% Max HP) True Damage to the target over 3s (dam...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Flask of the Oasis",
+        "Slug":  "flask-of-the-oasis",
+        "IconUrl":  "https://mlbbhub.com/images/items/flask-of-the-oasis.png",
+        "SourceUrl":  "https://mlbbhub.com/items/flask-of-the-oasis",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Flask of the Oasis is a Tier 3 Magic item in Mobile Legends costing 1850 gold. +60 Magic Power, +300 HP, +10% Cooldown Reduction. Blessing: When casting a healing or shield skill, if the target\u0027s HP is below 35% or falls below 35% within 3s, they wil...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Fleeting Time",
+        "Slug":  "fleeting-time",
+        "IconUrl":  "https://mlbbhub.com/images/items/fleeting-time.png",
+        "SourceUrl":  "https://mlbbhub.com/items/fleeting-time",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Fleeting Time is a Tier 3 Attack / Magic / Defense item in Mobile Legends costing 2050 gold. +600 HP, +15% Cooldown Reduction. Timestream: Hero kills or assists reduce the Ultimate\u0027s current cooldown by 30%.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Flower of Hope",
+        "Slug":  "flower-of-hope",
+        "IconUrl":  "https://mlbbhub.com/images/items/flower-of-hope.png",
+        "SourceUrl":  "https://mlbbhub.com/items/flower-of-hope",
+        "Category":  "Magic",
+        "Tier":  1,
+        "Description":  "Flower of Hope is a Tier 1 Magic item in Mobile Legends costing 0 gold. Flower of Hope: Every 6s, the next skill or Basic Attack deals an additional 100 (+40% Total Physical Attack) (+30% Total Magi...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Fury Hammer",
+        "Slug":  "fury-hammer",
+        "IconUrl":  "https://mlbbhub.com/images/items/fury-hammer.png",
+        "SourceUrl":  "https://mlbbhub.com/items/fury-hammer",
+        "Category":  "Attack",
+        "Tier":  2,
+        "Description":  "Fury Hammer is a Tier 2 Attack item in Mobile Legends costing 830 gold. +35 Physical Attack.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Genius Wand",
+        "Slug":  "genius-wand",
+        "IconUrl":  "https://mlbbhub.com/images/items/genius-wand.png",
+        "SourceUrl":  "https://mlbbhub.com/items/genius-wand",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Genius Wand is a Tier 3 Magic item in Mobile Legends costing 2000 gold. +75 Magic Power. Magic: Dealing Magic Damage to enemy heroes will reduce their Magic Defense by 2.5 (+0.5*Hero Level) for 2s. Stacks u...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Glowing Wand",
+        "Slug":  "glowing-wand",
+        "IconUrl":  "https://mlbbhub.com/images/items/glowing-wand.png",
+        "SourceUrl":  "https://mlbbhub.com/items/glowing-wand",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Glowing Wand is a Tier 3 Magic item in Mobile Legends costing 2050 gold. +60 Magic Power, +300 HP. Scorch: Dealing Magic Damage burns the targets for 3s, also dealing extra Magic Damage equal to 1% of the target\u0027s Max...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Golden Staff",
+        "Slug":  "golden-staff",
+        "IconUrl":  "https://mlbbhub.com/images/items/golden-staff.png",
+        "SourceUrl":  "https://mlbbhub.com/items/golden-staff",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Golden Staff is a Tier 3 Attack item in Mobile Legends costing 2000 gold. +55 Physical Attack, +15% Attack Speed. Swift: Every 1% extra Crit Chance gained is converted into 1% extra Attack Speed.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Great Dragon Spear",
+        "Slug":  "great-dragon-spear",
+        "IconUrl":  "https://mlbbhub.com/images/items/great-dragon-spear.png",
+        "SourceUrl":  "https://mlbbhub.com/items/great-dragon-spear",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Great Dragon Spear is a Tier 3 Attack item in Mobile Legends costing 2140 gold. +70 Physical Attack, +20% Crit Chance, +10% Cooldown Reduction. Supreme Warrior: After casting an Ultimate, increase Movement Speed by 30% for 7.5s. This effect has a 15s cooldown.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Guardian Helmet",
+        "Slug":  "guardian-helmet",
+        "IconUrl":  "https://mlbbhub.com/images/items/guardian-helmet.png",
+        "SourceUrl":  "https://mlbbhub.com/items/guardian-helmet",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Guardian Helmet is a Tier 3 Defense item in Mobile Legends costing 2500 gold. +1800 HP. Recovery: After 5s out of combat, recover (2.5% Max HP) HP per second.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Haas\u0027s Claws",
+        "Slug":  "haass-claws",
+        "IconUrl":  "https://mlbbhub.com/images/items/haass-claws.png",
+        "SourceUrl":  "https://mlbbhub.com/items/haass-claws",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Haas\u0027s Claws is a Tier 3 Attack item in Mobile Legends costing 2020 gold. +40 Physical Attack, +15% Attack Speed, +20% Crit Chance. Frenzy: Critical strikes grant 20% Attack Speed for 2s.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Healing Necklace",
+        "Slug":  "healing-necklace",
+        "IconUrl":  "https://mlbbhub.com/images/items/healing-necklace.png",
+        "SourceUrl":  "https://mlbbhub.com/items/healing-necklace",
+        "Category":  "Defense",
+        "Tier":  1,
+        "Description":  "Healing Necklace is a Tier 1 Defense item in Mobile Legends costing 140 gold.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Hero\u0027s Ring",
+        "Slug":  "heros-ring",
+        "IconUrl":  "https://mlbbhub.com/images/items/heros-ring.png",
+        "SourceUrl":  "https://mlbbhub.com/items/heros-ring",
+        "Category":  "Defense",
+        "Tier":  1,
+        "Description":  "Hero\u0027s Ring is a Tier 1 Defense item in Mobile Legends costing 450 gold. +150 HP, +5% Cooldown Reduction.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Holy Crystal",
+        "Slug":  "holy-crystal",
+        "IconUrl":  "https://mlbbhub.com/images/items/holy-crystal.png",
+        "SourceUrl":  "https://mlbbhub.com/items/holy-crystal",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Holy Crystal is a Tier 3 Magic item in Mobile Legends costing 3000 gold. +165 Magic Power. Mystery: Gains 21%-35% extra Magic Power (scales with level).",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Hunter Strike",
+        "Slug":  "hunter-strike",
+        "IconUrl":  "https://mlbbhub.com/images/items/hunter-strike.png",
+        "SourceUrl":  "https://mlbbhub.com/items/hunter-strike",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Hunter Strike is a Tier 3 Attack item in Mobile Legends costing 2010 gold. +80 Physical Attack, +10% Cooldown Reduction. Retribution: Dealing damage to the same enemy hero or creep 5 times in a row grants 50% extra Movement Speed that decays ov...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Ice Queen Wand",
+        "Slug":  "ice-queen-wand",
+        "IconUrl":  "https://mlbbhub.com/images/items/ice-queen-wand.png",
+        "SourceUrl":  "https://mlbbhub.com/items/ice-queen-wand",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Ice Queen Wand is a Tier 3 Magic item in Mobile Legends costing 2040 gold. +60 Magic Power, +300 HP. Ice Bound: When a skill deals damage to an enemy hero, it will also slow them by 10% for 2s (stacks up to 3 times). This ...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Ice Retribution",
+        "Slug":  "ice-retribution",
+        "IconUrl":  "https://mlbbhub.com/images/items/ice-retribution.png",
+        "SourceUrl":  "https://mlbbhub.com/items/ice-retribution",
+        "Category":  "Jungling",
+        "Tier":  1,
+        "Description":  "Ice Retribution is a Tier 1 Jungling item in Mobile Legends costing 0 gold. Hunter: After dealing damage to a Creep, deal 40 (+3*Hero Level) + (+1% Max HP) True Damage to the target over 3s (dam...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Immortality",
+        "Slug":  "immortality",
+        "IconUrl":  "https://mlbbhub.com/images/items/immortality.png",
+        "SourceUrl":  "https://mlbbhub.com/items/immortality",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Immortality is a Tier 3 Defense item in Mobile Legends costing 2120 gold. +850 HP, +15 Physical Defense. Immortal: Resurrect 2.5s upon death and get 16% HP and a shield that can absorb 150 (+70*Hero Level) damage. Shield last...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Iron Hunting Bow",
+        "Slug":  "iron-hunting-bow",
+        "IconUrl":  "https://mlbbhub.com/images/items/iron-hunting-bow.png",
+        "SourceUrl":  "https://mlbbhub.com/items/iron-hunting-bow",
+        "Category":  "Attack",
+        "Tier":  1,
+        "Description":  "Iron Hunting Bow is a Tier 1 Attack item in Mobile Legends costing 450 gold. +10 Physical Attack, +5% Cooldown Reduction.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Javelin",
+        "Slug":  "javelin",
+        "IconUrl":  "https://mlbbhub.com/images/items/javelin.png",
+        "SourceUrl":  "https://mlbbhub.com/items/javelin",
+        "Category":  "Attack",
+        "Tier":  1,
+        "Description":  "Javelin is a Tier 1 Attack item in Mobile Legends costing 320 gold. +8% Crit Chance.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Knife",
+        "Slug":  "knife",
+        "IconUrl":  "https://mlbbhub.com/images/items/knife.png",
+        "SourceUrl":  "https://mlbbhub.com/items/knife",
+        "Category":  "Attack",
+        "Tier":  1,
+        "Description":  "Knife is a Tier 1 Attack item in Mobile Legends costing 280 gold. +10% Attack Speed.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Lantern of Hope",
+        "Slug":  "lantern-of-hope",
+        "IconUrl":  "https://mlbbhub.com/images/items/lantern-of-hope.png",
+        "SourceUrl":  "https://mlbbhub.com/items/lantern-of-hope",
+        "Category":  "Magic",
+        "Tier":  1,
+        "Description":  "Lantern of Hope is a Tier 1 Magic item in Mobile Legends costing 0 gold. +20 Magic Power, +2% Cooldown Reduction. Lantern of Hope: The equipment\u0027s attributes scale with hero level.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Leather Jerkin",
+        "Slug":  "leather-jerkin",
+        "IconUrl":  "https://mlbbhub.com/images/items/leather-jerkin.png",
+        "SourceUrl":  "https://mlbbhub.com/items/leather-jerkin",
+        "Category":  "Defense",
+        "Tier":  1,
+        "Description":  "Leather Jerkin is a Tier 1 Defense item in Mobile Legends costing 220 gold. +14 Physical Defense.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Legion Sword",
+        "Slug":  "legion-sword",
+        "IconUrl":  "https://mlbbhub.com/images/items/legion-sword.png",
+        "SourceUrl":  "https://mlbbhub.com/items/legion-sword",
+        "Category":  "Attack",
+        "Tier":  2,
+        "Description":  "Legion Sword is a Tier 2 Attack item in Mobile Legends costing 910 gold. +60 Physical Attack.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Lightning Truncheon",
+        "Slug":  "lightning-truncheon",
+        "IconUrl":  "https://mlbbhub.com/images/items/lightning-truncheon.png",
+        "SourceUrl":  "https://mlbbhub.com/items/lightning-truncheon",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Lightning Truncheon is a Tier 3 Magic item in Mobile Legends costing 2250 gold. +75 Magic Power, +10% Cooldown Reduction. Resonate: Every 6s, the next skill echoes, dealing 255 (+85% Total Magic Power) extra Magic Damage to all enemies in ran...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Blade",
+        "Slug":  "magic-blade",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-blade.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-blade",
+        "Category":  "Attack",
+        "Tier":  2,
+        "Description":  "Magic Blade is a Tier 2 Attack item in Mobile Legends costing 1050 gold. +25 Physical Attack, +10% Lifesteal. Lifeline: When taking damage that reduces HP below 30%, gain a (60*Hero Level) shield and 50% Movement Speed that rapidl...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Boots",
+        "Slug":  "magic-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-boots",
+        "Category":  "Movement",
+        "Tier":  3,
+        "Description":  "Magic Boots is a Tier 3 Movement item in Mobile Legends costing 720 gold. +150 HP, +10% Cooldown Reduction, +40 Movement Speed.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Necklace",
+        "Slug":  "magic-necklace",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-necklace.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-necklace",
+        "Category":  "Magic",
+        "Tier":  1,
+        "Description":  "Magic Necklace is a Tier 1 Magic item in Mobile Legends costing 120 gold.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Potion",
+        "Slug":  "magic-potion",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-potion.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-potion",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Magic Potion is a Tier 3 Magic item in Mobile Legends costing 1500 gold. Increase Power: Upon purchase, grants 30 extra Magic Power and 10% Cooldown Reduction for 120s.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Resist Cloak",
+        "Slug":  "magic-resist-cloak",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-resist-cloak.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-resist-cloak",
+        "Category":  "Defense",
+        "Tier":  1,
+        "Description":  "Magic Resist Cloak is a Tier 1 Defense item in Mobile Legends costing 220 gold. +14 Magic Defense.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Magic Wand",
+        "Slug":  "magic-wand",
+        "IconUrl":  "https://mlbbhub.com/images/items/magic-wand.png",
+        "SourceUrl":  "https://mlbbhub.com/items/magic-wand",
+        "Category":  "Magic",
+        "Tier":  1,
+        "Description":  "Magic Wand is a Tier 1 Magic item in Mobile Legends costing 820 gold. +45 Magic Power.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Malefic Gun",
+        "Slug":  "malefic-gun",
+        "IconUrl":  "https://mlbbhub.com/images/items/malefic-gun.png",
+        "SourceUrl":  "https://mlbbhub.com/items/malefic-gun",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Malefic Gun is a Tier 3 Attack item in Mobile Legends costing 2120 gold. +40 Physical Attack, +20% Attack Speed. Armor Buster: Increase Physical Penetration by 30%.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Malefic Roar",
+        "Slug":  "malefic-roar",
+        "IconUrl":  "https://mlbbhub.com/images/items/malefic-roar.png",
+        "SourceUrl":  "https://mlbbhub.com/items/malefic-roar",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Malefic Roar is a Tier 3 Attack item in Mobile Legends costing 2060 gold. +60 Physical Attack. Armor Buster: Increase Physical Penetration by 30%.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Molten Essence",
+        "Slug":  "molten-essence",
+        "IconUrl":  "https://mlbbhub.com/images/items/molten-essence.png",
+        "SourceUrl":  "https://mlbbhub.com/items/molten-essence",
+        "Category":  "Defense",
+        "Tier":  2,
+        "Description":  "Molten Essence is a Tier 2 Defense item in Mobile Legends costing 800 gold. +540 HP. Burning Soul: Deals (0.6% Max HP) Magic Damage to nearby enemies per second. This damage is increased by 125 (+15*Hero Level...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Mystery Codex",
+        "Slug":  "mystery-codex",
+        "IconUrl":  "https://mlbbhub.com/images/items/mystery-codex.png",
+        "SourceUrl":  "https://mlbbhub.com/items/mystery-codex",
+        "Category":  "Magic",
+        "Tier":  1,
+        "Description":  "Mystery Codex is a Tier 1 Magic item in Mobile Legends costing 300 gold. +15 Magic Power.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Mystic Container",
+        "Slug":  "mystic-container",
+        "IconUrl":  "https://mlbbhub.com/images/items/mystic-container.png",
+        "SourceUrl":  "https://mlbbhub.com/items/mystic-container",
+        "Category":  "Magic",
+        "Tier":  2,
+        "Description":  "Mystic Container is a Tier 2 Magic item in Mobile Legends costing 500 gold. +15 Magic Power.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Ogre Tomahawk",
+        "Slug":  "ogre-tomahawk",
+        "IconUrl":  "https://mlbbhub.com/images/items/ogre-tomahawk.png",
+        "SourceUrl":  "https://mlbbhub.com/items/ogre-tomahawk",
+        "Category":  "Attack",
+        "Tier":  2,
+        "Description":  "Ogre Tomahawk is a Tier 2 Attack item in Mobile Legends costing 650 gold. +25 Physical Attack, +230 HP.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Oracle",
+        "Slug":  "oracle",
+        "IconUrl":  "https://mlbbhub.com/images/items/oracle.png",
+        "SourceUrl":  "https://mlbbhub.com/items/oracle",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Oracle is a Tier 3 Defense item in Mobile Legends costing 1860 gold. +850 HP, +20 Physical Defense, +20 Magic Defense. Bless: Received Shield and HP Regen effects are increased by 25%.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Power Crystal",
+        "Slug":  "power-crystal",
+        "IconUrl":  "https://mlbbhub.com/images/items/power-crystal.png",
+        "SourceUrl":  "https://mlbbhub.com/items/power-crystal",
+        "Category":  "Magic",
+        "Tier":  1,
+        "Description":  "Power Crystal is a Tier 1 Magic item in Mobile Legends costing 220 gold.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Power Potion",
+        "Slug":  "power-potion",
+        "IconUrl":  "https://mlbbhub.com/images/items/power-potion.png",
+        "SourceUrl":  "https://mlbbhub.com/items/power-potion",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Power Potion is a Tier 3 Attack item in Mobile Legends costing 1500 gold. Increase Power: Upon purchase, grants 30 Physical Attack and 15% Lifesteal for 120s.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Queen\u0027s Wings",
+        "Slug":  "queens-wings",
+        "IconUrl":  "https://mlbbhub.com/images/items/queens-wings.png",
+        "SourceUrl":  "https://mlbbhub.com/items/queens-wings",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Queen\u0027s Wings is a Tier 3 Defense item in Mobile Legends costing 2250 gold. +750 HP, +10% Cooldown Reduction. Demonize: When HP drops below 40%, gains 30% Damage Reduction for 3s and reduces skill cooldowns by 2s. The effect has a...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Radiant Armor",
+        "Slug":  "radiant-armor",
+        "IconUrl":  "https://mlbbhub.com/images/items/radiant-armor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/radiant-armor",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Radiant Armor is a Tier 3 Defense item in Mobile Legends costing 1880 gold. +950 HP, +40 Magic Defense. Holy Blessing: Taking Magic Damage grants 5 (+1*Hero Level) Magic Defense for 5s, up to 6 stacks (can only gain 1 stack(s) ev...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Rapid Boots",
+        "Slug":  "rapid-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/rapid-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/rapid-boots",
+        "Category":  "Movement",
+        "Tier":  3,
+        "Description":  "Rapid Boots is a Tier 3 Movement item in Mobile Legends costing 720 gold. +55 Movement Speed.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Regular Spear",
+        "Slug":  "regular-spear",
+        "IconUrl":  "https://mlbbhub.com/images/items/regular-spear.png",
+        "SourceUrl":  "https://mlbbhub.com/items/regular-spear",
+        "Category":  "Attack",
+        "Tier":  2,
+        "Description":  "Regular Spear is a Tier 2 Attack item in Mobile Legends costing 600 gold. +20 Physical Attack, +10% Attack Speed.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Rock Potion",
+        "Slug":  "rock-potion",
+        "IconUrl":  "https://mlbbhub.com/images/items/rock-potion.png",
+        "SourceUrl":  "https://mlbbhub.com/items/rock-potion",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Rock Potion is a Tier 3 Defense item in Mobile Legends costing 1500 gold. Increase Power: Upon purchase, grants 500 Max HP and 5% Damage Reduction for 120s.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Rogue Meteor",
+        "Slug":  "rogue-meteor",
+        "IconUrl":  "https://mlbbhub.com/images/items/rogue-meteor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/rogue-meteor",
+        "Category":  "Attack",
+        "Tier":  2,
+        "Description":  "Rogue Meteor is a Tier 2 Attack item in Mobile Legends costing 900 gold. +15% Attack Speed, +10% Crit Chance.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Rose Gold Meteor",
+        "Slug":  "rose-gold-meteor",
+        "IconUrl":  "https://mlbbhub.com/images/items/rose-gold-meteor.png",
+        "SourceUrl":  "https://mlbbhub.com/items/rose-gold-meteor",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Rose Gold Meteor is a Tier 3 Attack item in Mobile Legends costing 2030 gold. +30 Physical Attack, +20% Attack Speed, +10% Lifesteal. Dragon Scale: Every 4 extra Physical Attack increases Hybrid Defense by 1, up to 50 (effect is halved if Main Role is not Fi...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Sea Halberd",
+        "Slug":  "sea-halberd",
+        "IconUrl":  "https://mlbbhub.com/images/items/sea-halberd.png",
+        "SourceUrl":  "https://mlbbhub.com/items/sea-halberd",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Sea Halberd is a Tier 3 Attack item in Mobile Legends costing 2050 gold. +80 Physical Attack, +20% Attack Speed. Lifebane: Dealing damage to a target will reduce the Shield and HP Regen effects on them to 60% of normal for 3s.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Silence Robe",
+        "Slug":  "silence-robe",
+        "IconUrl":  "https://mlbbhub.com/images/items/silence-robe.png",
+        "SourceUrl":  "https://mlbbhub.com/items/silence-robe",
+        "Category":  "Defense",
+        "Tier":  2,
+        "Description":  "Silence Robe is a Tier 2 Defense item in Mobile Legends costing 1020 gold. +540 HP, +23 Magic Defense.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Sky Piercer",
+        "Slug":  "sky-piercer",
+        "IconUrl":  "https://mlbbhub.com/images/items/sky-piercer.png",
+        "SourceUrl":  "https://mlbbhub.com/items/sky-piercer",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Sky Piercer is a Tier 3 Attack / Magic item in Mobile Legends costing 1500 gold. +15 Movement Speed. Lethality: After dealing damage to an enemy hero, executes the hero if their HP is lower than 4%. Gains 10 stack(s) of Le...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Starlium Scythe",
+        "Slug":  "starlium-scythe",
+        "IconUrl":  "https://mlbbhub.com/images/items/starlium-scythe.png",
+        "SourceUrl":  "https://mlbbhub.com/items/starlium-scythe",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Starlium Scythe is a Tier 3 Magic item in Mobile Legends costing 2120 gold. +75 Magic Power, +10% Cooldown Reduction. Crisis: After casting a skill, the next Basic Attack within 3s deals 90 (+60% Total Magic Power) extra True Damage and...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Steel Legplates",
+        "Slug":  "steel-legplates",
+        "IconUrl":  "https://mlbbhub.com/images/items/steel-legplates.png",
+        "SourceUrl":  "https://mlbbhub.com/items/steel-legplates",
+        "Category":  "Defense",
+        "Tier":  2,
+        "Description":  "Steel Legplates is a Tier 2 Defense item in Mobile Legends costing 630 gold. +35 Physical Defense.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Swift Boots",
+        "Slug":  "swift-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/swift-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/swift-boots",
+        "Category":  "Movement",
+        "Tier":  3,
+        "Description":  "Swift Boots is a Tier 3 Movement item in Mobile Legends costing 720 gold. +15% Attack Speed, +40 Movement Speed.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Swift Crossbow",
+        "Slug":  "swift-crossbow",
+        "IconUrl":  "https://mlbbhub.com/images/items/swift-crossbow.png",
+        "SourceUrl":  "https://mlbbhub.com/items/swift-crossbow",
+        "Category":  "Attack",
+        "Tier":  2,
+        "Description":  "Swift Crossbow is a Tier 2 Attack item in Mobile Legends costing 1000 gold. +20% Attack Speed. Crossbow: Each Basic Attack deals 40 extra Adaptive Damage.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Throw Forbidden",
+        "Slug":  "throw-forbidden",
+        "IconUrl":  "https://mlbbhub.com/images/items/throw-forbidden.png",
+        "SourceUrl":  "https://mlbbhub.com/items/throw-forbidden",
+        "Category":  "Movement",
+        "Tier":  1,
+        "Description":  "Throw Forbidden is a Tier 1 Movement item in Mobile Legends costing 0 gold. Heavy Mountain: Become immune to allied Jawhead\u0027s Ejector in this match.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Thunder Belt",
+        "Slug":  "thunder-belt",
+        "IconUrl":  "https://mlbbhub.com/images/items/thunder-belt.png",
+        "SourceUrl":  "https://mlbbhub.com/items/thunder-belt",
+        "Category":  "Defense",
+        "Tier":  3,
+        "Description":  "Thunder Belt is a Tier 3 Defense item in Mobile Legends costing 1820 gold. +600 HP, +15 Physical Defense, +15 Magic Defense. Thunderbolt: Every 4s, the next Basic Attack deals 50 (+100% Extra Physical Defense)(100% Extra Magic Defense) extra True D...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Tome of Evil",
+        "Slug":  "tome-of-evil",
+        "IconUrl":  "https://mlbbhub.com/images/items/tome-of-evil.png",
+        "SourceUrl":  "https://mlbbhub.com/items/tome-of-evil",
+        "Category":  "Magic",
+        "Tier":  2,
+        "Description":  "Tome of Evil is a Tier 2 Magic item in Mobile Legends costing 950 gold. +30 Magic Power, +10% Cooldown Reduction.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Tough Boots",
+        "Slug":  "tough-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/tough-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/tough-boots",
+        "Category":  "Movement",
+        "Tier":  3,
+        "Description":  "Tough Boots is a Tier 3 Movement item in Mobile Legends costing 720 gold. +18 Magic Defense, +40 Movement Speed. Fortitude: CC and Slow Duration reduced by 25%",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Vampire Mallet",
+        "Slug":  "vampire-mallet",
+        "IconUrl":  "https://mlbbhub.com/images/items/vampire-mallet.png",
+        "SourceUrl":  "https://mlbbhub.com/items/vampire-mallet",
+        "Category":  "Attack",
+        "Tier":  1,
+        "Description":  "Vampire Mallet is a Tier 1 Attack item in Mobile Legends costing 400 gold. +8 Physical Attack, +8% Lifesteal.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Vitality Crystal",
+        "Slug":  "vitality-crystal",
+        "IconUrl":  "https://mlbbhub.com/images/items/vitality-crystal.png",
+        "SourceUrl":  "https://mlbbhub.com/items/vitality-crystal",
+        "Category":  "Defense",
+        "Tier":  1,
+        "Description":  "Vitality Crystal is a Tier 1 Defense item in Mobile Legends costing 300 gold. +230 HP.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "War Axe",
+        "Slug":  "war-axe",
+        "IconUrl":  "https://mlbbhub.com/images/items/war-axe.png",
+        "SourceUrl":  "https://mlbbhub.com/items/war-axe",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "War Axe is a Tier 3 Attack item in Mobile Legends costing 2100 gold. +35 Physical Attack, +400 HP, +10% Cooldown Reduction. Fighting Spirit: Attacks grant 12 extra Physical Attack per second for 4s, up to 6 stacks. Deals extra 10% True Damage based on...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Warrior Boots",
+        "Slug":  "warrior-boots",
+        "IconUrl":  "https://mlbbhub.com/images/items/warrior-boots.png",
+        "SourceUrl":  "https://mlbbhub.com/items/warrior-boots",
+        "Category":  "Movement",
+        "Tier":  3,
+        "Description":  "Warrior Boots is a Tier 3 Movement item in Mobile Legends costing 720 gold. +18 Physical Defense, +40 Movement Speed. Valor: Gain 4 extra Physical Defense for 3s when taking Physical Damage, up to 20.",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Wind of Nature",
+        "Slug":  "wind-of-nature",
+        "IconUrl":  "https://mlbbhub.com/images/items/wind-of-nature.png",
+        "SourceUrl":  "https://mlbbhub.com/items/wind-of-nature",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Wind of Nature is a Tier 3 Attack item in Mobile Legends costing 1910 gold. +30 Physical Attack, +20% Attack Speed, +10% Lifesteal. Wind Chant: Become immune to all Physical Damage for 2s (duration is halved if Main Role is not Marksman; 90s cooldown).",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Windtalker",
+        "Slug":  "windtalker",
+        "IconUrl":  "https://mlbbhub.com/images/items/windtalker.png",
+        "SourceUrl":  "https://mlbbhub.com/items/windtalker",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Windtalker is a Tier 3 Attack item in Mobile Legends costing 1880 gold. +35% Attack Speed, +20% Crit Chance, +20 Movement Speed. Typhoon: Every 5-2s (reduced by 0.2s for each Basic Attack), the next Basic Attack will hit up to 3 enemy units for 150...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Winter Crown",
+        "Slug":  "winter-crown",
+        "IconUrl":  "https://mlbbhub.com/images/items/winter-crown.png",
+        "SourceUrl":  "https://mlbbhub.com/items/winter-crown",
+        "Category":  "Attack",
+        "Tier":  3,
+        "Description":  "Winter Crown is a Tier 3 Attack / Magic item in Mobile Legends costing 1910 gold. +400 HP, +5% Cooldown Reduction. Frozen: Becomes frozen, untargetable, and immune to damage for 2s (100s cooldown). Cannot move or cast skills while fr...",
+        "Status":  "EXTRACTED"
+    },
+    {
+        "Name":  "Wishing Lantern",
+        "Slug":  "wishing-lantern",
+        "IconUrl":  "https://mlbbhub.com/images/items/wishing-lantern.png",
+        "SourceUrl":  "https://mlbbhub.com/items/wishing-lantern",
+        "Category":  "Magic",
+        "Tier":  3,
+        "Description":  "Wishing Lantern is a Tier 3 Magic item in Mobile Legends costing 2250 gold. +75 Magic Power, +10% Cooldown Reduction. Butterfly Goddess: For every 900 Magic Damage dealt to an enemy hero (calculated before Damage Reduction), a Butterfly Goddess is...",
+        "Status":  "EXTRACTED"
+    }
+]
