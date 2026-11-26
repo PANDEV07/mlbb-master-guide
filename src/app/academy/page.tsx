@@ -8,7 +8,7 @@ export const metadata = buildPageMetadata(
   "Kurikulum peningkatan ranked Mobile Legends: Bang Bang untuk Solo, Duo, Trio, dan 5-Man Squad berbasis adaptasi strategi turnamen global."
 );
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function AcademyPage() {
   const livePatch = await getCurrentLivePatch("ORIGINAL_SERVER").catch(

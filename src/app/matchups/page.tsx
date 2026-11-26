@@ -9,7 +9,7 @@ export const metadata = buildPageMetadata(
   "Analisis duel 1v1 head-to-head dan simulasi komposisi tim 5v5 Mobile Legends berbasis mekanik skill, kombo, dan katalog item Original Server.",
 );
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function MatchupsPage() {
   const directory = await getHeroDirectory();

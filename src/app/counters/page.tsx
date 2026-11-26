@@ -8,7 +8,7 @@ export const metadata = buildPageMetadata(
   "Temukan rekomendasi hero counter dan item counter untuk 1 hingga 5 hero lawan Mobile Legends berbasis bukti mekanik.",
 );
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function CountersPage() {
   const directory = await getHeroDirectory();

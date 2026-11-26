@@ -10,7 +10,7 @@ export const metadata = buildPageMetadata(
   "Pelacakan pembaruan patch Original Server vs Advance Server, registry sumber, dan status kesegaran basis pengetahuan."
 );
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function PatchesPage() {
   const snapshot = await getPatchHubSnapshot();

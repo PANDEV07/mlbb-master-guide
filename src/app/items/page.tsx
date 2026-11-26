@@ -9,7 +9,7 @@ export const metadata = buildPageMetadata(
   "Katalog item Mobile Legends: Bang Bang dengan atribut, harga, efek, dan data patch Original Server."
 );
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function ItemsPage() {
   try {

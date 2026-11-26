@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useDeferredValue, useMemo, useState } from "react";
 import Link from "next/link";
 import {
   ArrowUpDown,
@@ -9,6 +9,7 @@ import {
   ExternalLink,
   Info,
   LayoutGrid,
+  Loader2,
   Search,
   X,
 } from "lucide-react";
@@ -22,7 +23,7 @@ import {
   META_TIERS,
   formatPercent,
   groupHeroesByTier,
-  type MetaDashboardPayload,
+  type MetaBracketSnapshot,
   type MetaRankBracketKey,
   type MetaTierGrade,
   type RankedMetaHero,
@@ -30,7 +31,9 @@ import {
 import { MetaSpotlightStrip } from "./MetaSpotlightStrip";
 
 type Props = {
-  payload: MetaDashboardPayload;
+  initialBracket: MetaBracketSnapshot;
+  sourceName: string;
+  sourceUpdatedAt: string | null;
   patchLabel: string;
 };
 
@@ -119,24 +122,25 @@ const TIER_STYLES: Record<
   },
 };
 
-function getMetricPercentWidth(hero: RankedMetaHero, metric: MetricFocus): string {
-  const val = hero[metric] * 100;
-  if (metric === "winRate") {
-    return `${Math.max(10, Math.min(100, (val - 42) * 5.2))}%`;
-  }
-  if (metric === "pickRate") {
-    return `${Math.max(8, Math.min(100, val * 28))}%`;
-  }
-  return `${Math.max(6, Math.min(100, val * 1.15))}%`;
-}
-
-export function MetaTierListBoard({ payload, patchLabel }: Props) {
-  const [bracketKey, setBracketKey] =
-    useState<MetaRankBracketKey>("mythical_glory");
+export function MetaTierListBoard({
+  initialBracket,
+  sourceName,
+  sourceUpdatedAt,
+  patchLabel,
+}: Props) {
+  const [bracketCache, setBracketCache] = useState<
+    Partial<Record<MetaRankBracketKey, MetaBracketSnapshot>>
+  >({ [initialBracket.key]: initialBracket });
+  const [bracketKey, setBracketKey] = useState<MetaRankBracketKey>(
+    initialBracket.key,
+  );
+  const [loadingBracket, setLoadingBracket] =
+    useState<MetaRankBracketKey | null>(null);
   const [selectedRole, setSelectedRole] = useState<string>("ALL");
   const [selectedLane, setSelectedLane] = useState<string>("ALL");
   const [metricFocus, setMetricFocus] = useState<MetricFocus>("winRate");
   const [search, setSearch] = useState("");
+  const deferredSearch = useDeferredValue(search);
   const [viewMode, setViewMode] = useState<ViewMode>("tier-board");
   const [sortField, setSortField] = useState<SortField>("metaScore");
   const [mobileOpenTiers, setMobileOpenTiers] = useState<
@@ -149,10 +153,30 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
     D: false,
   });
 
-  const activeBracket = payload.brackets[bracketKey];
+  const activeBracket = bracketCache[bracketKey] ?? initialBracket;
+
+  const handleSelectBracket = async (nextKey: MetaRankBracketKey) => {
+    if (bracketCache[nextKey]) {
+      setBracketKey(nextKey);
+      return;
+    }
+    setLoadingBracket(nextKey);
+    try {
+      const res = await fetch(`/api/meta?bracket=${encodeURIComponent(nextKey)}`);
+      if (res.ok) {
+        const data = (await res.json()) as { bracket?: MetaBracketSnapshot };
+        if (data.bracket) {
+          setBracketCache((prev) => ({ ...prev, [nextKey]: data.bracket! }));
+          setBracketKey(nextKey);
+        }
+      }
+    } finally {
+      setLoadingBracket(null);
+    }
+  };
 
   const filteredHeroes = useMemo(() => {
-    const q = search.trim().toLowerCase();
+    const q = deferredSearch.trim().toLowerCase();
     return activeBracket.heroes.filter((hero) => {
       if (q && !hero.heroName.toLowerCase().includes(q)) return false;
       if (selectedRole !== "ALL" && !hero.roles.includes(selectedRole)) {
@@ -163,15 +187,13 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
       }
       return true;
     });
-  }, [activeBracket.heroes, search, selectedRole, selectedLane]);
+  }, [activeBracket.heroes, deferredSearch, selectedRole, selectedLane]);
 
-  // Saat memfilter 1 Role/Lane spesifik, hitung ulang distribusi S–D relatif pada kelompok tsb agar adil
   const tierBuckets = useMemo(() => {
     const grouped = groupHeroesByTier(
       filteredHeroes,
       selectedRole !== "ALL" || selectedLane !== "ALL",
     );
-    // Urutkan hero di dalam tiap tier berdasarkan metrik yang dipilih (Win Rate / Pick Rate / Ban Rate)
     const sortedBuckets: Record<MetaTierGrade, RankedMetaHero[]> = {
       S: [],
       A: [],
@@ -204,8 +226,8 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
     [activeBracket.heroes],
   );
 
-  const updatedDateText = payload.sourceUpdatedAt
-    ? new Date(payload.sourceUpdatedAt).toLocaleDateString("id-ID", {
+  const updatedDateText = sourceUpdatedAt
+    ? new Date(sourceUpdatedAt).toLocaleDateString("id-ID", {
         day: "numeric",
         month: "long",
         year: "numeric",
@@ -249,27 +271,34 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
           aria-label="Pilih Bracket Rank"
           className="flex flex-wrap gap-1.5 border border-[#22D3EE]/30 bg-[#101830] p-1.5"
         >
-          {BRACKET_OPTIONS.map((opt) => (
-            <button
-              key={opt.key}
-              type="button"
-              role="tab"
-              aria-selected={bracketKey === opt.key}
-              onClick={() => setBracketKey(opt.key)}
-              className={cn(
-                "font-display cursor-pointer px-3 py-1.5 text-xs transition sm:text-sm",
-                bracketKey === opt.key
-                  ? "bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.45)]"
-                  : "text-[#9AA6C4] hover:text-[#F5B83D]",
-              )}
-            >
-              {opt.label}
-            </button>
-          ))}
+          {BRACKET_OPTIONS.map((opt) => {
+            const isLoading = loadingBracket === opt.key;
+            return (
+              <button
+                key={opt.key}
+                type="button"
+                role="tab"
+                aria-selected={bracketKey === opt.key}
+                disabled={isLoading}
+                onClick={() => handleSelectBracket(opt.key)}
+                className={cn(
+                  "font-display inline-flex cursor-pointer items-center gap-1.5 px-3 py-1.5 text-xs transition sm:text-sm",
+                  bracketKey === opt.key
+                    ? "bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.45)]"
+                    : "text-[#9AA6C4] hover:text-[#F5B83D]",
+                )}
+              >
+                {isLoading && (
+                  <Loader2 className="h-3 w-3 animate-spin" aria-hidden="true" />
+                )}
+                {opt.label}
+              </button>
+            );
+          })}
         </div>
       </div>
 
-      {/* Top 5 Meta Terkini — Progress Bars (Referensi Beranda #meta) */}
+      {/* Top 5 Meta Terkini — Progress Bars */}
       <section className="border border-[#22D3EE]/20 bg-[#0D1328] p-5 sm:p-6">
         <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
           <h3 className="mlbb-heading text-xl text-[#E6EAF5] sm:text-2xl">
@@ -315,7 +344,6 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
                   </div>
                 </div>
 
-                {/* Win Rate Bar (Gold) */}
                 <div>
                   <div className="mb-1 flex items-center justify-between text-[11px] text-[#9AA6C4]">
                     <span>Win Rate</span>
@@ -331,7 +359,6 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
                   </div>
                 </div>
 
-                {/* Pick Rate Bar (Cyan) */}
                 <div>
                   <div className="mb-1 flex items-center justify-between text-[11px] text-[#9AA6C4]">
                     <span>Pick Rate</span>
@@ -349,7 +376,6 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
                   </div>
                 </div>
 
-                {/* Ban Rate Bar (Crimson) */}
                 <div>
                   <div className="mb-1 flex items-center justify-between text-[11px] text-[#9AA6C4]">
                     <span>Ban Rate</span>
@@ -378,7 +404,7 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
       {/* Panel Kontrol Tier List S–D */}
       <div id="tier-list" className="scroll-mt-20 space-y-5">
         <Surface elevated className="space-y-4 p-4 sm:p-5">
-          {/* Baris 1: Filter Role (dengan kode role seperti referensi) + Switcher Tampilan */}
+          {/* Baris 1: Filter Role + Switcher Tampilan */}
           <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex flex-wrap items-center gap-2">
               <button
@@ -406,7 +432,6 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
               ))}
             </div>
 
-            {/* View Mode Switcher */}
             <div className="inline-flex self-start border border-[#22D3EE]/30 bg-[#0A0E1A] p-1">
               <button
                 type="button"
@@ -437,7 +462,7 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
             </div>
           </div>
 
-          {/* Baris 2: Filter Lane + Metrik Fokus (Win/Pick/Ban) + Cari Hero */}
+          {/* Baris 2: Filter Lane + Metrik Fokus + Cari Hero */}
           <div className="flex flex-col gap-3 border-t border-[#22D3EE]/15 pt-3.5 xl:flex-row xl:items-center xl:justify-between">
             <div className="flex flex-wrap items-center gap-1.5">
               <span className="font-display mr-1 text-xs text-[#9AA6C4]">
@@ -469,7 +494,6 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
             </div>
 
             <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center">
-              {/* Toggle Metrik Kartu Tier (Referensi Tier List) */}
               {viewMode === "tier-board" && (
                 <div className="inline-flex border border-[#22D3EE]/30 bg-[#0A0E1A]">
                   {METRIC_OPTIONS.map((opt) => (
@@ -513,205 +537,138 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
             </div>
           </div>
 
-          {/* MODE 1: VISUAL TIER BOARD S -> D */}
+          {/* MODE 1: SINGLE UNIFIED RESPONSIVE TIER BOARD (tanpa duplikasi DOM) */}
           {viewMode === "tier-board" ? (
-            <div className="space-y-4">
+            <div className="space-y-3.5">
               {filteredHeroes.length === 0 ? (
                 <div className="border border-dashed border-[#22D3EE]/30 bg-[#0A0E1A] p-8 text-center text-xs text-[#9AA6C4]">
                   Tidak ada hero yang cocok dengan kombinasi filter saat ini.
                 </div>
               ) : (
-                <>
-                  {/* TAMPILAN DESKTOP: Bendera Tier Miring (Tier List Desktop) */}
-                  <div className="hidden space-y-3.5 sm:block">
-                    {META_TIERS.map((grade) => {
-                      const heroesInTier = tierBuckets[grade];
-                      const style = TIER_STYLES[grade];
+                META_TIERS.map((grade) => {
+                  const heroesInTier = tierBuckets[grade];
+                  const style = TIER_STYLES[grade];
+                  const isMobileOpen = mobileOpenTiers[grade];
 
-                      return (
-                        <div key={`desktop-${grade}`} className="flex min-h-[132px]">
-                          {/* Angled Tier Grade Flag */}
-                          <div
-                            className={cn(
-                              "mlbb-tier-flag font-display flex w-28 shrink-0 flex-col items-center justify-center pr-3",
-                              style.flagBg,
-                              style.glow,
-                            )}
-                          >
-                            <span className="text-6xl leading-none font-extrabold">
-                              {style.label}
-                            </span>
-                            <span className="mt-1 text-[10px] tracking-widest opacity-85">
-                              {heroesInTier.length} HERO
-                            </span>
-                          </div>
-
-                          {/* Hero Grid Container */}
-                          <div
-                            className={cn(
-                              "mlbb-card flex-1 p-3.5",
-                              style.borderColor,
-                            )}
-                          >
-                            {heroesInTier.length === 0 ? (
-                              <p className="py-4 text-xs text-[#9AA6C4]">
-                                Tidak ada hero di Tier {grade} pada filter ini.
-                              </p>
-                            ) : (
-                              <div className="grid grid-cols-3 gap-2.5 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-                                {heroesInTier.map((hero) => {
-                                  const primaryRoleCode =
-                                    ROLE_CODES[hero.roles[0] ?? ""] ?? "ML";
-                                  const metricVal = (
-                                    hero[metricFocus] * 100
-                                  ).toFixed(metricFocus === "pickRate" ? 2 : 1);
-
-                                  return (
-                                    <Link
-                                      key={`${grade}-${hero.heroSlug}`}
-                                      href={`/heroes/${hero.heroSlug}`}
-                                      className="group flex items-center gap-2.5 border border-white/12 bg-[#0A0E1A] p-2 transition hover:-translate-y-0.5 hover:border-[#F5B83D]/70 hover:bg-[#15203E]"
-                                    >
-                                      <div className="relative shrink-0">
-                                        <HeroPortrait
-                                          slug={hero.heroSlug}
-                                          name={hero.heroName}
-                                          className="h-11 w-10 shrink-0"
-                                        />
-                                        <span className="font-display absolute top-0.5 left-0.5 border border-[#22D3EE]/50 bg-[#0A0E1A]/90 px-1 text-[9px] leading-tight text-[#22D3EE]">
-                                          {primaryRoleCode}
-                                        </span>
-                                      </div>
-                                      <div className="min-w-0 flex-1">
-                                        <p className="font-display truncate text-sm leading-tight text-[#E6EAF5] group-hover:text-[#F5B83D]">
-                                          {hero.heroName}
-                                        </p>
-                                        <p
-                                          className={cn(
-                                            "font-display mt-0.5 text-base leading-none",
-                                            style.textAccent,
-                                          )}
-                                        >
-                                          {metricVal}%
-                                        </p>
-                                      </div>
-                                    </Link>
-                                  );
-                                })}
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-
-                  {/* TAMPILAN MOBILE: Akordeon Tier List (Referensi Tier List Mobile) */}
-                  <div className="space-y-3 sm:hidden">
-                    {META_TIERS.map((grade) => {
-                      const heroesInTier = tierBuckets[grade];
-                      const style = TIER_STYLES[grade];
-                      const isOpen = mobileOpenTiers[grade];
-
-                      return (
-                        <div
-                          key={`mobile-${grade}`}
-                          className={cn("mlbb-card", style.borderColor)}
-                        >
-                          <button
-                            type="button"
-                            onClick={() => toggleMobileTier(grade)}
-                            aria-expanded={isOpen}
-                            className="flex h-14 w-full cursor-pointer items-center gap-3.5 pr-4 text-left"
-                          >
-                            <span
-                              className={cn(
-                                "font-display flex h-14 w-14 shrink-0 items-center justify-center text-3xl font-extrabold",
-                                style.flagBg,
-                              )}
-                            >
-                              {style.label}
-                            </span>
-                            <div className="min-w-0 flex-1">
-                              <span className="font-display block text-lg leading-tight text-[#E6EAF5]">
-                                {heroesInTier.length} Hero
-                              </span>
-                              <span className="text-[11px] text-[#9AA6C4]">
-                                {style.subtitle}
-                              </span>
-                            </div>
-                            <ChevronDown
-                              className={cn(
-                                "h-5 w-5 text-[#22D3EE] transition-transform",
-                                isOpen ? "rotate-180" : "",
-                              )}
-                              aria-hidden="true"
-                            />
-                          </button>
-
-                          {isOpen && (
-                            <div className="border-t border-white/10 px-3 pb-3">
-                              {heroesInTier.length === 0 ? (
-                                <p className="py-3 text-xs text-[#9AA6C4]">
-                                  Tidak ada hero di Tier {grade} pada filter ini.
-                                </p>
-                              ) : (
-                                <div className="divide-y divide-white/10">
-                                  {heroesInTier.map((hero) => {
-                                    const metricVal = (
-                                      hero[metricFocus] * 100
-                                    ).toFixed(metricFocus === "pickRate" ? 2 : 1);
-                                    return (
-                                      <Link
-                                        key={`m-${grade}-${hero.heroSlug}`}
-                                        href={`/heroes/${hero.heroSlug}`}
-                                        className="flex items-center gap-3 py-2.5"
-                                      >
-                                        <HeroPortrait
-                                          slug={hero.heroSlug}
-                                          name={hero.heroName}
-                                          className="h-12 w-11 shrink-0"
-                                        />
-                                        <div className="min-w-0 flex-1">
-                                          <p className="font-display truncate text-base leading-tight text-[#E6EAF5]">
-                                            {hero.heroName}
-                                          </p>
-                                          <p className="text-[11px] text-[#9AA6C4]">
-                                            {hero.roles.join(" / ") || "Hero"}
-                                          </p>
-                                          <div className="mt-1.5 h-1 bg-[#1B2442]">
-                                            <div
-                                              className="h-1"
-                                              style={{
-                                                width: getMetricPercentWidth(
-                                                  hero,
-                                                  metricFocus,
-                                                ),
-                                                backgroundColor: style.hex,
-                                              }}
-                                            />
-                                          </div>
-                                        </div>
-                                        <span
-                                          className={cn(
-                                            "font-display shrink-0 text-xl",
-                                            style.textAccent,
-                                          )}
-                                        >
-                                          {metricVal}%
-                                        </span>
-                                      </Link>
-                                    );
-                                  })}
-                                </div>
-                              )}
-                            </div>
+                  return (
+                    <div
+                      key={grade}
+                      style={{
+                        contentVisibility: "auto",
+                        containIntrinsicSize: "0 180px",
+                      }}
+                      className="flex flex-col sm:min-h-[132px] sm:flex-row"
+                    >
+                      {/* Mobile Accordion Header (< sm) */}
+                      <button
+                        type="button"
+                        onClick={() => toggleMobileTier(grade)}
+                        aria-expanded={isMobileOpen}
+                        className={cn(
+                          "mlbb-card flex h-14 w-full cursor-pointer items-center gap-3.5 pr-4 text-left sm:hidden",
+                          style.borderColor,
+                        )}
+                      >
+                        <span
+                          className={cn(
+                            "font-display flex h-14 w-14 shrink-0 items-center justify-center text-3xl font-extrabold",
+                            style.flagBg,
                           )}
+                        >
+                          {style.label}
+                        </span>
+                        <div className="min-w-0 flex-1">
+                          <span className="font-display block text-lg leading-tight text-[#E6EAF5]">
+                            {heroesInTier.length} Hero
+                          </span>
+                          <span className="text-[11px] text-[#9AA6C4]">
+                            {style.subtitle}
+                          </span>
                         </div>
-                      );
-                    })}
-                  </div>
-                </>
+                        <ChevronDown
+                          className={cn(
+                            "h-5 w-5 text-[#22D3EE] transition-transform",
+                            isMobileOpen ? "rotate-180" : "",
+                          )}
+                          aria-hidden="true"
+                        />
+                      </button>
+
+                      {/* Desktop Angled Tier Flag (sm+) */}
+                      <div
+                        className={cn(
+                          "mlbb-tier-flag font-display hidden w-28 shrink-0 flex-col items-center justify-center pr-3 sm:flex",
+                          style.flagBg,
+                          style.glow,
+                        )}
+                      >
+                        <span className="text-6xl leading-none font-extrabold">
+                          {style.label}
+                        </span>
+                        <span className="mt-1 text-[10px] tracking-widest opacity-85">
+                          {heroesInTier.length} HERO
+                        </span>
+                      </div>
+
+                      {/* Single Shared Hero Grid (responsive mobile toggle, always open on desktop) */}
+                      <div
+                        className={cn(
+                          "mlbb-card flex-1 p-3.5",
+                          style.borderColor,
+                          isMobileOpen ? "block" : "hidden sm:block",
+                        )}
+                      >
+                        {heroesInTier.length === 0 ? (
+                          <p className="py-4 text-xs text-[#9AA6C4]">
+                            Tidak ada hero di Tier {grade} pada filter ini.
+                          </p>
+                        ) : (
+                          <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+                            {heroesInTier.map((hero) => {
+                              const primaryRoleCode =
+                                ROLE_CODES[hero.roles[0] ?? ""] ?? "ML";
+                              const metricVal = (
+                                hero[metricFocus] * 100
+                              ).toFixed(metricFocus === "pickRate" ? 2 : 1);
+
+                              return (
+                                <Link
+                                  key={`${grade}-${hero.heroSlug}`}
+                                  href={`/heroes/${hero.heroSlug}`}
+                                  className="group flex items-center gap-2.5 border border-white/12 bg-[#0A0E1A] p-2 transition hover:-translate-y-0.5 hover:border-[#F5B83D]/70 hover:bg-[#15203E]"
+                                >
+                                  <div className="relative shrink-0">
+                                    <HeroPortrait
+                                      slug={hero.heroSlug}
+                                      name={hero.heroName}
+                                      className="h-11 w-10 shrink-0"
+                                    />
+                                    <span className="font-display absolute top-0.5 left-0.5 border border-[#22D3EE]/50 bg-[#0A0E1A]/90 px-1 text-[9px] leading-tight text-[#22D3EE]">
+                                      {primaryRoleCode}
+                                    </span>
+                                  </div>
+                                  <div className="min-w-0 flex-1">
+                                    <p className="font-display truncate text-sm leading-tight text-[#E6EAF5] group-hover:text-[#F5B83D]">
+                                      {hero.heroName}
+                                    </p>
+                                    <p
+                                      className={cn(
+                                        "font-display mt-0.5 text-base leading-none",
+                                        style.textAccent,
+                                      )}
+                                    >
+                                      {metricVal}%
+                                    </p>
+                                  </div>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })
               )}
             </div>
           ) : (
@@ -851,7 +808,7 @@ export function MetaTierListBoard({ payload, patchLabel }: Props) {
               <p>
                 <strong className="text-[#F5B83D]">Fakta Resmi (Tier 1):</strong>{" "}
                 Seluruh angka Win Rate, Pick Rate, dan Ban Rate diambil langsung
-                dari {payload.sourceName} (diperbarui {updatedDateText}).
+                dari {sourceName} (diperbarui {updatedDateText}).
               </p>
               <p>
                 <strong className="text-[#22D3EE]">

@@ -36,7 +36,7 @@ export const metadata = buildPageMetadata(
   "Dashboard meta Mobile Legends: Bang Bang dengan Tier List S–D per Role dari data resmi Moonton, pencarian cepat Hero & Item, Matchup 1v1 & 5v5, Counter, Build, dan Akademi Ranked.",
 );
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 const CORE_TOOLS = [
   {
@@ -286,7 +286,12 @@ export default async function HomePage() {
 
       {/* Dashboard Meta Interaktif: Top 5 Bars + Sorotan + Tier List S-D */}
       <section aria-label="Dashboard Meta dan Tier List Hero">
-        <MetaTierListBoard payload={metaPayload} patchLabel={patchLabel} />
+        <MetaTierListBoard
+          initialBracket={metaPayload.brackets.mythical_glory}
+          sourceName={metaPayload.sourceName}
+          sourceUpdatedAt={metaPayload.sourceUpdatedAt}
+          patchLabel={patchLabel}
+        />
       </section>
 
       {/* 4 Alat Strategi Utama */}

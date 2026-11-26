@@ -55,6 +55,10 @@
 ---
 
 ## 6. Log Rilis Terbaru (`2026-11-26`)
+- **Optimasi Kecepatan & Caching Produksi:**
+  - Konversi seluruh **133 portrait hero** (`public/heroes/*.webp`) via `sharp` dari **22,98 MB → 1,17 MB** (**hemat 94,9%**), ditambah CDN resize WebP untuk splash art skin premium (`scale-to-width-down/1200` & `640`).
+  - Migrasi seluruh halaman pengetahuan dari `force-dynamic` ke **ISR Edge Caching (`revalidate = 3600`)** + deduplikasi query DB per-request dengan `React.cache()`, serta `Cache-Control: public, max-age=31536000, immutable` pada `/fonts/*` dan `/heroes/*`.
+  - Pemangkasan payload RSC & DOM Beranda: lazy-load bracket rank via `/api/meta` ter-cache edge, eliminasi duplikasi DOM Desktop/Mobile pada Tier List, pemisahan `hero-skin-utils.ts` (0 KB JSON skin di client bundle), `content-visibility: auto`, `useDeferredValue`, font `<link rel="preload">`, dan `optimizePackageImports: ["lucide-react"]`.
 - **Tema Cyber-Gold Navy (Land of Dawn):** Seluruh aplikasi diperbarui ke palet `#0A0E1A` / `#101830` dengan aksen emas `#F5B83D` dan cyan `#22D3EE`, sudut kartu *chamfered*, font lokal SIL OFL (`Rajdhani` + `Inter` di `public/fonts/`), Top 5 Meta Bars, Tier List S–D desktop miring & akordeon mobile + bottom bar mobile.
 - **Backdrop Splash Art Skin Premium (133/133 Hero):** Sinkronisasi otomatis (`npm run hero-skins:sync`) ke `src/data/imports/hero-premium-skins.json` berdasarkan hirarki resmi Collection Tier MLBB untuk banner Detail Hero dan sorotan #1 Meta di Beranda.
 - **Lokalisasi Penuh Bahasa Indonesia & Produksi:** 590 deskripsi skill resmi Moonton (`x-lang: id`), modul Matchup 1v1 & Draft 5v5, Counter Pick 1–5 musuh, dan Meta Dashboard aktif di GitHub (`PANDEV07/mlbb-master-guide`) & Vercel (`https://mlbb-master-guide.vercel.app/`).

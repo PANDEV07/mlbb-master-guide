@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useDeferredValue, useMemo, useState } from "react";
 import { Search, SlidersHorizontal, X } from "lucide-react";
 import type { HeroRecord } from "../types/hero.types";
 import { Surface } from "@/components/ui/Surface";
@@ -81,6 +81,7 @@ const MECHANIC_LABELS: Record<string, string> = {
 
 export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
   const [search, setSearch] = useState("");
+  const deferredSearch = useDeferredValue(search);
   const [selectedRole, setSelectedRole] = useState("All");
   const [selectedLane, setSelectedLane] = useState("All");
   const [selectedSpecialty, setSelectedSpecialty] = useState("All");
@@ -107,7 +108,7 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
   );
 
   const filteredHeroes = useMemo(() => {
-    const query = search.trim().toLowerCase();
+    const query = deferredSearch.trim().toLowerCase();
 
     return heroes.filter((hero) => {
       const slug = hero.metadata.slug;
@@ -142,7 +143,7 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
     });
   }, [
     heroes,
-    search,
+    deferredSearch,
     selectedRole,
     selectedLane,
     selectedSpecialty,
@@ -365,6 +366,10 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
               <Link
                 key={hero.entityId}
                 href={`/heroes/${encodeURIComponent(slug)}`}
+                style={{
+                  contentVisibility: "auto",
+                  containIntrinsicSize: "0 140px",
+                }}
                 className="group block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5B83D]"
                 aria-label={`Lihat detail ${hero.metadata.name}`}
               >

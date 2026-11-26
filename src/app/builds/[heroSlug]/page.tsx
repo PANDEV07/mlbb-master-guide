@@ -11,6 +11,8 @@ type Props = {
   params: Promise<{ heroSlug: string }>;
 };
 
+export const revalidate = 3600;
+
 export default async function HeroBuildPage({ params }: Props) {
   const { heroSlug } = await params;
 

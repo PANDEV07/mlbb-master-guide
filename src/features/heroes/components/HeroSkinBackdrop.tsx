@@ -4,8 +4,9 @@ import { useState } from "react";
 import { Sparkles } from "lucide-react";
 import {
   formatSkinTierLabelId,
+  getOptimizedSplashUrl,
   type HeroPremiumSkinRecord,
-} from "../data/hero-premium-skins";
+} from "../data/hero-skin-utils";
 
 interface HeroSkinBackdropProps {
   skin: HeroPremiumSkinRecord | null;
@@ -33,16 +34,21 @@ export function HeroSkinBackdrop({
   }
 
   const label = formatSkinTierLabelId(skin.skinTier, skin.skinTag);
+  const optimizedUrl = getOptimizedSplashUrl(
+    skin.splashUrl,
+    variant === "banner" ? 1200 : 640,
+  );
 
   return (
     <>
-      {/* Full-bleed HD Skin Splash Art */}
+      {/* Full-bleed HD Skin Splash Art (dioptimalkan via CDN resize WebP) */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={skin.splashUrl}
+        src={optimizedUrl}
         alt={`Splash art skin ${skin.skinName} untuk ${heroName}`}
         referrerPolicy="no-referrer"
         loading="eager"
+        fetchPriority="high"
         decoding="async"
         onError={() => setFailed(true)}
         className={
@@ -62,7 +68,7 @@ export function HeroSkinBackdrop({
         }
       />
 
-      {/* Vignette bawah & kilau cyan halus */}
+      {/* Vignette bawah */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[linear-gradient(0deg,rgba(10,14,26,0.8)_0%,transparent_45%)]"

@@ -1,12 +1,13 @@
-﻿import {
+import { cache } from "react";
+import {
   getCurrentOriginalServerHeroes,
   getOriginalServerHeroBySlug,
 } from "../repositories/hero.repository";
 
-export async function getHeroDirectory() {
+export const getHeroDirectory = cache(async () => {
   return getCurrentOriginalServerHeroes();
-}
+});
 
-export async function getHeroDetail(slug: string) {
+export const getHeroDetail = cache(async (slug: string) => {
   return getOriginalServerHeroBySlug(slug);
-}
+});

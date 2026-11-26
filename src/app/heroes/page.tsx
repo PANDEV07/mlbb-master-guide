@@ -9,7 +9,7 @@ export const metadata = buildPageMetadata(
   "Direktori lengkap hero Mobile Legends: Bang Bang lengkap dengan filter role, lane, spesialisasi, skill, dan kombo.",
 );
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function HeroesPage() {
   const result = await getCurrentOriginalServerHeroes();

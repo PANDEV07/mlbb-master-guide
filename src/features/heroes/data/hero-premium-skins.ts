@@ -1,16 +1,11 @@
 import rawData from "@/data/imports/hero-premium-skins.json";
+import type { HeroPremiumSkinRecord } from "./hero-skin-utils";
 
-export interface HeroPremiumSkinRecord {
-  heroSlug: string;
-  heroName: string;
-  skinName: string;
-  skinTier: string;
-  skinTag: string;
-  splashUrl: string;
-  width: number;
-  height: number;
-  sourceUrl: string;
-}
+export {
+  formatSkinTierLabelId,
+  getOptimizedSplashUrl,
+  type HeroPremiumSkinRecord,
+} from "./hero-skin-utils";
 
 interface HeroPremiumSkinDataset {
   schemaVersion: number;
@@ -59,13 +54,4 @@ export function getHeroPremiumSkin(
   }
 
   return SKIN_BY_NORMALIZED.get(normalizeKey(slugOrName)) ?? null;
-}
-
-export function formatSkinTierLabelId(tier: string, tag: string): string {
-  const cleanTag = tag.trim();
-  const cleanTier = tier.trim();
-  if (cleanTag && cleanTag.toLowerCase() !== cleanTier.toLowerCase()) {
-    return `${cleanTag} · ${cleanTier}`;
-  }
-  return cleanTier || "Default";
 }

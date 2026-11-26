@@ -8,7 +8,7 @@ export const metadata = buildPageMetadata(
   "Pilih hero untuk melihat 3 template build siap pakai atau menyusun konfigurasi item custom.",
 );
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function BuildsPage() {
   const directory = await getHeroDirectory();

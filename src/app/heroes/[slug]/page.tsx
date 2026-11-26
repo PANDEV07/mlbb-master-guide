@@ -39,6 +39,8 @@ type HeroDetailPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export const revalidate = 3600;
+
 const attributeLabels: Record<string, string> = {
   hp: "HP",
   hpRegen: "Regenerasi HP",

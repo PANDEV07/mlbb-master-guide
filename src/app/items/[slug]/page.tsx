@@ -1,3 +1,4 @@
+import { cache } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -6,6 +7,10 @@ import { PageHeader } from "@/components/shared/PageHeader";
 import { Surface } from "@/components/ui/Surface";
 import { Badge } from "@/components/ui/Badge";
 import { getItemDetail, type RecipeNode } from "@/features/items/server/item.repository";
+
+export const revalidate = 3600;
+
+const getCachedItemDetail = cache((slug: string) => getItemDetail(slug));
 import {
   formatClaimClassificationId,
   formatConfidenceLevelId,
@@ -144,7 +149,7 @@ export default async function ItemDetailPage({
   params,
 }: ItemDetailPageProps) {
   const { slug } = await params;
-  const { item, patchVersion } = await getItemDetail(slug);
+  const { item, patchVersion } = await getCachedItemDetail(slug);
 
   if (!item) notFound();
 
@@ -455,7 +460,7 @@ export async function generateMetadata({
   params,
 }: ItemDetailPageProps) {
   const { slug } = await params;
-  const { item } = await getItemDetail(slug);
+  const { item } = await getCachedItemDetail(slug);
 
   return buildPageMetadata(
     item ? item.name : "Item tidak ditemukan",

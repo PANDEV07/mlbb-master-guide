@@ -9,7 +9,7 @@ export const metadata = buildPageMetadata(
   "Cari hero, item, build, matchup, counter, akademi ranked, dan catatan patch secara instan.",
 );
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export default async function SearchPage() {
   const [heroDir, itemCatalog] = await Promise.all([
