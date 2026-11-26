@@ -31,6 +31,7 @@ export const NAV_ITEMS: NavItemConfig[] = [
   { label: "Hero", href: "/heroes", iconName: "shield", group: "ensiklopedia" },
   { label: "Item", href: "/items", iconName: "package", group: "ensiklopedia" },
   { label: "Build", href: "/builds", iconName: "layers", group: "strategi" },
+  { label: "Draft", href: "/draft", iconName: "trophy", group: "strategi" },
   { label: "Matchup", href: "/matchups", iconName: "swords", group: "strategi" },
   { label: "Counter", href: "/counters", iconName: "git-compare", group: "strategi" },
   { label: "Akademi", href: "/academy", iconName: "graduation-cap", group: "strategi" },

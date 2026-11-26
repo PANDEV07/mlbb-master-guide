@@ -15,6 +15,7 @@ const TOP_NAV_HREFS = [
   "/heroes",
   "/items",
   "/builds",
+  "/draft",
   "/matchups",
   "/counters",
   "/academy",

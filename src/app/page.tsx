@@ -11,6 +11,7 @@ import {
   Package,
   Shield,
   Swords,
+  Trophy,
 } from "lucide-react";
 import { buildPageMetadata } from "@/lib/metadata";
 import { getHeroDirectory } from "@/features/heroes";
@@ -78,6 +79,14 @@ const CORE_TOOLS = [
 ] as const;
 
 const SECONDARY_MODULES = [
+  {
+    href: "/draft",
+    title: "Live Draft Simulator",
+    description:
+      "Simulasi Ban/Pick Turnamen MPL & Ranked 10-Ban lengkap dengan Asisten & Lawan AI.",
+    icon: Trophy,
+    badge: "Baru",
+  },
   {
     href: "/items",
     title: "Database Item",
@@ -355,7 +364,7 @@ export default async function HomePage() {
         >
           Panduan &amp; Eksplorasi Lainnya
         </h2>
-        <div className="grid gap-4 sm:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {SECONDARY_MODULES.map((mod) => {
             const Icon = mod.icon;
             return (

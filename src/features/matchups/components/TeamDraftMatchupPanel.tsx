@@ -18,6 +18,7 @@ import { HERO_ROLE_MAP } from "@/features/heroes/data/hero-role-map";
 import { HeroPortrait } from "@/features/heroes/components/HeroPortrait";
 import { Surface } from "@/components/ui/Surface";
 import { Badge } from "@/components/ui/Badge";
+import { ShareLinkButton } from "@/components/shared/ShareLinkButton";
 import { cn } from "@/lib/cn";
 import { HeroPickerModal } from "./HeroPickerModal";
 import {
@@ -110,6 +111,79 @@ export function TeamDraftMatchupPanel({
     }
     return map;
   }, [heroes]);
+
+  const heroBySlug = useMemo(() => {
+    const map = new Map<string, HeroRecord>();
+    for (const h of heroes) {
+      map.set(h.metadata.slug.toLowerCase(), h);
+    }
+    return map;
+  }, [heroes]);
+
+  // Pulihkan komposisi 5v5 dari URL (?mode=5v5&ally=...&enemy=...)
+  const [urlHydrated, setUrlHydrated] = useState(false);
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const parseTeam = (raw: string | null) => {
+        const slots = EMPTY_SLOTS();
+        if (!raw) return slots;
+        raw.split(",").forEach((token, idx) => {
+          const lane = MATCHUP_LANES[idx];
+          const clean = token.trim().toLowerCase();
+          if (!lane || !clean) return;
+          const match = heroBySlug.get(clean) ?? heroByLowerName.get(clean);
+          if (match) slots[lane] = match.metadata.name;
+        });
+        return slots;
+      };
+      if (params.has("ally")) setAllyMap(parseTeam(params.get("ally")));
+      if (params.has("enemy")) setEnemyMap(parseTeam(params.get("enemy")));
+    } catch {
+      // Abaikan bila URL tidak valid
+    }
+    setUrlHydrated(true);
+  }, [heroByLowerName, heroBySlug]);
+
+  const buildSharePath = () => {
+    const serialize = (map: Record<MatchupLane, string | null>) =>
+      MATCHUP_LANES.map((lane) => {
+        const name = map[lane];
+        if (!name) return "";
+        return heroByLowerName.get(name.toLowerCase())?.metadata.slug ?? name;
+      }).join(",");
+
+    const params = new URLSearchParams();
+    params.set("mode", "5v5");
+    if (Object.values(allyMap).some(Boolean)) {
+      params.set("ally", serialize(allyMap));
+    }
+    if (Object.values(enemyMap).some(Boolean)) {
+      params.set("enemy", serialize(enemyMap));
+    }
+    return `/matchups?${params.toString()}`;
+  };
+
+  useEffect(() => {
+    if (!urlHydrated || typeof window === "undefined") return;
+    const hasAlly = Object.values(allyMap).some(Boolean);
+    const hasEnemy = Object.values(enemyMap).some(Boolean);
+    if (!hasAlly && !hasEnemy) {
+      window.history.replaceState(null, "", "/matchups?mode=5v5");
+      return;
+    }
+    const serialize = (map: Record<MatchupLane, string | null>) =>
+      MATCHUP_LANES.map((lane) => {
+        const name = map[lane];
+        if (!name) return "";
+        return heroByLowerName.get(name.toLowerCase())?.metadata.slug ?? name;
+      }).join(",");
+    const params = new URLSearchParams();
+    params.set("mode", "5v5");
+    if (hasAlly) params.set("ally", serialize(allyMap));
+    if (hasEnemy) params.set("enemy", serialize(enemyMap));
+    window.history.replaceState(null, "", `/matchups?${params.toString()}`);
+  }, [allyMap, enemyMap, urlHydrated, heroByLowerName]);
 
   const allyCount = Object.values(allyMap).filter(Boolean).length;
   const enemyCount = Object.values(enemyMap).filter(Boolean).length;
@@ -301,14 +375,21 @@ export function TeamDraftMatchupPanel({
               Tukar Tim
             </button>
             {(allyCount > 0 || enemyCount > 0) && (
-              <button
-                type="button"
-                onClick={handleReset}
-                className="inline-flex items-center gap-1 rounded-lg border border-slate-700 px-2.5 py-1.5 text-xs font-medium text-slate-300 transition hover:border-slate-500 hover:text-white"
-              >
-                <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
-                Reset
-              </button>
+              <>
+                <ShareLinkButton
+                  label="Bagikan Draft 5v5"
+                  copiedLabel="Link Draft Disalin!"
+                  getUrl={buildSharePath}
+                />
+                <button
+                  type="button"
+                  onClick={handleReset}
+                  className="inline-flex items-center gap-1 rounded-lg border border-slate-700 px-2.5 py-1.5 text-xs font-medium text-slate-300 transition hover:border-slate-500 hover:text-white"
+                >
+                  <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
+                  Reset
+                </button>
+              </>
             )}
           </div>
         </div>

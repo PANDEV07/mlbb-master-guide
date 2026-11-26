@@ -1,7 +1,7 @@
 # PROJECT_STATUS — Status Proyek MLBB Master Guide
 
 **Terakhir Diperbarui:** `2026-11-26`
-**Fase Aktif:** `Production Live — Tema Cyber-Gold Navy & Skin Premium 133 Hero`
+**Fase Aktif:** `Production Live — Live Draft Simulator MPL/Ranked, Tren Meta Mingguan, Shareable URL & SEO`
 **Status Arsitektur:** `FROZEN_BASELINE (ADR-001 s.d. ADR-009 APPROVED; ADR-010 DEFERRED)`
 **Status Basis Data Pengetahuan:** **LIVE PRODUCTION (Supabase + Vercel Auto-Deploy)**
 
@@ -55,6 +55,14 @@
 ---
 
 ## 6. Log Rilis Terbaru (`2026-11-26`)
+- **Live Draft Simulator (Ban/Pick Turnamen MPL & Ranked 10-Ban) (`/draft`):**
+  - Engine Ban/Pick deterministik 20 langkah untuk format **Turnamen MPL (2 Fase Ban/Pick)** dan **Ranked Mythic 10-Ban** (`src/features/draft/engine/draft-simulator-engine.ts`), lengkap dengan Undo, Reset, Timer opsional (Off/30d/45d auto-lock), serta serialisasi URL bagikan (`?format=...&seq=...`).
+  - **Asisten Draft Real-Time + Mode Lawan AI Drafter (Blue/Red):** rekomendasi Ban/Pick berbasis data resmi Moonton GMS Glory+, cakupan 5 lane, keseimbangan Physical/Magic Damage, Hard CC, dan Frontline, serta integrasi 1-klik ke Audit 5v5 Matchup Hub & Counter Analyzer.
+- **Riwayat Snapshot Meta & Auto-Sync Mingguan:**
+  - Pencatatan snapshot otomatis ke `src/data/imports/hero-meta-history.json` oleh `npm run meta:sync` (baseline nyata `2026-11-25`), engine tren `meta-trend-engine.ts`, kartu tren `HeroMetaTrendCard` di Detail Hero, indikator naik/turun tier `▲`/`▼` di Tier List, serta GitHub Actions terjadwal `.github/workflows/sync-meta-weekly.yml`.
+- **Shareable URL & SEO Teknis Lengkap:**
+  - Tombol salin tautan (`ShareLinkButton`) dan sinkronisasi query URL pada Detail Hero, Counter (`?enemies=`), Matchup 1v1 (`?mode=1v1&a=&b=`), Draft 5v5 (`?mode=5v5&ally=&enemy=`), Build (`?items=`), dan Live Draft (`/draft?format=&seq=`).
+  - Kartu OpenGraph dinamis `1200×630` (`src/app/opengraph-image.tsx` dan `src/app/heroes/[slug]/opengraph-image.tsx`), metadata SEO dinamis per hero (`generateMetadata`), `src/app/sitemap.ts` (370+ URL), dan `src/app/robots.ts`.
 - **Optimasi Kecepatan & Caching Produksi:**
   - Konversi seluruh **133 portrait hero** (`public/heroes/*.webp`) via `sharp` dari **22,98 MB → 1,17 MB** (**hemat 94,9%**), ditambah CDN resize WebP untuk splash art skin premium (`scale-to-width-down/1200` & `640`).
   - Migrasi seluruh halaman pengetahuan dari `force-dynamic` ke **ISR Edge Caching (`revalidate = 3600`)** + deduplikasi query DB per-request dengan `React.cache()`, serta `Cache-Control: public, max-age=31536000, immutable` pada `/fonts/*` dan `/heroes/*`.

@@ -50,6 +50,8 @@ export interface RankedMetaHero {
   metaScore: number;
   tier: MetaTierGrade;
   overallRank: number;
+  tierDelta?: number | null;
+  winRateDelta?: number | null;
 }
 
 export interface MetaBracketSnapshot {

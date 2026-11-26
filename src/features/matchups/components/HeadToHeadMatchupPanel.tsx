@@ -18,6 +18,7 @@ import { HERO_LANE_MAP } from "@/features/heroes/data/hero-lane-map";
 import { HeroPortrait } from "@/features/heroes/components/HeroPortrait";
 import { Surface } from "@/components/ui/Surface";
 import { Badge } from "@/components/ui/Badge";
+import { ShareLinkButton } from "@/components/shared/ShareLinkButton";
 import { cn } from "@/lib/cn";
 import { formatClaimClassificationId } from "@/lib/i18n/labels";
 import { HeroPickerModal } from "./HeroPickerModal";
@@ -373,6 +374,19 @@ export function HeadToHeadMatchupPanel({
           </div>
           <div className="flex flex-wrap items-center gap-2">
             <Badge tone="neutral">Patch {patchVersion || "Aktif"}</Badge>
+            {(heroA || heroB) && (
+              <ShareLinkButton
+                label="Bagikan Duel 1v1"
+                copiedLabel="Link Duel Disalin!"
+                getUrl={() => {
+                  const params = new URLSearchParams();
+                  params.set("mode", "1v1");
+                  if (heroA) params.set("a", heroA.metadata.slug);
+                  if (heroB) params.set("b", heroB.metadata.slug);
+                  return `/matchups?${params.toString()}`;
+                }}
+              />
+            )}
             {(heroAName || heroBName) && (
               <button
                 type="button"

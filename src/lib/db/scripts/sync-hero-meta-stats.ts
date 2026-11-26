@@ -1,4 +1,4 @@
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { z } from "zod";
 
@@ -9,6 +9,13 @@ const OUTPUT_PATH = path.resolve(
   process.cwd(),
   "src/data/imports/hero-meta-stats.json",
 );
+
+const HISTORY_PATH = path.resolve(
+  process.cwd(),
+  "src/data/imports/hero-meta-history.json",
+);
+
+const MAX_HISTORY_SNAPSHOTS = 24;
 
 const BRACKETS = [
   { id: "9", key: "mythical_glory", label: "Mythical Glory+" },
@@ -47,6 +54,27 @@ const outputSchema = z.object({
       heroes: z.array(heroRankStatSchema),
     }),
   ),
+});
+
+const historyHeroPointSchema = z.object({
+  heroSlug: z.string().min(1),
+  winRate: z.number().min(0).max(1),
+  pickRate: z.number().min(0).max(1),
+  banRate: z.number().min(0).max(1),
+});
+
+const historySnapshotSchema = z.object({
+  snapshotDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  fetchedAt: z.string(),
+  sourceUpdatedAt: z.string().nullable(),
+  brackets: z.record(z.string(), z.array(historyHeroPointSchema)),
+});
+
+const historyFileSchema = z.object({
+  schemaVersion: z.literal(1),
+  sourceName: z.string(),
+  sourceTier: z.literal("TIER_1_OFFICIAL"),
+  snapshots: z.array(historySnapshotSchema),
 });
 
 function toSlug(name: string): string {
@@ -147,6 +175,64 @@ async function fetchBracket(bigrank: string) {
   };
 }
 
+async function appendMetaHistory(output: z.infer<typeof outputSchema>) {
+  let existingSnapshots: z.infer<typeof historySnapshotSchema>[] = [];
+  try {
+    const raw = await readFile(HISTORY_PATH, "utf8");
+    const parsed = historyFileSchema.safeParse(JSON.parse(raw));
+    if (parsed.success) {
+      existingSnapshots = parsed.data.snapshots;
+    }
+  } catch {
+    existingSnapshots = [];
+  }
+
+  const dateStr = (output.sourceUpdatedAt ?? output.fetchedAt).slice(0, 10);
+  const compactBrackets: Record<
+    string,
+    Array<z.infer<typeof historyHeroPointSchema>>
+  > = {};
+
+  for (const [key, b] of Object.entries(output.brackets)) {
+    compactBrackets[key] = b.heroes.map((h) => ({
+      heroSlug: h.heroSlug,
+      winRate: h.winRate,
+      pickRate: h.pickRate,
+      banRate: h.banRate,
+    }));
+  }
+
+  const nextSnapshot: z.infer<typeof historySnapshotSchema> = {
+    snapshotDate: dateStr,
+    fetchedAt: output.fetchedAt,
+    sourceUpdatedAt: output.sourceUpdatedAt,
+    brackets: compactBrackets,
+  };
+
+  const withoutSameDate = existingSnapshots.filter(
+    (s) => s.snapshotDate !== dateStr,
+  );
+  const merged = [...withoutSameDate, nextSnapshot]
+    .sort((a, b) => a.snapshotDate.localeCompare(b.snapshotDate))
+    .slice(-MAX_HISTORY_SNAPSHOTS);
+
+  const historyDoc = historyFileSchema.parse({
+    schemaVersion: 1,
+    sourceName: output.source.name,
+    sourceTier: "TIER_1_OFFICIAL",
+    snapshots: merged,
+  });
+
+  await writeFile(
+    HISTORY_PATH,
+    `${JSON.stringify(historyDoc, null, 2)}\n`,
+    "utf8",
+  );
+  process.stdout.write(
+    `[meta:sync] Riwayat snapshot diperbarui (${merged.length} snapshot, terbaru ${dateStr})\n`,
+  );
+}
+
 async function main() {
   const brackets: z.infer<typeof outputSchema>["brackets"] = {};
   let maxUpdatedMs = 0;
@@ -186,6 +272,7 @@ async function main() {
 
   await writeFile(OUTPUT_PATH, `${JSON.stringify(output, null, 2)}\n`, "utf8");
   process.stdout.write(`[meta:sync] Tersimpan di ${OUTPUT_PATH}\n`);
+  await appendMetaHistory(output);
 }
 
 main().catch((err) => {

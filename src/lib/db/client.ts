@@ -14,10 +14,11 @@ declare global {
   var __mlbbDrizzleDb: DatabaseClient | undefined;
 }
 
-function buildPostgresClient(config: DatabaseEnvConfig, maxConnections = 10): Sql {
+function buildPostgresClient(config: DatabaseEnvConfig, maxConnections = 3): Sql {
+  const isBuildPhase = process.env.NEXT_PHASE === "phase-production-build";
   return postgres(config.databaseUrl, {
-    max: maxConnections,
-    idle_timeout: 20,
+    max: isBuildPhase ? 1 : maxConnections,
+    idle_timeout: isBuildPhase ? 5 : 15,
     connect_timeout: 10,
     prepare: !config.isTransactionPooler,
     ssl: config.requiresSsl ? "require" : undefined,
@@ -30,7 +31,7 @@ export function getSqlClient(): Sql {
   }
 
   const config = getDatabaseConfig();
-  globalThis.__mlbbPgSql = buildPostgresClient(config, 10);
+  globalThis.__mlbbPgSql = buildPostgresClient(config, 3);
 
   return globalThis.__mlbbPgSql;
 }

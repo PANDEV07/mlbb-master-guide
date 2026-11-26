@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     optimizePackageImports: ["lucide-react"],
+    staticGenerationMaxConcurrency: 4,
+    staticGenerationMinPagesPerWorker: 100,
   },
   async headers() {
     return [

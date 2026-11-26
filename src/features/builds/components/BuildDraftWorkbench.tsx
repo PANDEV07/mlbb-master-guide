@@ -13,6 +13,7 @@ import {
 import { BuildTemplatePanel } from "./BuildTemplatePanel";
 import { Badge } from "@/components/ui/Badge";
 import { Surface } from "@/components/ui/Surface";
+import { ShareLinkButton } from "@/components/shared/ShareLinkButton";
 
 type Props = {
   hero: HeroRecord;
@@ -40,11 +41,39 @@ export function BuildDraftWorkbench({ hero, items, patchVersion, templates }: Pr
 
   const storageKey = `mlbb-build-draft:${hero.entityId}`;
 
-  // Muat draft milik hero ini dari browser
+  // Muat draft milik hero ini dari URL (?items=slug1,slug2,...) atau localStorage browser
   useEffect(() => {
     setLoadedDraftKey(null);
 
     try {
+      const params = new URLSearchParams(window.location.search);
+      const urlItemsRaw = params.get("items");
+      if (urlItemsRaw) {
+        const itemBySlug = new Map(
+          items.map((item) => [item.slug.toLowerCase(), item.entityId]),
+        );
+        const tokens = urlItemsRaw.split(",").slice(0, 6);
+        const restoredFromUrl = createSlots();
+        let matchedAny = false;
+        tokens.forEach((slugToken, idx) => {
+          const id = itemBySlug.get(slugToken.trim().toLowerCase());
+          if (id) {
+            restoredFromUrl[idx] = {
+              itemEntityId: id,
+              modifierItemEntityId: "",
+              alternativeItemEntityId: "",
+              rationale: "",
+            };
+            matchedAny = true;
+          }
+        });
+        if (matchedAny) {
+          setSlots(restoredFromUrl);
+          setLoadedDraftKey(storageKey);
+          return;
+        }
+      }
+
       const saved = window.localStorage.getItem(storageKey);
 
       if (saved) {
@@ -91,7 +120,7 @@ export function BuildDraftWorkbench({ hero, items, patchVersion, templates }: Pr
     }
 
     setLoadedDraftKey(storageKey);
-  }, [storageKey]);
+  }, [storageKey, items]);
 
   // Simpan otomatis setelah draft selesai dimuat
   useEffect(() => {
@@ -368,6 +397,18 @@ export function BuildDraftWorkbench({ hero, items, patchVersion, templates }: Pr
           >
             {editingBuildId ? "Simpan Perubahan" : "Simpan Build"}
           </button>
+          <ShareLinkButton
+            label="Bagikan Build"
+            copiedLabel="Link Build Disalin!"
+            disabled={selectedCount === 0}
+            className="px-4 py-3"
+            getUrl={() => {
+              const slugs = slots
+                .map((slot) => itemsById.get(slot.itemEntityId)?.slug ?? "")
+                .filter(Boolean);
+              return `/builds/${hero.metadata.slug}?items=${encodeURIComponent(slugs.join(","))}`;
+            }}
+          />
           {editingBuildId && (
             <button
               type="button"

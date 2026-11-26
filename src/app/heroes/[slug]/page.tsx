@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BookOpenCheck, ChevronDown, ExternalLink } from "lucide-react";
@@ -14,10 +15,14 @@ import { HeroSkillShowcase } from "@/features/heroes/components/HeroSkillShowcas
 import { HeroCombosPanel } from "@/features/heroes/components/HeroCombosPanel";
 import { getHeroDetail, getHeroDirectory } from "@/features/heroes";
 import { formatPercent, getMetaDashboardPayload } from "@/features/meta";
+import { getHeroMetaTrend } from "@/features/meta/data/meta-history";
+import { HeroMetaTrendCard } from "@/features/meta/components/HeroMetaTrendCard";
 import { Breadcrumbs } from "@/components/navigation/Breadcrumbs";
+import { ShareLinkButton } from "@/components/shared/ShareLinkButton";
 import { Button } from "@/components/ui/Button";
 import { Surface } from "@/components/ui/Surface";
 import { Badge } from "@/components/ui/Badge";
+import { buildPageMetadata } from "@/lib/metadata";
 import { HeroPortrait } from "@/features/heroes/components/HeroPortrait";
 import {
   extractHeroMechanics,
@@ -48,6 +53,58 @@ export async function generateStaticParams() {
   } catch {
     return [];
   }
+}
+
+export async function generateMetadata({
+  params,
+}: HeroDetailPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const result = await getHeroDetail(slug);
+  if (!result) {
+    return buildPageMetadata(
+      "Hero Tidak Ditemukan",
+      "Detail hero Mobile Legends: Bang Bang yang Anda cari tidak tersedia.",
+    );
+  }
+
+  const { hero, patch } = result;
+  const heroName = hero.metadata.name;
+  const roles = hero.profile?.role
+    ? [hero.profile.role]
+    : (HERO_ROLE_MAP[slug] ?? []);
+  const lanes =
+    hero.profile?.lanes && hero.profile.lanes.length > 0
+      ? hero.profile.lanes
+      : (HERO_LANE_MAP[slug] ?? []);
+  const metaPayload = getMetaDashboardPayload();
+  const metaHero = metaPayload.brackets.mythical_glory.heroes.find(
+    (h) => h.heroSlug === slug,
+  );
+  const patchLabel = patch?.versionCode ?? "2.2.23";
+
+  const roleLaneText = [roles.join("/"), lanes.slice(0, 2).join("/")]
+    .filter(Boolean)
+    .join(" · ");
+  const metaText = metaHero
+    ? `Tier ${metaHero.tier} (WR ${formatPercent(metaHero.winRate)}, Pick ${formatPercent(metaHero.pickRate)}, Ban ${formatPercent(metaHero.banRate)} di Mythical Glory+). `
+    : "";
+
+  return buildPageMetadata(
+    `${heroName} — Build, Skill, Kombo & Counter MLBB`,
+    `Panduan ${heroName} (${roleLaneText || "MLBB"}) Patch ${patchLabel}. ${metaText}Rincian skill resmi Bahasa Indonesia, kombo bertahap, rekomendasi build, dan analisis matchup.`,
+    {
+      canonicalPath: `/heroes/${slug}`,
+      keywords: [
+        heroName,
+        `Build ${heroName} tersakit`,
+        `Counter ${heroName}`,
+        `Kombo ${heroName} MLBB`,
+        `Tier ${heroName} Patch ${patchLabel}`,
+        ...roles,
+        ...lanes,
+      ],
+    },
+  );
 }
 
 const attributeLabels: Record<string, string> = {
@@ -118,6 +175,7 @@ export default async function HeroDetailPage({
   const metaHero = metaPayload.brackets.mythical_glory.heroes.find(
     (h) => h.heroSlug === hero.metadata.slug,
   );
+  const heroTrend = getHeroMetaTrend(hero.metadata.slug, "mythical_glory");
   const premiumSkin = getHeroPremiumSkin(hero.metadata.slug);
   const displayRoles =
     profile?.role
@@ -210,16 +268,27 @@ export default async function HeroDetailPage({
                 )}
               </div>
 
-              <div className="flex flex-wrap gap-2.5 pt-2">
+              <div className="flex flex-wrap items-center gap-2.5 pt-2">
                 <Button href={`/builds/${hero.metadata.slug}`} variant="primary">
                   Template Build {hero.metadata.name}
                 </Button>
-                <Button href="/counters" variant="secondary">
+                <Button
+                  href={`/counters?enemies=${hero.metadata.slug}`}
+                  variant="secondary"
+                >
                   Cari Counter
                 </Button>
-                <Button href="/matchups" variant="secondary">
+                <Button
+                  href={`/matchups?mode=1v1&a=${hero.metadata.slug}`}
+                  variant="secondary"
+                >
                   Uji Matchup
                 </Button>
+                <ShareLinkButton
+                  label="Bagikan Hero"
+                  copiedLabel="Link Hero Disalin!"
+                  className="py-2"
+                />
               </div>
             </div>
           </div>
@@ -307,6 +376,8 @@ export default async function HeroDetailPage({
               </span>
             </div>
           )}
+
+          <HeroMetaTrendCard trend={heroTrend} />
         </Surface>
       </div>
 

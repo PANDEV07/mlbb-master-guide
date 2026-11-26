@@ -15,6 +15,7 @@ import { HeroPortrait } from "@/features/heroes/components/HeroPortrait";
 import { HeroPickerModal } from "@/features/matchups/components/HeroPickerModal";
 import { Surface } from "@/components/ui/Surface";
 import { Badge } from "@/components/ui/Badge";
+import { ShareLinkButton } from "@/components/shared/ShareLinkButton";
 import { cn } from "@/lib/cn";
 import { formatClaimClassificationId } from "@/lib/i18n/labels";
 import type { MultiEnemyCounterSummary } from "../engine/multi-enemy-counter";
@@ -99,6 +100,59 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
     }
     return map;
   }, [heroes]);
+
+  const heroBySlug = useMemo(() => {
+    const map = new Map<string, HeroRecord>();
+    for (const h of heroes) {
+      map.set(h.metadata.slug.toLowerCase(), h);
+    }
+    return map;
+  }, [heroes]);
+
+  // Pulihkan daftar hero musuh dari URL (?enemies=fanny,estes,tigreal) saat halaman dibuka
+  const [urlHydrated, setUrlHydrated] = useState(false);
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const raw = params.get("enemies");
+      if (raw) {
+        const resolved: string[] = [];
+        for (const token of raw.split(",")) {
+          const clean = token.trim().toLowerCase();
+          if (!clean) continue;
+          const match = heroBySlug.get(clean) ?? heroByLowerName.get(clean);
+          if (
+            match &&
+            resolved.length < MAX_ENEMY_SLOTS &&
+            !resolved.includes(match.metadata.name)
+          ) {
+            resolved.push(match.metadata.name);
+          }
+        }
+        if (resolved.length > 0) {
+          setSelectedEnemies(resolved);
+        }
+      }
+    } catch {
+      // Abaikan jika URL tidak dapat dibaca
+    }
+    setUrlHydrated(true);
+  }, [heroByLowerName, heroBySlug]);
+
+  // Sinkronkan URL agar hasil counter 1-5 musuh bisa langsung dibagikan
+  useEffect(() => {
+    if (!urlHydrated || typeof window === "undefined") return;
+    const url = new URL(window.location.href);
+    if (selectedEnemies.length > 0) {
+      const slugs = selectedEnemies.map(
+        (name) => heroByLowerName.get(name.toLowerCase())?.metadata.slug ?? name,
+      );
+      url.searchParams.set("enemies", slugs.join(","));
+    } else {
+      url.searchParams.delete("enemies");
+    }
+    window.history.replaceState(null, "", url.pathname + url.search);
+  }, [selectedEnemies, urlHydrated, heroByLowerName]);
 
   useEffect(() => {
     if (selectedEnemies.length === 0) {
@@ -289,18 +343,32 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
               Contoh 3 Musuh
             </button>
             {selectedEnemies.length > 0 && (
-              <button
-                type="button"
-                onClick={() => {
-                  setSelectedEnemies([]);
-                  resetHeroFilters();
-                  resetItemFilters();
-                }}
-                className="inline-flex items-center gap-1 rounded-xl border border-[#22D3EE]/35 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:border-slate-500 hover:text-white"
-              >
-                <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
-                Reset
-              </button>
+              <>
+                <ShareLinkButton
+                  label="Bagikan Counter"
+                  copiedLabel="Link Disalin!"
+                  getUrl={() => {
+                    const slugs = selectedEnemies.map(
+                      (name) =>
+                        heroByLowerName.get(name.toLowerCase())?.metadata.slug ??
+                        name,
+                    );
+                    return `/counters?enemies=${encodeURIComponent(slugs.join(","))}`;
+                  }}
+                />
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSelectedEnemies([]);
+                    resetHeroFilters();
+                    resetItemFilters();
+                  }}
+                  className="inline-flex items-center gap-1 rounded-xl border border-[#22D3EE]/35 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:border-slate-500 hover:text-white"
+                >
+                  <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
+                  Reset
+                </button>
+              </>
             )}
           </div>
         </div>

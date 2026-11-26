@@ -648,9 +648,29 @@ export function MetaTierListBoard({
                                     </span>
                                   </div>
                                   <div className="min-w-0 flex-1">
-                                    <p className="font-display truncate text-sm leading-tight text-[#E6EAF5] group-hover:text-[#F5B83D]">
-                                      {hero.heroName}
-                                    </p>
+                                    <div className="flex items-center justify-between gap-1">
+                                      <p className="font-display truncate text-sm leading-tight text-[#E6EAF5] group-hover:text-[#F5B83D]">
+                                        {hero.heroName}
+                                      </p>
+                                      {typeof hero.tierDelta === "number" &&
+                                        hero.tierDelta !== 0 && (
+                                          <span
+                                            title={
+                                              hero.tierDelta > 0
+                                                ? `Naik ${hero.tierDelta} tier dibanding snapshot lalu`
+                                                : `Turun ${Math.abs(hero.tierDelta)} tier dibanding snapshot lalu`
+                                            }
+                                            className={cn(
+                                              "font-display shrink-0 text-[10px]",
+                                              hero.tierDelta > 0
+                                                ? "text-[#4ADE80]"
+                                                : "text-[#FB7185]",
+                                            )}
+                                          >
+                                            {hero.tierDelta > 0 ? "▲" : "▼"}
+                                          </span>
+                                        )}
+                                    </div>
                                     <p
                                       className={cn(
                                         "font-display mt-0.5 text-base leading-none",
