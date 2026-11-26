@@ -1,5 +1,6 @@
 import type { HeroProfileInsights } from "../engine/hero-profile-insights";
 import { cleanCandidateDescription } from "../data/hero-gameplay-candidates";
+import { getIndonesianSkillOverlay } from "../data/hero-skills-id";
 import { Surface } from "@/components/ui/Surface";
 import { Badge } from "@/components/ui/Badge";
 import {
@@ -89,7 +90,12 @@ export function HeroProfileInsightsPanel({ insights }: Props) {
                         )}
                         {evidence.description.trim() && (
                           <p className="mt-1.5 whitespace-pre-line text-[11px] leading-relaxed text-slate-400">
-                            {cleanCandidateDescription(evidence.description)}
+                            {getIndonesianSkillOverlay(
+                              insights.heroName,
+                              evidence.apiSkillId,
+                              evidence.skillName,
+                            )?.description ||
+                              cleanCandidateDescription(evidence.description)}
                           </p>
                         )}
                       </div>

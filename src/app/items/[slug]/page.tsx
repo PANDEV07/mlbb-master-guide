@@ -32,7 +32,7 @@ const ATTRIBUTE_LABELS: Record<string, string> = {
   LIFESTEAL: "Lifesteal",
   SPELL_VAMP: "Spell Vamp",
   PENETRATION: "Penetration",
-  OTHER: "Other",
+  OTHER: "Lainnya",
 };
 
 const ASPECT_LABELS: Record<string, string> = {
@@ -231,14 +231,12 @@ export default async function ItemDetailPage({
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-lg font-semibold text-slate-100">
-          Passive Effects
-        </h2>
+        <h2 className="text-lg font-bold text-white">Efek Pasif</h2>
         {item.passiveEffects.length ? (
           item.passiveEffects.map((effect, index) => (
             <Surface key={`${effect.name}-${index}`} className="space-y-3 p-5">
               <div className="flex flex-wrap items-center justify-between gap-2">
-                <h3 className="font-semibold text-slate-100">
+                <h3 className="font-semibold text-white">
                   {effect.name}
                 </h3>
                 <VerificationBadge status={effect.verificationStatus} />
@@ -251,21 +249,19 @@ export default async function ItemDetailPage({
         ) : (
           <Surface className="p-5">
             <p className="text-sm text-slate-500">
-              Tidak ada passive effect yang tercatat.
+              Tidak ada efek pasif yang tercatat.
             </p>
           </Surface>
         )}
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-lg font-semibold text-slate-100">
-          Active Effects
-        </h2>
+        <h2 className="text-lg font-bold text-white">Efek Aktif</h2>
         {item.activeEffects.length ? (
           item.activeEffects.map((effect, index) => (
             <Surface key={`${effect.name}-${index}`} className="space-y-3 p-5">
               <div className="flex flex-wrap items-center justify-between gap-2">
-                <h3 className="font-semibold text-slate-100">
+                <h3 className="font-semibold text-white">
                   {effect.name}
                 </h3>
                 <VerificationBadge status={effect.verificationStatus} />
@@ -278,7 +274,7 @@ export default async function ItemDetailPage({
         ) : (
           <Surface className="p-5">
             <p className="text-sm text-slate-500">
-              Tidak ada active effect yang tercatat.
+              Tidak ada efek aktif yang tercatat.
             </p>
           </Surface>
         )}

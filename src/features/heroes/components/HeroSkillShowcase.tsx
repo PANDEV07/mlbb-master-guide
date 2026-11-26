@@ -47,21 +47,20 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
         <div className="flex flex-wrap items-center gap-2">
           <h2
             id="hero-skills-showcase-heading"
-            className="text-xl font-bold text-slate-100"
+            className="text-xl font-bold text-white"
           >
-            Skills {heroName}
+            Daftar Skill {heroName}
           </h2>
-          <Badge tone="neutral">Data API Moonton</Badge>
+          <Badge tone="emerald">Bahasa Indonesia · Resmi Moonton</Badge>
         </div>
         <Badge tone="neutral">{totalSkillCount} Skill</Badge>
       </div>
 
-      <Surface className="border border-amber-500/30 p-4">
-        <p className="text-xs leading-relaxed text-amber-200">
-          Deskripsi dan ikon skill diambil dari data kandidat API Moonton (belum
-          terverifikasi untuk versi patch spesifik). Pilih ikon skill di bawah
-          untuk melihat rincian efek, cooldown, biaya resource, dan kategori
-          mekaniknya.
+      <Surface className="border border-emerald-500/25 p-4">
+        <p className="text-xs leading-relaxed text-[#9FB0BE]">
+          Deskripsi dan ikon skill diambil dari data resmi Moonton (Bahasa
+          Indonesia). Pilih ikon skill di bawah untuk melihat rincian efek,
+          cooldown, biaya resource, dan kategori mekaniknya.
         </p>
       </Surface>
 
@@ -77,13 +76,13 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
                 setSelectedSkillIdx(0);
               }}
               className={cn(
-                "rounded-lg border px-3 py-1.5 text-xs font-medium transition",
+                "rounded-full border px-3 py-1.5 text-xs font-medium transition",
                 idx === selectedGroupIdx
-                  ? "border-amber-400/60 bg-amber-500/15 text-amber-200"
-                  : "border-[#1E2738] bg-[#0B0F17] text-slate-400 hover:text-slate-200",
+                  ? "border-emerald-400/55 bg-emerald-500/15 text-emerald-200"
+                  : "border-[#1E2A33] bg-[#0B1014] text-slate-400 hover:text-slate-200",
               )}
             >
-              Form {idx + 1} (Group {group.apiGroupId})
+              Mode {idx + 1} (Grup {group.apiGroupId})
             </button>
           ))}
         </div>
@@ -166,7 +165,7 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
                       {activeSkill.resourceCost}{" "}
                       {activeSkill.resourceType === "MANA"
                         ? "Mana"
-                        : "Energy"}
+                        : "Energi"}
                     </Badge>
                   )}
               </div>
@@ -198,7 +197,7 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
 
           {activeSkill.rawCooldownCost && (
             <p className="text-xs text-slate-500">
-              Data asli API: {activeSkill.rawCooldownCost}
+              Info Cooldown &amp; Biaya: {activeSkill.rawCooldownCost}
             </p>
           )}
         </div>

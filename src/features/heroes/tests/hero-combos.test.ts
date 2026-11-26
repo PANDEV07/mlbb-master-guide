@@ -26,14 +26,18 @@ test("Kombo Aamon terpetakan ke nama skill nyata dan Basic Attack", () => {
   assert.equal(teamfight.steps[4].slotLabel, "Ultimate");
 });
 
-test("Skill display groups memuat ikon dan slotLabel", () => {
+test("Skill display groups memuat ikon, deskripsi Bahasa Indonesia, dan slotLabel", () => {
   const groups = getHeroSkillGroupsForDisplay("Aamon");
   assert.ok(groups.length >= 1);
   assert.equal(groups[0].skills.length, 4);
-  assert.equal(groups[0].skills[0].slotLabel, "Passive");
+  assert.equal(groups[0].skills[0].slotLabel, "Pasif");
   assert.equal(groups[0].skills[1].slotLabel, "Skill 1");
   assert.equal(groups[0].skills[2].slotLabel, "Skill 2");
   assert.equal(groups[0].skills[3].slotLabel, "Ultimate");
+  assert.match(
+    groups[0].skills[0].description,
+    /Setiap kali Aamon|lawan|skill/i,
+  );
 });
 
 process.stdout.write("\nSemua pengujian Kombo & Skill Hero selesai.\n");

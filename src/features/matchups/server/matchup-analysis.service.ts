@@ -4,6 +4,7 @@ import {
   getHeroComboCollection,
   getHeroSkillGroupsForDisplay,
 } from "@/features/heroes/data/hero-combos";
+import { getIndonesianSkillOverlay } from "@/features/heroes/data/hero-skills-id";
 import {
   getItemCatalog,
   type ItemCatalogRecord,
@@ -304,8 +305,35 @@ export async function getEnrichedHeadToHeadAnalysis(
     sharedLanes,
   );
 
+  const localizeMatchupDirections = (
+    directions: typeof base.analysis.aToB,
+  ) =>
+    directions.map((dir) => ({
+      ...dir,
+      supportingSkillPairs: dir.supportingSkillPairs.map((pair) => ({
+        ...pair,
+        sourceDescription:
+          getIndonesianSkillOverlay(
+            dir.sourceHero,
+            pair.sourceSkillId,
+            pair.sourceSkill,
+          )?.description || pair.sourceDescription,
+        targetDescription:
+          getIndonesianSkillOverlay(
+            dir.targetHero,
+            pair.targetSkillId,
+            pair.targetSkill,
+          )?.description || pair.targetDescription,
+      })),
+    }));
+
   return {
     ...base,
+    analysis: {
+      ...base.analysis,
+      aToB: localizeMatchupDirections(base.analysis.aToB),
+      bToA: localizeMatchupDirections(base.analysis.bToA),
+    },
     enriched: {
       profileA,
       profileB,

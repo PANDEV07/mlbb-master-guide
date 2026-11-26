@@ -38,7 +38,7 @@ const ATTRIBUTE_LABELS: Record<string, string> = {
   LIFESTEAL: "Lifesteal",
   SPELL_VAMP: "Spell Vamp",
   PENETRATION: "Penetration",
-  OTHER: "Other",
+  OTHER: "Lainnya",
 };
 
 export function ItemCatalog({
@@ -204,7 +204,7 @@ export function ItemCatalog({
 
                 <div className="mt-4 flex items-center justify-between border-t border-[#293548] pt-3">
                   <span className="text-xs text-slate-500">
-                    {item.passiveEffects.length} passive · {item.activeEffects.length} active
+                    {item.passiveEffects.length} efek pasif · {item.activeEffects.length} efek aktif
                   </span>
                   <Badge
                     tone={
