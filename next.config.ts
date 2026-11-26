@@ -22,7 +22,7 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        source: "/heroes/:path*",
+        source: "/heroes/:file*.webp",
         headers: [
           {
             key: "Cache-Control",
