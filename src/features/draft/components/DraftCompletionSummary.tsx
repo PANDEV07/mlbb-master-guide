@@ -5,7 +5,10 @@ import { ArrowRight, CheckCircle2, RotateCcw, Swords, Trophy } from "lucide-reac
 import { ShareLinkButton } from "@/components/shared/ShareLinkButton";
 import { Surface } from "@/components/ui/Surface";
 import { MATCHUP_LANES } from "@/features/matchups/types/matchup-hub.types";
-import { assignPicksToLanes } from "../engine/draft-simulator-engine";
+import {
+  assignPicksToLanes,
+  computeDraftComparisonIndex,
+} from "../engine/draft-simulator-engine";
 import type { DraftHeroEntry, TeamLiveAudit } from "../types/draft.types";
 
 interface DraftCompletionSummaryProps {
@@ -33,14 +36,7 @@ export function DraftCompletionSummary({
   const matchup5v5Href = `/matchups?mode=5v5&ally=${encodeURIComponent(allyOrdered)}&enemy=${encodeURIComponent(enemyOrdered)}`;
   const counterRedHref = `/counters?enemies=${encodeURIComponent(redPicks.map((h) => h.slug).join(","))}`;
 
-  const blueScore = blueAudit.avgMetaScore ?? 0;
-  const redScore = redAudit.avgMetaScore ?? 0;
-  const metaEdge =
-    Math.abs(blueScore - redScore) < 1.5
-      ? "Seimbang secara statistik meta"
-      : blueScore > redScore
-        ? `Blue Side unggul +${(blueScore - redScore).toFixed(1)} poin skor meta rata-rata`
-        : `Red Side unggul +${(redScore - blueScore).toFixed(1)} poin skor meta rata-rata`;
+  const comparison = computeDraftComparisonIndex(blueAudit, redAudit);
 
   return (
     <Surface className="space-y-4 border-[#F5B83D]/55 bg-[#101830] p-5">
@@ -53,9 +49,7 @@ export function DraftCompletionSummary({
             <h2 className="font-display text-xl text-[#F5B83D]">
               DRAFT SELESAI — 10 BAN &amp; 10 PICK TERKUNCI
             </h2>
-            <p className="text-xs text-[#9AA6C4]">
-              {metaEdge} (berdasarkan rata-rata data resmi Moonton GMS Glory+).
-            </p>
+            <p className="text-xs text-[#9AA6C4]">{comparison.verdict}</p>
           </div>
         </div>
 
@@ -74,6 +68,36 @@ export function DraftCompletionSummary({
             Draft Baru
           </button>
         </div>
+      </div>
+
+      {/* Bilah Indeks Perbandingan Draft (Total Tepat 100%) */}
+      <div className="border border-white/10 bg-[#0A0E1A] p-3.5">
+        <div className="mb-1.5 flex items-center justify-between text-xs">
+          <span className="font-display text-[#22D3EE]">
+            BLUE SIDE {comparison.blueSharePct.toFixed(1)}%
+          </span>
+          <span className="text-[10px] font-semibold tracking-wider text-[#9AA6C4] uppercase">
+            Indeks Perbandingan Draft (Total 100%)
+          </span>
+          <span className="font-display text-[#FB7185]">
+            {comparison.redSharePct.toFixed(1)}% RED SIDE
+          </span>
+        </div>
+        <div className="flex h-2.5 w-full overflow-hidden bg-[#1B2442]">
+          <div
+            className="h-full bg-[#22D3EE] transition-all duration-300"
+            style={{ width: `${comparison.blueSharePct}%` }}
+          />
+          <div
+            className="h-full bg-[#E11D48] transition-all duration-300"
+            style={{ width: `${comparison.redSharePct}%` }}
+          />
+        </div>
+        <p className="mt-1.5 text-[10px] text-[#9AA6C4]">
+          Proporsi 100% dihitung dari rasio Skor Meta &amp; WR hero resmi Moonton
+          Glory+ serta kelengkapan 5 lane, keseimbangan damage, Hard CC, dan
+          frontline (indikator analisis, bukan jaminan hasil match).
+        </p>
       </div>
 
       {/* Head-to-Head Draft Metrics */}

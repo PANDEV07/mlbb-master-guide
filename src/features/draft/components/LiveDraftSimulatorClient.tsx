@@ -20,6 +20,7 @@ import { cn } from "@/lib/cn";
 import {
   applyDraftSelection,
   auditDraftTeam,
+  computeDraftComparisonIndex,
   computeDraftRecommendations,
   createInitialDraftState,
   decodeDraftFromSearchParams,
@@ -169,6 +170,10 @@ export function LiveDraftSimulatorClient({
   const redAudit = useMemo(
     () => auditDraftTeam(redPickEntries),
     [redPickEntries],
+  );
+  const liveComparison = useMemo(
+    () => computeDraftComparisonIndex(blueAudit, redAudit),
+    [blueAudit, redAudit],
   );
 
   const recommendations = useMemo(
@@ -533,6 +538,35 @@ export function LiveDraftSimulatorClient({
           </div>
         </div>
       )}
+
+      {/* Live Tug-of-War Bar saat kedua tim sudah memiliki minimal 1 Pick (selama draft berlangsung) */}
+      {!isDraftComplete &&
+        bluePickEntries.length > 0 &&
+        redPickEntries.length > 0 && (
+          <div className="border border-white/10 bg-[#0E1529] px-4 py-2.5">
+            <div className="mb-1 flex items-center justify-between text-[11px]">
+              <span className="font-display text-[#22D3EE]">
+                BLUE {liveComparison.blueSharePct.toFixed(1)}%
+              </span>
+              <span className="text-[10px] text-[#9AA6C4]">
+                Indeks Perbandingan Draft Live (Total 100%)
+              </span>
+              <span className="font-display text-[#FB7185]">
+                {liveComparison.redSharePct.toFixed(1)}% RED
+              </span>
+            </div>
+            <div className="flex h-2 w-full overflow-hidden bg-[#1B2442]">
+              <div
+                className="h-full bg-[#22D3EE] transition-all duration-300"
+                style={{ width: `${liveComparison.blueSharePct}%` }}
+              />
+              <div
+                className="h-full bg-[#E11D48] transition-all duration-300"
+                style={{ width: `${liveComparison.redSharePct}%` }}
+              />
+            </div>
+          </div>
+        )}
 
       {/* Ringkasan Selesai Draft */}
       {isDraftComplete && (

@@ -165,8 +165,11 @@ export function DraftSideColumn({
             Pick Tim ({picks.filter(Boolean).length}/5)
           </span>
           {audit.avgWinRate !== null && (
-            <span className="text-[#F5B83D]">
-              Avg WR {(audit.avgWinRate * 100).toFixed(1)}%
+            <span
+              title="Rata-rata Win Rate global tiap hero yang dipilih di sisi ini (data resmi Moonton GMS Glory+, dihitung independen antar tim)"
+              className="cursor-help text-[#F5B83D] underline decoration-[#F5B83D]/40 decoration-dotted underline-offset-2"
+            >
+              WR Hero {(audit.avgWinRate * 100).toFixed(1)}%
             </span>
           )}
         </div>

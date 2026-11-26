@@ -4,6 +4,7 @@ import {
 } from "@/features/matchups/types/matchup-hub.types";
 import type {
   DraftBoardState,
+  DraftComparisonIndex,
   DraftFormat,
   DraftHeroEntry,
   DraftRecommendation,
@@ -494,4 +495,60 @@ export function decodeDraftFromSearchParams(
 
 export function getSideLabel(side: DraftSide): string {
   return side === "BLUE" ? "Blue Side (Tim Biru)" : "Red Side (Tim Merah)";
+}
+
+/**
+ * Menghitung indeks perbandingan relatif kedua tim (selalu total tepat 100,0%).
+ * Menggabungkan:
+ * - Skor Meta rata-rata & Win Rate rata-rata hero (Moonton GMS Glory+)
+ * - Kelengkapan 5 lane, keseimbangan damage Physical/Magic, Hard CC, dan Frontline
+ * Catatan: Ini adalah indeks komparasi statistik + komposisi, bukan jaminan hasil match.
+ */
+export function computeDraftComparisonIndex(
+  blueAudit: TeamLiveAudit,
+  redAudit: TeamLiveAudit,
+): DraftComparisonIndex {
+  const computeSidePower = (audit: TeamLiveAudit): number => {
+    const pickCount = audit.filledLanes.length;
+    if (pickCount === 0) return 50;
+
+    const metaBase = audit.avgMetaScore ?? 50;
+    const wrBonus = ((audit.avgWinRate ?? 0.5) - 0.5) * 200; // +-10 poin untuk WR 55% / 45%
+    const laneBonus = (audit.filledLanes.length / 5) * 6;
+    const ccBonus = Math.min(3, audit.hardCCCount) * 1.5;
+    const frontlineBonus = audit.frontlineCount > 0 ? 2.5 : 0;
+    const hasBalancedDamage =
+      (audit.physicalCount > 0 || audit.trueOrMixedCount > 0) &&
+      (audit.magicCount > 0 || audit.trueOrMixedCount > 0);
+    const damageBonus = hasBalancedDamage ? 2.5 : 0;
+    const warningPenalty = audit.warnings.length * 2.5;
+
+    return Math.max(
+      15,
+      metaBase + wrBonus + laneBonus + ccBonus + frontlineBonus + damageBonus - warningPenalty,
+    );
+  };
+
+  const bluePower = Math.round(computeSidePower(blueAudit) * 10) / 10;
+  const redPower = Math.round(computeSidePower(redAudit) * 10) / 10;
+  const total = bluePower + redPower;
+
+  const rawBluePct = total > 0 ? (bluePower / total) * 100 : 50;
+  const blueSharePct = Math.round(rawBluePct * 10) / 10;
+  const redSharePct = Math.round((100 - blueSharePct) * 10) / 10;
+
+  const diff = Math.abs(blueSharePct - redSharePct);
+  let verdict = "Kedua draft seimbang secara statistik meta dan kelengkapan komposisi.";
+  if (diff >= 1.5) {
+    const leader = blueSharePct > redSharePct ? "Blue Side" : "Red Side";
+    verdict = `${leader} lebih unggul (+${diff.toFixed(1)}%) pada indeks meta & kelengkapan komposisi.`;
+  }
+
+  return {
+    blueSharePct,
+    redSharePct,
+    bluePower,
+    redPower,
+    verdict,
+  };
 }

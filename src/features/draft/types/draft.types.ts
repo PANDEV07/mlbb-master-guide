@@ -60,6 +60,14 @@ export interface TeamLiveAudit {
   strengths: string[];
 }
 
+export interface DraftComparisonIndex {
+  blueSharePct: number;
+  redSharePct: number;
+  bluePower: number;
+  redPower: number;
+  verdict: string;
+}
+
 export interface DraftBoardState {
   format: DraftFormat;
   blueBans: (string | null)[];

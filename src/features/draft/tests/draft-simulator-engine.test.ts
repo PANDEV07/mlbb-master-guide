@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import {
   applyDraftSelection,
   auditDraftTeam,
+  computeDraftComparisonIndex,
   computeDraftRecommendations,
   createInitialDraftState,
   decodeDraftFromSearchParams,
@@ -188,6 +189,24 @@ function run() {
   assert.ok(blueAudit.missingLanes.includes("Mid Lane"));
   assert.ok(blueAudit.missingLanes.includes("Jungle"));
   console.log("PASS Audit tim live mendeteksi celah Magic Damage dan lane kosong");
+
+  // 5. Verifikasi Indeks Perbandingan Draft selalu tepat 100.0%
+  const redAudit = auditDraftTeam([
+    SAMPLE_POOL[2]!, // Zhuxin (Tier S, Magic, Hard CC)
+    SAMPLE_POOL[5]!, // Khufra (Tier A, Frontline, Hard CC)
+    SAMPLE_POOL[0]!, // Fanny (Tier S, Physical)
+  ]);
+  const cmp = computeDraftComparisonIndex(blueAudit, redAudit);
+  assert.equal(
+    Math.round((cmp.blueSharePct + cmp.redSharePct) * 10) / 10,
+    100,
+    "Total persentase Blue + Red harus selalu tepat 100.0%",
+  );
+  assert.ok(
+    cmp.redSharePct > cmp.blueSharePct,
+    "Tim Red dengan komposisi seimbang + Tier S harus unggul di indeks perbandingan",
+  );
+  console.log("PASS Indeks perbandingan draft selalu berjumlah tepat 100.0%");
 
   console.log("\nSemua pengujian Live Draft Simulator selesai.");
 }
