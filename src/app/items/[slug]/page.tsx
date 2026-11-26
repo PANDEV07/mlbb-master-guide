@@ -310,7 +310,7 @@ export default async function ItemDetailPage({
                   <p className="text-xs text-slate-500">Selisih terhadap harga item</p>
                   <p className={`mt-1 text-xl font-bold ${
                     item.recipeCost.priceDifference === 0
-                      ? "text-emerald-400"
+                      ? "text-[#22D3EE]"
                       : "text-amber-300"
                   }`}>
                     {item.recipeCost.priceDifference?.toLocaleString("id-ID")} Gold
@@ -395,23 +395,23 @@ export default async function ItemDetailPage({
               <h2 className="text-sm font-bold text-white">
                 Sumber Referensi &amp; Status Verifikasi Data
               </h2>
-              <p className="text-xs text-[#9FB0BE]">
+              <p className="text-xs text-[#9AA6C4]">
                 {item.evidence.length > 0
                   ? `${item.evidence.length} catatan sumber terdaftar untuk item ini`
                   : "Belum ada catatan sumber untuk item ini."}
               </p>
             </div>
-            <span className="rounded-full border border-[#243440] bg-[#0B1014] px-3 py-1 text-[11px] font-medium text-slate-300 group-hover:border-emerald-400/40 group-hover:text-emerald-200">
+            <span className="rounded-full border border-[#22D3EE]/35 bg-[#0A0E1A] px-3 py-1 text-[11px] font-medium text-slate-300 group-hover:border-[#F5B83D]/55 group-hover:text-[#F5B83D]">
               Lihat rincian
             </span>
           </summary>
 
-          <div className="mt-4 space-y-3 border-t border-[#1E2A33] pt-4">
+          <div className="mt-4 space-y-3 border-t border-[#22D3EE]/25 pt-4">
             {item.evidence.length ? (
               item.evidence.map((evidence, index) => (
                 <div
                   key={`${evidence.aspectName}-${index}`}
-                  className="flex flex-col gap-2 border-b border-[#1E2A33] pb-3 last:border-0 last:pb-0 sm:flex-row sm:items-center sm:justify-between"
+                  className="flex flex-col gap-2 border-b border-[#22D3EE]/25 pb-3 last:border-0 last:pb-0 sm:flex-row sm:items-center sm:justify-between"
                 >
                   <div>
                     <p className="text-sm font-medium text-slate-200">
@@ -430,7 +430,7 @@ export default async function ItemDetailPage({
                         href={evidence.sourceUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="mt-1 block break-all text-xs text-emerald-300 hover:underline"
+                        className="mt-1 block break-all text-xs text-[#F5B83D] hover:underline"
                       >
                         Buka sumber rujukan
                       </a>

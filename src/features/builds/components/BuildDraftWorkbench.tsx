@@ -567,7 +567,7 @@ export function BuildDraftWorkbench({ hero, items, patchVersion, templates }: Pr
           <p className="text-xs text-slate-500">
             Patch {patchVersion || "belum tersedia"} · Draft lokal untuk {hero.metadata.name}.
           </p>
-          <span className="inline-flex items-center gap-1.5 text-xs text-emerald-400">
+          <span className="inline-flex items-center gap-1.5 text-xs text-[#22D3EE]">
             <span className="size-1.5 rounded-full bg-emerald-400" />
             {loadedDraftKey === storageKey ? "Auto-save aktif" : "Memuat draft..."}
           </span>

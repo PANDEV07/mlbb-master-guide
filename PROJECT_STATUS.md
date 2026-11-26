@@ -1,9 +1,9 @@
 # PROJECT_STATUS — Status Proyek MLBB Master Guide
 
-**Terakhir Diperbarui:** `2026-11-19`
-**Fase Aktif:** `Phase 2B.1 — Final Conceptual Data Model Validation (IN_PROGRESS)`
+**Terakhir Diperbarui:** `2026-11-26`
+**Fase Aktif:** `Production Live — Tema Cyber-Gold Navy & Skin Premium 133 Hero`
 **Status Arsitektur:** `FROZEN_BASELINE (ADR-001 s.d. ADR-009 APPROVED; ADR-010 DEFERRED)`
-**Status Basis Data Pengetahuan:** **SELESAI (DDL & Koneksi Live Supabase, Migrasi Dijalankan, Validasi Lulus)**
+**Status Basis Data Pengetahuan:** **LIVE PRODUCTION (Supabase + Vercel Auto-Deploy)**
 
 ---
 
@@ -49,6 +49,12 @@
 ---
 
 ## 5. Tonggak Berikutnya (*Next Milestones*)
-1. **Phase 2B — Core Game Knowledge Schema & Verified Ingestion** setelah persetujuan user.
-2. Implementasi unit‑test suite untuk repository & layanan.
-3. Integrasi CI/CD pipeline.
+1. Pembaruan rutin snapshot statistik Moonton GMS (`npm run meta:sync`), deskripsi skill Bahasa Indonesia (`npm run hero-skills:sync-id`), dan skin premium (`npm run hero-skins:sync`) pada setiap patch baru.
+2. Pemantauan performa dan analitik produksi di Vercel.
+
+---
+
+## 6. Log Rilis Terbaru (`2026-11-26`)
+- **Tema Cyber-Gold Navy (Land of Dawn):** Seluruh aplikasi diperbarui ke palet `#0A0E1A` / `#101830` dengan aksen emas `#F5B83D` dan cyan `#22D3EE`, sudut kartu *chamfered*, font lokal SIL OFL (`Rajdhani` + `Inter` di `public/fonts/`), Top 5 Meta Bars, Tier List S–D desktop miring & akordeon mobile + bottom bar mobile.
+- **Backdrop Splash Art Skin Premium (133/133 Hero):** Sinkronisasi otomatis (`npm run hero-skins:sync`) ke `src/data/imports/hero-premium-skins.json` berdasarkan hirarki resmi Collection Tier MLBB untuk banner Detail Hero dan sorotan #1 Meta di Beranda.
+- **Lokalisasi Penuh Bahasa Indonesia & Produksi:** 590 deskripsi skill resmi Moonton (`x-lang: id`), modul Matchup 1v1 & Draft 5v5, Counter Pick 1–5 musuh, dan Meta Dashboard aktif di GitHub (`PANDEV07/mlbb-master-guide`) & Vercel (`https://mlbb-master-guide.vercel.app/`).

@@ -25,7 +25,7 @@ export function HeroProfileInsightsPanel({ insights }: Props) {
           <h2 className="text-xl font-bold text-white">
             Analisis Mekanik Hero
           </h2>
-          <p className="mt-1 text-xs text-[#9FB0BE]">
+          <p className="mt-1 text-xs text-[#9AA6C4]">
             Ringkasan potensi keunggulan berdasarkan data skill kandidat (bukan
             penilaian performa terverifikasi).
           </p>
@@ -40,7 +40,7 @@ export function HeroProfileInsightsPanel({ insights }: Props) {
           <h3 className="text-sm font-bold text-white">
             Potensi Keunggulan ({insights.strengths.length})
           </h3>
-          <span className="text-xs text-emerald-300">
+          <span className="text-xs text-[#F5B83D]">
             {insights.metadata.mechanicRecords} skill dianalisis
           </span>
         </div>
@@ -50,7 +50,7 @@ export function HeroProfileInsightsPanel({ insights }: Props) {
             {insights.strengths.map((strength) => (
               <div
                 key={strength.id}
-                className="rounded-xl border border-[#1E2A33] bg-[#0B1014] p-4"
+                className="rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-4"
               >
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <h4 className="text-sm font-semibold text-white">
@@ -59,19 +59,19 @@ export function HeroProfileInsightsPanel({ insights }: Props) {
                   <Badge tone="emerald">{statusLabels.POTENTIAL}</Badge>
                 </div>
 
-                <p className="mt-2 text-xs leading-relaxed text-[#9FB0BE]">
+                <p className="mt-2 text-xs leading-relaxed text-[#9AA6C4]">
                   {strength.explanation}
                 </p>
 
-                <details className="mt-3 rounded-lg border border-[#1E2A33] bg-[#10161B] p-2.5">
-                  <summary className="cursor-pointer text-[11px] font-semibold text-emerald-300">
+                <details className="mt-3 rounded-lg border border-[#22D3EE]/25 bg-[#101830] p-2.5">
+                  <summary className="cursor-pointer text-[11px] font-semibold text-[#F5B83D]">
                     Lihat skill pendukung ({strength.evidence.length})
                   </summary>
                   <div className="mt-2.5 space-y-2">
                     {strength.evidence.map((evidence, index) => (
                       <div
                         key={`${evidence.apiGroupId}-${evidence.apiSkillId ?? index}-${index}`}
-                        className="rounded-lg border border-[#1E2A33] bg-[#0B1014] p-2.5 text-xs"
+                        className="rounded-lg border border-[#22D3EE]/25 bg-[#0A0E1A] p-2.5 text-xs"
                       >
                         <p className="font-semibold text-white">
                           {evidence.skillName}
@@ -81,7 +81,7 @@ export function HeroProfileInsightsPanel({ insights }: Props) {
                             {evidence.mechanicCategories.map((category) => (
                               <span
                                 key={category}
-                                className="rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] text-emerald-300"
+                                className="rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] text-[#F5B83D]"
                               >
                                 {formatMechanicCategoryId(category)}
                               </span>
@@ -112,8 +112,8 @@ export function HeroProfileInsightsPanel({ insights }: Props) {
           </p>
         )}
 
-        <div className="grid gap-3 border-t border-[#1E2A33] pt-4 md:grid-cols-2">
-          <div className="rounded-xl border border-[#1E2A33] bg-[#0B1014] p-4">
+        <div className="grid gap-3 border-t border-[#22D3EE]/25 pt-4 md:grid-cols-2">
+          <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-4">
             <div className="flex items-center justify-between gap-2">
               <h3 className="text-xs font-bold text-white">
                 Penilaian Kelemahan
@@ -122,18 +122,18 @@ export function HeroProfileInsightsPanel({ insights }: Props) {
                 {statusLabels[insights.weaknessAssessment]}
               </Badge>
             </div>
-            <p className="mt-2 text-xs leading-relaxed text-[#9FB0BE]">
+            <p className="mt-2 text-xs leading-relaxed text-[#9AA6C4]">
               Kelemahan hero belum disimpulkan otomatis dari teks skill saja.
               Gunakan modul Counter atau Matchup untuk menguji interaksi
               spesifiknya.
             </p>
           </div>
 
-          <div className="rounded-xl border border-[#1E2A33] bg-[#0B1014] p-4">
+          <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-4">
             <h3 className="text-xs font-bold text-white">
               Keunggulan Situasional &amp; Cara Menghadapi
             </h3>
-            <p className="mt-2 text-xs leading-relaxed text-[#9FB0BE]">
+            <p className="mt-2 text-xs leading-relaxed text-[#9AA6C4]">
               Memerlukan bukti tambahan mengenai fase permainan dan kondisi
               draft agar rekomendasi tidak menyesatkan.
             </p>

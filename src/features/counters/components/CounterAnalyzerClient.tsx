@@ -253,8 +253,8 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
     cn(
       "rounded-full border px-3 py-1 text-xs font-medium transition",
       active
-        ? "border-emerald-400/55 bg-emerald-500/15 text-emerald-200"
-        : "border-[#1E2A33] bg-[#0B1014] text-slate-400 hover:border-[#2C3E4B] hover:text-slate-200",
+        ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+        : "border-[#22D3EE]/25 bg-[#0A0E1A] text-slate-400 hover:border-[#22D3EE]/45 hover:text-slate-200",
     );
 
   return (
@@ -266,7 +266,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
             <h2 className="text-base font-bold text-white">
               Pilih Hero Lawan (1 hingga 5 Hero)
             </h2>
-            <p className="mt-0.5 text-xs text-[#9FB0BE]">
+            <p className="mt-0.5 text-xs text-[#9AA6C4]">
               Pilih 1 hero untuk counter langsung, atau tambahkan hingga 5 hero
               musuh sekaligus untuk menemukan hero &amp; item counter terbaik bagi
               seluruh draft lawan.
@@ -283,7 +283,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                 resetItemFilters();
                 setSelectedEnemies([...SAMPLE_MULTI_DRAFT]);
               }}
-              className="inline-flex items-center gap-1 rounded-xl border border-emerald-400/45 bg-emerald-500/15 px-3 py-1.5 text-xs font-semibold text-emerald-200 transition hover:bg-emerald-500/25"
+              className="inline-flex items-center gap-1 rounded-xl border border-emerald-400/45 bg-emerald-500/15 px-3 py-1.5 text-xs font-semibold text-[#F5B83D] transition hover:bg-emerald-500/25"
             >
               <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
               Contoh 3 Musuh
@@ -296,7 +296,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                   resetHeroFilters();
                   resetItemFilters();
                 }}
-                className="inline-flex items-center gap-1 rounded-xl border border-[#243440] px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:border-slate-500 hover:text-white"
+                className="inline-flex items-center gap-1 rounded-xl border border-[#22D3EE]/35 px-3 py-1.5 text-xs font-medium text-slate-300 transition hover:border-slate-500 hover:text-white"
               >
                 <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
                 Reset
@@ -353,8 +353,8 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                 className={cn(
                   "flex h-16 items-center justify-center gap-1.5 rounded-xl border border-dashed px-3 text-xs transition",
                   isNextSlot
-                    ? "border-emerald-400/55 bg-emerald-500/10 font-semibold text-emerald-200 hover:bg-emerald-500/15"
-                    : "border-[#243440] bg-[#0B1014] text-slate-500 hover:border-emerald-400/40 hover:text-slate-300",
+                    ? "border-emerald-400/55 bg-emerald-500/10 font-semibold text-[#F5B83D] hover:bg-emerald-500/15"
+                    : "border-[#22D3EE]/35 bg-[#0A0E1A] text-slate-500 hover:border-[#F5B83D]/55 hover:text-slate-300",
                 )}
               >
                 <Plus className="h-3.5 w-3.5" aria-hidden="true" />
@@ -365,7 +365,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
         </div>
 
         {/* Quick Picks */}
-        <div className="flex flex-wrap items-center gap-2 border-t border-[#1E2A33] pt-3">
+        <div className="flex flex-wrap items-center gap-2 border-t border-[#22D3EE]/25 pt-3">
           <span className="text-[11px] font-semibold text-slate-400">
             Target Populer:
           </span>
@@ -383,7 +383,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                   "rounded-full border px-3 py-1 text-[11px] font-medium transition",
                   picked
                     ? "border-rose-500/35 bg-rose-500/10 text-rose-200 opacity-70"
-                    : "border-[#243440] bg-[#0B1014] text-slate-300 hover:border-emerald-400/50 hover:text-emerald-200 disabled:opacity-40",
+                    : "border-[#22D3EE]/35 bg-[#0A0E1A] text-slate-300 hover:border-[#F5B83D]/65 hover:text-[#F5B83D] disabled:opacity-40",
                 )}
               >
                 {picked ? `✓ ${name}` : `+ ${name}`}
@@ -405,7 +405,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
       {/* Loading */}
       {loading && (
         <Surface className="p-8 text-center">
-          <p role="status" className="text-sm font-medium text-emerald-300">
+          <p role="status" className="text-sm font-medium text-[#F5B83D]">
             Memetakan ancaman skill dan menyusun peringkat Hero &amp; Item
             Counter...
           </p>
@@ -438,7 +438,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                 {summary.threatGroups.slice(0, 10).map((threat) => (
                   <div
                     key={threat.mechanic}
-                    className="inline-flex items-center gap-1.5 rounded-xl border border-[#243440] bg-[#0B1014] px-3 py-1.5 text-xs"
+                    className="inline-flex items-center gap-1.5 rounded-xl border border-[#22D3EE]/35 bg-[#0A0E1A] px-3 py-1.5 text-xs"
                   >
                     <span className="font-semibold text-rose-200">
                       {threat.label}
@@ -462,7 +462,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
             <div
               role="tablist"
               aria-label="Hasil Counter Pick"
-              className="flex flex-wrap gap-2 border-b border-[#1E2A33] pb-3.5"
+              className="flex flex-wrap gap-2 border-b border-[#22D3EE]/25 pb-3.5"
             >
               {(
                 [
@@ -489,8 +489,8 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                   className={cn(
                     "rounded-full border px-4 py-2 text-xs font-semibold transition",
                     activeTab === tab.id
-                      ? "border-emerald-400/55 bg-emerald-500/15 text-emerald-200"
-                      : "border-[#1E2A33] bg-[#0B1014] text-slate-400 hover:text-slate-200",
+                      ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+                      : "border-[#22D3EE]/25 bg-[#0A0E1A] text-slate-400 hover:text-slate-200",
                   )}
                 >
                   {tab.label}
@@ -502,15 +502,15 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
             {activeTab === "heroes" && (
               <div className="space-y-4">
                 {/* Clean Pill Filters */}
-                <div className="space-y-3 rounded-xl border border-[#1E2A33] bg-[#0B1014] p-4">
+                <div className="space-y-3 rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-4">
                   <div className="flex flex-col gap-2.5 sm:flex-row">
                     <div className="relative flex-1">
-                      <Search className="pointer-events-none absolute top-1/2 left-3.5 h-3.5 w-3.5 -translate-y-1/2 text-emerald-400" />
+                      <Search className="pointer-events-none absolute top-1/2 left-3.5 h-3.5 w-3.5 -translate-y-1/2 text-[#22D3EE]" />
                       <input
                         value={heroSearch}
                         onChange={(e) => setHeroSearch(e.target.value)}
                         placeholder="Cari hero counter..."
-                        className="w-full rounded-xl border border-[#243440] bg-[#10161B] py-2 pr-3 pl-9 text-xs text-white placeholder:text-slate-500 outline-none focus:border-emerald-400/70"
+                        className="w-full rounded-xl border border-[#22D3EE]/35 bg-[#101830] py-2 pr-3 pl-9 text-xs text-white placeholder:text-slate-500 outline-none focus:border-[#F5B83D]"
                       />
                     </div>
                     <button
@@ -520,8 +520,8 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                       className={cn(
                         "rounded-xl border px-3.5 py-2 text-xs font-semibold transition",
                         sameLaneOnly
-                          ? "border-emerald-400/55 bg-emerald-500/15 text-emerald-200"
-                          : "border-[#243440] bg-[#10161B] text-slate-300 hover:border-emerald-400/40",
+                          ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+                          : "border-[#22D3EE]/35 bg-[#101830] text-slate-300 hover:border-[#F5B83D]/55",
                       )}
                     >
                       {sameLaneOnly
@@ -601,7 +601,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                       <button
                         type="button"
                         onClick={resetHeroFilters}
-                        className="text-xs font-semibold text-emerald-300 hover:underline"
+                        className="text-xs font-semibold text-[#F5B83D] hover:underline"
                       >
                         Reset filter
                       </button>
@@ -610,14 +610,14 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                 </div>
 
                 {filteredHeroes.length === 0 ? (
-                  <div className="rounded-xl border border-dashed border-[#243440] p-8 text-center">
+                  <div className="rounded-xl border border-dashed border-[#22D3EE]/35 p-8 text-center">
                     <p className="text-sm font-semibold text-slate-200">
                       Tidak ada hero counter yang cocok dengan filter ini
                     </p>
                     <button
                       type="button"
                       onClick={resetHeroFilters}
-                      className="mt-3 rounded-xl border border-emerald-400/40 px-3.5 py-1.5 text-xs font-semibold text-emerald-200 hover:bg-emerald-500/10"
+                      className="mt-3 rounded-xl border border-emerald-400/40 px-3.5 py-1.5 text-xs font-semibold text-[#F5B83D] hover:bg-emerald-500/10"
                     >
                       Reset Filter Hero
                     </button>
@@ -644,7 +644,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                           onClick={() =>
                             setVisibleHeroCount((prev) => prev + PAGE_SIZE)
                           }
-                          className="rounded-xl border border-[#243440] bg-[#0B1014] px-5 py-2.5 text-xs font-semibold text-emerald-200 transition hover:border-emerald-400/50 hover:bg-emerald-500/10"
+                          className="rounded-xl border border-[#22D3EE]/35 bg-[#0A0E1A] px-5 py-2.5 text-xs font-semibold text-[#F5B83D] transition hover:border-[#F5B83D]/65 hover:bg-emerald-500/10"
                         >
                           Tampilkan Lebih Banyak (
                           {filteredHeroes.length - visibleHeroCount} tersisa)
@@ -659,14 +659,14 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
             {/* TAB 2: ITEM COUNTERS */}
             {activeTab === "items" && (
               <div className="space-y-4">
-                <div className="space-y-3 rounded-xl border border-[#1E2A33] bg-[#0B1014] p-4">
+                <div className="space-y-3 rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-4">
                   <div className="relative">
-                    <Search className="pointer-events-none absolute top-1/2 left-3.5 h-3.5 w-3.5 -translate-y-1/2 text-emerald-400" />
+                    <Search className="pointer-events-none absolute top-1/2 left-3.5 h-3.5 w-3.5 -translate-y-1/2 text-[#22D3EE]" />
                     <input
                       value={itemSearch}
                       onChange={(e) => setItemSearch(e.target.value)}
                       placeholder="Cari nama item counter..."
-                      className="w-full rounded-xl border border-[#243440] bg-[#10161B] py-2 pr-3 pl-9 text-xs text-white placeholder:text-slate-500 outline-none focus:border-emerald-400/70"
+                      className="w-full rounded-xl border border-[#22D3EE]/35 bg-[#101830] py-2 pr-3 pl-9 text-xs text-white placeholder:text-slate-500 outline-none focus:border-[#F5B83D]"
                     />
                   </div>
 
@@ -716,7 +716,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                       <button
                         type="button"
                         onClick={resetItemFilters}
-                        className="text-xs font-semibold text-emerald-300 hover:underline"
+                        className="text-xs font-semibold text-[#F5B83D] hover:underline"
                       >
                         Reset filter
                       </button>
@@ -725,12 +725,12 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                 </div>
 
                 {!data?.metadata.itemCatalogAvailable ? (
-                  <div className="rounded-xl border border-dashed border-[#243440] p-8 text-center text-xs text-slate-400">
+                  <div className="rounded-xl border border-dashed border-[#22D3EE]/35 p-8 text-center text-xs text-slate-400">
                     Katalog item PostgreSQL tidak terhubung saat ini sehingga
                     rekomendasi item counter belum dapat dimuat.
                   </div>
                 ) : filteredItems.length === 0 ? (
-                  <div className="rounded-xl border border-dashed border-[#243440] p-8 text-center text-xs text-slate-400">
+                  <div className="rounded-xl border border-dashed border-[#22D3EE]/35 p-8 text-center text-xs text-slate-400">
                     Tidak ada item counter yang cocok dengan filter saat ini.
                   </div>
                 ) : (
@@ -755,11 +755,11 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                     {summary.tacticalBrief.map((tip) => (
                       <div
                         key={tip.id}
-                        className="rounded-xl border border-[#1E2A33] bg-[#0B1014] p-4"
+                        className="rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-4"
                       >
                         <div className="flex flex-wrap items-center justify-between gap-2">
                           <h4 className="flex items-center gap-1.5 text-sm font-bold text-white">
-                            <CheckCircle2 className="h-4 w-4 text-emerald-400" />
+                            <CheckCircle2 className="h-4 w-4 text-[#22D3EE]" />
                             {tip.title}
                           </h4>
                           <Badge tone="neutral">
@@ -769,7 +769,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                         <p className="mt-2 text-xs leading-relaxed text-slate-200">
                           {tip.recommendation}
                         </p>
-                        <p className="mt-2 text-[11px] text-[#9FB0BE]">
+                        <p className="mt-2 text-[11px] text-[#9AA6C4]">
                           Dasar deteksi: {tip.reason}
                         </p>
                       </div>
@@ -782,7 +782,7 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
                   </p>
                 )}
 
-                <div className="rounded-xl border border-[#1E2A33] bg-[#0B1014] p-4 text-xs leading-relaxed text-[#9FB0BE]">
+                <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-4 text-xs leading-relaxed text-[#9AA6C4]">
                   <p className="font-bold text-white">
                     Transparansi Sumber &amp; Metodologi
                   </p>
@@ -799,8 +799,8 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
               </div>
             )}
 
-            <div className="rounded-xl border border-emerald-400/20 bg-emerald-500/5 p-3 text-[11px] leading-relaxed text-[#9FB0BE]">
-              <strong className="text-emerald-300">
+            <div className="rounded-xl border border-emerald-400/20 bg-emerald-500/5 p-3 text-[11px] leading-relaxed text-[#9AA6C4]">
+              <strong className="text-[#F5B83D]">
                 Status: Belum Diverifikasi ·{" "}
               </strong>
               {summary.disclaimer}
@@ -815,10 +815,10 @@ export function CounterAnalyzerClient({ heroes, patchVersion }: Props) {
           <p className="text-sm font-semibold text-slate-100">
             Pilih minimal 1 hero lawan untuk melihat rekomendasi counter
           </p>
-          <p className="mt-1.5 text-xs text-[#9FB0BE]">
-            Klik tombol <strong className="text-emerald-300">+ Pilih Musuh</strong>{" "}
+          <p className="mt-1.5 text-xs text-[#9AA6C4]">
+            Klik tombol <strong className="text-[#F5B83D]">+ Pilih Musuh</strong>{" "}
             di atas, pilih dari target populer, atau coba simulasi{" "}
-            <strong className="text-emerald-300">Contoh 3 Musuh</strong> untuk
+            <strong className="text-[#F5B83D]">Contoh 3 Musuh</strong> untuk
             melihat pemeringkatan counter multi-hero.
           </p>
         </Surface>

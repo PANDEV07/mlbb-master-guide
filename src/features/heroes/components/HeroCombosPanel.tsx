@@ -32,12 +32,12 @@ export function HeroCombosPanel({ collection }: Props) {
   return (
     <section aria-labelledby="hero-combos-heading" className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <div className="flex flex-wrap items-center gap-2">
-          <Sparkles className="h-5 w-5 text-amber-300" aria-hidden="true" />
+        <div className="flex flex-wrap items-center gap-3">
           <h2
             id="hero-combos-heading"
-            className="text-xl font-bold text-slate-100"
+            className="mlbb-heading flex items-center gap-2 text-2xl text-[#E6EAF5]"
           >
+            <Sparkles className="h-5 w-5 text-[#F5B83D]" aria-hidden="true" />
             Kombo Skill {collection.heroName}
           </h2>
           <Badge tone="neutral">
@@ -55,7 +55,7 @@ export function HeroCombosPanel({ collection }: Props) {
             href={collection.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-xs text-amber-300 hover:underline"
+            className="font-display inline-flex items-center gap-1 text-xs text-[#22D3EE] hover:text-[#F5B83D]"
           >
             Sumber: {collection.sourceName}
             <ExternalLink className="h-3 w-3" aria-hidden="true" />
@@ -80,17 +80,17 @@ export function HeroCombosPanel({ collection }: Props) {
                     <Badge tone="blue">
                       {formatComboTypeLabel(combo.type)}
                     </Badge>
-                    <h3 className="mt-2 text-base font-bold text-white">
+                    <h3 className="font-display mt-2 text-xl text-[#E6EAF5]">
                       {combo.title}
                     </h3>
                   </div>
-                  <span className="text-xs text-slate-400">
+                  <span className="font-display text-xs text-[#F5B83D]">
                     {combo.steps.length} langkah
                   </span>
                 </div>
 
-                {/* Urutan Ikon Skill Interaktif (Klik untuk simulasi langkah) */}
-                <div className="flex flex-wrap items-center gap-2 rounded-xl border border-[#1E2738] bg-[#080B10] p-3">
+                {/* Urutan Ikon Skill Interaktif */}
+                <div className="flex flex-wrap items-center gap-2 border border-[#22D3EE]/25 bg-[#0A0E1A] p-3">
                   {combo.steps.map((step, idx) => {
                     const selected = idx === activeStepIdx;
                     return (
@@ -108,10 +108,10 @@ export function HeroCombosPanel({ collection }: Props) {
                           }
                           aria-pressed={selected}
                           className={cn(
-                            "group flex flex-col items-center gap-1 rounded-xl border p-1.5 transition",
+                            "group flex cursor-pointer flex-col items-center gap-1 border p-1.5 transition",
                             selected
-                              ? "border-amber-400 bg-amber-500/15"
-                              : "border-transparent hover:border-slate-700 hover:bg-slate-900",
+                              ? "border-[#F5B83D] bg-[#F5B83D]/15 shadow-[0_0_12px_rgba(245,184,61,0.3)]"
+                              : "border-transparent hover:border-[#22D3EE]/40 hover:bg-[#101830]",
                           )}
                         >
                           <div className="relative">
@@ -122,25 +122,25 @@ export function HeroCombosPanel({ collection }: Props) {
                                 width={44}
                                 height={44}
                                 unoptimized
-                                className="h-11 w-11 rounded-lg object-cover"
+                                className="h-11 w-11 border border-[#22D3EE]/35 object-cover"
                               />
                             ) : (
-                              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-slate-800 text-[10px] font-bold text-slate-200">
+                              <div className="font-display flex h-11 w-11 items-center justify-center border border-[#F5B83D]/50 bg-[#101830] text-xs text-[#F5B83D]">
                                 {step.slotLabel}
                               </div>
                             )}
-                            <span className="absolute -top-1.5 -left-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-amber-500 text-[10px] font-bold text-slate-950">
+                            <span className="font-display absolute -top-1.5 -left-1.5 flex h-5 w-5 items-center justify-center bg-[#F5B83D] text-[11px] font-bold text-[#0A0E1A]">
                               {step.stepNumber}
                             </span>
                           </div>
-                          <span className="max-w-[64px] truncate text-[10px] font-medium text-slate-300">
+                          <span className="font-display max-w-[64px] truncate text-[10px] text-[#E6EAF5]">
                             {step.slotLabel}
                           </span>
                         </button>
 
                         {idx < combo.steps.length - 1 && (
                           <ArrowRight
-                            className="h-3.5 w-3.5 shrink-0 text-slate-600"
+                            className="h-3.5 w-3.5 shrink-0 text-[#22D3EE]/60"
                             aria-hidden="true"
                           />
                         )}
@@ -150,30 +150,30 @@ export function HeroCombosPanel({ collection }: Props) {
                 </div>
 
                 {/* Penjelasan Umum Kombo */}
-                <p className="text-sm leading-relaxed text-slate-300">
+                <p className="text-sm leading-relaxed text-[#E6EAF5]/90">
                   {combo.description}
                 </p>
 
                 {/* Sorotan Langkah Terpilih */}
                 {activeStep && (
-                  <div className="rounded-xl border border-amber-500/20 bg-amber-500/5 p-3.5">
+                  <div className="border border-[#F5B83D]/35 bg-[#F5B83D]/8 p-3.5">
                     <div className="flex flex-wrap items-center justify-between gap-2">
-                      <span className="text-xs font-semibold text-amber-200">
-                        Langkah {activeStep.stepNumber}: {activeStep.skillName} (
-                        {activeStep.slotLabel})
+                      <span className="font-display text-sm text-[#F5B83D]">
+                        Langkah {activeStep.stepNumber}: {activeStep.skillName}{" "}
+                        ({activeStep.slotLabel})
                       </span>
                       {activeStep.cooldownSeconds !== null && (
-                        <span className="text-[11px] text-slate-400">
+                        <span className="font-display text-xs text-[#22D3EE]">
                           CD: {activeStep.cooldownSeconds}s
                         </span>
                       )}
                     </div>
                     {activeStep.description ? (
-                      <p className="mt-1.5 line-clamp-3 text-xs leading-relaxed text-slate-300">
+                      <p className="mt-1.5 line-clamp-3 text-xs leading-relaxed text-[#E6EAF5]/85">
                         {activeStep.description}
                       </p>
                     ) : (
-                      <p className="mt-1.5 text-xs text-slate-400">
+                      <p className="mt-1.5 text-xs text-[#9AA6C4]">
                         Sisipkan {activeStep.skillName} pada titik urutan ini
                         untuk memaksimalkan damage/pasif hero.
                       </p>
@@ -182,8 +182,8 @@ export function HeroCombosPanel({ collection }: Props) {
                 )}
               </div>
 
-              <div className="flex items-center justify-between border-t border-[#1E2738] pt-3">
-                <span className="text-[11px] text-slate-500">
+              <div className="flex items-center justify-between border-t border-white/10 pt-3">
+                <span className="text-[11px] text-[#9AA6C4]">
                   Klik ikon langkah atau gunakan tombol simulasi
                 </span>
                 <button
@@ -195,7 +195,7 @@ export function HeroCombosPanel({ collection }: Props) {
                         ((prev[combo.id] ?? 0) + 1) % combo.steps.length,
                     }))
                   }
-                  className="rounded-lg border border-amber-400/40 bg-amber-500/15 px-3 py-1.5 text-xs font-semibold text-amber-200 transition hover:bg-amber-500/25"
+                  className="mlbb-btn-chamfer font-display cursor-pointer bg-[#F5B83D] px-3.5 py-1.5 text-xs text-[#0A0E1A] transition hover:bg-[#FFC757]"
                 >
                   Langkah Berikutnya →
                 </button>

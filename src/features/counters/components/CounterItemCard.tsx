@@ -19,7 +19,7 @@ type Props = {
 
 export function CounterItemCard({ candidate, totalTargets }: Props) {
   return (
-    <article className="flex flex-col justify-between rounded-2xl border border-[#1E2A33] bg-[#10161B]/95 p-4 transition hover:border-emerald-400/40">
+    <article className="flex flex-col justify-between rounded-2xl border border-[#22D3EE]/25 bg-[#101830]/95 p-4 transition hover:border-[#F5B83D]/55">
       <div>
         <div className="flex items-start gap-3.5">
           {candidate.itemIconUrl ? (
@@ -29,10 +29,10 @@ export function CounterItemCard({ candidate, totalTargets }: Props) {
               width={52}
               height={52}
               unoptimized
-              className="h-13 w-13 shrink-0 rounded-xl border border-emerald-400/35 bg-[#0B1014] object-cover"
+              className="h-13 w-13 shrink-0 rounded-xl border border-emerald-400/35 bg-[#0A0E1A] object-cover"
             />
           ) : (
-            <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-xl border border-[#1E2A33] bg-[#0B1014] text-slate-400">
+            <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] text-slate-400">
               <Package className="h-5 w-5" />
             </div>
           )}
@@ -61,19 +61,19 @@ export function CounterItemCard({ candidate, totalTargets }: Props) {
         </div>
 
         {totalTargets > 1 && (
-          <p className="mt-2.5 text-[11px] text-emerald-300/90">
+          <p className="mt-2.5 text-[11px] text-[#F5B83D]/90">
             Target: {candidate.counteredEnemies.join(", ")}
           </p>
         )}
 
-        <p className="mt-2.5 text-xs leading-relaxed text-[#9FB0BE]">
+        <p className="mt-2.5 text-xs leading-relaxed text-[#9AA6C4]">
           {candidate.explanation}
         </p>
       </div>
 
       <div className="mt-3.5 space-y-3">
-        <details className="rounded-xl border border-[#1E2A33] bg-[#0B1014] p-3">
-          <summary className="cursor-pointer text-[11px] font-semibold text-slate-300 hover:text-emerald-200">
+        <details className="rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-3">
+          <summary className="cursor-pointer text-[11px] font-semibold text-slate-300 hover:text-[#F5B83D]">
             Lihat bukti efek item &amp; kondisi (
             {candidate.evidencePairs.length})
           </summary>
@@ -81,7 +81,7 @@ export function CounterItemCard({ candidate, totalTargets }: Props) {
             {candidate.evidencePairs.slice(0, 4).map((pair, idx) => (
               <div
                 key={`${candidate.id}-${idx}`}
-                className="rounded-lg border border-[#1E2A33] bg-[#10161B] p-2.5 text-[11px] text-slate-300"
+                className="rounded-lg border border-[#22D3EE]/25 bg-[#101830] p-2.5 text-[11px] text-slate-300"
               >
                 <p>
                   <span className="font-semibold text-rose-300">
@@ -93,7 +93,7 @@ export function CounterItemCard({ candidate, totalTargets }: Props) {
                   </span>
                 </p>
                 <p className="mt-1">
-                  <span className="font-semibold text-emerald-300">
+                  <span className="font-semibold text-[#F5B83D]">
                     {pair.itemEffect} ({pair.itemEffectType}):
                   </span>{" "}
                   {pair.itemMechanic.replaceAll("_", " ")} —{" "}
@@ -113,13 +113,13 @@ export function CounterItemCard({ candidate, totalTargets }: Props) {
           </div>
         </details>
 
-        <div className="flex items-center justify-between border-t border-[#1E2A33] pt-2.5 text-[11px]">
+        <div className="flex items-center justify-between border-t border-[#22D3EE]/25 pt-2.5 text-[11px]">
           <span className="text-[10px] text-slate-500">
             {candidate.evidenceCount} bukti · Belum Diverifikasi
           </span>
           <Link
             href={`/items/${candidate.itemSlug}`}
-            className="inline-flex items-center gap-1 font-medium text-emerald-300 hover:underline"
+            className="inline-flex items-center gap-1 font-medium text-[#F5B83D] hover:underline"
           >
             Detail Item <ExternalLink className="h-3 w-3" />
           </Link>

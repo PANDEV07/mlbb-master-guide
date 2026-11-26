@@ -79,7 +79,7 @@ export function KnowledgeFreshnessPanel({
 
         {/* Metrik Inventaris & Status Verifikasi */}
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="rounded-xl border border-[#1E2738] bg-[#0B0F17] p-4">
+          <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-4">
             <div className="flex items-center justify-between text-xs text-slate-400">
               <span>Entitas Katalog</span>
               <Database className="h-4 w-4 text-sky-400" aria-hidden="true" />
@@ -93,7 +93,7 @@ export function KnowledgeFreshnessPanel({
             </p>
           </div>
 
-          <div className="rounded-xl border border-[#1E2738] bg-[#0B0F17] p-4">
+          <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-4">
             <div className="flex items-center justify-between text-xs text-slate-400">
               <span>Template &amp; Build</span>
               <Layers className="h-4 w-4 text-amber-400" aria-hidden="true" />
@@ -109,15 +109,15 @@ export function KnowledgeFreshnessPanel({
             </p>
           </div>
 
-          <div className="rounded-xl border border-[#1E2738] bg-[#0B0F17] p-4">
+          <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-4">
             <div className="flex items-center justify-between text-xs text-slate-400">
               <span>Bukti Terverifikasi</span>
               <CheckCircle2
-                className="h-4 w-4 text-emerald-400"
+                className="h-4 w-4 text-[#22D3EE]"
                 aria-hidden="true"
               />
             </div>
-            <p className="mt-2 text-2xl font-bold text-emerald-300">
+            <p className="mt-2 text-2xl font-bold text-[#F5B83D]">
               {evidenceHealth.verifiedCount}
             </p>
             <p className="mt-1 text-[11px] text-slate-400">
@@ -126,7 +126,7 @@ export function KnowledgeFreshnessPanel({
             </p>
           </div>
 
-          <div className="rounded-xl border border-[#1E2738] bg-[#0B0F17] p-4">
+          <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-4">
             <div className="flex items-center justify-between text-xs text-slate-400">
               <span>Antrean Audit</span>
               <AlertTriangle
@@ -184,7 +184,7 @@ export function KnowledgeFreshnessPanel({
         <div className="overflow-x-auto">
           <table className="w-full min-w-[540px] border-collapse text-left text-xs">
             <thead>
-              <tr className="border-b border-[#1E2738] text-[11px] uppercase tracking-wider text-slate-500">
+              <tr className="border-b border-[#22D3EE]/25 text-[11px] uppercase tracking-wider text-slate-500">
                 <th className="py-2.5 pr-4">Domain Entitas</th>
                 <th className="px-3 py-2.5 text-right">Total Bukti</th>
                 <th className="px-3 py-2.5 text-right">Terverifikasi</th>
@@ -194,7 +194,7 @@ export function KnowledgeFreshnessPanel({
                 <th className="pl-3 py-2.5 text-right">Navigasi</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-[#1E2738]/70">
+            <tbody className="divide-y divide-[#22D3EE]/20/70">
               {evidenceHealth.byEntityType.map((row) => {
                 const href = getEntityHref(row.entityType);
                 return (
@@ -203,7 +203,7 @@ export function KnowledgeFreshnessPanel({
                       {getEntityLabel(row.entityType)}
                     </td>
                     <td className="px-3 py-3 text-right">{row.total}</td>
-                    <td className="px-3 py-3 text-right text-emerald-300">
+                    <td className="px-3 py-3 text-right text-[#F5B83D]">
                       {row.verified}
                     </td>
                     <td className="px-3 py-3 text-right text-sky-300">
@@ -236,7 +236,7 @@ export function KnowledgeFreshnessPanel({
 
         {/* Rincian Klasifikasi Klaim */}
         {evidenceBuckets.length > 0 && (
-          <div className="space-y-2 border-t border-[#1E2738] pt-4">
+          <div className="space-y-2 border-t border-[#22D3EE]/25 pt-4">
             <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-500">
               Rincian Klasifikasi Klaim Aktif
             </p>
@@ -244,7 +244,7 @@ export function KnowledgeFreshnessPanel({
               {evidenceBuckets.map((bucket) => (
                 <div
                   key={`${bucket.entityType}-${bucket.verificationStatus}-${bucket.claimClassification}`}
-                  className="rounded-lg border border-[#1E2738] bg-[#0B0F17] px-3 py-1.5 text-[11px] text-slate-300"
+                  className="rounded-lg border border-[#22D3EE]/25 bg-[#0B0F17] px-3 py-1.5 text-[11px] text-slate-300"
                 >
                   <span className="font-semibold text-white">
                     {getEntityLabel(bucket.entityType)}

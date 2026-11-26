@@ -5,20 +5,26 @@ interface SurfaceProps {
   children: ReactNode;
   className?: string;
   elevated?: boolean;
+  chamfered?: boolean;
 }
 
 export function Surface({
   children,
   className,
   elevated = false,
+  chamfered = true,
 }: SurfaceProps) {
   return (
     <div
       className={cn(
-        "rounded-2xl border border-[#1E2A33] shadow-[0_1px_0_0_rgba(255,255,255,0.03)_inset]",
-        elevated
-          ? "bg-[#151D24]/95 shadow-lg shadow-black/25"
-          : "bg-[#10161B]/90",
+        "border shadow-[0_1px_0_0_rgba(34,211,238,0.06)_inset]",
+        chamfered
+          ? elevated
+            ? "mlbb-card-elevated shadow-lg shadow-black/35"
+            : "mlbb-card"
+          : elevated
+            ? "rounded-lg border-[#22D3EE]/35 bg-[#15203E] shadow-lg shadow-black/35"
+            : "rounded-lg border-[#22D3EE]/25 bg-[#101830]",
         className,
       )}
     >

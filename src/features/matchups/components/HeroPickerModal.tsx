@@ -95,11 +95,11 @@ export function HeroPickerModal({
       onClick={onClose}
     >
         <div
-        className="flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden rounded-2xl border border-[#243440] bg-[#10161B] shadow-2xl"
+        className="flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden rounded-2xl border border-[#22D3EE]/35 bg-[#101830] shadow-2xl"
         onClick={(event) => event.stopPropagation()}
       >
         {/* Header */}
-        <div className="flex items-start justify-between gap-3 border-b border-[#1E2A33] p-4 sm:p-5">
+        <div className="flex items-start justify-between gap-3 border-b border-[#22D3EE]/25 p-4 sm:p-5">
           <div>
             <h3 className="text-base font-bold text-white">{title}</h3>
             {subtitle && (
@@ -110,17 +110,17 @@ export function HeroPickerModal({
             type="button"
             onClick={onClose}
             aria-label="Tutup pemilih hero"
-            className="rounded-lg border border-[#243440] p-1.5 text-slate-400 transition hover:border-emerald-400/50 hover:text-white"
+            className="rounded-lg border border-[#22D3EE]/35 p-1.5 text-slate-400 transition hover:border-[#F5B83D]/65 hover:text-white"
           >
             <X className="h-4 w-4" aria-hidden="true" />
           </button>
         </div>
 
         {/* Search & Filters */}
-        <div className="space-y-3 border-b border-[#1E2A33] bg-[#0B1014] p-4">
+        <div className="space-y-3 border-b border-[#22D3EE]/25 bg-[#0A0E1A] p-4">
           <div className="relative">
             <Search
-              className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-emerald-400"
+              className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#22D3EE]"
               aria-hidden="true"
             />
             <input
@@ -129,7 +129,7 @@ export function HeroPickerModal({
               value={search}
               onChange={(event) => setSearch(event.target.value)}
               placeholder="Cari nama hero (mis. Fanny, Khufra, Aamon)..."
-              className="w-full rounded-xl border border-[#243440] bg-[#10161B] py-2.5 pl-9 pr-4 text-sm text-white outline-none focus:border-emerald-400/70"
+              className="w-full rounded-xl border border-[#22D3EE]/35 bg-[#101830] py-2.5 pl-9 pr-4 text-sm text-white outline-none focus:border-[#F5B83D]"
             />
           </div>
 
@@ -143,8 +143,8 @@ export function HeroPickerModal({
               className={cn(
                 "rounded-full border px-2.5 py-1 text-[11px] font-medium transition",
                 laneFilter === "ALL"
-                  ? "border-emerald-400/60 bg-emerald-500/15 text-emerald-200"
-                  : "border-[#1E2A33] bg-[#10161B] text-slate-400 hover:text-slate-200",
+                  ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+                  : "border-[#22D3EE]/25 bg-[#101830] text-slate-400 hover:text-slate-200",
               )}
             >
               Semua Lane
@@ -157,8 +157,8 @@ export function HeroPickerModal({
                 className={cn(
                   "rounded-full border px-2.5 py-1 text-[11px] font-medium transition",
                   laneFilter === lane
-                    ? "border-emerald-400/60 bg-emerald-500/15 text-emerald-200"
-                    : "border-[#1E2A33] bg-[#10161B] text-slate-400 hover:text-slate-200",
+                    ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+                    : "border-[#22D3EE]/25 bg-[#101830] text-slate-400 hover:text-slate-200",
                 )}
               >
                 {lane}
@@ -244,8 +244,8 @@ export function HeroPickerModal({
                     className={cn(
                       "flex items-center gap-2.5 rounded-xl border p-2.5 text-left transition",
                       isDisabled
-                        ? "cursor-not-allowed border-slate-800 bg-slate-900/50 opacity-45"
-                        : "border-[#1E2738] bg-[#0F1420] hover:border-amber-400/70 hover:bg-amber-500/5",
+                        ? "cursor-not-allowed border-slate-800 bg-[#101830]/70 opacity-45"
+                        : "border-[#22D3EE]/25 bg-[#0F1420] hover:border-amber-400/70 hover:bg-amber-500/5",
                     )}
                   >
                     <HeroPortrait

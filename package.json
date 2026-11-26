@@ -18,6 +18,7 @@
         "hero-combos:extract": "tsx src/lib/db/scripts/extract-hero-combos.ts",
         "hero-combos:test": "tsx src/features/heroes/tests/hero-combos.test.ts",
         "hero-skills:sync-id": "tsx src/lib/db/scripts/sync-hero-skills-id.ts",
+        "hero-skins:sync": "tsx src/lib/db/scripts/sync-hero-premium-skins.ts",
         "item:import": "tsx src/lib/db/scripts/import-item-identities.ts",
         "pro-build:import": "tsx src/lib/db/scripts/import-pro-builds.ts",
         "pro-build:test": "tsx src/features/esports/tests/pro-build-pipeline.test.ts",

@@ -124,7 +124,7 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
       <div role="search" aria-label="Pencarian Pengetahuan MLBB" className="space-y-4">
         <div className="relative">
           <Search
-            className="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-emerald-400"
+            className="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-[#22D3EE]"
             aria-hidden="true"
           />
           <input
@@ -134,7 +134,7 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Ketik nama hero, item, role, lane, atau modul (mis. Aamon, Assassin, Athena, Solo)..."
             aria-label="Kata kunci pencarian"
-            className="w-full rounded-2xl border border-[#243440] bg-[#0B1014] py-3.5 pr-11 pl-11 text-sm text-white placeholder:text-slate-500 outline-none transition focus:border-emerald-400/70 focus:ring-2 focus:ring-emerald-500/20"
+            className="w-full rounded-2xl border border-[#22D3EE]/35 bg-[#0A0E1A] py-3.5 pr-11 pl-11 text-sm text-white placeholder:text-slate-500 outline-none transition focus:border-[#F5B83D] focus:ring-2 focus:ring-[#F5B83D]/25"
           />
           {query && (
             <button
@@ -160,8 +160,8 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
                 className={cn(
                   "rounded-full border px-3 py-1 text-xs font-semibold transition-colors",
                   active
-                    ? "border-emerald-400/50 bg-emerald-500/15 text-emerald-200"
-                    : "border-[#1E2A33] bg-[#0B1014] text-slate-400 hover:text-slate-200",
+                    ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+                    : "border-[#22D3EE]/25 bg-[#0A0E1A] text-slate-400 hover:text-slate-200",
                 )}
               >
                 {scope.label}
@@ -173,7 +173,7 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
 
       {/* Results */}
       {!normalized ? (
-        <div className="rounded-2xl border border-dashed border-[#243440] bg-[#0B1014]/60 p-8 text-center">
+        <div className="rounded-2xl border border-dashed border-[#22D3EE]/35 bg-[#0A0E1A]/60 p-8 text-center">
           <p className="text-sm font-medium text-slate-200">
             Mulai mengetik untuk mencari secara langsung
           </p>
@@ -185,7 +185,7 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
                   key={sample}
                   type="button"
                   onClick={() => setQuery(sample)}
-                  className="mx-1 rounded-full border border-[#243440] bg-[#151D24] px-2.5 py-0.5 text-[11px] font-medium text-emerald-300 hover:border-emerald-400/50"
+                  className="mx-1 rounded-full border border-[#22D3EE]/35 bg-[#15203E] px-2.5 py-0.5 text-[11px] font-medium text-[#F5B83D] hover:border-[#F5B83D]/65"
                 >
                   {sample}
                 </button>
@@ -194,7 +194,7 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
           </p>
         </div>
       ) : totalCount === 0 ? (
-        <div className="rounded-2xl border border-dashed border-[#243440] bg-[#0B1014]/60 p-8 text-center">
+        <div className="rounded-2xl border border-dashed border-[#22D3EE]/35 bg-[#0A0E1A]/60 p-8 text-center">
           <Badge tone="neutral">Tidak ditemukan</Badge>
           <p className="mt-2 text-sm text-slate-300">
             Tidak ada hasil yang cocok untuk &ldquo;{query}&rdquo;.
@@ -212,7 +212,7 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
 
           {matchedHeroes.length > 0 && (
             <div className="space-y-2.5">
-              <h2 className="text-xs font-bold uppercase tracking-wider text-emerald-300">
+              <h2 className="text-xs font-bold uppercase tracking-wider text-[#F5B83D]">
                 Hero ({matchedHeroes.length})
               </h2>
               <div className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
@@ -222,7 +222,7 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
                   return (
                     <div
                       key={hero.entityId}
-                      className="flex items-center justify-between gap-2 rounded-xl border border-[#1E2A33] bg-[#0B1014] p-3 transition hover:border-emerald-400/40"
+                      className="flex items-center justify-between gap-2 rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-3 transition hover:border-[#F5B83D]/55"
                     >
                       <Link
                         href={`/heroes/${hero.metadata.slug}`}
@@ -245,13 +245,13 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
                       <div className="flex shrink-0 flex-col gap-1">
                         <Link
                           href={`/heroes/${hero.metadata.slug}`}
-                          className="rounded-lg bg-emerald-500/15 px-2.5 py-1 text-center text-[11px] font-semibold text-emerald-200 hover:bg-emerald-500/25"
+                          className="rounded-lg bg-emerald-500/15 px-2.5 py-1 text-center text-[11px] font-semibold text-[#F5B83D] hover:bg-emerald-500/25"
                         >
                           Detail
                         </Link>
                         <Link
                           href={`/builds/${hero.metadata.slug}`}
-                          className="rounded-lg border border-[#263542] px-2.5 py-1 text-center text-[11px] text-slate-300 hover:border-emerald-400/50"
+                          className="rounded-lg border border-[#22D3EE]/35 px-2.5 py-1 text-center text-[11px] text-slate-300 hover:border-[#F5B83D]/65"
                         >
                           Build
                         </Link>
@@ -273,7 +273,7 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
                   <Link
                     key={item.entityId}
                     href={`/items/${item.slug}`}
-                    className="group flex items-center justify-between gap-3 rounded-xl border border-[#1E2A33] bg-[#0B1014] p-3 transition hover:border-emerald-400/40"
+                    className="group flex items-center justify-between gap-3 rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-3 transition hover:border-[#F5B83D]/55"
                   >
                     <div className="flex min-w-0 items-center gap-3">
                       {item.iconUrl ? (
@@ -283,15 +283,15 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
                           width={40}
                           height={40}
                           unoptimized
-                          className="h-10 w-10 shrink-0 rounded-lg border border-[#263542] object-cover"
+                          className="h-10 w-10 shrink-0 rounded-lg border border-[#22D3EE]/35 object-cover"
                         />
                       ) : (
-                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#151D24] text-slate-400">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#15203E] text-slate-400">
                           <Package className="h-4 w-4" />
                         </div>
                       )}
                       <div className="min-w-0">
-                        <p className="truncate text-sm font-bold text-white group-hover:text-emerald-200">
+                        <p className="truncate text-sm font-bold text-white group-hover:text-[#F5B83D]">
                           {item.name}
                         </p>
                         <p className="truncate text-[11px] text-slate-400">
@@ -300,7 +300,7 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
                         </p>
                       </div>
                     </div>
-                    <ArrowRight className="h-4 w-4 shrink-0 text-slate-500 group-hover:text-emerald-300" />
+                    <ArrowRight className="h-4 w-4 shrink-0 text-slate-500 group-hover:text-[#F5B83D]" />
                   </Link>
                 ))}
               </div>
@@ -309,7 +309,7 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
 
           {matchedModules.length > 0 && (
             <div className="space-y-2.5">
-              <h2 className="text-xs font-bold uppercase tracking-wider text-teal-300">
+              <h2 className="text-xs font-bold uppercase tracking-wider text-[#22D3EE]">
                 Modul &amp; Alat ({matchedModules.length})
               </h2>
               <div className="grid gap-2.5 sm:grid-cols-2">
@@ -317,17 +317,17 @@ export function SearchWorkspace({ heroes, items = [] }: SearchWorkspaceProps) {
                   <Link
                     key={mod.href}
                     href={mod.href}
-                    className="group flex items-center justify-between gap-3 rounded-xl border border-[#1E2A33] bg-[#0B1014] p-4 transition hover:border-emerald-400/40"
+                    className="group flex items-center justify-between gap-3 rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-4 transition hover:border-[#F5B83D]/55"
                   >
                     <div>
-                      <p className="text-sm font-bold text-white group-hover:text-emerald-200">
+                      <p className="text-sm font-bold text-white group-hover:text-[#F5B83D]">
                         {mod.title}
                       </p>
                       <p className="mt-0.5 text-xs text-slate-400">
                         {mod.description}
                       </p>
                     </div>
-                    <ArrowRight className="h-4 w-4 shrink-0 text-slate-500 group-hover:text-emerald-300" />
+                    <ArrowRight className="h-4 w-4 shrink-0 text-slate-500 group-hover:text-[#F5B83D]" />
                   </Link>
                 ))}
               </div>

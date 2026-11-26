@@ -289,7 +289,7 @@ export function HeadToHeadMatchupPanel({
     items: MatchupItemRecommendation[],
     catalogAvailable: boolean,
   ) => (
-    <div className="space-y-3 rounded-xl border border-[#1E2738] bg-[#0B0F17] p-4">
+    <div className="space-y-3 rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-4">
       <div className="flex items-center justify-between gap-2">
         <h4 className="text-sm font-bold text-white">{title}</h4>
         <Badge tone="neutral">{items.length} kandidat</Badge>
@@ -409,7 +409,7 @@ export function HeadToHeadMatchupPanel({
         </div>
 
         {/* Preset Populer */}
-        <div className="flex flex-wrap items-center gap-2 border-t border-[#1E2738] pt-3">
+        <div className="flex flex-wrap items-center gap-2 border-t border-[#22D3EE]/25 pt-3">
           <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-400">
             <Sparkles className="h-3.5 w-3.5 text-amber-400" aria-hidden="true" />
             Contoh Duel Cepat:
@@ -477,7 +477,7 @@ export function HeadToHeadMatchupPanel({
 
             {/* Summary KPI Row */}
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-              <div className="rounded-xl border border-[#1E2738] bg-[#0B0F17] p-3 text-center">
+              <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-3 text-center">
                 <p className="text-[11px] text-slate-400">
                   Tipe Damage {result.enriched.profileA.heroName}
                 </p>
@@ -485,7 +485,7 @@ export function HeadToHeadMatchupPanel({
                   {result.enriched.profileA.damageProfile}
                 </p>
               </div>
-              <div className="rounded-xl border border-[#1E2738] bg-[#0B0F17] p-3 text-center">
+              <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-3 text-center">
                 <p className="text-[11px] text-slate-400">
                   Aturan A → B / B → A
                 </p>
@@ -494,7 +494,7 @@ export function HeadToHeadMatchupPanel({
                   {result.analysis.summary.bToAInteractions}
                 </p>
               </div>
-              <div className="rounded-xl border border-[#1E2738] bg-[#0B0F17] p-3 text-center">
+              <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-3 text-center">
                 <p className="text-[11px] text-slate-400">
                   Total Pasangan Interaksi
                 </p>
@@ -502,7 +502,7 @@ export function HeadToHeadMatchupPanel({
                   {result.analysis.summary.totalSkillPairs}
                 </p>
               </div>
-              <div className="rounded-xl border border-[#1E2738] bg-[#0B0F17] p-3 text-center">
+              <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-3 text-center">
                 <p className="text-[11px] text-slate-400">
                   Tipe Damage {result.enriched.profileB.heroName}
                 </p>
@@ -560,7 +560,7 @@ export function HeadToHeadMatchupPanel({
             <div
               role="tablist"
               aria-label="Detail Analisis Matchup 1v1"
-              className="flex flex-wrap gap-2 border-b border-[#1E2738] pb-3"
+              className="flex flex-wrap gap-2 border-b border-[#22D3EE]/25 pb-3"
             >
               {(
                 [
@@ -591,8 +591,8 @@ export function HeadToHeadMatchupPanel({
                   className={cn(
                     "rounded-full border px-3.5 py-2 text-xs font-semibold transition",
                     activeTab === tab.id
-                      ? "border-emerald-400/55 bg-emerald-500/15 text-emerald-200"
-                      : "border-[#1E2A33] bg-[#0B1014] text-slate-400 hover:text-slate-200",
+                      ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+                      : "border-[#22D3EE]/25 bg-[#0A0E1A] text-slate-400 hover:text-slate-200",
                   )}
                 >
                   {tab.label}
@@ -667,7 +667,7 @@ export function HeadToHeadMatchupPanel({
                         dir.items.map((item) => (
                           <div
                             key={item.ruleId}
-                            className="space-y-3 rounded-xl border border-[#1E2738] bg-[#0B0F17] p-4"
+                            className="space-y-3 rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-4"
                           >
                             <div className="flex flex-wrap items-center justify-between gap-2">
                               <span className="text-sm font-semibold text-white">
@@ -780,7 +780,7 @@ export function HeadToHeadMatchupPanel({
                         {side.combos.combos.map((combo) => (
                           <div
                             key={combo.id}
-                            className="rounded-lg border border-[#1E2738] bg-[#0B0F17] p-3"
+                            className="rounded-lg border border-[#22D3EE]/25 bg-[#0B0F17] p-3"
                           >
                             <p className="text-xs font-semibold text-white">
                               {combo.title}
@@ -813,7 +813,7 @@ export function HeadToHeadMatchupPanel({
                       {side.groups.flatMap((g) => g.skills).map((skill, idx) => (
                         <div
                           key={`${skill.apiGroupId}-${skill.apiSkillId ?? idx}`}
-                          className="rounded-xl border border-[#1E2738] bg-[#0B0F17] p-3.5"
+                          className="rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-3.5"
                         >
                           <div className="flex items-center gap-3">
                             {skill.iconUrl && (
@@ -873,7 +873,7 @@ export function HeadToHeadMatchupPanel({
                 <p className="text-xs text-slate-400">
                   Panduan persiapan taktis disusun dari mekanik yang terdeteksi
                   pada kedua hero (klasifikasi{" "}
-                  <strong className="text-emerald-300">
+                  <strong className="text-[#F5B83D]">
                     Interpretasi Strategis
                   </strong>
                   , bukan angka win rate).
@@ -881,7 +881,7 @@ export function HeadToHeadMatchupPanel({
                 {result.enriched.phaseChecklists.map((item) => (
                   <div
                     key={item.phase}
-                    className="rounded-xl border border-[#1E2738] bg-[#0B0F17] p-4"
+                    className="rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-4"
                   >
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <h4 className="text-sm font-bold text-white">
@@ -917,7 +917,7 @@ export function HeadToHeadMatchupPanel({
             )}
 
             <div className="rounded-xl border border-amber-500/20 bg-amber-500/5 p-3 text-[11px] leading-relaxed text-slate-400">
-              <strong className="text-emerald-300">
+              <strong className="text-[#F5B83D]">
                 Status: Belum Diverifikasi ·{" "}
               </strong>
               {result.analysis.disclaimer}

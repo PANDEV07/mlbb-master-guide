@@ -1,0 +1,9 @@
+Bundled Font Licenses (SIL Open Font License 1.1)
+
+- Inter (inter-latin.woff2, inter-latin-ext.woff2)
+  Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)
+  Licensed under SIL Open Font License, Version 1.1 (https://scripts.sil.org/OFL)
+
+- Rajdhani (rajdhani-700-latin.woff2)
+  Copyright (c) 2014, Indian Type Foundry (info@indiantypefoundry.com)
+  Licensed under SIL Open Font License, Version 1.1 (https://scripts.sil.org/OFL)

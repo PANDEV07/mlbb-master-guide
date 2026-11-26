@@ -23,7 +23,7 @@ export function CounterHeroCard({ candidate, totalTargets, rank }: Props) {
   const isSameLane = candidate.sameLaneAsTargets.length > 0;
 
   return (
-    <article className="flex flex-col justify-between rounded-2xl border border-[#1E2A33] bg-[#10161B]/95 p-4 transition hover:border-emerald-400/40">
+    <article className="flex flex-col justify-between rounded-2xl border border-[#22D3EE]/25 bg-[#101830]/95 p-4 transition hover:border-[#F5B83D]/55">
       <div>
         <div className="flex items-start gap-3.5">
           <div className="relative shrink-0">
@@ -32,7 +32,7 @@ export function CounterHeroCard({ candidate, totalTargets, rank }: Props) {
               name={candidate.counterHero}
               className="h-16 w-14 rounded-xl"
             />
-            <span className="absolute -top-2 -left-2 flex h-6 w-6 items-center justify-center rounded-full border border-emerald-400/40 bg-[#0B1014] text-[10px] font-bold text-emerald-300">
+            <span className="absolute -top-2 -left-2 flex h-6 w-6 items-center justify-center rounded-full border border-emerald-400/40 bg-[#0A0E1A] text-[10px] font-bold text-[#F5B83D]">
               #{rank}
             </span>
           </div>
@@ -74,38 +74,38 @@ export function CounterHeroCard({ candidate, totalTargets, rank }: Props) {
           {candidate.ruleIds.map((rule) => (
             <span
               key={rule}
-              className="inline-flex items-center gap-1 rounded-full border border-emerald-400/25 bg-emerald-500/10 px-2.5 py-0.5 text-[10px] font-semibold text-emerald-200"
+              className="inline-flex items-center gap-1 rounded-full border border-emerald-400/25 bg-emerald-500/10 px-2.5 py-0.5 text-[10px] font-semibold text-[#F5B83D]"
             >
               <ShieldCheck className="h-3 w-3" aria-hidden="true" />
               {HERO_RULE_LABELS[rule] ?? rule}
             </span>
           ))}
-          <span className="rounded-full bg-[#151D24] px-2 py-0.5 text-[10px] text-slate-400">
+          <span className="rounded-full bg-[#15203E] px-2 py-0.5 text-[10px] text-slate-400">
             {candidate.evidenceCount} bukti mekanik
           </span>
         </div>
 
         {totalTargets > 1 && (
-          <p className="mt-2 text-[11px] text-emerald-300/90">
+          <p className="mt-2 text-[11px] text-[#F5B83D]/90">
             Efektif terhadap: {candidate.counteredEnemies.join(", ")}
           </p>
         )}
 
-        <p className="mt-2.5 text-xs leading-relaxed text-[#9FB0BE]">
+        <p className="mt-2.5 text-xs leading-relaxed text-[#9AA6C4]">
           {candidate.explanation}
         </p>
       </div>
 
       <div className="mt-3.5 space-y-3">
-        <details className="rounded-xl border border-[#1E2A33] bg-[#0B1014] p-3">
-          <summary className="cursor-pointer text-[11px] font-semibold text-slate-300 hover:text-emerald-200">
+        <details className="rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A] p-3">
+          <summary className="cursor-pointer text-[11px] font-semibold text-slate-300 hover:text-[#F5B83D]">
             Lihat bukti skill &amp; kondisi ({candidate.evidencePairs.length})
           </summary>
           <div className="mt-2.5 space-y-2">
             {candidate.evidencePairs.slice(0, 4).map((pair, idx) => (
               <div
                 key={`${candidate.id}-${idx}`}
-                className="rounded-lg border border-[#1E2A33] bg-[#10161B] p-2.5 text-[11px] text-slate-300"
+                className="rounded-lg border border-[#22D3EE]/25 bg-[#101830] p-2.5 text-[11px] text-slate-300"
               >
                 <p>
                   <span className="font-semibold text-rose-300">
@@ -117,7 +117,7 @@ export function CounterHeroCard({ candidate, totalTargets, rank }: Props) {
                   </span>
                 </p>
                 <p className="mt-1">
-                  <span className="font-semibold text-emerald-300">
+                  <span className="font-semibold text-[#F5B83D]">
                     {candidate.counterHero} ({pair.responseSkill}):
                   </span>{" "}
                   {pair.responseMechanic.replaceAll("_", " ")} —{" "}
@@ -137,14 +137,14 @@ export function CounterHeroCard({ candidate, totalTargets, rank }: Props) {
           </div>
         </details>
 
-        <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[#1E2A33] pt-2.5 text-[11px]">
+        <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[#22D3EE]/25 pt-2.5 text-[11px]">
           <span className="text-[10px] text-slate-500">
             Kandidat · Belum Diverifikasi
           </span>
           <div className="flex items-center gap-3">
             <Link
               href={`/heroes/${candidate.counterSlug}`}
-              className="inline-flex items-center gap-1 font-medium text-emerald-300 hover:underline"
+              className="inline-flex items-center gap-1 font-medium text-[#F5B83D] hover:underline"
             >
               Skill &amp; Kombo <ExternalLink className="h-3 w-3" />
             </Link>

@@ -12,19 +12,28 @@ interface BreadcrumbsProps {
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
   return (
-    <nav aria-label="Breadcrumb" className="mb-4 flex flex-wrap items-center gap-1.5 text-xs text-slate-400">
-      <Link href="/" className="transition-colors hover:text-slate-200">
-        MLBB Master Guide
+    <nav
+      aria-label="Breadcrumb"
+      className="mb-4 flex flex-wrap items-center gap-1.5 text-xs text-[#9AA6C4]"
+    >
+      <Link href="/" className="transition-colors hover:text-[#22D3EE]">
+        Beranda
       </Link>
       {items.map((item) => (
         <span key={item.label} className="flex items-center gap-1.5">
-          <ChevronRight className="h-3.5 w-3.5 text-slate-600" aria-hidden="true" />
+          <ChevronRight
+            className="h-3.5 w-3.5 text-[#22D3EE]/45"
+            aria-hidden="true"
+          />
           {item.href ? (
-            <Link href={item.href} className="transition-colors hover:text-slate-200">
+            <Link
+              href={item.href}
+              className="transition-colors hover:text-[#22D3EE]"
+            >
               {item.label}
             </Link>
           ) : (
-            <span className="font-medium text-slate-200">{item.label}</span>
+            <span className="font-semibold text-[#F5B83D]">{item.label}</span>
           )}
         </span>
       ))}

@@ -12,32 +12,33 @@ const FOOTER_LINKS = [
 
 export function Footer() {
   return (
-    <footer className="mt-12 border-t border-[#1E2A33] bg-[#0B1014]/80 px-4 py-8 text-xs text-slate-400 sm:px-6 lg:px-8">
-      <div className="mx-auto flex max-w-7xl flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-        <div className="space-y-1">
-          <div className="flex items-center gap-2">
-            <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[10px] font-extrabold text-slate-950">
+    <footer className="mt-12 border-t border-[#F5B83D]/35 bg-[#070A14] px-4 py-9 pb-24 text-xs text-[#9AA6C4] sm:px-6 lg:px-8 lg:pb-10">
+      <div className="mx-auto flex max-w-7xl flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+        <div className="max-w-md space-y-2">
+          <div className="flex items-center gap-2.5">
+            <span className="mlbb-btn-chamfer font-display inline-flex h-6 w-6 items-center justify-center bg-[#F5B83D] text-[11px] font-extrabold text-[#0A0E1A]">
               MG
             </span>
-            <span className="font-semibold text-slate-100">
-              MLBB Master Guide
+            <span className="font-display text-xl text-[#F5B83D]">
+              MLBB MASTER GUIDE
             </span>
           </div>
-          <p className="text-[11px] text-slate-500">
-            Panduan strategi Mobile Legends: Bang Bang — sadar-patch, transparan
-            sumber, tanpa klaim win rate palsu.
+          <p className="text-xs leading-relaxed text-[#9AA6C4]">
+            Situs ini adalah panduan strategi Mobile Legends: Bang Bang buatan
+            penggemar yang sadar-patch dan transparan sumber. Mobile Legends:
+            Bang Bang dan seluruh materi terkait adalah milik Moonton.
           </p>
         </div>
 
         <nav
           aria-label="Navigasi Footer"
-          className="flex flex-wrap items-center gap-x-5 gap-y-2"
+          className="font-display flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-[#22D3EE]"
         >
           {FOOTER_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-slate-400 transition-colors hover:text-emerald-300"
+              className="transition-colors hover:text-[#F5B83D]"
             >
               {link.label}
             </Link>

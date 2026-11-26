@@ -71,7 +71,7 @@ function statusClass(status: string | undefined) {
     case "NEEDS_REVIEW":
       return "border-amber-400/30 bg-amber-400/10 text-amber-300";
     case "VERIFIED":
-      return "border-emerald-400/30 bg-emerald-400/10 text-emerald-300";
+      return "border-emerald-400/30 bg-emerald-400/10 text-[#F5B83D]";
     case "REJECTED":
       return "border-red-400/30 bg-red-400/10 text-red-300";
     default:
@@ -704,7 +704,7 @@ export function EvidenceReviewDashboard({ items, metadata }: Props) {
                   )}
 
                   {message && (
-                    <p role="status" className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3 text-xs text-emerald-300">
+                    <p role="status" className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3 text-xs text-[#F5B83D]">
                       {message}
                     </p>
                   )}

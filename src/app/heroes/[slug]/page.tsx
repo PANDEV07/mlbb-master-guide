@@ -6,10 +6,16 @@ import {
   getHeroComboCollection,
   getHeroSkillGroupsForDisplay,
 } from "@/features/heroes/data/hero-combos";
+import { HERO_ROLE_MAP } from "@/features/heroes/data/hero-role-map";
+import { HERO_LANE_MAP } from "@/features/heroes/data/hero-lane-map";
+import { getHeroPremiumSkin } from "@/features/heroes/data/hero-premium-skins";
+import { HeroSkinBackdrop } from "@/features/heroes/components/HeroSkinBackdrop";
 import { HeroSkillShowcase } from "@/features/heroes/components/HeroSkillShowcase";
 import { HeroCombosPanel } from "@/features/heroes/components/HeroCombosPanel";
 import { getHeroDetail } from "@/features/heroes";
-import { PageHeader } from "@/components/shared/PageHeader";
+import { formatPercent, getMetaDashboardPayload } from "@/features/meta";
+import { Breadcrumbs } from "@/components/navigation/Breadcrumbs";
+import { Button } from "@/components/ui/Button";
 import { Surface } from "@/components/ui/Surface";
 import { Badge } from "@/components/ui/Badge";
 import { HeroPortrait } from "@/features/heroes/components/HeroPortrait";
@@ -55,6 +61,14 @@ const skillLabels: Record<string, string> = {
   ULTIMATE: "Ultimate",
 };
 
+const TIER_BADGE_CLASSES: Record<string, string> = {
+  S: "bg-[#F5B83D] text-[#0A0E1A]",
+  A: "bg-[#22D3EE] text-[#0A0E1A]",
+  B: "bg-[#4ADE80] text-[#0A0E1A]",
+  C: "bg-[#94A3B8] text-[#0A0E1A]",
+  D: "bg-[#E11D48] text-white",
+};
+
 export default async function HeroDetailPage({
   params,
 }: HeroDetailPageProps) {
@@ -89,88 +103,216 @@ export default async function HeroDetailPage({
       ]
     : [];
 
+  const metaPayload = getMetaDashboardPayload();
+  const metaHero = metaPayload.brackets.mythical_glory.heroes.find(
+    (h) => h.heroSlug === hero.metadata.slug,
+  );
+  const premiumSkin = getHeroPremiumSkin(hero.metadata.slug);
+  const displayRoles =
+    profile?.role
+      ? [profile.role]
+      : (HERO_ROLE_MAP[hero.metadata.slug] ?? []);
+  const displayLanes =
+    profile?.lanes && profile.lanes.length > 0
+      ? profile.lanes
+      : (HERO_LANE_MAP[hero.metadata.slug] ?? []);
+
   return (
-    <div className="space-y-6">
-      <div className="flex flex-wrap items-center justify-between gap-2">
+    <div className="space-y-7">
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <Breadcrumbs
+          items={[
+            { label: "Hero", href: "/heroes" },
+            { label: hero.metadata.name },
+          ]}
+        />
         <Link
           href="/heroes"
-          className="inline-flex text-sm font-medium text-emerald-300 transition hover:text-emerald-200"
+          className="font-display text-sm text-[#22D3EE] transition hover:text-[#F5B83D]"
         >
           ← Kembali ke Database Hero
         </Link>
-        <Link
-          href={`/builds/${hero.metadata.slug}`}
-          className="inline-flex items-center gap-1.5 rounded-xl border border-emerald-400/40 bg-emerald-500/10 px-3.5 py-1.5 text-xs font-semibold text-emerald-200 transition hover:bg-emerald-500/20"
-        >
-          Lihat Template Build {hero.metadata.name} →
-        </Link>
       </div>
 
-      <PageHeader
-        title={hero.metadata.name}
-        description="Profil Lengkap Hero — Mobile Legends: Bang Bang"
-        breadcrumbs={[
-          { label: "Hero", href: "/heroes" },
-          { label: hero.metadata.name },
-        ]}
-        phaseBadge={patch?.versionCode ? `Patch ${patch.versionCode}` : undefined}
-        statusLabel="Original Server"
-      />
-
-      <Surface className="overflow-hidden p-5 sm:p-7">
-        <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
-          <HeroPortrait
-            slug={hero.metadata.slug}
-            name={hero.metadata.name}
-            className="h-36 w-36 text-4xl"
+      {/* Hero Detail Banner + Statistik Patch Ini (Referensi Detail Hero) */}
+      <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
+        <div className="mlbb-card relative min-h-[260px] overflow-hidden bg-[#0A0E1A] p-6 sm:min-h-[290px] sm:p-8">
+          <HeroSkinBackdrop
+            skin={premiumSkin}
+            heroName={hero.metadata.name}
+            variant="banner"
           />
 
-          <div className="min-w-0 flex-1">
-            <div className="text-xs font-semibold uppercase tracking-wider text-emerald-300/80">
-              Profil Hero
-            </div>
-            <h2 className="mt-1.5 text-3xl font-bold text-white">
-              {hero.metadata.name}
-            </h2>
+          <div className="relative z-10 flex flex-col gap-5 sm:flex-row sm:items-end">
+            <HeroPortrait
+              slug={hero.metadata.slug}
+              name={hero.metadata.name}
+              className="h-36 w-32 shrink-0 border-2 border-[#F5B83D]/60 shadow-[0_0_24px_rgba(245,184,61,0.3)]"
+            />
 
-            <div className="mt-3 flex flex-wrap gap-2">
-              <Badge tone="emerald">Original Server</Badge>
-              {profile ? (
-                <>
-                  <Badge tone="blue">{profile.role}</Badge>
-                  <Badge tone="neutral">{profile.damageType}</Badge>
-                </>
-              ) : (
-                <Badge tone="neutral">Profil atribut belum tersedia</Badge>
-              )}
-            </div>
-
-            <div className="mt-4 text-xs text-slate-400">
-              Patch aktif: {patch?.versionCode ?? "Belum tersedia"}
-              {patch?.seasonLabel ? ` · ${patch.seasonLabel}` : ""}
-            </div>
-
-            {hero.metadata.releaseDate && (
-              <div className="mt-1 text-xs text-slate-500">
-                Tanggal rilis: {hero.metadata.releaseDate}
+            <div className="min-w-0 flex-1 space-y-3">
+              <div className="flex flex-wrap items-center gap-2">
+                {displayRoles.map((r) => (
+                  <span
+                    key={r}
+                    className="font-display bg-[#22D3EE] px-3 py-0.5 text-sm text-[#0A0E1A]"
+                  >
+                    {r}
+                  </span>
+                ))}
+                {displayLanes.slice(0, 2).map((l) => (
+                  <span
+                    key={l}
+                    className="font-display bg-[#F5B83D] px-3 py-0.5 text-sm text-[#0A0E1A]"
+                  >
+                    {l}
+                  </span>
+                ))}
+                {metaHero && (
+                  <span
+                    className={`font-display px-3 py-0.5 text-sm ${TIER_BADGE_CLASSES[metaHero.tier] ?? "bg-[#F5B83D] text-[#0A0E1A]"}`}
+                  >
+                    Tier {metaHero.tier}
+                  </span>
+                )}
               </div>
-            )}
+
+              <h1 className="font-display mlbb-glow-gold text-5xl leading-[0.95] text-[#E6EAF5] sm:text-6xl">
+                {hero.metadata.name}
+              </h1>
+
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[#9AA6C4]">
+                <span>Original Server</span>
+                <span>•</span>
+                <span>Patch {patch?.versionCode ?? "2.2.23"}</span>
+                {patch?.seasonLabel && (
+                  <>
+                    <span>•</span>
+                    <span>{patch.seasonLabel}</span>
+                  </>
+                )}
+                {hero.metadata.releaseDate && (
+                  <>
+                    <span>•</span>
+                    <span>Rilis: {hero.metadata.releaseDate}</span>
+                  </>
+                )}
+              </div>
+
+              <div className="flex flex-wrap gap-2.5 pt-2">
+                <Button href={`/builds/${hero.metadata.slug}`} variant="primary">
+                  Template Build {hero.metadata.name}
+                </Button>
+                <Button href="/counters" variant="secondary">
+                  Cari Counter
+                </Button>
+                <Button href="/matchups" variant="secondary">
+                  Uji Matchup
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
-      </Surface>
+
+        {/* Sidebar Statistik Patch Ini (Data Resmi Moonton GMS) */}
+        <Surface className="flex flex-col justify-between p-5">
+          <div>
+            <div className="flex items-center justify-between gap-2">
+              <h2 className="font-display text-xl text-[#F5B83D]">
+                Statistik Patch Ini
+              </h2>
+              <Badge tone="blue">Glory+</Badge>
+            </div>
+            <p className="mt-0.5 text-[11px] text-[#9AA6C4]">
+              Data resmi Moonton GMS (Patch {patch?.versionCode ?? "2.2.23"}).
+            </p>
+
+            {metaHero ? (
+              <div className="mt-4 divide-y divide-white/10">
+                <div className="py-2.5">
+                  <div className="mb-1 flex items-center justify-between">
+                    <span className="text-xs text-[#9AA6C4]">Win Rate</span>
+                    <b className="font-display text-lg text-[#F5B83D]">
+                      {formatPercent(metaHero.winRate)}
+                    </b>
+                  </div>
+                  <div className="h-1.5 bg-[#1B2442]">
+                    <div
+                      className="h-1.5 bg-[#F5B83D] shadow-[0_0_8px_#F5B83D]"
+                      style={{
+                        width: `${Math.min(100, Math.max(10, metaHero.winRate * 100))}%`,
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div className="py-2.5">
+                  <div className="mb-1 flex items-center justify-between">
+                    <span className="text-xs text-[#9AA6C4]">Pick Rate</span>
+                    <b className="font-display text-lg text-[#22D3EE]">
+                      {formatPercent(metaHero.pickRate)}
+                    </b>
+                  </div>
+                  <div className="h-1.5 bg-[#1B2442]">
+                    <div
+                      className="h-1.5 bg-[#22D3EE] shadow-[0_0_8px_#22D3EE]"
+                      style={{
+                        width: `${Math.min(100, Math.max(8, metaHero.pickRate * 100 * 28))}%`,
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div className="py-2.5">
+                  <div className="mb-1 flex items-center justify-between">
+                    <span className="text-xs text-[#9AA6C4]">Ban Rate</span>
+                    <b className="font-display text-lg text-[#FB7185]">
+                      {formatPercent(metaHero.banRate)}
+                    </b>
+                  </div>
+                  <div className="h-1.5 bg-[#1B2442]">
+                    <div
+                      className="h-1.5 bg-[#E11D48] shadow-[0_0_8px_#E11D48]"
+                      style={{
+                        width: `${Math.min(100, Math.max(6, metaHero.banRate * 100))}%`,
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <p className="mt-4 text-xs text-[#9AA6C4]">
+                Data statistik meta untuk hero ini belum tersedia pada snapshot
+                saat ini.
+              </p>
+            )}
+          </div>
+
+          {metaHero && (
+            <div className="mt-3 flex items-center justify-between border-t border-white/10 pt-3 text-xs">
+              <span className="text-[#9AA6C4]">Skor Komposit Meta</span>
+              <span className="font-display text-lg text-[#F5B83D]">
+                {metaHero.metaScore} / 100
+              </span>
+            </div>
+          )}
+        </Surface>
+      </div>
 
       {profile && (
         <>
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-white">Ringkasan Hero</h2>
+            <h2 className="mlbb-heading text-2xl text-[#E6EAF5]">
+              Ringkasan Hero
+            </h2>
             <Surface className="grid gap-4 p-5 sm:grid-cols-2 lg:grid-cols-4">
               <div>
-                <div className="mb-2 text-xs text-slate-500">Peran (Role)</div>
+                <div className="mb-2 text-xs text-[#9AA6C4]">Peran (Role)</div>
                 <Badge tone="blue">{profile.role}</Badge>
               </div>
 
               <div>
-                <div className="mb-2 text-xs text-slate-500">Spesialisasi</div>
+                <div className="mb-2 text-xs text-[#9AA6C4]">Spesialisasi</div>
                 <div className="flex flex-wrap gap-1.5">
                   {profile.specialties.length > 0 ? (
                     profile.specialties.map((value) => (
@@ -179,7 +321,7 @@ export default async function HeroDetailPage({
                       </Badge>
                     ))
                   ) : (
-                    <span className="text-sm text-slate-500">
+                    <span className="text-sm text-[#9AA6C4]">
                       Belum tersedia
                     </span>
                   )}
@@ -187,10 +329,10 @@ export default async function HeroDetailPage({
               </div>
 
               <div>
-                <div className="mb-2 text-xs text-slate-500">Lane Utama</div>
+                <div className="mb-2 text-xs text-[#9AA6C4]">Lane Utama</div>
                 <div className="flex flex-wrap gap-1.5">
                   {profile.lanes.map((lane) => (
-                    <Badge key={lane} tone="neutral">
+                    <Badge key={lane} tone="gold">
                       {lane}
                     </Badge>
                   ))}
@@ -198,10 +340,10 @@ export default async function HeroDetailPage({
               </div>
 
               <div>
-                <div className="mb-2 text-xs text-slate-500">
+                <div className="mb-2 text-xs text-[#9AA6C4]">
                   Tingkat Kesulitan
                 </div>
-                <div className="text-lg font-bold text-white">
+                <div className="font-display text-2xl text-[#F5B83D]">
                   {profile.difficulty}/5
                 </div>
               </div>
@@ -210,31 +352,35 @@ export default async function HeroDetailPage({
 
           {profile.skills.length > 0 && (
             <section className="space-y-3">
-              <h2 className="text-xl font-bold text-white">Skill Profil</h2>
+              <h2 className="mlbb-heading text-2xl text-[#E6EAF5]">
+                Skill Profil
+              </h2>
               <div className="grid gap-3 md:grid-cols-2">
                 {profile.skills.map((skill) => (
                   <Surface key={skill.slot} className="space-y-3 p-5">
                     <div className="flex flex-wrap items-center justify-between gap-2">
-                      <Badge tone="emerald">
+                      <Badge tone="gold">
                         {skill.slot
                           ? (skillLabels[skill.slot] ?? skill.slot)
                           : "Slot belum diverifikasi"}
                       </Badge>
                       {skill.damageType && (
-                        <Badge tone="neutral">{skill.damageType}</Badge>
+                        <Badge tone="blue">{skill.damageType}</Badge>
                       )}
                     </div>
-                    <h3 className="font-semibold text-white">{skill.name}</h3>
-                    <p className="text-sm leading-6 text-[#9FB0BE]">
+                    <h3 className="font-display text-lg text-[#E6EAF5]">
+                      {skill.name}
+                    </h3>
+                    <p className="text-sm leading-6 text-[#9AA6C4]">
                       {skill.description}
                     </p>
                     {skill.cooldownSeconds && (
-                      <p className="text-xs text-slate-500">
+                      <p className="text-xs text-[#22D3EE]">
                         Cooldown: {skill.cooldownSeconds} detik
                       </p>
                     )}
                     {skill.mechanics.length > 0 && (
-                      <ul className="list-disc space-y-1 pl-5 text-sm text-[#9FB0BE]">
+                      <ul className="list-disc space-y-1 pl-5 text-sm text-[#9AA6C4]">
                         {skill.mechanics.map((mechanic, index) => (
                           <li key={index}>{mechanic}</li>
                         ))}
@@ -251,7 +397,9 @@ export default async function HeroDetailPage({
               ([, value]) => value !== undefined,
             ) && (
               <section className="space-y-3">
-                <h2 className="text-xl font-bold text-white">Atribut Dasar</h2>
+                <h2 className="mlbb-heading text-2xl text-[#E6EAF5]">
+                  Atribut Dasar
+                </h2>
                 <Surface className="p-5">
                   <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                     {Object.entries(profile.attributes).map(
@@ -259,12 +407,12 @@ export default async function HeroDetailPage({
                         value !== undefined && (
                           <div
                             key={key}
-                            className="rounded-xl border border-[#1E2A33] bg-[#0B1014] p-3"
+                            className="border border-[#22D3EE]/25 bg-[#0A0E1A] p-3"
                           >
-                            <div className="text-xs text-slate-400">
+                            <div className="text-xs text-[#9AA6C4]">
                               {attributeLabels[key] ?? key}
                             </div>
-                            <div className="mt-1 font-bold text-white">
+                            <div className="font-display mt-1 text-lg text-[#F5B83D]">
                               {value}
                             </div>
                           </div>
@@ -285,15 +433,17 @@ export default async function HeroDetailPage({
                 { title: "Mekanik Utama", values: profile.mechanics },
               ].map((section) => (
                 <Surface key={section.title} className="space-y-3 p-5">
-                  <h2 className="font-semibold text-white">{section.title}</h2>
+                  <h2 className="font-display text-lg text-[#F5B83D]">
+                    {section.title}
+                  </h2>
                   {section.values.length > 0 ? (
-                    <ul className="list-disc space-y-2 pl-5 text-sm text-[#9FB0BE]">
+                    <ul className="list-disc space-y-2 pl-5 text-sm text-[#9AA6C4]">
                       {section.values.map((value, index) => (
                         <li key={index}>{value}</li>
                       ))}
                     </ul>
                   ) : (
-                    <p className="text-sm text-slate-500">Belum tersedia.</p>
+                    <p className="text-sm text-[#9AA6C4]">Belum tersedia.</p>
                   )}
                 </Surface>
               ))}
@@ -311,15 +461,15 @@ export default async function HeroDetailPage({
 
           {candidateMechanicCategories.length > 0 && (
             <Surface className="space-y-3 p-5">
-              <h3 className="font-semibold text-white">
+              <h3 className="font-display text-lg text-[#F5B83D]">
                 Ringkasan Kategori Mekanik Hero
               </h3>
-              <p className="text-xs text-[#9FB0BE]">
+              <p className="text-xs text-[#9AA6C4]">
                 Kategori kemampuan yang dipetakan dari seluruh skill hero ini.
               </p>
               <div className="flex flex-wrap gap-2">
                 {candidateMechanicCategories.map((category) => (
-                  <Badge key={category} tone="emerald">
+                  <Badge key={category} tone="blue">
                     {formatMechanicCategoryId(category)}
                   </Badge>
                 ))}
@@ -339,40 +489,40 @@ export default async function HeroDetailPage({
           <summary className="flex cursor-pointer list-none flex-wrap items-center justify-between gap-2">
             <div className="flex items-center gap-2.5">
               <BookOpenCheck
-                className="h-4 w-4 text-emerald-400"
+                className="h-4 w-4 text-[#F5B83D]"
                 aria-hidden="true"
               />
               <div>
-                <h2 className="text-sm font-bold text-white">
+                <h2 className="font-display text-base text-[#E6EAF5]">
                   Sumber Referensi &amp; Status Verifikasi Data
                 </h2>
-                <p className="text-xs text-[#9FB0BE]">
+                <p className="text-xs text-[#9AA6C4]">
                   {evidences.length > 0
                     ? `${evidences.length} sumber rujukan tercatat (${evidences.map((e) => e.sourceName).join(", ")})`
                     : "Belum ada sumber rujukan yang tercatat untuk hero ini."}
                 </p>
               </div>
             </div>
-            <span className="inline-flex items-center gap-1 rounded-full border border-[#243440] bg-[#0B1014] px-3 py-1 text-[11px] font-medium text-slate-300 transition group-hover:border-emerald-400/40 group-hover:text-emerald-200">
+            <span className="font-display inline-flex items-center gap-1 border border-[#22D3EE]/35 bg-[#0A0E1A] px-3 py-1 text-xs text-[#22D3EE] transition group-hover:border-[#F5B83D] group-hover:text-[#F5B83D]">
               <span>Lihat rincian</span>
               <ChevronDown className="h-3.5 w-3.5 transition-transform group-open:rotate-180" />
             </span>
           </summary>
 
-          <div className="mt-4 space-y-3 border-t border-[#1E2A33] pt-4">
+          <div className="mt-4 space-y-3 border-t border-[#22D3EE]/20 pt-4">
             {evidences.length > 0 ? (
               <div className="grid gap-3 md:grid-cols-2">
                 {evidences.map((evidence) => (
                   <div
                     key={evidence.id}
-                    className="space-y-3 rounded-xl border border-[#1E2A33] bg-[#0B1014] p-4"
+                    className="space-y-3 border border-[#22D3EE]/20 bg-[#0A0E1A] p-4"
                   >
                     <div className="flex flex-wrap items-start justify-between gap-2">
                       <div>
-                        <h3 className="text-sm font-semibold text-white">
+                        <h3 className="font-display text-base text-[#E6EAF5]">
                           {evidence.sourceName}
                         </h3>
-                        <p className="mt-0.5 text-[11px] text-slate-400">
+                        <p className="mt-0.5 text-[11px] text-[#9AA6C4]">
                           {evidence.sourceDomain} ·{" "}
                           {formatSourceTierId(evidence.sourceTier)}
                         </p>
@@ -390,47 +540,47 @@ export default async function HeroDetailPage({
 
                     <div className="grid grid-cols-2 gap-2 text-xs">
                       <div>
-                        <p className="text-[11px] text-slate-500">Aspek Data</p>
-                        <p className="font-medium text-slate-200">
+                        <p className="text-[11px] text-[#9AA6C4]">Aspek Data</p>
+                        <p className="font-medium text-[#E6EAF5]">
                           {formatEvidenceAspectId(evidence.aspectName)}
                         </p>
                       </div>
                       <div>
-                        <p className="text-[11px] text-slate-500">
+                        <p className="text-[11px] text-[#9AA6C4]">
                           Klasifikasi
                         </p>
-                        <p className="font-medium text-slate-200">
+                        <p className="font-medium text-[#E6EAF5]">
                           {formatClaimClassificationId(
                             evidence.claimClassification,
                           )}
                         </p>
                       </div>
                       <div>
-                        <p className="text-[11px] text-slate-500">
+                        <p className="text-[11px] text-[#9AA6C4]">
                           Tingkat Keyakinan
                         </p>
-                        <p className="font-medium text-slate-200">
+                        <p className="font-medium text-[#E6EAF5]">
                           {formatConfidenceLevelId(evidence.confidenceLevel)}
                         </p>
                       </div>
                       <div>
-                        <p className="text-[11px] text-slate-500">
+                        <p className="text-[11px] text-[#9AA6C4]">
                           Sikap Bukti
                         </p>
-                        <p className="font-medium text-slate-200">
+                        <p className="font-medium text-[#E6EAF5]">
                           {formatEvidenceStanceId(evidence.stance)}
                         </p>
                       </div>
                     </div>
 
                     {evidence.evidenceExcerpt && (
-                      <p className="rounded-lg border border-[#1E2A33] bg-[#10161B] p-2.5 text-xs text-slate-300">
+                      <p className="border border-[#22D3EE]/20 bg-[#101830] p-2.5 text-xs text-[#E6EAF5]">
                         {evidence.evidenceExcerpt}
                       </p>
                     )}
 
-                    <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[#1E2A33] pt-2.5 text-[11px]">
-                      <span className="text-slate-500">
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-t border-white/10 pt-2.5 text-[11px]">
+                      <span className="text-[#9AA6C4]">
                         {evidence.verifiedAt
                           ? `Diverifikasi: ${new Date(evidence.verifiedAt).toLocaleDateString("id-ID")}`
                           : "Belum ada tanggal verifikasi"}
@@ -440,7 +590,7 @@ export default async function HeroDetailPage({
                           href={evidence.sourceUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 font-medium text-emerald-300 hover:underline"
+                          className="font-display inline-flex items-center gap-1 text-xs text-[#22D3EE] hover:text-[#F5B83D]"
                         >
                           Buka sumber <ExternalLink className="h-3 w-3" />
                         </a>
@@ -450,7 +600,7 @@ export default async function HeroDetailPage({
                 ))}
               </div>
             ) : (
-              <p className="text-xs leading-relaxed text-[#9FB0BE]">
+              <p className="text-xs leading-relaxed text-[#9AA6C4]">
                 Belum ada bukti sumber yang tercatat untuk hero ini pada patch
                 aktif.
               </p>

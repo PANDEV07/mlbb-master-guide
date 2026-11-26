@@ -43,7 +43,7 @@ export function SevenDimensionMatrixPanel({ selectedMode }: Props) {
         <div className="overflow-x-auto">
           <table className="w-full min-w-[780px] border-collapse text-left text-xs">
             <thead>
-              <tr className="border-b border-[#1E2738] text-[11px] uppercase tracking-wider text-slate-500">
+              <tr className="border-b border-[#22D3EE]/25 text-[11px] uppercase tracking-wider text-slate-500">
                 <th className="py-2.5 pr-3">Dimensi</th>
                 <th className="px-3 py-2.5 text-sky-300">Pro Play</th>
                 {columns.map((col) => (
@@ -60,7 +60,7 @@ export function SevenDimensionMatrixPanel({ selectedMode }: Props) {
                 ))}
               </tr>
             </thead>
-            <tbody className="divide-y divide-[#1E2738]/70">
+            <tbody className="divide-y divide-[#22D3EE]/20/70">
               {SEVEN_DIMENSION_MATRIX.map((row) => (
                 <tr key={row.dimension} className="align-top text-slate-300">
                   <td className="py-3 pr-3 font-semibold text-white">
@@ -86,8 +86,8 @@ export function SevenDimensionMatrixPanel({ selectedMode }: Props) {
           </table>
         </div>
 
-        <div className="rounded-xl border border-[#1E2738] bg-[#0A0E16] p-4">
-          <div className="flex items-center gap-2 text-xs font-semibold text-emerald-300">
+        <div className="rounded-xl border border-[#22D3EE]/25 bg-[#0A0E16] p-4">
+          <div className="flex items-center gap-2 text-xs font-semibold text-[#F5B83D]">
             <ShieldCheck className="h-4 w-4" aria-hidden="true" />
             <span>Aturan Anti-Misleading Guardrails (PRO_TO_RANKED_ADAPTATION.md)</span>
           </div>

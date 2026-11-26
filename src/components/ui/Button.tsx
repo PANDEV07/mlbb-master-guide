@@ -23,15 +23,15 @@ interface LinkButtonProps extends BaseButtonProps {
 
 const VARIANT_STYLES: Record<ButtonVariant, string> = {
   primary:
-    "border border-emerald-400/50 bg-emerald-500 text-slate-950 font-semibold shadow-sm shadow-emerald-950/50 hover:bg-emerald-400 focus-visible:outline-emerald-400",
+    "mlbb-btn-chamfer font-display bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_18px_rgba(245,184,61,0.3)] hover:bg-[#FFC757] hover:shadow-[0_0_22px_rgba(245,184,61,0.55)] focus-visible:outline-[#F5B83D]",
   secondary:
-    "border border-[#263542] bg-[#151D24] text-slate-100 hover:border-emerald-400/40 hover:bg-[#1B252E] focus-visible:outline-emerald-400",
+    "mlbb-btn-chamfer font-display border border-[#22D3EE]/45 bg-[#101830] text-[#22D3EE] hover:border-[#F5B83D]/70 hover:bg-[#15203E] hover:text-[#F5B83D] focus-visible:outline-[#22D3EE]",
   ghost:
-    "border border-transparent bg-transparent text-slate-300 hover:bg-white/5 hover:text-white focus-visible:outline-slate-400",
+    "border border-transparent bg-transparent text-[#9AA6C4] hover:bg-white/5 hover:text-[#F5B83D] focus-visible:outline-[#22D3EE]",
 };
 
 const BASE_CLASSES =
-  "inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium transition-all focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-50";
+  "inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-bold tracking-wider transition-all focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-50";
 
 export function Button(props: ActionButtonProps | LinkButtonProps) {
   const { children, variant = "secondary", className } = props;

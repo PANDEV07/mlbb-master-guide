@@ -44,20 +44,20 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
       className="space-y-4"
     >
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center gap-3">
           <h2
             id="hero-skills-showcase-heading"
-            className="text-xl font-bold text-white"
+            className="mlbb-heading text-2xl text-[#E6EAF5]"
           >
-            Daftar Skill {heroName}
+            Rincian Skill {heroName}
           </h2>
-          <Badge tone="emerald">Bahasa Indonesia · Resmi Moonton</Badge>
+          <Badge tone="gold">Bahasa Indonesia · Resmi Moonton</Badge>
         </div>
-        <Badge tone="neutral">{totalSkillCount} Skill</Badge>
+        <Badge tone="blue">{totalSkillCount} Skill</Badge>
       </div>
 
-      <Surface className="border border-emerald-500/25 p-4">
-        <p className="text-xs leading-relaxed text-[#9FB0BE]">
+      <Surface className="p-4">
+        <p className="text-xs leading-relaxed text-[#9AA6C4]">
           Deskripsi dan ikon skill diambil dari data resmi Moonton (Bahasa
           Indonesia). Pilih ikon skill di bawah untuk melihat rincian efek,
           cooldown, biaya resource, dan kategori mekaniknya.
@@ -66,7 +66,9 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
 
       {skillGroups.length > 1 && (
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs text-slate-400">Mode / Grup Skill:</span>
+          <span className="font-display text-xs text-[#9AA6C4]">
+            Mode / Grup Skill:
+          </span>
           {skillGroups.map((group, idx) => (
             <button
               key={group.apiGroupId}
@@ -76,10 +78,8 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
                 setSelectedSkillIdx(0);
               }}
               className={cn(
-                "rounded-full border px-3 py-1.5 text-xs font-medium transition",
-                idx === selectedGroupIdx
-                  ? "border-emerald-400/55 bg-emerald-500/15 text-emerald-200"
-                  : "border-[#1E2A33] bg-[#0B1014] text-slate-400 hover:text-slate-200",
+                "cursor-pointer px-3.5 py-1.5 text-xs",
+                idx === selectedGroupIdx ? "mlbb-pill-active" : "mlbb-pill",
               )}
             >
               Mode {idx + 1} (Grup {group.apiGroupId})
@@ -90,7 +90,7 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
 
       {/* Selector Ikon Skill Interaktif */}
       <Surface elevated className="space-y-5 p-5 sm:p-6">
-        <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           {activeGroup.skills.map((skill, idx) => {
             const active = idx === selectedSkillIdx;
             return (
@@ -100,10 +100,10 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
                 aria-pressed={active}
                 onClick={() => setSelectedSkillIdx(idx)}
                 className={cn(
-                  "flex items-center gap-3 rounded-xl border p-3 text-left transition",
+                  "flex cursor-pointer items-center gap-3 border p-3 text-left transition",
                   active
-                    ? "border-emerald-400/60 bg-emerald-500/10"
-                    : "border-[#1E2A33] bg-[#0B1014] hover:border-[#2C3E4B]",
+                    ? "border-[#F5B83D] bg-[#F5B83D]/12 shadow-[0_0_16px_rgba(245,184,61,0.28)]"
+                    : "border-[#22D3EE]/25 bg-[#0A0E1A] hover:border-[#22D3EE]/60 hover:bg-[#15203E]",
                 )}
               >
                 {skill.iconUrl ? (
@@ -113,22 +113,27 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
                     width={48}
                     height={48}
                     unoptimized
-                    className="h-12 w-12 shrink-0 rounded-lg object-cover"
+                    className={cn(
+                      "h-12 w-12 shrink-0 border-2 object-cover",
+                      active
+                        ? "border-[#F5B83D] shadow-[0_0_12px_rgba(245,184,61,0.4)]"
+                        : "border-[#22D3EE]/35",
+                    )}
                   />
                 ) : (
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-slate-800 text-xs font-bold text-slate-300">
+                  <div className="font-display flex h-12 w-12 shrink-0 items-center justify-center border-2 border-[#F5B83D] bg-[#0A0E1A] text-sm text-[#F5B83D] shadow-[0_0_12px_rgba(245,184,61,0.3)]">
                     {skill.slotLabel.slice(0, 2).toUpperCase()}
                   </div>
                 )}
                 <div className="min-w-0">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-amber-300">
+                  <p className="font-display text-[11px] text-[#F5B83D]">
                     {skill.slotLabel}
                   </p>
-                  <p className="truncate text-xs font-semibold text-white">
+                  <p className="font-display truncate text-sm text-[#E6EAF5]">
                     {skill.name}
                   </p>
                   {skill.cooldownSeconds !== null && (
-                    <p className="mt-0.5 text-[10px] text-slate-500">
+                    <p className="mt-0.5 text-[10px] text-[#22D3EE]">
                       CD {skill.cooldownSeconds}s
                     </p>
                   )}
@@ -139,8 +144,8 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
         </div>
 
         {/* Panel Penjelasan Detail Skill */}
-        <div className="space-y-4 rounded-xl border border-[#1E2738] bg-[#080B10] p-5">
-          <div className="flex items-start gap-3">
+        <div className="space-y-4 border border-[#22D3EE]/25 bg-[#0A0E1A] p-5">
+          <div className="flex items-start gap-3.5">
             {activeSkill.iconUrl && (
               <Image
                 src={activeSkill.iconUrl}
@@ -148,7 +153,7 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
                 width={56}
                 height={56}
                 unoptimized
-                className="h-14 w-14 shrink-0 rounded-xl border border-amber-500/30 object-cover"
+                className="h-14 w-14 shrink-0 border-2 border-[#F5B83D] object-cover shadow-[0_0_14px_rgba(245,184,61,0.4)]"
               />
             )}
             <div className="min-w-0">
@@ -169,13 +174,13 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
                     </Badge>
                   )}
               </div>
-              <h3 className="mt-2 text-lg font-bold text-white">
+              <h3 className="font-display mt-2 text-2xl text-[#E6EAF5]">
                 {activeSkill.name}
               </h3>
             </div>
           </div>
 
-          <p className="whitespace-pre-line text-sm leading-relaxed text-slate-300">
+          <p className="whitespace-pre-line text-sm leading-relaxed text-[#E6EAF5]/90">
             {activeSkill.description}
           </p>
 
@@ -196,7 +201,7 @@ export function HeroSkillShowcase({ heroName, skillGroups }: Props) {
           )}
 
           {activeSkill.rawCooldownCost && (
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-[#9AA6C4]">
               Info Cooldown &amp; Biaya: {activeSkill.rawCooldownCost}
             </p>
           )}

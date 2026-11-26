@@ -50,8 +50,8 @@ export function BuildHeroSelection({ heroes }: Props) {
     cn(
       "rounded-full border px-3 py-1.5 text-xs font-medium transition",
       active
-        ? "border-emerald-400/50 bg-emerald-500/15 text-emerald-200"
-        : "border-[#1E2A33] bg-[#0B1014] text-slate-400 hover:border-[#2C3E4B] hover:text-slate-200",
+        ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+        : "border-[#22D3EE]/25 bg-[#0A0E1A] text-slate-400 hover:border-[#22D3EE]/45 hover:text-slate-200",
     );
 
   return (
@@ -59,7 +59,7 @@ export function BuildHeroSelection({ heroes }: Props) {
       <Surface className="space-y-4 p-4 sm:p-5">
         <div className="relative">
           <Search
-            className="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-emerald-400"
+            className="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-[#22D3EE]"
             aria-hidden="true"
           />
           <input
@@ -67,7 +67,7 @@ export function BuildHeroSelection({ heroes }: Props) {
             value={search}
             onChange={(event) => setSearch(event.target.value)}
             placeholder="Cari nama hero (filter langsung saat mengetik)..."
-            className="w-full rounded-xl border border-[#243440] bg-[#0B1014] py-3 pr-10 pl-11 text-sm text-white placeholder:text-slate-500 outline-none transition focus:border-emerald-400/70"
+            className="w-full rounded-xl border border-[#22D3EE]/35 bg-[#0A0E1A] py-3 pr-10 pl-11 text-sm text-white placeholder:text-slate-500 outline-none transition focus:border-[#F5B83D]"
           />
           {search && (
             <button
@@ -117,7 +117,7 @@ export function BuildHeroSelection({ heroes }: Props) {
           </div>
         </div>
 
-        <div className="flex items-center justify-between gap-2 border-t border-[#1E2A33] pt-3 text-xs text-slate-400">
+        <div className="flex items-center justify-between gap-2 border-t border-[#22D3EE]/25 pt-3 text-xs text-slate-400">
           <span>
             Menampilkan{" "}
             <strong className="text-white">{filteredHeroes.length}</strong> dari{" "}
@@ -131,7 +131,7 @@ export function BuildHeroSelection({ heroes }: Props) {
                 setSelectedRole("All");
                 setSelectedLane("All");
               }}
-              className="font-semibold text-emerald-300 hover:underline"
+              className="font-semibold text-[#F5B83D] hover:underline"
             >
               Reset filter
             </button>
@@ -157,17 +157,17 @@ export function BuildHeroSelection({ heroes }: Props) {
               <Link
                 key={hero.entityId}
                 href={`/builds/${hero.metadata.slug}`}
-                className="group flex flex-col items-center rounded-2xl border border-[#1E2A33] bg-[#10161B]/90 p-3.5 text-center transition-all hover:-translate-y-0.5 hover:border-emerald-400/50 hover:bg-[#141D24]"
+                className="group flex flex-col items-center rounded-2xl border border-[#22D3EE]/25 bg-[#101830]/90 p-3.5 text-center transition-all hover:-translate-y-0.5 hover:border-[#F5B83D]/65 hover:bg-[#15203E]"
               >
                 <HeroPortrait
                   slug={hero.metadata.slug}
                   name={hero.metadata.name}
                   className="h-20 w-16"
                 />
-                <p className="mt-3 line-clamp-1 text-sm font-bold text-white group-hover:text-emerald-300">
+                <p className="mt-3 line-clamp-1 text-sm font-bold text-white group-hover:text-[#F5B83D]">
                   {hero.metadata.name}
                 </p>
-                <p className="mt-0.5 line-clamp-1 text-[11px] text-[#9FB0BE]">
+                <p className="mt-0.5 line-clamp-1 text-[11px] text-[#9AA6C4]">
                   {heroRoles.join(" / ") || "Hero"}
                 </p>
                 <p className="mt-0.5 line-clamp-1 text-[10px] text-slate-500">

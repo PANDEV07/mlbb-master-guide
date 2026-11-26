@@ -174,10 +174,8 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
 
   const pillClass = (active: boolean) =>
     cn(
-      "rounded-full border px-3 py-1.5 text-xs font-medium transition",
-      active
-        ? "border-emerald-400/50 bg-emerald-500/15 text-emerald-200"
-        : "border-[#1E2A33] bg-[#0B1014] text-slate-400 hover:border-[#2C3E4B] hover:text-slate-200",
+      "cursor-pointer px-3 py-1.5 text-xs",
+      active ? "mlbb-pill-active" : "mlbb-pill",
     );
 
   return (
@@ -186,7 +184,7 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
         <div className="flex flex-col gap-3 sm:flex-row">
           <div className="relative flex-1">
             <Search
-              className="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-emerald-400"
+              className="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-[#22D3EE]"
               aria-hidden="true"
             />
             <input
@@ -196,14 +194,14 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
               onChange={(event) => setSearch(event.target.value)}
               placeholder="Cari nama hero (filter otomatis)..."
               aria-label="Cari hero"
-              className="w-full rounded-xl border border-[#243440] bg-[#0B1014] py-3 pr-10 pl-11 text-sm text-white placeholder:text-slate-500 outline-none transition focus:border-emerald-400/70"
+              className="w-full border border-[#22D3EE]/35 bg-[#0A0E1A] py-3 pr-10 pl-11 text-sm text-[#E6EAF5] placeholder:text-[#9AA6C4]/70 outline-none transition focus:border-[#F5B83D]"
             />
             {search && (
               <button
                 type="button"
                 onClick={() => setSearch("")}
                 aria-label="Hapus kata kunci"
-                className="absolute top-1/2 right-3 -translate-y-1/2 rounded-lg p-1 text-slate-400 hover:text-white"
+                className="absolute top-1/2 right-3 -translate-y-1/2 p-1 text-[#9AA6C4] hover:text-[#F5B83D]"
               >
                 <X className="h-4 w-4" />
               </button>
@@ -214,10 +212,10 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
             type="button"
             onClick={() => setShowAdvanced((prev) => !prev)}
             className={cn(
-              "inline-flex items-center justify-center gap-2 rounded-xl border px-4 py-2.5 text-xs font-semibold transition",
+              "inline-flex cursor-pointer items-center justify-center gap-2 px-4 py-2.5 text-xs",
               showAdvanced || activeAdvancedCount > 0
-                ? "border-emerald-400/45 bg-emerald-500/15 text-emerald-200"
-                : "border-[#243440] bg-[#0B1014] text-slate-300 hover:border-[#2C3E4B] hover:text-white",
+                ? "mlbb-pill-active"
+                : "mlbb-pill",
             )}
           >
             <SlidersHorizontal className="h-3.5 w-3.5" aria-hidden="true" />
@@ -230,7 +228,7 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
 
         <div className="space-y-3">
           <div className="flex flex-wrap items-center gap-1.5">
-            <span className="mr-1 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+            <span className="font-display mr-1 text-xs text-[#9AA6C4]">
               Role:
             </span>
             {ROLES.map((role) => (
@@ -247,7 +245,7 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
           </div>
 
           <div className="flex flex-wrap items-center gap-1.5">
-            <span className="mr-1 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+            <span className="font-display mr-1 text-xs text-[#9AA6C4]">
               Lane:
             </span>
             {LANES.map((lane) => (
@@ -264,11 +262,11 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
           </div>
         </div>
 
-        {/* Filter Lanjutan Tersembunyi agar Halaman Ringkas */}
+        {/* Filter Lanjutan */}
         {showAdvanced && (
-          <div className="space-y-4 rounded-xl border border-[#1E2A33] bg-[#0B1014] p-4">
+          <div className="space-y-4 border border-[#22D3EE]/25 bg-[#0A0E1A] p-4">
             <div>
-              <div className="mb-2 text-xs font-semibold text-slate-300">
+              <div className="font-display mb-2 text-xs text-[#F5B83D]">
                 Spesialisasi
               </div>
               <div className="flex flex-wrap gap-1.5">
@@ -287,7 +285,7 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
             </div>
 
             <div>
-              <div className="mb-2 text-xs font-semibold text-slate-300">
+              <div className="font-display mb-2 text-xs text-[#F5B83D]">
                 Kategori Mekanik
               </div>
               <div className="flex flex-wrap gap-1.5">
@@ -306,7 +304,7 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
             </div>
 
             <div>
-              <div className="mb-2 text-xs font-semibold text-slate-300">
+              <div className="font-display mb-2 text-xs text-[#F5B83D]">
                 Tag Skill API
               </div>
               <div className="flex flex-wrap gap-1.5">
@@ -326,17 +324,19 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
           </div>
         )}
 
-        <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[#1E2A33] pt-3 text-xs text-slate-400">
+        <div className="flex flex-wrap items-center justify-between gap-2 border-t border-white/10 pt-3 text-xs text-[#9AA6C4]">
           <span>
             Menampilkan{" "}
-            <strong className="text-white">{filteredHeroes.length}</strong> dari{" "}
-            {heroes.length} hero
+            <strong className="font-display text-sm text-[#F5B83D]">
+              {filteredHeroes.length}
+            </strong>{" "}
+            dari {heroes.length} hero
           </span>
           {hasAnyFilter && (
             <button
               type="button"
               onClick={resetAll}
-              className="font-semibold text-emerald-300 hover:underline"
+              className="font-display cursor-pointer text-xs text-[#22D3EE] hover:text-[#F5B83D]"
             >
               Reset semua filter
             </button>
@@ -346,13 +346,15 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
 
       {filteredHeroes.length === 0 ? (
         <Surface className="p-10 text-center">
-          <p className="font-semibold text-slate-200">Hero tidak ditemukan</p>
-          <p className="mt-1.5 text-xs text-slate-500">
+          <p className="font-display text-lg text-[#E6EAF5]">
+            Hero tidak ditemukan
+          </p>
+          <p className="mt-1.5 text-xs text-[#9AA6C4]">
             Coba kata kunci atau kombinasi filter yang berbeda.
           </p>
         </Surface>
       ) : (
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredHeroes.map((hero) => {
             const slug = hero.metadata.slug;
             const heroRoles = HERO_ROLE_MAP[slug] ?? [];
@@ -363,50 +365,50 @@ export function HeroDirectoryClient({ heroes }: HeroDirectoryClientProps) {
               <Link
                 key={hero.entityId}
                 href={`/heroes/${encodeURIComponent(slug)}`}
-                className="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+                className="group block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5B83D]"
                 aria-label={`Lihat detail ${hero.metadata.name}`}
               >
-                <Surface className="flex h-full flex-col justify-between p-4 transition-all group-hover:-translate-y-0.5 group-hover:border-emerald-400/45 group-hover:bg-[#141D24]">
+                <Surface className="flex h-full flex-col justify-between p-4 transition-all group-hover:-translate-y-0.5 group-hover:border-[#F5B83D]/70 group-hover:bg-[#15203E]">
                   <div className="flex items-start gap-3.5">
                     <HeroPortrait
                       slug={slug}
                       name={hero.metadata.name}
-                      className="h-16 w-14 shrink-0 text-lg"
+                      className="h-16 w-14 shrink-0 border border-[#22D3EE]/35 text-lg"
                     />
                     <div className="min-w-0 flex-1">
-                      <h2 className="truncate text-sm font-bold text-white group-hover:text-emerald-300">
+                      <h2 className="font-display truncate text-lg text-[#E6EAF5] group-hover:text-[#F5B83D]">
                         {hero.metadata.name}
                       </h2>
-                      <div className="mt-1.5 flex flex-wrap gap-1">
+                      <div className="mt-1 flex flex-wrap gap-1">
                         {heroRoles.map((role) => (
-                          <Badge key={role} tone="emerald">
+                          <Badge key={role} tone="blue">
                             {role}
                           </Badge>
                         ))}
                       </div>
                       {heroSpecialties.length > 0 && (
-                        <p className="mt-1.5 truncate text-[11px] text-[#9FB0BE]">
+                        <p className="mt-1.5 truncate text-[11px] text-[#9AA6C4]">
                           {heroSpecialties.join(" · ")}
                         </p>
                       )}
                     </div>
                   </div>
 
-                  <div className="mt-3.5 flex flex-wrap items-center justify-between gap-2 border-t border-[#1E2A33] pt-3">
+                  <div className="mt-3.5 flex flex-wrap items-center justify-between gap-2 border-t border-white/10 pt-3">
                     <div className="flex flex-wrap gap-1">
                       {heroLanes.length > 0 ? (
                         heroLanes.map((lane) => (
-                          <Badge key={lane} tone="neutral">
+                          <Badge key={lane} tone="gold">
                             {lane}
                           </Badge>
                         ))
                       ) : (
-                        <span className="text-[11px] text-slate-500">
+                        <span className="text-[11px] text-[#9AA6C4]">
                           Lane fleksibel
                         </span>
                       )}
                     </div>
-                    <span className="text-[11px] font-semibold text-emerald-300/80 group-hover:text-emerald-300">
+                    <span className="font-display text-xs text-[#22D3EE] group-hover:text-[#F5B83D]">
                       Detail →
                     </span>
                   </div>

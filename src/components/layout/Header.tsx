@@ -28,7 +28,7 @@ export function Header({ mobileMenuOpen, onToggleMobileMenu }: HeaderProps) {
   ).filter((item): item is NonNullable<typeof item> => Boolean(item));
 
   return (
-    <header className="sticky top-0 z-30 border-b border-[#1E2A33] bg-[#090D10]/85 backdrop-blur-xl">
+    <header className="sticky top-0 z-30 border-b border-[#F5B83D]/35 bg-[#0A0E1A]/94 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         {/* Brand */}
         <div className="flex items-center gap-3">
@@ -40,12 +40,12 @@ export function Header({ mobileMenuOpen, onToggleMobileMenu }: HeaderProps) {
             aria-label={
               mobileMenuOpen ? "Tutup menu navigasi" : "Buka menu navigasi"
             }
-            className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-[#1E2A33] bg-[#10161B] text-slate-300 transition-colors hover:border-emerald-400/40 hover:text-white lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center border border-[#22D3EE]/35 bg-[#101830] text-[#22D3EE] transition-colors hover:border-[#F5B83D] hover:text-[#F5B83D] lg:hidden"
           >
             {mobileMenuOpen ? (
-              <X className="h-4 w-4" aria-hidden="true" />
+              <X className="h-5 w-5" aria-hidden="true" />
             ) : (
-              <Menu className="h-4 w-4" aria-hidden="true" />
+              <Menu className="h-5 w-5" aria-hidden="true" />
             )}
           </button>
 
@@ -53,14 +53,14 @@ export function Header({ mobileMenuOpen, onToggleMobileMenu }: HeaderProps) {
             href="/"
             className="group flex items-center gap-2.5 focus-visible:outline-none"
           >
-            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-400 to-teal-500 text-xs font-extrabold tracking-tight text-slate-950 shadow-md shadow-emerald-950/60 transition-transform group-hover:scale-105">
+            <span className="mlbb-btn-chamfer font-display flex h-9 w-9 items-center justify-center bg-[#F5B83D] text-sm font-extrabold text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.45)] transition-transform group-hover:scale-105">
               MG
             </span>
-            <div className="leading-tight">
-              <span className="block text-sm font-bold tracking-tight text-white">
-                MLBB Master
+            <div className="leading-none">
+              <span className="font-display block text-xl tracking-wider text-[#F5B83D] sm:text-2xl">
+                MLBB MASTER
               </span>
-              <span className="hidden text-[10px] font-medium text-emerald-300/80 sm:block">
+              <span className="hidden text-[10px] font-medium tracking-widest text-[#9AA6C4] uppercase sm:block">
                 Panduan Strategi
               </span>
             </div>
@@ -72,6 +72,18 @@ export function Header({ mobileMenuOpen, onToggleMobileMenu }: HeaderProps) {
           aria-label="Navigasi Utama"
           className="hidden items-center gap-1 lg:flex"
         >
+          <Link
+            href="/"
+            aria-current={pathname === "/" ? "page" : undefined}
+            className={cn(
+              "font-display px-3 py-2 text-[15px] transition-colors",
+              pathname === "/"
+                ? "border-b-2 border-[#22D3EE] text-[#22D3EE]"
+                : "text-[#E6EAF5] hover:text-[#F5B83D]",
+            )}
+          >
+            Tier List
+          </Link>
           {topLinks.map((item) => {
             const isActive =
               pathname === item.href || pathname.startsWith(`${item.href}/`);
@@ -81,10 +93,10 @@ export function Header({ mobileMenuOpen, onToggleMobileMenu }: HeaderProps) {
                 href={item.href}
                 aria-current={isActive ? "page" : undefined}
                 className={cn(
-                  "rounded-xl border px-3 py-1.5 text-xs font-semibold transition-all",
+                  "font-display px-3 py-2 text-[15px] transition-colors",
                   isActive
-                    ? "border-emerald-400/35 bg-emerald-500/15 text-emerald-200"
-                    : "border-transparent text-slate-300 hover:bg-white/5 hover:text-white",
+                    ? "border-b-2 border-[#22D3EE] text-[#22D3EE]"
+                    : "text-[#E6EAF5] hover:text-[#F5B83D]",
                 )}
               >
                 {item.label}
@@ -98,17 +110,20 @@ export function Header({ mobileMenuOpen, onToggleMobileMenu }: HeaderProps) {
           <Link
             href="/search"
             className={cn(
-              "inline-flex items-center gap-2 rounded-xl border px-3.5 py-2 text-xs font-medium transition-all",
+              "inline-flex items-center gap-2 border px-3.5 py-2 text-xs font-medium transition-all",
               pathname === "/search"
-                ? "border-emerald-400/40 bg-emerald-500/15 text-emerald-200"
-                : "border-[#1E2A33] bg-[#10161B] text-slate-300 hover:border-emerald-400/40 hover:text-white",
+                ? "border-[#F5B83D] bg-[#F5B83D] font-bold text-[#0A0E1A] shadow-[0_0_14px_rgba(245,184,61,0.45)]"
+                : "border-[#22D3EE]/35 bg-[#101830] text-[#9AA6C4] hover:border-[#F5B83D] hover:text-[#E6EAF5]",
             )}
           >
             <Search
-              className="h-3.5 w-3.5 text-emerald-400"
+              className={cn(
+                "h-3.5 w-3.5",
+                pathname === "/search" ? "text-[#0A0E1A]" : "text-[#22D3EE]",
+              )}
               aria-hidden="true"
             />
-            <span className="hidden sm:inline">Cari Hero &amp; Item</span>
+            <span className="hidden sm:inline">Cari hero, build, item…</span>
             <span className="sm:hidden">Cari</span>
           </Link>
         </div>

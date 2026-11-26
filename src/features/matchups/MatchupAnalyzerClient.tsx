@@ -43,8 +43,8 @@ export function MatchupAnalyzerClient({ heroes, patchVersion }: Props) {
             className={cn(
               "flex items-center justify-center gap-2 rounded-xl border px-4 py-3 text-xs font-bold transition sm:text-sm",
               mode === "head-to-head"
-                ? "border-emerald-400/50 bg-emerald-500/15 text-emerald-200"
-                : "border-transparent bg-[#0B1014] text-slate-400 hover:border-[#243440] hover:text-slate-200",
+                ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+                : "border-transparent bg-[#0A0E1A] text-slate-400 hover:border-[#22D3EE]/35 hover:text-slate-200",
             )}
           >
             <Swords className="h-4 w-4 shrink-0" aria-hidden="true" />
@@ -59,8 +59,8 @@ export function MatchupAnalyzerClient({ heroes, patchVersion }: Props) {
             className={cn(
               "flex items-center justify-center gap-2 rounded-xl border px-4 py-3 text-xs font-bold transition sm:text-sm",
               mode === "team-5v5"
-                ? "border-emerald-400/50 bg-emerald-500/15 text-emerald-200"
-                : "border-transparent bg-[#0B1014] text-slate-400 hover:border-[#243440] hover:text-slate-200",
+                ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+                : "border-transparent bg-[#0A0E1A] text-slate-400 hover:border-[#22D3EE]/35 hover:text-slate-200",
             )}
           >
             <Users className="h-4 w-4 shrink-0" aria-hidden="true" />

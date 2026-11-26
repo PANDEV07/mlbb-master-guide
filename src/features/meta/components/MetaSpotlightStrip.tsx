@@ -32,8 +32,8 @@ export function MetaSpotlightStrip({ bracket }: Props) {
       title: "Meta Dominan",
       subtitle: "Skor komposit tertinggi",
       icon: Crown,
-      iconAccent: "text-amber-300 bg-amber-400/15 border-amber-400/30",
-      valueAccent: "text-amber-200",
+      iconAccent: "text-[#F5B83D] bg-[#F5B83D]/15 border-[#F5B83D]/40",
+      valueAccent: "text-[#F5B83D]",
       heroes: bracket.spotlights.metaLeaders,
       formatMetric: (h) => `Skor ${h.metaScore}`,
     },
@@ -42,8 +42,8 @@ export function MetaSpotlightStrip({ bracket }: Props) {
       title: "Win Rate Tertinggi",
       subtitle: "Paling konsisten menang",
       icon: Trophy,
-      iconAccent: "text-emerald-300 bg-emerald-500/15 border-emerald-400/30",
-      valueAccent: "text-emerald-300",
+      iconAccent: "text-[#4ADE80] bg-[#4ADE80]/15 border-[#4ADE80]/40",
+      valueAccent: "text-[#4ADE80]",
       heroes: bracket.spotlights.highestWinRate,
       formatMetric: (h) => `${formatPercent(h.winRate)} WR`,
     },
@@ -52,8 +52,8 @@ export function MetaSpotlightStrip({ bracket }: Props) {
       title: "Prioritas Ban",
       subtitle: "Paling diwaspadai di draft",
       icon: Ban,
-      iconAccent: "text-rose-300 bg-rose-500/15 border-rose-400/30",
-      valueAccent: "text-rose-300",
+      iconAccent: "text-[#FB7185] bg-[#E11D48]/15 border-[#E11D48]/45",
+      valueAccent: "text-[#FB7185]",
       heroes: bracket.spotlights.mostBanned,
       formatMetric: (h) => `${formatPercent(h.banRate)} Ban`,
     },
@@ -62,8 +62,8 @@ export function MetaSpotlightStrip({ bracket }: Props) {
       title: "Paling Populer",
       subtitle: "Sering muncul di ranked",
       icon: Flame,
-      iconAccent: "text-sky-300 bg-sky-500/15 border-sky-400/30",
-      valueAccent: "text-sky-300",
+      iconAccent: "text-[#22D3EE] bg-[#22D3EE]/15 border-[#22D3EE]/40",
+      valueAccent: "text-[#22D3EE]",
       heroes: bracket.spotlights.mostPicked,
       formatMetric: (h) => `${formatPercent(h.pickRate)} Pick`,
     },
@@ -77,15 +77,15 @@ export function MetaSpotlightStrip({ bracket }: Props) {
           <Surface key={card.id} className="space-y-3 p-4">
             <div className="flex items-center gap-2.5">
               <span
-                className={`inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-xl border ${card.iconAccent}`}
+                className={`inline-flex h-9 w-9 shrink-0 items-center justify-center border ${card.iconAccent}`}
               >
                 <Icon className="h-4 w-4" aria-hidden="true" />
               </span>
               <div className="min-w-0">
-                <h3 className="truncate text-xs font-bold text-white">
+                <h3 className="font-display truncate text-base text-[#E6EAF5]">
                   {card.title}
                 </h3>
-                <p className="truncate text-[11px] text-slate-400">
+                <p className="truncate text-[11px] text-[#9AA6C4]">
                   {card.subtitle}
                 </p>
               </div>
@@ -96,10 +96,10 @@ export function MetaSpotlightStrip({ bracket }: Props) {
                 <Link
                   key={`${card.id}-${hero.heroSlug}`}
                   href={`/heroes/${hero.heroSlug}`}
-                  className="group flex items-center justify-between gap-2.5 rounded-xl border border-[#1E2A33] bg-[#0B1014] px-2.5 py-2 transition hover:border-emerald-400/45 hover:bg-[#131C23]"
+                  className="group flex items-center justify-between gap-2.5 border border-[#22D3EE]/20 bg-[#0A0E1A] px-2.5 py-2 transition hover:border-[#F5B83D]/60 hover:bg-[#15203E]"
                 >
                   <div className="flex min-w-0 items-center gap-2.5">
-                    <span className="w-4 text-center text-[11px] font-bold text-slate-500">
+                    <span className="font-display w-4 text-center text-sm text-[#F5B83D]">
                       {index + 1}
                     </span>
                     <HeroPortrait
@@ -108,16 +108,16 @@ export function MetaSpotlightStrip({ bracket }: Props) {
                       className="h-9 w-8 shrink-0"
                     />
                     <div className="min-w-0">
-                      <p className="truncate text-xs font-bold text-white group-hover:text-emerald-300">
+                      <p className="font-display truncate text-sm text-[#E6EAF5] group-hover:text-[#F5B83D]">
                         {hero.heroName}
                       </p>
-                      <p className="truncate text-[10px] text-slate-400">
+                      <p className="truncate text-[10px] text-[#9AA6C4]">
                         {hero.roles.join("/") || "Hero"}
                       </p>
                     </div>
                   </div>
                   <span
-                    className={`shrink-0 font-mono text-[11px] font-semibold ${card.valueAccent}`}
+                    className={`font-display shrink-0 text-sm ${card.valueAccent}`}
                   >
                     {card.formatMetric(hero)}
                   </span>

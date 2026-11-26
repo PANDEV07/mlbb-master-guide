@@ -103,7 +103,7 @@ export function ProToRankedStudiesPanel({
                   "rounded-md border px-2.5 py-1 text-xs font-medium transition",
                   active
                     ? "border-amber-400/50 bg-amber-500/15 text-amber-200"
-                    : "border-[#1E2738] bg-[#0B0F17] text-slate-400 hover:text-slate-200",
+                    : "border-[#22D3EE]/25 bg-[#0B0F17] text-slate-400 hover:text-slate-200",
                 )}
               >
                 {filter === "ALL" ? "Semua" : RATING_LABELS[filter]}
@@ -113,7 +113,7 @@ export function ProToRankedStudiesPanel({
         </div>
 
         {filteredStudies.length === 0 ? (
-          <div className="rounded-xl border border-dashed border-[#1E2738] bg-[#0A0E16] p-5 text-center text-xs text-slate-400">
+          <div className="rounded-xl border border-dashed border-[#22D3EE]/25 bg-[#0A0E16] p-5 text-center text-xs text-slate-400">
             Tidak ada studi adaptasi dengan status kelayakan tersebut untuk{" "}
             {selectedModeLabel}. Coba pilih filter &quot;Semua&quot;.
           </div>
@@ -125,7 +125,7 @@ export function ProToRankedStudiesPanel({
               return (
                 <article
                   key={study.id}
-                  className="rounded-xl border border-[#1E2738] bg-[#0B0F17] p-4 sm:p-5"
+                  className="rounded-xl border border-[#22D3EE]/25 bg-[#0B0F17] p-4 sm:p-5"
                 >
                   <div className="flex flex-wrap items-start justify-between gap-2">
                     <div className="space-y-1">
@@ -152,8 +152,8 @@ export function ProToRankedStudiesPanel({
 
                   {/* Panduan Langsung untuk Mode Terpilih */}
                   <div className="mt-4 grid gap-3 md:grid-cols-2">
-                    <div className="rounded-lg border border-[#1E2738] bg-[#080B10] p-3.5">
-                      <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-300">
+                    <div className="rounded-lg border border-[#22D3EE]/25 bg-[#0A0E1A] p-3.5">
+                      <div className="flex items-center gap-1.5 text-xs font-semibold text-[#F5B83D]">
                         <CheckCircle2 className="h-3.5 w-3.5" aria-hidden="true" />
                         <span>Cara Menerapkan di {selectedModeLabel}</span>
                       </div>
@@ -196,7 +196,7 @@ export function ProToRankedStudiesPanel({
                           "rounded border px-2 py-0.5",
                           modeKey === selectedMode
                             ? "border-amber-400/60 bg-amber-500/15 font-semibold text-amber-200"
-                            : "border-[#1E2738] bg-[#080B10] text-slate-400",
+                            : "border-[#22D3EE]/25 bg-[#0A0E1A] text-slate-400",
                         )}
                       >
                         {label}: {RATING_LABELS[study.modeAdaptations[modeKey].rating]}
@@ -205,7 +205,7 @@ export function ProToRankedStudiesPanel({
                   </div>
 
                   {/* Detail 5 Pertanyaan Inti (AGENTS.md §4) */}
-                  <details className="mt-3 border-t border-[#1E2738] pt-3">
+                  <details className="mt-3 border-t border-[#22D3EE]/25 pt-3">
                     <summary className="cursor-pointer text-xs font-medium text-amber-300 hover:text-amber-200">
                       Bedah 5 Pertanyaan Inti Pro-to-Ranked &amp; Sumber Turnamen
                     </summary>
@@ -242,7 +242,7 @@ export function ProToRankedStudiesPanel({
                           {study.rankedRealismCheck}
                         </p>
                       </div>
-                      <div className="rounded-lg border border-[#1E2738] bg-[#080B10] p-3 text-[11px] text-slate-400">
+                      <div className="rounded-lg border border-[#22D3EE]/25 bg-[#0A0E1A] p-3 text-[11px] text-slate-400">
                         <div className="flex items-center gap-1.5 font-semibold text-slate-200">
                           <ShieldAlert className="h-3.5 w-3.5 text-amber-300" aria-hidden="true" />
                           <span>Batasan &amp; Rujukan Turnamen</span>

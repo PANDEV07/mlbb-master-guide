@@ -86,7 +86,7 @@ export function ItemCatalog({
             onChange={(event) => setSearch(event.target.value)}
             placeholder="Cari nama item..."
             aria-label="Cari item"
-            className="min-h-11 flex-1 rounded-xl border border-[#243440] bg-[#0B1014] px-4 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-emerald-400/70"
+            className="min-h-11 flex-1 rounded-xl border border-[#22D3EE]/35 bg-[#0A0E1A] px-4 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-[#F5B83D]"
           />
           <div className="flex items-center gap-2 text-xs text-slate-400">
             <Badge tone="blue">{patchVersion || "Patch tidak tersedia"}</Badge>
@@ -101,8 +101,8 @@ export function ItemCatalog({
             aria-pressed={category === "ALL"}
             className={`rounded-full border px-3.5 py-1.5 text-xs font-medium transition ${
               category === "ALL"
-                ? "border-emerald-400/50 bg-emerald-500/15 text-emerald-200"
-                : "border-[#1E2A33] bg-[#0B1014] text-slate-400 hover:border-[#2C3E4B] hover:text-slate-100"
+                ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+                : "border-[#22D3EE]/25 bg-[#0A0E1A] text-slate-400 hover:border-[#22D3EE]/45 hover:text-slate-100"
             }`}
           >
             Semua
@@ -116,8 +116,8 @@ export function ItemCatalog({
               aria-pressed={category === value}
               className={`rounded-full border px-3.5 py-1.5 text-xs font-medium transition ${
                 category === value
-                  ? "border-emerald-400/50 bg-emerald-500/15 text-emerald-200"
-                  : "border-[#1E2A33] bg-[#0B1014] text-slate-400 hover:border-[#2C3E4B] hover:text-slate-100"
+                  ? "border-[#F5B83D] bg-[#F5B83D] text-[#0A0E1A] shadow-[0_0_16px_rgba(245,184,61,0.4)]"
+                  : "border-[#22D3EE]/25 bg-[#0A0E1A] text-slate-400 hover:border-[#22D3EE]/45 hover:text-slate-100"
               }`}
             >
               {CATEGORY_LABELS[value] ?? value}
@@ -145,11 +145,11 @@ export function ItemCatalog({
             <Link
               key={item.entityId}
               href={`/items/${item.slug}`}
-              className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+              className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5B83D]"
             >
-              <Surface className="h-full p-4 transition-all group-hover:-translate-y-0.5 group-hover:border-emerald-400/45 group-hover:bg-[#141D24]">
+              <Surface className="h-full p-4 transition-all group-hover:-translate-y-0.5 group-hover:border-[#F5B83D]/60 group-hover:bg-[#15203E]">
                 <div className="flex gap-3">
-                  <div className="flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-[#1E2A33] bg-[#0B1014]">
+                  <div className="flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-[#22D3EE]/25 bg-[#0A0E1A]">
                     {item.iconUrl ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
@@ -164,7 +164,7 @@ export function ItemCatalog({
                   </div>
 
                   <div className="min-w-0 flex-1">
-                    <h2 className="font-bold text-slate-100 group-hover:text-emerald-300">
+                    <h2 className="font-bold text-slate-100 group-hover:text-[#F5B83D]">
                       {item.name}
                     </h2>
                     <div className="mt-1 flex flex-wrap gap-1.5">
