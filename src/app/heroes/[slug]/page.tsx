@@ -12,7 +12,7 @@ import { getHeroPremiumSkin } from "@/features/heroes/data/hero-premium-skins";
 import { HeroSkinBackdrop } from "@/features/heroes/components/HeroSkinBackdrop";
 import { HeroSkillShowcase } from "@/features/heroes/components/HeroSkillShowcase";
 import { HeroCombosPanel } from "@/features/heroes/components/HeroCombosPanel";
-import { getHeroDetail } from "@/features/heroes";
+import { getHeroDetail, getHeroDirectory } from "@/features/heroes";
 import { formatPercent, getMetaDashboardPayload } from "@/features/meta";
 import { Breadcrumbs } from "@/components/navigation/Breadcrumbs";
 import { Button } from "@/components/ui/Button";
@@ -40,6 +40,15 @@ type HeroDetailPageProps = {
 };
 
 export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  try {
+    const { heroes } = await getHeroDirectory();
+    return heroes.map((h) => ({ slug: h.metadata.slug }));
+  } catch {
+    return [];
+  }
+}
 
 const attributeLabels: Record<string, string> = {
   hp: "HP",

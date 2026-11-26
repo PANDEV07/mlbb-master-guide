@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { and, asc, eq, sql } from "drizzle-orm";
 
 import { getDb } from "@/lib/db/client";
@@ -165,7 +166,7 @@ function mapCatalogRow(row: {
   };
 }
 
-export async function getItemCatalog(): Promise<{
+async function loadItemCatalog(): Promise<{
   patchVersion: string;
   items: ItemCatalogRecord[];
 }> {
@@ -209,6 +210,8 @@ export async function getItemCatalog(): Promise<{
     items: rows.map(mapCatalogRow),
   };
 }
+
+export const getItemCatalog = cache(loadItemCatalog);
 
 export async function getItemDetail(
   slug: string,

@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getHeroDetail } from "@/features/heroes";
+import { getHeroDetail, getHeroDirectory } from "@/features/heroes";
 import { getItemCatalog } from "@/features/items/server/item.repository";
 import { getHeroBuildTemplates } from "@/features/builds/server";
 import { HeroPortrait } from "@/features/heroes/components/HeroPortrait";
@@ -12,6 +12,15 @@ type Props = {
 };
 
 export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  try {
+    const { heroes } = await getHeroDirectory();
+    return heroes.map((h) => ({ heroSlug: h.metadata.slug }));
+  } catch {
+    return [];
+  }
+}
 
 export default async function HeroBuildPage({ params }: Props) {
   const { heroSlug } = await params;

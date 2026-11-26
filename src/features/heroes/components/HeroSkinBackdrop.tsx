@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Sparkles } from "lucide-react";
 import {
   formatSkinTierLabelId,
-  getOptimizedSplashUrl,
   type HeroPremiumSkinRecord,
 } from "../data/hero-skin-utils";
 
@@ -34,10 +33,8 @@ export function HeroSkinBackdrop({
   }
 
   const label = formatSkinTierLabelId(skin.skinTier, skin.skinTag);
-  const optimizedUrl = getOptimizedSplashUrl(
-    skin.splashUrl,
-    variant === "banner" ? 1200 : 640,
-  );
+  // Self-hosted WebP (public/skins) agar LCP cepat, tanpa bergantung CDN eksternal
+  const optimizedUrl = `/skins/${skin.heroSlug}-${variant === "banner" ? 1200 : 640}.webp`;
 
   return (
     <>

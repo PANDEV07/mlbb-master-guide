@@ -6,9 +6,18 @@ import { buildPageMetadata } from "@/lib/metadata";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { Surface } from "@/components/ui/Surface";
 import { Badge } from "@/components/ui/Badge";
-import { getItemDetail, type RecipeNode } from "@/features/items/server/item.repository";
+import { getItemCatalog, getItemDetail, type RecipeNode } from "@/features/items/server/item.repository";
 
 export const revalidate = 3600;
+
+export async function generateStaticParams() {
+  try {
+    const { items } = await getItemCatalog();
+    return items.filter((i) => i.slug).map((i) => ({ slug: i.slug }));
+  } catch {
+    return [];
+  }
+}
 
 const getCachedItemDetail = cache((slug: string) => getItemDetail(slug));
 import {
