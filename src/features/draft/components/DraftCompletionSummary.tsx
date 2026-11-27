@@ -9,6 +9,7 @@ import {
   assignPicksToLanes,
   computeDraftComparisonIndex,
 } from "../engine/draft-simulator-engine";
+import { DraftItemSuggestionsPanel } from "./DraftItemSuggestionsPanel";
 import type { DraftHeroEntry, TeamLiveAudit } from "../types/draft.types";
 
 interface DraftCompletionSummaryProps {
@@ -160,6 +161,12 @@ export function DraftCompletionSummary({
           )}
         </div>
       </div>
+
+      {/* Rekomendasi 6-Slot Item Counter Adaptif per Hero (Blue & Red) */}
+      <DraftItemSuggestionsPanel
+        bluePicks={bluePicks}
+        redPicks={redPicks}
+      />
 
       {/* Deep Analysis Actions */}
       <div className="flex flex-wrap gap-2.5 border-t border-white/10 pt-3">

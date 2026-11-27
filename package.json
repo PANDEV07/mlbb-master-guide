@@ -33,7 +33,8 @@
         "meta:sync": "tsx src/lib/db/scripts/sync-hero-meta-stats.ts",
         "meta:test": "tsx src/features/meta/tests/tier-list-engine.test.ts",
         "meta:trend-test": "tsx src/features/meta/tests/meta-trend-engine.test.ts",
-        "draft:test": "tsx src/features/draft/tests/draft-simulator-engine.test.ts"
+        "draft:test": "tsx src/features/draft/tests/draft-simulator-engine.test.ts",
+        "draft:build-test": "tsx src/features/draft/tests/draft-build-engine.test.ts"
     },
     "dependencies": {
         "dotenv": "^18.0.10",
